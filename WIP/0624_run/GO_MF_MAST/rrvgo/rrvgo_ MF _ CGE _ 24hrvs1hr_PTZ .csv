@@ -1,0 +1,16 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0044389","GO:0044389",1,"GO:0044389",5.64122144449908,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.713466666666667,0.4582,0
+"GO:0031625","GO:0031625",1,"GO:0044389",5.56633779214775,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.714866666666667,0.4602,0.99
+"GO:0044325","GO:0044325",2,"GO:0044325",4.92251966789966,169,"transmembrane transporter binding","transmembrane transporter binding",0.8494,1,0
+"GO:0019903","GO:0019903",1,"GO:0044389",2.95555659710178,191,"protein phosphatase binding","ubiquitin-like protein ligase binding",0.7228,0.4704,0.56
+"GO:0008017","GO:0008017",3,"GO:0008017",2.51235247731142,269,"microtubule binding","microtubule binding",0.7634,0.479666666666667,0
+"GO:0015631","GO:0015631",3,"GO:0008017",2.43490147783999,387,"tubulin binding","microtubule binding",0.756533333333333,0.472333333333333,0.952
+"GO:0005516","GO:0005516",4,"GO:0005516",2.42974562063778,195,"calmodulin binding","calmodulin binding",0.848466666666667,1,0
+"GO:0003729","GO:0003729",5,"GO:0003729",2.1980490622151,386,"mRNA binding","mRNA binding",0.941333333333333,1,0
+"GO:0019894","GO:0019894",3,"GO:0008017",2.10057742412025,53,"kinesin binding","microtubule binding",0.803066666666667,0.586666666666667,0.609
+"GO:0019902","GO:0019902",1,"GO:0044389",2.02412378777862,243,"phosphatase binding","ubiquitin-like protein ligase binding",0.717866666666667,0.4626,0.573
+"GO:0001664","GO:0001664",6,"GO:0001664",1.95873509514846,335,"G protein-coupled receptor binding","G protein-coupled receptor binding",0.7904,0.734,0
+"GO:0051020","GO:0051020",1,"GO:0044389",1.90234751648511,337,"GTPase binding","ubiquitin-like protein ligase binding",0.742,0.5414,0.586
+"GO:0035254","GO:0035254",6,"GO:0001664",1.63497630810381,76,"glutamate receptor binding","G protein-coupled receptor binding",0.816666666666667,0.734,0.532
+"GO:0005158","GO:0005158",7,"GO:0005158",1.4091026159198,27,"insulin receptor binding","insulin receptor binding",0.827866666666667,1,0
+"GO:0005200","GO:0005200",8,"GO:0005200",1.33980509253478,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0

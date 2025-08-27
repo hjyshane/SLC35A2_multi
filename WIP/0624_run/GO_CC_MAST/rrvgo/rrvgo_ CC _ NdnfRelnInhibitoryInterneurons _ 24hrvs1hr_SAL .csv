@@ -1,0 +1,16 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0044306","GO:0044306",1,"GO:0044306",4.22965014913219,224,"neuron projection terminus","neuron projection terminus",0.756866666666667,0.396166666666667,0
+"GO:0098984","GO:0098984",2,"GO:0098984",3.8460174386246,448,"neuron to neuron synapse","neuron to neuron synapse",0.667533333333333,0.405333333333333,0
+"GO:0150034","GO:0150034",1,"GO:0044306",3.36809200986243,397,"distal axon","neuron projection terminus",0.7598,0.403666666666667,0.613
+"GO:0034705","GO:0034705",3,"GO:0034705",3.36664497118967,91,"potassium channel complex","potassium channel complex",0.904933333333333,0.5095,0
+"GO:0097060","GO:0097060",2,"GO:0098984",3.05243175098623,514,"synaptic membrane","neuron to neuron synapse",0.655933333333333,0.477333333333333,0.557
+"GO:0043679","GO:0043679",1,"GO:0044306",3.03480751896009,202,"axon terminus","neuron projection terminus",0.5422,0.342666666666667,0.989
+"GO:0008076","GO:0008076",3,"GO:0034705",2.8238287313967,77,"voltage-gated potassium channel complex","potassium channel complex",0.8862,0.5095,0.981
+"GO:0099572","GO:0099572",2,"GO:0098984",2.72903879803271,436,"postsynaptic specialization","neuron to neuron synapse",0.6628,0.4345,0.535
+"GO:0014069","GO:0014069",2,"GO:0098984",2.71819020363389,384,"postsynaptic density","neuron to neuron synapse",0.6058,0.288666666666667,0.97
+"GO:0043197","GO:0043197",1,"GO:0044306",2.67139693392381,208,"dendritic spine","neuron projection terminus",0.536066666666667,0.457666666666667,0.579
+"GO:0044309","GO:0044309",1,"GO:0044306",2.55179009325011,214,"neuron spine","neuron projection terminus",0.780666666666667,0.455666666666667,0.582
+"GO:0045211","GO:0045211",2,"GO:0098984",2.51290201420741,352,"postsynaptic membrane","neuron to neuron synapse",0.6158,0.404333333333333,0.527
+"GO:0044305","GO:0044305",1,"GO:0044306",2.4476959754727,32,"calyx of Held","neuron projection terminus",0.5962,0.410166666666667,0.86
+"GO:0032279","GO:0032279",2,"GO:0098984",2.41139674444017,407,"asymmetric synapse","neuron to neuron synapse",0.6694,0.406833333333333,0.979
+"GO:0043209","GO:0043209",4,"GO:0043209",1.35490176565334,208,"myelin sheath","myelin sheath",0.997666666666667,1,0

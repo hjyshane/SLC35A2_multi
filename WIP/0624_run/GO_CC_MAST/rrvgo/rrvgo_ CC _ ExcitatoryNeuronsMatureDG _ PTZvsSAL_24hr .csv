@@ -1,0 +1,25 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0098984","GO:0098984",1,"GO:0098984",8.26581782727724,448,"neuron to neuron synapse","neuron to neuron synapse",0.790333333333333,0.3918,0
+"GO:0032279","GO:0032279",1,"GO:0098984",7.93816692512027,407,"asymmetric synapse","neuron to neuron synapse",0.7915,0.3922,0.979
+"GO:0014069","GO:0014069",1,"GO:0098984",7.1627475328075,384,"postsynaptic density","neuron to neuron synapse",0.725708333333333,0.3042,0.97
+"GO:0099572","GO:0099572",1,"GO:0098984",6.62891700376099,436,"postsynaptic specialization","neuron to neuron synapse",0.761,0.4814,0.535
+"GO:0043209","GO:0043209",2,"GO:0043209",6.20644328637353,208,"myelin sheath","myelin sheath",0.997791666666667,1,0
+"GO:0035770","GO:0035770",3,"GO:0035770",5.16203673781339,264,"ribonucleoprotein granule","ribonucleoprotein granule",0.87925,0.372666666666667,0
+"GO:0036464","GO:0036464",3,"GO:0035770",4.97226344431806,246,"cytoplasmic ribonucleoprotein granule","ribonucleoprotein granule",0.8725,0.371,0.991
+"GO:0098685","GO:0098685",4,"GO:0098685",4.00806084902711,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.841375,1,0
+"GO:0150034","GO:0150034",5,"GO:0150034",2.74496146979696,397,"distal axon","distal axon",0.946791666666667,0.592666666666667,0
+"GO:0044309","GO:0044309",5,"GO:0150034",2.6529100966839,214,"neuron spine","distal axon",0.931083333333333,0.465,0.613
+"GO:0008021","GO:0008021",6,"GO:0008021",2.42439455176222,259,"synaptic vesicle","synaptic vesicle",0.742083333333333,0.506,0
+"GO:0060076","GO:0060076",7,"GO:0060076",2.40430355234039,99,"excitatory synapse","excitatory synapse",0.849083333333333,1,0
+"GO:0010494","GO:0010494",3,"GO:0035770",2.39203312749908,84,"cytoplasmic stress granule","ribonucleoprotein granule",0.881541666666667,0.404333333333333,0.891
+"GO:0005681","GO:0005681",8,"GO:0005681",2.38871987877528,221,"spliceosomal complex","spliceosomal complex",0.8205,0.40275,0
+"GO:0005751","GO:0005751",9,"GO:0005751",2.28931597926533,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.861375,0.5085,0
+"GO:0070382","GO:0070382",6,"GO:0008021",2.00446817466292,281,"exocytic vesicle","synaptic vesicle",0.895916666666667,0.506,0.988
+"GO:0045277","GO:0045277",9,"GO:0005751",1.932554200003,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.899291666666667,0.5085,0.983
+"GO:0016607","GO:0016607",10,"GO:0016607",1.92879641296038,369,"nuclear speck","nuclear speck",0.904541666666667,1,0
+"GO:0097060","GO:0097060",1,"GO:0098984",1.88873891986417,514,"synaptic membrane","neuron to neuron synapse",0.807583333333333,0.5604,0.557
+"GO:0071013","GO:0071013",8,"GO:0005681",1.84580905379696,110,"catalytic step 2 spliceosome","spliceosomal complex",0.8155,0.42925,0.901
+"GO:0043197","GO:0043197",5,"GO:0150034",1.5075867226543,208,"dendritic spine","distal axon",0.752875,0.466333333333333,0.609
+"GO:0016363","GO:0016363",11,"GO:0016363",1.42055477487248,107,"nuclear matrix","nuclear matrix",0.911791666666667,1,0
+"GO:0071010","GO:0071010",8,"GO:0005681",1.31314328234234,15,"prespliceosome","spliceosomal complex",0.837208333333333,0.39125,0.744
+"GO:0071004","GO:0071004",8,"GO:0005681",1.31314328234234,15,"U2-type prespliceosome","spliceosomal complex",0.837208333333333,0.39125,0.744

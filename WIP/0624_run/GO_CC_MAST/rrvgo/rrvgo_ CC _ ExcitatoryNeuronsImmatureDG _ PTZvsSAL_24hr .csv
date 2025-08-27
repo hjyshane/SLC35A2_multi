@@ -1,0 +1,24 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0097060","GO:0097060",1,"GO:0097060",14.5926192632783,514,"synaptic membrane","synaptic membrane",0.55695652173913,0.392,0
+"GO:0045211","GO:0045211",1,"GO:0097060",10.4149911560475,352,"postsynaptic membrane","synaptic membrane",0.54404347826087,0.406333333333333,0.938
+"GO:0099572","GO:0099572",2,"GO:0099572",6.87565757756857,436,"postsynaptic specialization","postsynaptic specialization",0.609478260869565,0.407,0
+"GO:0042734","GO:0042734",1,"GO:0097060",6.52484909421417,238,"presynaptic membrane","synaptic membrane",0.540869565217391,0.423666666666667,0.886
+"GO:0099634","GO:0099634",2,"GO:0099572",6.37987523598335,154,"postsynaptic specialization membrane","postsynaptic specialization",0.555173913043478,0.374333333333333,0.9
+"GO:0032279","GO:0032279",3,"GO:0032279",5.43143317983356,407,"asymmetric synapse","asymmetric synapse",0.621,0.345333333333333,0
+"GO:0098984","GO:0098984",3,"GO:0032279",4.88329643334185,448,"neuron to neuron synapse","asymmetric synapse",0.618826086956522,0.350333333333333,0.979
+"GO:0014069","GO:0014069",3,"GO:0032279",4.87421388411788,384,"postsynaptic density","asymmetric synapse",0.573217391304348,0.348333333333333,0.985
+"GO:0034702","GO:0034702",4,"GO:0034702",4.61849797484421,301,"monoatomic ion channel complex","monoatomic ion channel complex",0.800782608695652,0.2755,0
+"GO:0098685","GO:0098685",5,"GO:0098685",4.32944958106647,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.701565217391304,1,0
+"GO:1902495","GO:1902495",4,"GO:0034702",3.50093195026976,396,"transmembrane transporter complex","monoatomic ion channel complex",0.799086956521739,0.27625,0.969
+"GO:1990351","GO:1990351",4,"GO:0034702",3.21350856305228,421,"transporter complex","monoatomic ion channel complex",0.858304347826087,0.27825,0.965
+"GO:0098839","GO:0098839",2,"GO:0099572",2.83154947297187,114,"postsynaptic density membrane","postsynaptic specialization",0.527913043478261,0.381333333333333,0.879
+"GO:0043235","GO:0043235",6,"GO:0043235",2.54118533536697,417,"receptor complex","receptor complex",0.936869565217391,1,0
+"GO:0098982","GO:0098982",7,"GO:0098982",2.41206683266996,135,"GABA-ergic synapse","GABA-ergic synapse",0.705173913043478,1,0
+"GO:0150034","GO:0150034",8,"GO:0150034",2.36607371837258,397,"distal axon","distal axon",0.919608695652174,0.400333333333333,0
+"GO:0043209","GO:0043209",9,"GO:0043209",2.27256278633948,208,"myelin sheath","myelin sheath",0.997869565217391,1,0
+"GO:0048787","GO:0048787",10,"GO:0048787",1.98565970510842,66,"presynaptic active zone membrane","presynaptic active zone membrane",0.574565217391304,0.462,0
+"GO:0048786","GO:0048786",10,"GO:0048787",1.67974737279567,121,"presynaptic active zone","presynaptic active zone membrane",0.642782608695652,0.447,0.941
+"GO:0034703","GO:0034703",4,"GO:0034702",1.62684579996351,194,"cation channel complex","monoatomic ion channel complex",0.805869565217391,0.2915,0.964
+"GO:0008021","GO:0008021",10,"GO:0048787",1.4982214511258,259,"synaptic vesicle","presynaptic active zone membrane",0.632217391304348,0.536333333333333,0.673
+"GO:0043679","GO:0043679",8,"GO:0150034",1.44674615360138,202,"axon terminus","distal axon",0.592391304347826,0.379666666666667,0.935
+"GO:0043195","GO:0043195",8,"GO:0150034",1.33709354605386,93,"terminal bouton","distal axon",0.619608695652174,0.403333333333333,0.864

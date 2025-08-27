@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0048167","GO:0048167",1,"GO:0048167",1.95529380395577,393,"regulation of synaptic plasticity","regulation of synaptic plasticity",0.988,1,0
+"GO:0098742","GO:0098742",2,"GO:0098742",1.33400819015375,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.988,1,0

@@ -1,0 +1,38 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0015631","GO:0015631",1,"GO:0015631",8.66327075419065,387,"tubulin binding","tubulin binding",0.831864864864865,0.3845,0
+"GO:0004674","GO:0004674",2,"GO:0004674",7.58033143695327,441,"protein serine/threonine kinase activity","protein serine/threonine kinase activity",1,1,0
+"GO:0031267","GO:0031267",3,"GO:0031267",7.37921273277855,297,"small GTPase binding","small GTPase binding",0.825648648648649,0.457833333333333,0
+"GO:0060589","GO:0060589",4,"GO:0060589",7.28574315661181,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.867054054054054,0.297285714285714,0
+"GO:0030695","GO:0030695",4,"GO:0060589",7.28574315661181,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.867054054054054,0.297285714285714,0.994
+"GO:0051020","GO:0051020",3,"GO:0031267",6.6871127102297,337,"GTPase binding","small GTPase binding",0.824027027027027,0.453666666666667,0.985
+"GO:0008017","GO:0008017",1,"GO:0015631",6.18008865285766,269,"microtubule binding","tubulin binding",0.837540540540541,0.40025,0.952
+"GO:0003729","GO:0003729",5,"GO:0003729",5.57249396343733,386,"mRNA binding","mRNA binding",0.942378378378378,0.7165,0
+"GO:0098918","GO:0098918",6,"GO:0098918",5.3569806660174,37,"structural constituent of synapse","structural constituent of synapse",0.973810810810811,0.5155,0
+"GO:0003779","GO:0003779",1,"GO:0015631",5.33494007206467,448,"actin binding","tubulin binding",0.830405405405405,0.38725,0.787
+"GO:0035254","GO:0035254",7,"GO:0035254",3.85014180808983,76,"glutamate receptor binding","glutamate receptor binding",0.866486486486487,0.501333333333333,0
+"GO:0003712","GO:0003712",8,"GO:0003712",3.80060633798589,497,"transcription coregulator activity","transcription coregulator activity",0.975756756756757,0.5515,0
+"GO:0005516","GO:0005516",9,"GO:0005516",3.23183919964431,195,"calmodulin binding","calmodulin binding",0.890432432432432,1,0
+"GO:0019902","GO:0019902",3,"GO:0031267",2.89004985041484,243,"phosphatase binding","small GTPase binding",0.826567567567568,0.458333333333333,0.563
+"GO:0005096","GO:0005096",4,"GO:0060589",2.68660924454452,238,"GTPase activator activity","nucleoside-triphosphatase regulator activity",0.868486486486487,0.304857142857143,0.928
+"GO:0001664","GO:0001664",7,"GO:0035254",2.68178686914274,335,"G protein-coupled receptor binding","glutamate receptor binding",0.861810810810811,0.652666666666667,0.532
+"GO:0005085","GO:0005085",4,"GO:0060589",2.63935608055778,201,"guanyl-nucleotide exchange factor activity","nucleoside-triphosphatase regulator activity",0.874972972972973,0.339142857142857,0.917
+"GO:0044325","GO:0044325",10,"GO:0044325",2.51828835090296,169,"transmembrane transporter binding","transmembrane transporter binding",0.891162162162162,1,0
+"GO:0005543","GO:0005543",11,"GO:0005543",2.50254377447472,492,"phospholipid binding","phospholipid binding",0.954486486486486,1,0
+"GO:0099186","GO:0099186",6,"GO:0098918",2.48735390601702,27,"structural constituent of postsynapse","structural constituent of synapse",0.973810810810811,0.5155,0.969
+"GO:0017124","GO:0017124",12,"GO:0017124",2.43357236559146,130,"SH3 domain binding","SH3 domain binding",0.880378378378378,0.6525,0
+"GO:0035255","GO:0035255",7,"GO:0035254",2.25917599516189,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.870648648648649,0.508666666666667,0.964
+"GO:0008013","GO:0008013",13,"GO:0008013",2.192494690236,97,"beta-catenin binding","beta-catenin binding",0.895783783783784,1,0
+"GO:0000149","GO:0000149",14,"GO:0000149",2.18508724461092,119,"SNARE binding","SNARE binding",0.890675675675676,1,0
+"GO:0008047","GO:0008047",4,"GO:0060589",2.05951945919102,554,"enzyme activator activity","nucleoside-triphosphatase regulator activity",0.878702702702703,0.358857142857143,0.77
+"GO:0044389","GO:0044389",3,"GO:0031267",1.89148321404804,358,"ubiquitin-like protein ligase binding","small GTPase binding",0.823081081081081,0.452,0.579
+"GO:0003714","GO:0003714",8,"GO:0003712",1.85134337218264,200,"transcription corepressor activity","transcription coregulator activity",0.975756756756757,0.5515,0.897
+"GO:0019208","GO:0019208",4,"GO:0060589",1.85045036450429,100,"phosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.88627027027027,0.398857142857143,0.66
+"GO:0019888","GO:0019888",4,"GO:0060589",1.62862306962602,86,"protein phosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.887513513513513,0.405428571428571,0.65
+"GO:0097110","GO:0097110",15,"GO:0097110",1.51128249571902,89,"scaffold protein binding","scaffold protein binding",0.897972972972973,1,0
+"GO:0030165","GO:0030165",12,"GO:0017124",1.48475637794012,121,"PDZ domain binding","SH3 domain binding",0.881081081081081,0.6525,0.695
+"GO:0031625","GO:0031625",3,"GO:0031267",1.43887964356375,338,"ubiquitin protein ligase binding","small GTPase binding",0.823972972972973,0.454166666666667,0.576
+"GO:0008143","GO:0008143",5,"GO:0003729",1.38891651143415,33,"poly(A) binding","mRNA binding",0.950432432432432,0.7165,0.567
+"GO:0140297","GO:0140297",16,"GO:0140297",1.35160681201486,539,"DNA-binding transcription factor binding","DNA-binding transcription factor binding",0.86272972972973,0.6275,0
+"GO:0019903","GO:0019903",3,"GO:0031267",1.34151953188415,191,"protein phosphatase binding","small GTPase binding",0.829918918918919,0.467,0.55
+"GO:0050681","GO:0050681",16,"GO:0140297",1.34023033371655,33,"nuclear androgen receptor binding","DNA-binding transcription factor binding",0.889567567567568,0.6275,0.745
+"GO:0051015","GO:0051015",1,"GO:0015631",1.30629415533834,219,"actin filament binding","tubulin binding",0.841378378378378,0.418,0.723

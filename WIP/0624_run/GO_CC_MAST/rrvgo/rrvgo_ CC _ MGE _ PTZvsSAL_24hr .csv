@@ -1,0 +1,15 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043209","GO:0043209",1,"GO:0043209",9.82604883411916,208,"myelin sheath","myelin sheath",0.998214285714286,1,0
+"GO:0005751","GO:0005751",2,"GO:0005751",4.30766922062856,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.7185,0.354333333333333,0
+"GO:0045277","GO:0045277",2,"GO:0005751",3.85717606949222,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.752214285714286,0.348666666666667,0.983
+"GO:0032279","GO:0032279",3,"GO:0032279",3.37127964175635,407,"asymmetric synapse","asymmetric synapse",0.763285714285714,0.345333333333333,0
+"GO:0014069","GO:0014069",3,"GO:0032279",3.14766235495655,384,"postsynaptic density","asymmetric synapse",0.705642857142857,0.348333333333333,0.985
+"GO:0070069","GO:0070069",2,"GO:0005751",2.77573145837059,41,"cytochrome complex","mitochondrial respiratory chain complex IV",0.772642857142857,0.358333333333333,0.954
+"GO:0098984","GO:0098984",3,"GO:0032279",2.7405818650741,448,"neuron to neuron synapse","asymmetric synapse",0.763071428571429,0.350333333333333,0.979
+"GO:0099572","GO:0099572",4,"GO:0099572",2.39561308358986,436,"postsynaptic specialization","postsynaptic specialization",0.7685,0.697,0
+"GO:0098800","GO:0098800",5,"GO:0098800",2.0103973913814,154,"inner mitochondrial membrane protein complex","inner mitochondrial membrane protein complex",0.815857142857143,1,0
+"GO:0044305","GO:0044305",6,"GO:0044305",1.62416589194717,32,"calyx of Held","calyx of Held",0.799071428571429,0.596,0
+"GO:0031248","GO:0031248",7,"GO:0031248",1.61542202416053,99,"protein acetyltransferase complex","protein acetyltransferase complex",0.804714285714286,0.502,0
+"GO:0098871","GO:0098871",4,"GO:0099572",1.59114355261283,16,"postsynaptic actin cytoskeleton","postsynaptic specialization",0.823142857142857,0.697,0.606
+"GO:1902493","GO:1902493",7,"GO:0031248",1.48756027115373,104,"acetyltransferase complex","protein acetyltransferase complex",0.804714285714286,0.502,0.996
+"GO:0150034","GO:0150034",6,"GO:0044305",1.3929509234128,397,"distal axon","calyx of Held",0.940571428571429,0.596,0.808

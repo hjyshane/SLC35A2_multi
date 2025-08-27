@@ -1,0 +1,30 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0002181","GO:0002181",1,"GO:0002181",9.70279478928795,148,"cytoplasmic translation","cytoplasmic translation",0.918931034482759,0.534,0
+"GO:0007409","GO:0007409",2,"GO:0007409",8.82119768100791,501,"axonogenesis","axonogenesis",0.838275862068966,0.3708,0
+"GO:0140242","GO:0140242",1,"GO:0002181",7.10413864316807,48,"translation at postsynapse","cytoplasmic translation",0.899379310344828,0.3795,0.611
+"GO:0140241","GO:0140241",1,"GO:0002181",7.10413864316807,48,"translation at synapse","cytoplasmic translation",0.896206896551724,0.362,0.641
+"GO:0140236","GO:0140236",1,"GO:0002181",6.16293246306419,47,"translation at presynapse","cytoplasmic translation",0.899241379310345,0.379,0.612
+"GO:0099003","GO:0099003",3,"GO:0099003",5.43750488115345,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.846620689655172,0.509,0
+"GO:0031346","GO:0031346",2,"GO:0007409",4.28202589266701,463,"positive regulation of cell projection organization","axonogenesis",0.813379310344828,0.4894,0.687
+"GO:0099504","GO:0099504",3,"GO:0099003",3.67263447991761,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.822103448275862,0.509,0.982
+"GO:0099173","GO:0099173",4,"GO:0099173",3.1881580336684,252,"postsynapse organization","postsynapse organization",0.864137931034483,0.5315,0
+"GO:0050807","GO:0050807",5,"GO:0050807",2.96880949865414,309,"regulation of synapse organization","regulation of synapse organization",0.765103448275862,0.492666666666667,0
+"GO:0050803","GO:0050803",5,"GO:0050807",2.70874655859306,317,"regulation of synapse structure or activity","regulation of synapse organization",0.875827586206896,0.492333333333333,0.995
+"GO:0010970","GO:0010970",6,"GO:0010970",2.47356447341678,180,"transport along microtubule","transport along microtubule",0.812965517241379,0.5065,0
+"GO:0030705","GO:0030705",6,"GO:0010970",2.3191344280045,214,"cytoskeleton-dependent intracellular transport","transport along microtubule",0.832620689655172,0.5065,0.987
+"GO:0032870","GO:0032870",7,"GO:0032870",2.21607255744418,580,"cellular response to hormone stimulus","cellular response to hormone stimulus",0.921413793103448,0.429,0
+"GO:0022898","GO:0022898",8,"GO:0022898",2.17697341281501,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.770758620689655,0.336666666666667,0
+"GO:0030518","GO:0030518",7,"GO:0032870",1.91966736901783,118,"intracellular steroid hormone receptor signaling pathway","cellular response to hormone stimulus",0.881206896551724,0.384,0.854
+"GO:0016358","GO:0016358",2,"GO:0007409",1.90872839749801,327,"dendrite development","axonogenesis",0.854827586206897,0.447,0.762
+"GO:0032409","GO:0032409",8,"GO:0022898",1.8259292248622,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.902827586206897,0.337666666666667,0.995
+"GO:1990138","GO:1990138",2,"GO:0007409",1.77841253788777,211,"neuron projection extension","axonogenesis",0.844310344827586,0.3776,0.828
+"GO:0099072","GO:0099072",9,"GO:0099072",1.76191832695235,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.910965517241379,1,0
+"GO:0043401","GO:0043401",7,"GO:0032870",1.69990059364815,123,"steroid hormone mediated signaling pathway","cellular response to hormone stimulus",0.880689655172414,0.382333333333333,0.859
+"GO:0048167","GO:0048167",5,"GO:0050807",1.65175154190187,393,"regulation of synaptic plasticity","regulation of synapse organization",0.87451724137931,0.648333333333333,0.527
+"GO:0072659","GO:0072659",10,"GO:0072659",1.63392546462205,315,"protein localization to plasma membrane","protein localization to plasma membrane",0.843034482758621,0.5145,0
+"GO:0099111","GO:0099111",11,"GO:0099111",1.63276096242871,222,"microtubule-based transport","microtubule-based transport",0.86348275862069,1,0
+"GO:0048675","GO:0048675",2,"GO:0007409",1.62147376036449,143,"axon extension","axonogenesis",0.845448275862069,0.3768,0.869
+"GO:1990778","GO:1990778",10,"GO:0072659",1.5554416140323,400,"protein localization to cell periphery","protein localization to plasma membrane",0.839965517241379,0.5145,0.971
+"GO:0034765","GO:0034765",12,"GO:0034765",1.54400734406382,490,"regulation of monoatomic ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.798172413793103,1,0
+"GO:0099175","GO:0099175",4,"GO:0099173",1.48543341671797,139,"regulation of postsynapse organization","postsynapse organization",0.775172413793103,0.5315,0.937
+"GO:0032412","GO:0032412",8,"GO:0022898",1.46331604198168,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.771310344827586,0.337666666666667,0.995

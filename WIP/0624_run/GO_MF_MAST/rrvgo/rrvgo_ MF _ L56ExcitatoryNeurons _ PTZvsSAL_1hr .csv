@@ -1,0 +1,32 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0019902","GO:0019902",1,"GO:0019902",7.07518812824774,243,"phosphatase binding","phosphatase binding",0.87558064516129,0.47325,0
+"GO:0060589","GO:0060589",2,"GO:0060589",5.85868068708477,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.887129032258064,0.3002,0
+"GO:0030695","GO:0030695",2,"GO:0060589",5.85868068708477,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.887129032258064,0.3002,0.994
+"GO:0019903","GO:0019903",1,"GO:0019902",5.7889358456594,191,"protein phosphatase binding","phosphatase binding",0.877741935483871,0.47975,0.975
+"GO:0015631","GO:0015631",3,"GO:0015631",5.62312928805604,387,"tubulin binding","tubulin binding",0.902354838709677,0.6065,0
+"GO:0051020","GO:0051020",1,"GO:0019902",5.39725021305445,337,"GTPase binding","phosphatase binding",0.874354838709677,0.4725,0.569
+"GO:0035254","GO:0035254",4,"GO:0035254",4.56356606920687,76,"glutamate receptor binding","glutamate receptor binding",0.905064516129032,0.518,0
+"GO:0003729","GO:0003729",5,"GO:0003729",4.52611258847578,386,"mRNA binding","mRNA binding",0.923967741935484,0.51,0
+"GO:0005516","GO:0005516",6,"GO:0005516",4.31451936361835,195,"calmodulin binding","calmodulin binding",0.926483870967742,1,0
+"GO:0044325","GO:0044325",7,"GO:0044325",3.67290201122659,169,"transmembrane transporter binding","transmembrane transporter binding",0.926935483870968,1,0
+"GO:0004674","GO:0004674",8,"GO:0004674",2.79118794213565,441,"protein serine/threonine kinase activity","protein serine/threonine kinase activity",0.981645161290323,1,0
+"GO:0031267","GO:0031267",1,"GO:0019902",2.77218902119629,297,"small GTPase binding","phosphatase binding",0.875354838709677,0.4755,0.563
+"GO:0005085","GO:0005085",2,"GO:0060589",2.72772614408338,201,"guanyl-nucleotide exchange factor activity","nucleoside-triphosphatase regulator activity",0.893258064516129,0.3382,0.917
+"GO:0004115","GO:0004115",9,"GO:0004115",2.31109313680917,15,"3',5'-cyclic-AMP phosphodiesterase activity","3',5'-cyclic-AMP phosphodiesterase activity",0.933774193548387,0.375666666666667,0
+"GO:0035255","GO:0035255",4,"GO:0035254",2.26211062654283,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.907548387096774,0.518,0.964
+"GO:0098918","GO:0098918",10,"GO:0098918",2.17093147167562,37,"structural constituent of synapse","structural constituent of synapse",1,1,0
+"GO:0022839","GO:0022839",11,"GO:0022839",2.04586583970794,315,"monoatomic ion gated channel activity","monoatomic ion gated channel activity",0.879161290322581,0.2508,0
+"GO:0022836","GO:0022836",11,"GO:0022839",1.98048567942619,320,"gated channel activity","monoatomic ion gated channel activity",0.879870967741936,0.2552,0.988
+"GO:0003779","GO:0003779",3,"GO:0015631",1.96375073213223,448,"actin binding","tubulin binding",0.901129032258065,0.6065,0.787
+"GO:0050839","GO:0050839",12,"GO:0050839",1.77618733156909,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.923096774193548,1,0
+"GO:0035091","GO:0035091",13,"GO:0035091",1.73316176822542,294,"phosphatidylinositol binding","phosphatidylinositol binding",0.967741935483871,1,0
+"GO:0004114","GO:0004114",9,"GO:0004115",1.69614117568835,24,"3',5'-cyclic-nucleotide phosphodiesterase activity","3',5'-cyclic-AMP phosphodiesterase activity",0.93141935483871,0.356,0.94
+"GO:0005244","GO:0005244",11,"GO:0022839",1.62375286586622,197,"voltage-gated monoatomic ion channel activity","monoatomic ion gated channel activity",0.881258064516129,0.2638,0.917
+"GO:0022832","GO:0022832",11,"GO:0022839",1.58303959179692,198,"voltage-gated channel activity","monoatomic ion gated channel activity",0.881935483870968,0.268,0.916
+"GO:0003730","GO:0003730",5,"GO:0003729",1.48755327743904,119,"mRNA 3'-UTR binding","mRNA binding",0.928322580645161,0.526666666666667,0.891
+"GO:0070717","GO:0070717",5,"GO:0003729",1.42312150574873,41,"poly-purine tract binding","mRNA binding",0.940677419354839,0.630666666666667,0.579
+"GO:0004112","GO:0004112",9,"GO:0004115",1.41064419866894,26,"cyclic-nucleotide phosphodiesterase activity","3',5'-cyclic-AMP phosphodiesterase activity",0.931612903225806,0.358333333333333,0.933
+"GO:0005096","GO:0005096",2,"GO:0060589",1.40484632472678,238,"GTPase activator activity","nucleoside-triphosphatase regulator activity",0.892354838709677,0.3326,0.928
+"GO:0030165","GO:0030165",14,"GO:0030165",1.40065115485668,121,"PDZ domain binding","PDZ domain binding",0.929645161290323,1,0
+"GO:0005216","GO:0005216",11,"GO:0022839",1.34401174101488,437,"monoatomic ion channel activity","monoatomic ion gated channel activity",0.886548387096774,0.2966,0.925
+"GO:0019208","GO:0019208",2,"GO:0060589",1.31065106243195,100,"phosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.917548387096774,0.4888,0.66

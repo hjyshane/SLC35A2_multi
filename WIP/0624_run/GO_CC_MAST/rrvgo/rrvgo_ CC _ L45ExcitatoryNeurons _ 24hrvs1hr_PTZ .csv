@@ -1,0 +1,61 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0098984","GO:0098984",1,"GO:0098984",31.7282402970271,448,"neuron to neuron synapse","neuron to neuron synapse",0.781316666666667,0.30675,0
+"GO:0032279","GO:0032279",1,"GO:0098984",30.0450761544997,407,"asymmetric synapse","neuron to neuron synapse",0.782616666666667,0.3055,0.979
+"GO:0099572","GO:0099572",2,"GO:0099572",28.3105853505211,436,"postsynaptic specialization","postsynaptic specialization",0.750333333333333,0.325,0
+"GO:0014069","GO:0014069",1,"GO:0098984",26.6839118213616,384,"postsynaptic density","neuron to neuron synapse",0.731116666666667,0.30925,0.97
+"GO:0097060","GO:0097060",3,"GO:0097060",22.1057730921211,514,"synaptic membrane","synaptic membrane",0.7337,0.392,0
+"GO:0150034","GO:0150034",4,"GO:0150034",15.6385581724359,397,"distal axon","distal axon",0.902416666666667,0.3948,0
+"GO:0042734","GO:0042734",3,"GO:0097060",13.2370540461198,238,"presynaptic membrane","synaptic membrane",0.727933333333333,0.423666666666667,0.886
+"GO:0045211","GO:0045211",3,"GO:0097060",12.3909400659906,352,"postsynaptic membrane","synaptic membrane",0.721316666666667,0.406333333333333,0.938
+"GO:0099634","GO:0099634",2,"GO:0099572",12.1306391171721,154,"postsynaptic specialization membrane","postsynaptic specialization",0.709733333333333,0.33,0.9
+"GO:0098839","GO:0098839",2,"GO:0099572",11.1781324661258,114,"postsynaptic density membrane","postsynaptic specialization",0.69585,0.336,0.879
+"GO:0044309","GO:0044309",5,"GO:0044309",10.5464547191383,214,"neuron spine","neuron spine",0.917,0.495666666666667,0
+"GO:0022626","GO:0022626",6,"GO:0022626",9.78148154816213,142,"cytosolic ribosome","cytosolic ribosome",0.849133333333333,0.262166666666667,0
+"GO:0098685","GO:0098685",7,"GO:0098685",9.47040631254048,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.830116666666667,1,0
+"GO:0043197","GO:0043197",5,"GO:0044309",9.17147128811541,208,"dendritic spine","neuron spine",0.732666666666667,0.443666666666667,0.992
+"GO:0030427","GO:0030427",8,"GO:0030427",8.69868182616812,221,"site of polarized growth","site of polarized growth",0.981283333333333,0.5025,0
+"GO:0030426","GO:0030426",8,"GO:0030427",8.63118240487072,213,"growth cone","site of polarized growth",0.890416666666667,0.5025,0.995
+"GO:0048786","GO:0048786",9,"GO:0048786",8.40661029540714,121,"presynaptic active zone","presynaptic active zone",0.801683333333333,0.5295,0
+"GO:0098982","GO:0098982",10,"GO:0098982",7.01527742200831,135,"GABA-ergic synapse","GABA-ergic synapse",0.83215,1,0
+"GO:0060076","GO:0060076",11,"GO:0060076",6.93044256254078,99,"excitatory synapse","excitatory synapse",0.82925,0.536,0
+"GO:0044306","GO:0044306",4,"GO:0150034",6.49321693886426,224,"neuron projection terminus","distal axon",0.911016666666667,0.4074,0.613
+"GO:0005874","GO:0005874",12,"GO:0005874",5.6500793682133,467,"microtubule","microtubule",0.92125,1,0
+"GO:0022627","GO:0022627",6,"GO:0022626",5.46884332909938,45,"cytosolic small ribosomal subunit","cytosolic ribosome",0.8225,0.2695,0.897
+"GO:0043209","GO:0043209",13,"GO:0043209",5.43057246364988,208,"myelin sheath","myelin sheath",0.997866666666667,1,0
+"GO:0005840","GO:0005840",6,"GO:0022626",5.10084217927077,267,"ribosome","cytosolic ribosome",0.868866666666667,0.267333333333333,0.917
+"GO:0031252","GO:0031252",14,"GO:0031252",5.0261312927076,415,"cell leading edge","cell leading edge",0.98255,0.5495,0
+"GO:0043679","GO:0043679",4,"GO:0150034",4.68492460676925,202,"axon terminus","distal axon",0.718533333333333,0.3142,0.935
+"GO:0099738","GO:0099738",15,"GO:0099738",4.54629322414035,47,"cell cortex region","cell cortex region",0.913533333333333,0.573,0
+"GO:0098686","GO:0098686",1,"GO:0098984",4.4066905494328,61,"hippocampal mossy fiber to CA3 synapse","neuron to neuron synapse",0.813333333333333,0.3885,0.824
+"GO:0042788","GO:0042788",16,"GO:0042788",4.2324536372898,37,"polysomal ribosome","polysomal ribosome",0.857033333333333,0.5275,0
+"GO:0044391","GO:0044391",6,"GO:0022626",4.11297037454533,215,"ribosomal subunit","cytosolic ribosome",0.830216666666667,0.248666666666667,0.875
+"GO:0034702","GO:0034702",17,"GO:0034702",3.82333906201019,301,"monoatomic ion channel complex","monoatomic ion channel complex",0.864766666666667,0.245,0
+"GO:0099092","GO:0099092",2,"GO:0099572",3.66717261416739,44,"postsynaptic density, intracellular component","postsynaptic specialization",0.739833333333333,0.3506,0.792
+"GO:0034399","GO:0034399",18,"GO:0034399",3.43692756571604,136,"nuclear periphery","nuclear periphery",0.93775,0.5115,0
+"GO:0008021","GO:0008021",19,"GO:0008021",3.41804929979612,259,"synaptic vesicle","synaptic vesicle",0.691816666666667,0.213833333333333,0
+"GO:0099091","GO:0099091",2,"GO:0099572",3.41123037153186,52,"postsynaptic specialization, intracellular component","postsynaptic specialization",0.754483333333333,0.348,0.804
+"GO:0070382","GO:0070382",19,"GO:0008021",3.37580995667867,281,"exocytic vesicle","synaptic vesicle",0.873016666666667,0.211666666666667,0.988
+"GO:0099501","GO:0099501",19,"GO:0008021",3.26427009987068,147,"exocytic vesicle membrane","synaptic vesicle",0.839366666666667,0.211166666666667,0.924
+"GO:0030672","GO:0030672",19,"GO:0008021",3.26427009987068,147,"synaptic vesicle membrane","synaptic vesicle",0.684266666666667,0.208666666666667,0.939
+"GO:0016363","GO:0016363",18,"GO:0034399",3.13619716775623,107,"nuclear matrix","nuclear periphery",0.938766666666667,0.5115,0.977
+"GO:0022625","GO:0022625",6,"GO:0022626",3.12570310106046,79,"cytosolic large ribosomal subunit","cytosolic ribosome",0.818816666666667,0.271166666666667,0.932
+"GO:0005938","GO:0005938",15,"GO:0099738",2.83924323286319,306,"cell cortex","cell cortex region",0.901933333333333,0.573,0.854
+"GO:1902495","GO:1902495",17,"GO:0034702",2.81638633664105,396,"transmembrane transporter complex","monoatomic ion channel complex",0.86355,0.2506,0.969
+"GO:1990351","GO:1990351",17,"GO:0034702",2.73685458835737,421,"transporter complex","monoatomic ion channel complex",0.9052,0.2532,0.965
+"GO:0005844","GO:0005844",16,"GO:0042788",2.72904444833907,78,"polysome","polysomal ribosome",0.921,0.5275,0.945
+"GO:0031256","GO:0031256",14,"GO:0031252",2.61406366132479,159,"leading edge membrane","cell leading edge",0.91145,0.5495,0.901
+"GO:0099523","GO:0099523",20,"GO:0099523",2.55248661301362,32,"presynaptic cytosol","presynaptic cytosol",0.771283333333333,0.5215,0
+"GO:0015935","GO:0015935",6,"GO:0022626",2.13036864643091,83,"small ribosomal subunit","cytosolic ribosome",0.8396,0.270833333333333,0.806
+"GO:0098791","GO:0098791",21,"GO:0098791",2.08296229697491,323,"Golgi apparatus subcompartment","Golgi apparatus subcompartment",0.919016666666667,1,0
+"GO:0043198","GO:0043198",5,"GO:0044309",2.07813435418943,71,"dendritic shaft","neuron spine",0.92815,0.600666666666667,0.521
+"GO:0048787","GO:0048787",9,"GO:0048786",2.0381136869577,66,"presynaptic active zone membrane","presynaptic active zone",0.7508,0.5295,0.941
+"GO:0044305","GO:0044305",4,"GO:0150034",1.98003295773734,32,"calyx of Held","distal axon",0.752633333333333,0.3798,0.808
+"GO:0030658","GO:0030658",19,"GO:0008021",1.92807748029096,190,"transport vesicle membrane","synaptic vesicle",0.838083333333333,0.2185,0.902
+"GO:0098688","GO:0098688",11,"GO:0060076",1.86742749285588,37,"parallel fiber to Purkinje cell synapse","excitatory synapse",0.840616666666667,0.536,0.928
+"GO:0030133","GO:0030133",19,"GO:0008021",1.84430876416717,366,"transport vesicle","synaptic vesicle",0.872633333333333,0.2205,0.964
+"GO:0042383","GO:0042383",22,"GO:0042383",1.77953462536673,170,"sarcolemma","sarcolemma",0.924783333333333,1,0
+"GO:0034704","GO:0034704",17,"GO:0034702",1.77938975914862,68,"calcium channel complex","monoatomic ion channel complex",0.87775,0.3028,0.877
+"GO:0034703","GO:0034703",17,"GO:0034702",1.5219175114931,194,"cation channel complex","monoatomic ion channel complex",0.867516666666667,0.2512,0.964
+"GO:0043194","GO:0043194",4,"GO:0150034",1.41300253268456,29,"axon initial segment","distal axon",0.923966666666667,0.5258,0.67
+"GO:0099522","GO:0099522",20,"GO:0099523",1.40902588315965,49,"cytosolic region","presynaptic cytosol",0.93455,0.5215,0.957
+"GO:0016607","GO:0016607",23,"GO:0016607",1.38417939888961,369,"nuclear speck","nuclear speck",0.943833333333333,1,0

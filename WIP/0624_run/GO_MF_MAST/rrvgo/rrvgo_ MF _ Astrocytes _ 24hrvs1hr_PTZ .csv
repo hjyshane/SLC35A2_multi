@@ -1,0 +1,11 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0008047","GO:0008047",1,"GO:0008047",2.46292796856871,554,"enzyme activator activity","enzyme activator activity",0.9084,0.542,0
+"GO:0035254","GO:0035254",2,"GO:0035254",1.88604037417032,76,"glutamate receptor binding","glutamate receptor binding",0.8346,0.518,0
+"GO:0005543","GO:0005543",3,"GO:0005543",1.78665229508624,492,"phospholipid binding","phospholipid binding",0.9524,1,0
+"GO:0050839","GO:0050839",4,"GO:0050839",1.71588999459984,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.9075,1,0
+"GO:0005096","GO:0005096",1,"GO:0008047",1.68481972798714,238,"GTPase activator activity","enzyme activator activity",0.9084,0.542,0.916
+"GO:0045309","GO:0045309",5,"GO:0045309",1.52355928234976,64,"protein phosphorylated amino acid binding","protein phosphorylated amino acid binding",0.917,1,0
+"GO:0001540","GO:0001540",6,"GO:0001540",1.47251388361444,71,"amyloid-beta binding","amyloid-beta binding",0.8826,0.5835,0
+"GO:0019902","GO:0019902",7,"GO:0019902",1.40699022394831,243,"phosphatase binding","phosphatase binding",0.9096,1,0
+"GO:0035255","GO:0035255",2,"GO:0035254",1.39236586712577,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.8373,0.518,0.964
+"GO:0033218","GO:0033218",6,"GO:0001540",1.32468693558326,457,"amide binding","amyloid-beta binding",0.8766,0.5835,0.833

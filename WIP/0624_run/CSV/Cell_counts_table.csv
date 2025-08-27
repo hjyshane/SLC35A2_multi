@@ -1,0 +1,17 @@
+"","Cell_Type","PTZ_1hr","PTZ_24hr","SAL_1hr","SAL_24hr","Total"
+"1","Astrocytes",421,361,177,489,1448
+"2","CGE",352,214,214,199,979
+"3","COPMFOL",109,95,43,81,328
+"4","ExcitatoryNeuronsCA1",1598,990,856,964,4408
+"5","ExcitatoryNeuronsCA3",779,454,499,425,2157
+"6","ExcitatoryNeuronsImmatureDG",334,542,110,805,1791
+"7","ExcitatoryNeuronsMatureDG",950,883,384,610,2827
+"8","L23ExcitatoryNeurons",1006,139,341,219,1705
+"9","L45ExcitatoryNeurons",503,427,462,656,2048
+"10","L56ExcitatoryNeurons",636,269,366,412,1683
+"11","Lamp5positive",100,58,57,47,262
+"12","LGE",35,260,114,82,491
+"13","MGE",600,223,465,287,1575
+"14","Microglia",44,93,34,135,306
+"15","NdnfRelnInhibitoryInterneurons",96,102,73,87,358
+"16","OPCs",411,329,192,386,1318

@@ -1,0 +1,18 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",6.70929694870834,501,"axonogenesis","axonogenesis",0.863823529411765,0.528,0
+"GO:0002181","GO:0002181",2,"GO:0002181",4.60995423267852,148,"cytoplasmic translation","cytoplasmic translation",0.951823529411765,1,0
+"GO:0006403","GO:0006403",3,"GO:0006403",3.85964892934017,173,"RNA localization","RNA localization",0.769764705882353,0.5065,0
+"GO:0051236","GO:0051236",3,"GO:0006403",3.76864049018917,148,"establishment of RNA localization","RNA localization",0.764705882352941,0.5065,0.987
+"GO:0099003","GO:0099003",4,"GO:0099003",3.40869096353075,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.858941176470588,1,0
+"GO:0006397","GO:0006397",5,"GO:0006397",3.29544235040511,496,"mRNA processing","mRNA processing",0.919352941176471,0.5755,0
+"GO:0050807","GO:0050807",6,"GO:0050807",3.28737658515263,309,"regulation of synapse organization","regulation of synapse organization",0.771117647058824,0.501333333333333,0
+"GO:0050658","GO:0050658",7,"GO:0050658",3.22459283115293,145,"RNA transport","RNA transport",0.724764705882353,0.341,0
+"GO:0050657","GO:0050657",7,"GO:0050658",3.22459283115293,145,"nucleic acid transport","RNA transport",0.803235294117647,0.341,0.999
+"GO:0050803","GO:0050803",6,"GO:0050807",3.0354916551672,317,"regulation of synapse structure or activity","regulation of synapse organization",0.889411764705882,0.501,0.995
+"GO:0099072","GO:0099072",6,"GO:0050807",2.63913663906466,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of synapse organization",0.919823529411765,0.665666666666667,0.501
+"GO:1902903","GO:1902903",8,"GO:1902903",1.91629193065657,393,"regulation of supramolecular fiber organization","regulation of supramolecular fiber organization",0.848058823529412,1,0
+"GO:0051028","GO:0051028",7,"GO:0050658",1.90127868623743,116,"mRNA transport","RNA transport",0.729352941176471,0.348,0.978
+"GO:0010976","GO:0010976",1,"GO:0007409",1.73579323693142,239,"positive regulation of neuron projection development","axonogenesis",0.812411764705882,0.447333333333333,0.729
+"GO:0031346","GO:0031346",1,"GO:0007409",1.46600530550962,463,"positive regulation of cell projection organization","axonogenesis",0.808411764705882,0.461333333333333,0.687
+"GO:0051168","GO:0051168",9,"GO:0051168",1.46178746092934,175,"nuclear export","nuclear export",0.867705882352941,1,0
+"GO:1903311","GO:1903311",5,"GO:0006397",1.44365344477241,304,"regulation of mRNA metabolic process","mRNA processing",0.884823529411765,0.5755,0.849

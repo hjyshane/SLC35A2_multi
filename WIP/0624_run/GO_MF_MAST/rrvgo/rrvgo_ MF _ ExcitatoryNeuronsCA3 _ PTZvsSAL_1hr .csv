@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005003","GO:0005003",1,"GO:0005003",2.05941178437781,16,"ephrin receptor activity","ephrin receptor activity",1,1,0
+"GO:0015631","GO:0015631",2,"GO:0015631",1.74541387719414,387,"tubulin binding","tubulin binding",0.682666666666667,0.524,0
+"GO:0008017","GO:0008017",2,"GO:0015631",1.42114945568254,269,"microtubule binding","tubulin binding",0.682666666666667,0.524,0.952

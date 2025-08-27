@@ -1,0 +1,1257 @@
+Description,p.adjust,Regulation,CellType,Comparison
+Hepatocellular carcinoma - Mus musculus (house mouse),7.88187200690377e-4,Up,Astrocytes,24hrvs1hr_PTZ
+Endometrial cancer - Mus musculus (house mouse),7.88187200690377e-4,Up,Astrocytes,24hrvs1hr_PTZ
+Acute myeloid leukemia - Mus musculus (house mouse),9.274014617607711e-4,Up,Astrocytes,24hrvs1hr_PTZ
+Colorectal cancer - Mus musculus (house mouse),0.0013836228622714185,Up,Astrocytes,24hrvs1hr_PTZ
+Prostate cancer - Mus musculus (house mouse),0.0019858256787527156,Up,Astrocytes,24hrvs1hr_PTZ
+Breast cancer - Mus musculus (house mouse),0.003867572044948577,Up,Astrocytes,24hrvs1hr_PTZ
+Gastric cancer - Mus musculus (house mouse),0.003867572044948577,Up,Astrocytes,24hrvs1hr_PTZ
+Thyroid cancer - Mus musculus (house mouse),0.006445744151255673,Up,Astrocytes,24hrvs1hr_PTZ
+Kaposi sarcoma-associated herpesvirus infection - Mus musculus (house mouse),0.009767759138244824,Up,Astrocytes,24hrvs1hr_PTZ
+Basal cell carcinoma - Mus musculus (house mouse),0.01494786610281092,Up,Astrocytes,24hrvs1hr_PTZ
+ErbB signaling pathway - Mus musculus (house mouse),0.023075328203281713,Up,Astrocytes,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.023075328203281713,Up,Astrocytes,24hrvs1hr_PTZ
+Adherens junction - Mus musculus (house mouse),0.024329902344873058,Up,Astrocytes,24hrvs1hr_PTZ
+Human papillomavirus infection - Mus musculus (house mouse),0.02450363832291358,Up,Astrocytes,24hrvs1hr_PTZ
+Melanogenesis - Mus musculus (house mouse),0.024845930519185627,Up,Astrocytes,24hrvs1hr_PTZ
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.02909492642557684,Up,Astrocytes,24hrvs1hr_PTZ
+T cell receptor signaling pathway - Mus musculus (house mouse),0.032371511737369414,Up,Astrocytes,24hrvs1hr_PTZ
+Insulin signaling pathway - Mus musculus (house mouse),0.03840549488097725,Up,Astrocytes,24hrvs1hr_PTZ
+Alcoholic liver disease - Mus musculus (house mouse),0.03840549488097725,Up,Astrocytes,24hrvs1hr_PTZ
+Measles - Mus musculus (house mouse),0.03852371996938866,Up,Astrocytes,24hrvs1hr_PTZ
+Phospholipase D signaling pathway - Mus musculus (house mouse),0.03867980404337236,Up,Astrocytes,24hrvs1hr_PTZ
+Ubiquitin mediated proteolysis - Mus musculus (house mouse),0.03956826460326899,Up,Astrocytes,24hrvs1hr_PTZ
+Hippo signaling pathway - Mus musculus (house mouse),0.03956826460326899,Up,Astrocytes,24hrvs1hr_PTZ
+Cushing syndrome - Mus musculus (house mouse),0.03979930317750364,Up,Astrocytes,24hrvs1hr_PTZ
+Wnt signaling pathway - Mus musculus (house mouse),0.044348905532238435,Up,Astrocytes,24hrvs1hr_PTZ
+Nicotine addiction - Mus musculus (house mouse),0.0010247288439234285,Down,Astrocytes,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.0024266613449241887,Down,Astrocytes,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.0034283469603169706,Down,Astrocytes,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.004479915761527636,Down,Astrocytes,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.004479915761527636,Down,Astrocytes,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),0.004777276194680225,Down,Astrocytes,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),0.00540375411104821,Down,Astrocytes,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),0.00776904842568876,Down,Astrocytes,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),0.011020058459866174,Down,Astrocytes,24hrvs1hr_PTZ
+GnRH secretion - Mus musculus (house mouse),0.013046219553463944,Down,Astrocytes,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.015423264455415437,Down,Astrocytes,24hrvs1hr_PTZ
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.015824201595287492,Down,Astrocytes,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.017872369439312114,Down,Astrocytes,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.02272024354501839,Down,Astrocytes,24hrvs1hr_PTZ
+MAPK signaling pathway - Mus musculus (house mouse),0.02342520483489014,Down,Astrocytes,24hrvs1hr_PTZ
+Taste transduction - Mus musculus (house mouse),0.023454854825924458,Down,Astrocytes,24hrvs1hr_PTZ
+Huntington disease - Mus musculus (house mouse),0.023454854825924458,Down,Astrocytes,24hrvs1hr_PTZ
+Neuroactive ligand signaling - Mus musculus (house mouse),0.02513537419058792,Down,Astrocytes,24hrvs1hr_PTZ
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.025575386569769463,Down,Astrocytes,24hrvs1hr_PTZ
+Dilated cardiomyopathy - Mus musculus (house mouse),0.026382200256260976,Down,Astrocytes,24hrvs1hr_PTZ
+Circadian rhythm - Mus musculus (house mouse),0.024065630933729223,Up,Astrocytes,24hrvs1hr_SAL
+Nicotine addiction - Mus musculus (house mouse),5.106609243142889e-12,Down,Astrocytes,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),1.424163136324681e-10,Down,Astrocytes,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),6.422059249255123e-10,Down,Astrocytes,24hrvs1hr_SAL
+Circadian entrainment - Mus musculus (house mouse),2.0840882304848417e-9,Down,Astrocytes,24hrvs1hr_SAL
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),2.0840882304848417e-9,Down,Astrocytes,24hrvs1hr_SAL
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),2.0840882304848417e-9,Down,Astrocytes,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),2.433314174268679e-9,Down,Astrocytes,24hrvs1hr_SAL
+Calcium signaling pathway - Mus musculus (house mouse),1.61549761687265e-8,Down,Astrocytes,24hrvs1hr_SAL
+Amphetamine addiction - Mus musculus (house mouse),1.716200741870085e-7,Down,Astrocytes,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),1.8407682606176455e-7,Down,Astrocytes,24hrvs1hr_SAL
+Neuroactive ligand signaling - Mus musculus (house mouse),2.746649233070206e-7,Down,Astrocytes,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),4.796862899994233e-7,Down,Astrocytes,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),4.796862899994233e-7,Down,Astrocytes,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),7.906848549080458e-7,Down,Astrocytes,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),9.355646624673656e-7,Down,Astrocytes,24hrvs1hr_SAL
+Cardiac muscle contraction - Mus musculus (house mouse),9.355646624673656e-7,Down,Astrocytes,24hrvs1hr_SAL
+GABAergic synapse - Mus musculus (house mouse),1.0700019367232594e-6,Down,Astrocytes,24hrvs1hr_SAL
+Taste transduction - Mus musculus (house mouse),1.103513076974351e-6,Down,Astrocytes,24hrvs1hr_SAL
+Morphine addiction - Mus musculus (house mouse),1.103513076974351e-6,Down,Astrocytes,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),1.103513076974351e-6,Down,Astrocytes,24hrvs1hr_SAL
+Axon guidance - Mus musculus (house mouse),4.726250465587675e-6,Down,Astrocytes,24hrvs1hr_SAL
+Cholinergic synapse - Mus musculus (house mouse),5.780204155686959e-6,Down,Astrocytes,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),1.528175634725775e-5,Down,Astrocytes,24hrvs1hr_SAL
+Spinocerebellar ataxia - Mus musculus (house mouse),3.1392214641518365e-5,Down,Astrocytes,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),3.620662168294216e-5,Down,Astrocytes,24hrvs1hr_SAL
+MAPK signaling pathway - Mus musculus (house mouse),8.766083753619017e-5,Down,Astrocytes,24hrvs1hr_SAL
+Serotonergic synapse - Mus musculus (house mouse),1.867550864092382e-4,Down,Astrocytes,24hrvs1hr_SAL
+Type II diabetes mellitus - Mus musculus (house mouse),3.9855497354542637e-4,Down,Astrocytes,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),4.933155107758279e-4,Down,Astrocytes,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),9.747739005836387e-4,Down,Astrocytes,24hrvs1hr_SAL
+Neuroactive ligand-receptor interaction - Mus musculus (house mouse),0.001013303539154571,Down,Astrocytes,24hrvs1hr_SAL
+Long-term depression - Mus musculus (house mouse),0.0010223365853785865,Down,Astrocytes,24hrvs1hr_SAL
+GnRH secretion - Mus musculus (house mouse),0.0012492584482057167,Down,Astrocytes,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.0025636697812148465,Down,Astrocytes,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.0026587908765268193,Down,Astrocytes,24hrvs1hr_SAL
+Synaptic vesicle cycle - Mus musculus (house mouse),0.0029179440259219126,Down,Astrocytes,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.003069383096786507,Down,Astrocytes,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),0.004575083801666425,Down,Astrocytes,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),0.004696617474177619,Down,Astrocytes,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),0.00530601935291858,Down,Astrocytes,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),0.007092130165918763,Down,Astrocytes,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),0.00794437784712237,Down,Astrocytes,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.008488434419914603,Down,Astrocytes,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.00920063818849627,Down,Astrocytes,24hrvs1hr_SAL
+Pancreatic secretion - Mus musculus (house mouse),0.013905609915959634,Down,Astrocytes,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.01631403219729597,Down,Astrocytes,24hrvs1hr_SAL
+Chemical carcinogenesis - receptor activation - Mus musculus (house mouse),0.016734042361867596,Down,Astrocytes,24hrvs1hr_SAL
+ErbB signaling pathway - Mus musculus (house mouse),0.024067067277764635,Down,Astrocytes,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),0.024342201973918818,Down,Astrocytes,24hrvs1hr_SAL
+Cocaine addiction - Mus musculus (house mouse),0.030876497953286643,Down,Astrocytes,24hrvs1hr_SAL
+Viral myocarditis - Mus musculus (house mouse),0.03321624179600294,Down,Astrocytes,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.03321624179600294,Down,Astrocytes,24hrvs1hr_SAL
+Mineral absorption - Mus musculus (house mouse),0.042250917496467776,Down,Astrocytes,24hrvs1hr_SAL
+Pantothenate and CoA biosynthesis - Mus musculus (house mouse),0.0039901197035909775,Up,CGE,24hrvs1hr_SAL
+Biosynthesis of cofactors - Mus musculus (house mouse),0.014630438913167398,Up,CGE,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),9.37807529915968e-9,Down,CGE,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),5.6855560914980665e-5,Down,CGE,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),5.6855560914980665e-5,Down,CGE,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),5.6855560914980665e-5,Down,CGE,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),1.687102091643924e-4,Down,CGE,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),1.687102091643924e-4,Down,CGE,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),6.653806367358607e-4,Down,CGE,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),6.848746625071435e-4,Down,CGE,24hrvs1hr_SAL
+Antigen processing and presentation - Mus musculus (house mouse),0.0013223260325874813,Down,CGE,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.001499016318656908,Down,CGE,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),0.0030707191262769958,Down,CGE,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),0.0035472939059573755,Down,CGE,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.004463830943564369,Down,CGE,24hrvs1hr_SAL
+Protein processing in endoplasmic reticulum - Mus musculus (house mouse),0.006376915609118318,Down,CGE,24hrvs1hr_SAL
+Necroptosis - Mus musculus (house mouse),0.006376915609118318,Down,CGE,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.010738886140898872,Down,CGE,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.017695064064790562,Down,CGE,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.0246105608422928,Down,CGE,24hrvs1hr_SAL
+IL-17 signaling pathway - Mus musculus (house mouse),0.0246105608422928,Down,CGE,24hrvs1hr_SAL
+Th17 cell differentiation - Mus musculus (house mouse),0.028628981047332365,Down,CGE,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.028628981047332365,Down,CGE,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.034096773594576316,Down,CGE,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.04146863940961585,Down,CGE,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),7.143842887877094e-6,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),1.4730409799282396e-4,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),1.4730409799282396e-4,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),1.4730409799282396e-4,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.00060610186790233805,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),0.0011082264566030376,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Nicotine addiction - Mus musculus (house mouse),0.001610424436704881,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.0020238622992342042,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.004636973989926773,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.007463655909817067,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),0.010545809620742025,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Long-term potentiation - Mus musculus (house mouse),0.010545809620742025,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Spinocerebellar ataxia - Mus musculus (house mouse),0.010545809620742025,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.01944334359286359,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Type II diabetes mellitus - Mus musculus (house mouse),0.01944334359286359,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.01944334359286359,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),0.03366342352332177,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Serotonergic synapse - Mus musculus (house mouse),0.034606245663233816,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Long-term depression - Mus musculus (house mouse),0.03685600030261612,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.039804492735788594,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.04375666727166231,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+mRNA surveillance pathway - Mus musculus (house mouse),0.04375666727166231,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Proteoglycans in cancer - Mus musculus (house mouse),0.048308870186329844,Up,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),1.3967778868763347e-9,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Regulation of actin cytoskeleton - Mus musculus (house mouse),1.0560269290791423e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),2.5787623683425467e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Yersinia infection - Mus musculus (house mouse),2.9061263439602745e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),3.0109150205367956e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Tight junction - Mus musculus (house mouse),4.3136726086324286e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),6.088188597743794e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),6.970214669323397e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Parkinson disease - Mus musculus (house mouse),1.0338178228960985e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),1.2455570299172076e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),1.2455570299172076e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+cGMP-PKG signaling pathway - Mus musculus (house mouse),1.2455570299172076e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),1.2455570299172076e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Oocyte meiosis - Mus musculus (house mouse),1.2455570299172076e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Dilated cardiomyopathy - Mus musculus (house mouse),1.4776441908043546e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Endocytosis - Mus musculus (house mouse),2.0087098672879323e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),2.0087098672879323e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Salivary secretion - Mus musculus (house mouse),2.085592717668703e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Lipid and atherosclerosis - Mus musculus (house mouse),2.351336418732081e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),2.389112171680629e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Alzheimer disease - Mus musculus (house mouse),3.6420229999213405e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Gastric acid secretion - Mus musculus (house mouse),4.1039510671560643e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Glucagon signaling pathway - Mus musculus (house mouse),6.836691789278207e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Gap junction - Mus musculus (house mouse),0.0010103903866299521,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.001050995711326443,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Long-term potentiation - Mus musculus (house mouse),0.0012298032262835587,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.0013991034491724755,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.0013991034491724755,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Fc gamma R-mediated phagocytosis - Mus musculus (house mouse),0.0015642158296886167,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Prion disease - Mus musculus (house mouse),0.0017799983761656645,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Phagosome - Mus musculus (house mouse),0.002161503874746288,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),0.0031964311137802856,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Estrogen signaling pathway - Mus musculus (house mouse),0.003281390951074855,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.003995012647846064,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.006663672475277491,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Rap1 signaling pathway - Mus musculus (house mouse),0.007090899866745546,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.007090899866745546,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),0.009713672271899277,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Renin secretion - Mus musculus (house mouse),0.011132166311587156,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.011575499458048382,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Motor proteins - Mus musculus (house mouse),0.01170156694161422,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Huntington disease - Mus musculus (house mouse),0.012824329915371274,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Focal adhesion - Mus musculus (house mouse),0.012922949733499344,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Apelin signaling pathway - Mus musculus (house mouse),0.014343302295851214,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.01567989425188797,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Protein processing in endoplasmic reticulum - Mus musculus (house mouse),0.016625758692593553,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Tuberculosis - Mus musculus (house mouse),0.018196863319935565,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Cardiac muscle contraction - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Human cytomegalovirus infection - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Nucleocytoplasmic transport - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+GnRH signaling pathway - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Viral life cycle - HIV-1 - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.019176560125525665,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Ribosome - Mus musculus (house mouse),0.01925803432320974,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Coronavirus disease - COVID-19 - Mus musculus (house mouse),0.01925803432320974,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Adherens junction - Mus musculus (house mouse),0.019909404489327338,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.02062882818072263,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Phosphatidylinositol signaling system - Mus musculus (house mouse),0.023663902936040367,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Apoptosis - Mus musculus (house mouse),0.033845952776448474,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Insulin signaling pathway - Mus musculus (house mouse),0.03843933628981214,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Pertussis - Mus musculus (house mouse),0.03843933628981214,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Phototransduction - Mus musculus (house mouse),0.04030218074888002,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.042717031176522834,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),0.04444076752394774,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Phospholipase D signaling pathway - Mus musculus (house mouse),0.048710470596178786,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Pancreatic secretion - Mus musculus (house mouse),0.048710470596178786,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Mineral absorption - Mus musculus (house mouse),0.04931020643604212,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Kaposi sarcoma-associated herpesvirus infection - Mus musculus (house mouse),0.04931020643604212,Down,ExcitatoryNeuronsCA1,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),2.197669040953493e-6,Up,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),0.011436596357236197,Up,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.011436596357236197,Up,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Cholinergic synapse - Mus musculus (house mouse),0.03443971723085736,Up,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),1.4999590693603838e-8,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),5.840911498891803e-7,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),1.011600424532033e-6,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),1.3138061717853972e-6,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),2.984111247614576e-6,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),6.738385194526933e-6,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),2.711268933152552e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),3.322355309513424e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),8.2746197010243e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),8.2746197010243e-5,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Oocyte meiosis - Mus musculus (house mouse),1.22706078646078e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),1.4702882109239845e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),2.4974452156119987e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),4.5396558752322383e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),5.5123706617439e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),5.636061326982309e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Cardiac muscle contraction - Mus musculus (house mouse),5.636061326982309e-4,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),0.001011164188656619,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Amphetamine addiction - Mus musculus (house mouse),0.001011164188656619,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Circadian entrainment - Mus musculus (house mouse),0.001011164188656619,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.001407809816620903,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Hippo signaling pathway - Mus musculus (house mouse),0.0027768963767609497,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),0.002896994661000478,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.004275356975695729,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.004275356975695729,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Diabetic cardiomyopathy - Mus musculus (house mouse),0.004275356975695729,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+PI3K-Akt signaling pathway - Mus musculus (house mouse),0.004359187274065769,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Glucagon signaling pathway - Mus musculus (house mouse),0.006353557400790718,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.006353557400790718,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Thermogenesis - Mus musculus (house mouse),0.007178661500756476,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.009044073301512702,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.010860543148810901,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.011719496241787173,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.011866325488332777,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Hepatitis C - Mus musculus (house mouse),0.0127593264440848,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.013201069023346253,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.013201069023346253,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Phototransduction - Mus musculus (house mouse),0.016712865056426173,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Viral carcinogenesis - Mus musculus (house mouse),0.01687811346692846,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Chemical carcinogenesis - reactive oxygen species - Mus musculus (house mouse),0.016903636835794152,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+ATP-dependent chromatin remodeling - Mus musculus (house mouse),0.017700438932939842,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Long-term depression - Mus musculus (house mouse),0.019706776559539792,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Oxidative phosphorylation - Mus musculus (house mouse),0.019706776559539792,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Spinocerebellar ataxia - Mus musculus (house mouse),0.019706776559539792,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Human immunodeficiency virus 1 infection - Mus musculus (house mouse),0.02100481868537871,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.02315087544100817,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.02640233141231865,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Human cytomegalovirus infection - Mus musculus (house mouse),0.02688404649178029,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Cell cycle - Mus musculus (house mouse),0.02975769775219239,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Pancreatic secretion - Mus musculus (house mouse),0.03317148024576571,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Non-alcoholic fatty liver disease - Mus musculus (house mouse),0.03317148024576571,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Glioma - Mus musculus (house mouse),0.03547174253517258,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Renin secretion - Mus musculus (house mouse),0.03594619084539321,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Nicotine addiction - Mus musculus (house mouse),0.03594619084539321,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Pertussis - Mus musculus (house mouse),0.0367418447127193,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.037859630650538066,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.046286051673446224,Down,ExcitatoryNeuronsCA1,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.021102134701252273,Up,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+GnRH secretion - Mus musculus (house mouse),0.021102134701252273,Up,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Axon guidance - Mus musculus (house mouse),0.021102134701252273,Up,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Phagosome - Mus musculus (house mouse),2.060044327081007e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),2.060044327081007e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Motor proteins - Mus musculus (house mouse),2.060044327081007e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Prion disease - Mus musculus (house mouse),2.468371711893178e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),8.138316356579306e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),8.138316356579306e-5,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Huntington disease - Mus musculus (house mouse),3.307985380894088e-4,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Cell adhesion molecules - Mus musculus (house mouse),4.5378387205536816e-4,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Parkinson disease - Mus musculus (house mouse),7.868579493082757e-4,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),7.918511543897779e-4,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),9.984390351473805e-4,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Alzheimer disease - Mus musculus (house mouse),0.0011862078596551696,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Axon guidance - Mus musculus (house mouse),0.0024189861716319683,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Glutamatergic synapse - Mus musculus (house mouse),0.0024189861716319683,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Amphetamine addiction - Mus musculus (house mouse),0.0030064400952717228,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),0.004374425422151318,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.006055828794826108,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.006055828794826108,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.006055828794826108,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.006055828794826108,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Circadian entrainment - Mus musculus (house mouse),0.008015639229195995,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.008015639229195995,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Tight junction - Mus musculus (house mouse),0.008015639229195995,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Dilated cardiomyopathy - Mus musculus (house mouse),0.008243912228109674,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Type II diabetes mellitus - Mus musculus (house mouse),0.008243912228109674,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Proteoglycans in cancer - Mus musculus (house mouse),0.01567034104716956,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Apoptosis - Mus musculus (house mouse),0.02055609616175331,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.023316069957838838,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+GABAergic synapse - Mus musculus (house mouse),0.042705959900267,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Adherens junction - Mus musculus (house mouse),0.042705959900267,Down,ExcitatoryNeuronsCA1,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),1.911911929262715e-6,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Salmonella infection - Mus musculus (house mouse),4.828346571957116e-6,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Prion disease - Mus musculus (house mouse),5.965721592001798e-6,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),5.965721592001798e-6,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Alzheimer disease - Mus musculus (house mouse),7.249392292357125e-5,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Huntington disease - Mus musculus (house mouse),1.0246593138417686e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Nicotine addiction - Mus musculus (house mouse),1.4618823581760698e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Parkinson disease - Mus musculus (house mouse),3.398177227398062e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Phagosome - Mus musculus (house mouse),3.398177227398062e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Motor proteins - Mus musculus (house mouse),4.77039452620958e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Long-term potentiation - Mus musculus (house mouse),7.311949293520797e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Amphetamine addiction - Mus musculus (house mouse),7.311949293520797e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+cAMP signaling pathway - Mus musculus (house mouse),7.311949293520797e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Gastric acid secretion - Mus musculus (house mouse),8.97518966973569e-4,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Gap junction - Mus musculus (house mouse),0.00142729411967172,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Circadian entrainment - Mus musculus (house mouse),0.0023932198831638956,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Cocaine addiction - Mus musculus (house mouse),0.003801196869138138,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Glutamatergic synapse - Mus musculus (house mouse),0.003869182703394542,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Apoptosis - Mus musculus (house mouse),0.006181732389504773,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Thermogenesis - Mus musculus (house mouse),0.006181732389504773,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.008201515572994915,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),0.011654164699135033,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Tight junction - Mus musculus (house mouse),0.012158313355436812,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Antigen processing and presentation - Mus musculus (house mouse),0.015143109970649871,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Cardiac muscle contraction - Mus musculus (house mouse),0.015507180283046717,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Neuroactive ligand signaling - Mus musculus (house mouse),0.01799850985434589,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Proteoglycans in cancer - Mus musculus (house mouse),0.019997363879503547,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.02148265224082582,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Rap1 signaling pathway - Mus musculus (house mouse),0.022411893893757803,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Lipid and atherosclerosis - Mus musculus (house mouse),0.022411893893757803,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.027437219153270617,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.02798955237599859,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Calcium signaling pathway - Mus musculus (house mouse),0.03566727256533989,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Estrogen signaling pathway - Mus musculus (house mouse),0.03566727256533989,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Yersinia infection - Mus musculus (house mouse),0.035781424034703704,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Dopaminergic synapse - Mus musculus (house mouse),0.035781424034703704,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Spinocerebellar ataxia - Mus musculus (house mouse),0.03764663737123899,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.04573426761099342,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Mineral absorption - Mus musculus (house mouse),0.04573426761099342,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.04573426761099342,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Hippo signaling pathway - Mus musculus (house mouse),0.04616627272025565,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Efferocytosis - Mus musculus (house mouse),0.04897389345134248,Up,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Axon guidance - Mus musculus (house mouse),0.037934075799808925,Down,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Cell adhesion molecules - Mus musculus (house mouse),0.037934075799808925,Down,ExcitatoryNeuronsCA1,PTZvsSAL_24hr
+Salmonella infection - Mus musculus (house mouse),3.014555717882364e-6,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),4.922381649811101e-4,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.0015392251314566075,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Gastric acid secretion - Mus musculus (house mouse),0.0015392251314566075,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),0.0015392251314566075,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Oocyte meiosis - Mus musculus (house mouse),0.002005726151235258,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Parkinson disease - Mus musculus (house mouse),0.002005726151235258,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.002005726151235258,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Estrogen signaling pathway - Mus musculus (house mouse),0.0024749282870051162,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Phagosome - Mus musculus (house mouse),0.0024749282870051162,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Motor proteins - Mus musculus (house mouse),0.0038729056334453563,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Alzheimer disease - Mus musculus (house mouse),0.00532382551146022,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Rap1 signaling pathway - Mus musculus (house mouse),0.005563297492056594,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Lipid and atherosclerosis - Mus musculus (house mouse),0.005563297492056594,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.005563297492056594,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Tight junction - Mus musculus (house mouse),0.006029605512998263,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.006169979663066413,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.007706152469812299,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Salivary secretion - Mus musculus (house mouse),0.007706152469812299,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.009032901011681707,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Phototransduction - Mus musculus (house mouse),0.013176427124083932,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.013221780136221462,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Glucagon signaling pathway - Mus musculus (house mouse),0.013221780136221462,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.013221780136221462,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),0.013221780136221462,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Hippo signaling pathway - Mus musculus (house mouse),0.014485441025493559,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),0.01783720788307483,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.021714788634942868,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Regulation of actin cytoskeleton - Mus musculus (house mouse),0.021714788634942868,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Glioma - Mus musculus (house mouse),0.022413848618057872,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.023109032834746756,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Pertussis - Mus musculus (house mouse),0.023109032834746756,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Apoptosis - Mus musculus (house mouse),0.030725793549722036,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Yersinia infection - Mus musculus (house mouse),0.030725793549722036,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Gap junction - Mus musculus (house mouse),0.031367026134337526,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Endocytosis - Mus musculus (house mouse),0.03722705402671546,Down,ExcitatoryNeuronsCA3,24hrvs1hr_PTZ
+Parkinson disease - Mus musculus (house mouse),2.523728380417085e-11,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),3.159322273109107e-8,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),1.6253067897314955e-7,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),2.0391755548223128e-7,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),2.3664229930758462e-7,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),5.218329898543167e-7,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),7.170141629163544e-6,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),7.170141629163544e-6,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),1.1573160162142073e-5,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),2.4361054449849742e-5,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),2.873554843238391e-5,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),7.208887412675812e-5,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Oocyte meiosis - Mus musculus (house mouse),6.49847248416609e-4,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Cardiac muscle contraction - Mus musculus (house mouse),8.614353430974338e-4,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),9.735050662808299e-4,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Thermogenesis - Mus musculus (house mouse),0.0010233592412133947,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.0016751711401947202,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.001942853442550524,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.001993860530188853,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Hippo signaling pathway - Mus musculus (house mouse),0.0020494380659036495,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Diabetic cardiomyopathy - Mus musculus (house mouse),0.002378854943116947,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.0029906907518905982,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),0.004498254814026487,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+ATP-dependent chromatin remodeling - Mus musculus (house mouse),0.004915493399334996,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.004915493399334996,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),0.004915493399334996,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Oxidative phosphorylation - Mus musculus (house mouse),0.005509679973550045,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Glucagon signaling pathway - Mus musculus (house mouse),0.00847080912733631,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.00847080912733631,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Non-alcoholic fatty liver disease - Mus musculus (house mouse),0.010199758850327617,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Hepatitis C - Mus musculus (house mouse),0.01152869654853033,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Chemical carcinogenesis - reactive oxygen species - Mus musculus (house mouse),0.01160007013692861,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.01160007013692861,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+PI3K-Akt signaling pathway - Mus musculus (house mouse),0.01160007013692861,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.011860428386780846,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.012868869246515157,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Thyroid hormone synthesis - Mus musculus (house mouse),0.013821034775464364,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.02095787827572789,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Vasopressin-regulated water reabsorption - Mus musculus (house mouse),0.02466826297980694,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.031165437966025642,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.03178188024196368,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.032812657125329985,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Cell cycle - Mus musculus (house mouse),0.03367493391547393,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Circadian entrainment - Mus musculus (house mouse),0.03367493391547393,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.03367493391547393,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Viral carcinogenesis - Mus musculus (house mouse),0.03581355758794548,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Mineral absorption - Mus musculus (house mouse),0.03819862056259358,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Necroptosis - Mus musculus (house mouse),0.048657694342112354,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.048657694342112354,Down,ExcitatoryNeuronsCA3,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),4.759709602579003e-4,Up,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Axon guidance - Mus musculus (house mouse),0.02359769495503373,Up,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Neuroactive ligand signaling - Mus musculus (house mouse),0.02359769495503373,Up,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Phagosome - Mus musculus (house mouse),2.768153125763316e-4,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Motor proteins - Mus musculus (house mouse),2.768153125763316e-4,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),6.055227771924725e-4,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.002991083468865541,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),0.0036592377655857936,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Huntington disease - Mus musculus (house mouse),0.011057479775404257,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.04836457596474589,Down,ExcitatoryNeuronsCA3,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),0.019955481216698327,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.020456532005222957,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Apoptosis - Mus musculus (house mouse),0.020456532005222957,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Phagosome - Mus musculus (house mouse),0.033980420961301126,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Motor proteins - Mus musculus (house mouse),0.033980420961301126,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.033980420961301126,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_PTZ
+Long-term depression - Mus musculus (house mouse),0.011400342010260411,Up,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Neuroactive ligand-receptor interaction - Mus musculus (house mouse),0.037241117233516974,Up,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),0.02212220168508604,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),0.02212220168508604,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.022520286451941412,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),0.022520286451941412,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Taste transduction - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Viral myocarditis - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.02285180483981167,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.02324571980313272,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.026056455004915643,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.03085672071763224,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.04429524664098184,Down,ExcitatoryNeuronsImmatureDG,24hrvs1hr_SAL
+Axon guidance - Mus musculus (house mouse),1.930334678852069e-8,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),8.617995858330858e-6,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),1.4459899854458265e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),2.3460700366459425e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cell adhesion molecules - Mus musculus (house mouse),2.5762314705665153e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),3.3290872784761907e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GnRH secretion - Mus musculus (house mouse),6.814268534048563e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),9.309353330466148e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Type II diabetes mellitus - Mus musculus (house mouse),0.0016882520112305383,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+"Parathyroid hormone synthesis, secretion and action - Mus musculus (house mouse)",0.001690861900252331,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+MAPK signaling pathway - Mus musculus (house mouse),0.001690861900252331,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.001690861900252331,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.0021376071700101845,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.0027109468466637986,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Long-term depression - Mus musculus (house mouse),0.002958368320110663,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Alzheimer disease - Mus musculus (house mouse),0.0030371211258018635,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Serotonergic synapse - Mus musculus (house mouse),0.0031824471821401377,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Long-term potentiation - Mus musculus (house mouse),0.004141320936350976,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.004499155770046145,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.004589133955340773,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Nicotine addiction - Mus musculus (house mouse),0.004589133955340773,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.004774857735462387,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),0.004774857735462387,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.005867498381690806,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+"Growth hormone synthesis, secretion and action - Mus musculus (house mouse)",0.005867498381690806,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Prion disease - Mus musculus (house mouse),0.007242133320039431,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.007813477841525914,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.008354331543539657,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Salivary secretion - Mus musculus (house mouse),0.008495805714875581,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Taste transduction - Mus musculus (house mouse),0.010538452907086278,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Apelin signaling pathway - Mus musculus (house mouse),0.011961769394879147,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.014816416038152109,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.016414792142118554,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),0.027457650358539025,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.028750306890571575,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Renin secretion - Mus musculus (house mouse),0.029124088594943306,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Gap junction - Mus musculus (house mouse),0.04371493445969563,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Colorectal cancer - Mus musculus (house mouse),0.046088103043933036,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GnRH signaling pathway - Mus musculus (house mouse),0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Neuroactive ligand signaling - Mus musculus (house mouse),0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Spinocerebellar ataxia - Mus musculus (house mouse),0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Motor proteins - Mus musculus (house mouse),0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Adherens junction - Mus musculus (house mouse),0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+"Virion - Ebolavirus, Lyssavirus and Morbillivirus - Mus musculus (house mouse)",0.04673191111558398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.047099403968083035,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+cGMP-PKG signaling pathway - Mus musculus (house mouse),9.286302319095986e-7,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),9.286302319095986e-7,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),9.286302319095986e-7,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Long-term potentiation - Mus musculus (house mouse),1.1331270702157242e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),1.7729825313223876e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Rap1 signaling pathway - Mus musculus (house mouse),3.009764230957273e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),3.009764230957273e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),3.2474088285156666e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),3.856092181673222e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),3.856092181673222e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Salivary secretion - Mus musculus (house mouse),4.721415003937829e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),4.721415003937829e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Gastric acid secretion - Mus musculus (house mouse),9.557333899490333e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Oocyte meiosis - Mus musculus (house mouse),1.4366907657621065e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Phospholipase D signaling pathway - Mus musculus (house mouse),1.5255762689188478e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Dilated cardiomyopathy - Mus musculus (house mouse),1.5845715306462432e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Estrogen signaling pathway - Mus musculus (house mouse),2.6820836064719953e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GnRH signaling pathway - Mus musculus (house mouse),3.115417180396232e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Pancreatic secretion - Mus musculus (house mouse),3.502341660179588e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),3.502341660179588e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Spinocerebellar ataxia - Mus musculus (house mouse),3.502341660179588e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Thyroid hormone synthesis - Mus musculus (house mouse),4.176322238553033e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),7.20765375011879e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Glucagon signaling pathway - Mus musculus (house mouse),7.405729309449691e-4,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.0010870002454625614,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.0011492360086241581,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Neuroactive ligand signaling - Mus musculus (house mouse),0.0012674904381693665,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Apelin signaling pathway - Mus musculus (house mouse),0.0012774991382666133,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Phosphatidylinositol signaling system - Mus musculus (house mouse),0.002025803193025929,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),0.0023190365347519324,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.0025098679844568665,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Mineral absorption - Mus musculus (house mouse),0.0026520915082748294,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.003394995783054042,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Yersinia infection - Mus musculus (house mouse),0.003991604681800805,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Gap junction - Mus musculus (house mouse),0.004645476825639153,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.004645476825639153,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cardiac muscle contraction - Mus musculus (house mouse),0.005546664938369453,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+"Parathyroid hormone synthesis, secretion and action - Mus musculus (house mouse)",0.005546664938369453,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.006507431388087152,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.006507431388087152,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),0.006507431388087152,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Fc gamma R-mediated phagocytosis - Mus musculus (house mouse),0.006700828603255116,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.006700828603255116,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.009066373489000128,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Melanogenesis - Mus musculus (house mouse),0.009066373489000128,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Bile secretion - Mus musculus (house mouse),0.0093949294650453909,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+MAPK signaling pathway - Mus musculus (house mouse),0.010103745423052939,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.010394430773323603,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),0.010394430773323603,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Purine metabolism - Mus musculus (house mouse),0.01117579673313638,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Regulation of actin cytoskeleton - Mus musculus (house mouse),0.01171110037305363,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Tight junction - Mus musculus (house mouse),0.012532658592408515,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Alzheimer disease - Mus musculus (house mouse),0.013210054100416674,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.014414638400918608,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),0.015623827821347193,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.016371026974532403,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Longevity regulating pathway - multiple species - Mus musculus (house mouse),0.016983033921316993,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Lipid and atherosclerosis - Mus musculus (house mouse),0.017812351214108763,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),0.017812351214108763,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GnRH secretion - Mus musculus (house mouse),0.0179836941524925,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Human cytomegalovirus infection - Mus musculus (house mouse),0.0179836941524925,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Longevity regulating pathway - Mus musculus (house mouse),0.0179836941524925,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.01868472237017988,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.025949325997298274,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Inflammatory mediator regulation of TRP channels - Mus musculus (house mouse),0.027052339545732683,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Ras signaling pathway - Mus musculus (house mouse),0.02908168235891803,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.029243121689031627,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Th17 cell differentiation - Mus musculus (house mouse),0.03438788392794947,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Renin secretion - Mus musculus (house mouse),0.035508258172505906,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.04286725571891436,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Tuberculosis - Mus musculus (house mouse),0.04352548349746316,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),4.6703028506261505e-9,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Neurotrophin signaling pathway - Mus musculus (house mouse),2.0389856138184462e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+MAPK signaling pathway - Mus musculus (house mouse),4.829100421007169e-4,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),0.007920078734044619,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Pancreatic cancer - Mus musculus (house mouse),0.007920078734044619,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Relaxin signaling pathway - Mus musculus (house mouse),0.010795747303454398,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Chagas disease - Mus musculus (house mouse),0.020927323695345883,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.020927323695345883,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.020927323695345883,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Toxoplasmosis - Mus musculus (house mouse),0.020927323695345883,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.022105836164882407,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.022105836164882407,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+"Growth hormone synthesis, secretion and action - Mus musculus (house mouse)",0.022105836164882407,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Prolactin signaling pathway - Mus musculus (house mouse),0.026595209610570106,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Sphingolipid signaling pathway - Mus musculus (house mouse),0.026595209610570106,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Synaptic vesicle cycle - Mus musculus (house mouse),0.027266741393033055,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+FoxO signaling pathway - Mus musculus (house mouse),0.029732766392424323,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Osteoclast differentiation - Mus musculus (house mouse),0.030064620793572455,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+ErbB signaling pathway - Mus musculus (house mouse),0.030064620793572455,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Apelin signaling pathway - Mus musculus (house mouse),0.030064620793572455,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Insulin signaling pathway - Mus musculus (house mouse),0.030064620793572455,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Colorectal cancer - Mus musculus (house mouse),0.03224574861257237,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.03761604989365555,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.03881087843904148,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Type II diabetes mellitus - Mus musculus (house mouse),0.03881087843904148,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Hepatitis B - Mus musculus (house mouse),0.047552559498040596,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Ras signaling pathway - Mus musculus (house mouse),0.04944104785026528,Up,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),4.639337466256897e-5,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.004413110734199691,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.004413110734199691,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.0057308849908351825,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.0057308849908351825,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.006123263671925038,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.006499268914915827,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),0.010541898588570214,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),0.010541898588570214,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),0.01314916632468866,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.01314916632468866,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Mineral absorption - Mus musculus (house mouse),0.01592880012053412,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.01652017366566728,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),0.01652017366566728,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.01652017366566728,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.01652017366566728,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),0.01652017366566728,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.016869117388674883,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Antigen processing and presentation - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),0.026359911084249482,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.030488141844767308,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Viral myocarditis - Mus musculus (house mouse),0.030488141844767308,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.035013875086130096,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.036593443272920405,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.036593443272920405,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.03754768165823344,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Neutrophil extracellular trap formation - Mus musculus (house mouse),0.03754768165823344,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Cholinergic synapse - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Pancreatic secretion - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+HIF-1 signaling pathway - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),0.039472695181087626,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Nicotine addiction - Mus musculus (house mouse),0.04023615367157112,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Platelet activation - Mus musculus (house mouse),0.046031492531054444,Down,ExcitatoryNeuronsMatureDG,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),1.2091118178517363e-4,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Cell adhesion molecules - Mus musculus (house mouse),3.7576961340634034e-4,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Taste transduction - Mus musculus (house mouse),0.014064519006615539,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Calcium signaling pathway - Mus musculus (house mouse),0.014064519006615539,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.014184353057108717,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Dilated cardiomyopathy - Mus musculus (house mouse),0.014184353057108717,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Cholinergic synapse - Mus musculus (house mouse),0.017777649088254875,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+GnRH secretion - Mus musculus (house mouse),0.029049908175678214,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.033075234146108405,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Gastric acid secretion - Mus musculus (house mouse),0.033075234146108405,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.033075234146108405,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Renin secretion - Mus musculus (house mouse),0.033075234146108405,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.03628423592718088,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),0.03628423592718088,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Insulin secretion - Mus musculus (house mouse),0.03628423592718088,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Salivary secretion - Mus musculus (house mouse),0.03628423592718088,Down,ExcitatoryNeuronsMatureDG,PTZvsSAL_1hr
+Prion disease - Mus musculus (house mouse),0.017683469699804777,Up,ExcitatoryNeuronsMatureDG,PTZvsSAL_24hr
+Huntington disease - Mus musculus (house mouse),0.017683469699804777,Up,ExcitatoryNeuronsMatureDG,PTZvsSAL_24hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.024931635962659578,Up,ExcitatoryNeuronsMatureDG,PTZvsSAL_24hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.04632321322184979,Up,ExcitatoryNeuronsMatureDG,PTZvsSAL_24hr
+Axon guidance - Mus musculus (house mouse),6.406846656369571e-11,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),3.65283257408958e-5,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),0.004114600208493286,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.004114600208493286,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.0056470068135001114,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Adherens junction - Mus musculus (house mouse),0.0056470068135001114,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),0.007642098714102369,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.009315353163440496,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.012386925390965621,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),0.012386925390965621,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.018310371700444743,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.018310371700444743,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Serotonergic synapse - Mus musculus (house mouse),0.020808314693764086,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),0.020808314693764086,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Spinocerebellar ataxia - Mus musculus (house mouse),0.021886545362806133,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.023639656460653097,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Melanogenesis - Mus musculus (house mouse),0.023639656460653097,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.028489009958689856,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Rap1 signaling pathway - Mus musculus (house mouse),0.0329004999079284,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Non-small cell lung cancer - Mus musculus (house mouse),0.03938067780387835,Up,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),2.5175739834180043e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Pancreatic secretion - Mus musculus (house mouse),0.009837860043976493,Down,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Ras signaling pathway - Mus musculus (house mouse),0.025466872348391102,Down,L23ExcitatoryNeurons,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),7.396570325795051e-10,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),9.465856018813724e-10,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),3.699556209368668e-8,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),1.0364306414411944e-7,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),1.6605039015924102e-7,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),2.0664951004349851e-7,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),1.8275966344131369e-6,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),1.8275966344131369e-6,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),3.70541841163493e-6,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),4.33012925331664e-6,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),1.851949077209175e-5,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),3.765338253793173e-5,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),3.765338253793173e-5,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),1.388978478878342e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),3.2528718121698446e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),4.5349096964796833e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),5.237808304950352e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),8.938619426364503e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),9.00146347676946e-4,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),0.0011480317162791773,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.0012211055414717287,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.002079320046654344,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.0033103848786260174,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.0033103848786260174,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.0036806117668841884,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Glioma - Mus musculus (house mouse),0.009998781699493458,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Pertussis - Mus musculus (house mouse),0.010387663046000715,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Influenza A - Mus musculus (house mouse),0.01129406115283132,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Necroptosis - Mus musculus (house mouse),0.011548004388825807,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.011548004388825807,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Tuberculosis - Mus musculus (house mouse),0.011548004388825807,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Cellular senescence - Mus musculus (house mouse),0.011882408132374345,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Antigen processing and presentation - Mus musculus (house mouse),0.012064233637664571,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.01415956672612014,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Fc gamma R-mediated phagocytosis - Mus musculus (house mouse),0.01417927853503049,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Phototransduction - Mus musculus (house mouse),0.014569927576517722,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Neutrophil extracellular trap formation - Mus musculus (house mouse),0.016612565150600687,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Glucagon signaling pathway - Mus musculus (house mouse),0.0173813139768603,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Diabetic cardiomyopathy - Mus musculus (house mouse),0.017886989973855166,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.017886989973855166,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Kaposi sarcoma-associated herpesvirus infection - Mus musculus (house mouse),0.01919870973806446,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.019361638379279757,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.02072677044699733,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+HIF-1 signaling pathway - Mus musculus (house mouse),0.02072677044699733,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Regulation of actin cytoskeleton - Mus musculus (house mouse),0.02072677044699733,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.02154590900746918,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.02154590900746918,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Human immunodeficiency virus 1 infection - Mus musculus (house mouse),0.02154590900746918,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Platelet activation - Mus musculus (house mouse),0.023029421612058457,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Yersinia infection - Mus musculus (house mouse),0.027853357554778378,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),0.027861394445132668,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Apelin signaling pathway - Mus musculus (house mouse),0.028448235798744444,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Insulin signaling pathway - Mus musculus (house mouse),0.028448235798744444,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.030153845700381987,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Ubiquitin mediated proteolysis - Mus musculus (house mouse),0.03678675995095892,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Mineral absorption - Mus musculus (house mouse),0.03758470682036494,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Legionellosis - Mus musculus (house mouse),0.04346725349104919,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Longevity regulating pathway - multiple species - Mus musculus (house mouse),0.04346725349104919,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.04346725349104919,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Hepatocellular carcinoma - Mus musculus (house mouse),0.0458862217151313,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Protein processing in endoplasmic reticulum - Mus musculus (house mouse),0.046517811759262624,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Glycolysis / Gluconeogenesis - Mus musculus (house mouse),0.04863029899036777,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.04863029899036777,Down,L23ExcitatoryNeurons,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),9.001288472653288e-5,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+MAPK signaling pathway - Mus musculus (house mouse),9.001288472653288e-5,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),3.015822792737425e-4,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Insulin secretion - Mus musculus (house mouse),3.1386682979748294e-4,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Morphine addiction - Mus musculus (house mouse),4.225401455223635e-4,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Circadian entrainment - Mus musculus (house mouse),5.678721252148507e-4,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Ras signaling pathway - Mus musculus (house mouse),0.0038275793159980517,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Spinocerebellar ataxia - Mus musculus (house mouse),0.0038275793159980517,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Dilated cardiomyopathy - Mus musculus (house mouse),0.004258017624440856,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Long-term potentiation - Mus musculus (house mouse),0.004258017624440856,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.0047955785644497335,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.004977093792947521,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Pancreatic secretion - Mus musculus (house mouse),0.005418917295600807,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+cAMP signaling pathway - Mus musculus (house mouse),0.0070157810057605826,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.00905379845728673,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),0.011130214497316552,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.011395101878800301,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Phosphatidylinositol signaling system - Mus musculus (house mouse),0.012414933109514265,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.014118245704689275,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.017372830183194098,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cholinergic synapse - Mus musculus (house mouse),0.022761479630240257,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Circadian rhythm - Mus musculus (house mouse),0.023670098624407918,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Oocyte meiosis - Mus musculus (house mouse),0.02886966205169094,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Platelet activation - Mus musculus (house mouse),0.030674941127884978,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.03234644782165003,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Inflammatory mediator regulation of TRP channels - Mus musculus (house mouse),0.03234644782165003,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+FoxO signaling pathway - Mus musculus (house mouse),0.03430791654167205,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Purine metabolism - Mus musculus (house mouse),0.03508993488024901,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Yersinia infection - Mus musculus (house mouse),0.03508993488024901,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Neuroactive ligand signaling - Mus musculus (house mouse),0.035646640153761774,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Salivary secretion - Mus musculus (house mouse),0.035646640153761774,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Apelin signaling pathway - Mus musculus (house mouse),0.035907128132382504,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cardiac muscle contraction - Mus musculus (house mouse),0.03627743133769239,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+GnRH signaling pathway - Mus musculus (house mouse),0.0366196674081439,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.03691423249349134,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Adherens junction - Mus musculus (house mouse),0.03735231736082584,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Phospholipase D signaling pathway - Mus musculus (house mouse),0.04020872992873778,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Rap1 signaling pathway - Mus musculus (house mouse),0.04378992050885518,Up,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Axon guidance - Mus musculus (house mouse),1.880326008415487e-8,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Motor proteins - Mus musculus (house mouse),3.3621966716447166e-7,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),4.580953884945492e-6,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),4.24735379973941e-5,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),4.24735379973941e-5,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Prion disease - Mus musculus (house mouse),4.24735379973941e-5,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),9.995464540663331e-5,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Alzheimer disease - Mus musculus (house mouse),3.179035074153408e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Huntington disease - Mus musculus (house mouse),5.673909625844541e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Circadian entrainment - Mus musculus (house mouse),6.725675360762966e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),6.725675360762966e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),6.725675360762966e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Phagosome - Mus musculus (house mouse),7.172506829915264e-4,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Glutamatergic synapse - Mus musculus (house mouse),0.0014117633038376236,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.0015450513807909916,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cell adhesion molecules - Mus musculus (house mouse),0.0032011809782947413,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+GnRH secretion - Mus musculus (house mouse),0.0032011809782947413,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.0034343935427061383,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Dilated cardiomyopathy - Mus musculus (house mouse),0.003630629546272463,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Long-term potentiation - Mus musculus (house mouse),0.003630629546272463,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.003636991197107921,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Amphetamine addiction - Mus musculus (house mouse),0.0037849704217156927,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.004081527563794859,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.0042790642172309545,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.0042790642172309545,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Calcium signaling pathway - Mus musculus (house mouse),0.004338943839817172,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Parkinson disease - Mus musculus (house mouse),0.006970569539224738,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.009483767954449182,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+GABAergic synapse - Mus musculus (house mouse),0.010115840745080745,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+ATP-dependent chromatin remodeling - Mus musculus (house mouse),0.010389740554157366,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Serotonergic synapse - Mus musculus (house mouse),0.010437240492603746,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+MAPK signaling pathway - Mus musculus (house mouse),0.010785522741566725,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Proteoglycans in cancer - Mus musculus (house mouse),0.01648195597314716,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Hippo signaling pathway - Mus musculus (house mouse),0.019447948566516788,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cushing syndrome - Mus musculus (house mouse),0.021359906619046885,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cholinergic synapse - Mus musculus (house mouse),0.021755518487914783,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.0227673666112406,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+"Growth hormone synthesis, secretion and action - Mus musculus (house mouse)",0.023015825135099165,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Gastric acid secretion - Mus musculus (house mouse),0.02498452526967065,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Hepatocellular carcinoma - Mus musculus (house mouse),0.027164473051968376,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Insulin secretion - Mus musculus (house mouse),0.03842804045262768,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Yersinia infection - Mus musculus (house mouse),0.03897491952841619,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Neuroactive ligand signaling - Mus musculus (house mouse),0.042137167987737485,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Type II diabetes mellitus - Mus musculus (house mouse),0.042137167987737485,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Spinocerebellar ataxia - Mus musculus (house mouse),0.042137167987737485,Down,L23ExcitatoryNeurons,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.011053940055834186,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),0.011053940055834186,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.01489736615817888,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Synaptic vesicle cycle - Mus musculus (house mouse),0.024702089856879626,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Axon guidance - Mus musculus (house mouse),0.024702089856879626,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.024702089856879626,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Morphine addiction - Mus musculus (house mouse),0.024702089856879626,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Glycosaminoglycan biosynthesis - heparan sulfate / heparin - Mus musculus (house mouse),0.024702089856879626,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.041896810201129765,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.04453542705756223,Up,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),1.1445599447337197e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Gap junction - Mus musculus (house mouse),1.1445599447337197e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),1.1445599447337197e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Phagosome - Mus musculus (house mouse),6.169301521873134e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Parkinson disease - Mus musculus (house mouse),6.858457633595327e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Motor proteins - Mus musculus (house mouse),6.858457633595327e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.0019221348054890967,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Dilated cardiomyopathy - Mus musculus (house mouse),0.001936645592506028,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.004155448276510722,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Alzheimer disease - Mus musculus (house mouse),0.004701999028320318,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Regulation of actin cytoskeleton - Mus musculus (house mouse),0.008947395628647369,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.008961227463684003,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Cell adhesion molecules - Mus musculus (house mouse),0.015398410694418052,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Prion disease - Mus musculus (house mouse),0.015398410694418052,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Huntington disease - Mus musculus (house mouse),0.02660012288564866,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Estrogen signaling pathway - Mus musculus (house mouse),0.03233807979286034,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.044570579358323585,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Oxytocin signaling pathway - Mus musculus (house mouse),0.047343446093242175,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Hippo signaling pathway - Mus musculus (house mouse),0.04911990701673338,Down,L45ExcitatoryNeurons,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),3.16287616376981e-8,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Morphine addiction - Mus musculus (house mouse),5.7724969095881025e-6,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Circadian entrainment - Mus musculus (house mouse),7.26187406244879e-6,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Pancreatic secretion - Mus musculus (house mouse),1.8207184307010978e-5,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Spinocerebellar ataxia - Mus musculus (house mouse),8.138288067211028e-5,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Neuroactive ligand signaling - Mus musculus (house mouse),1.2049827676339265e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),1.2049827676339265e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),1.5805319016469883e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Long-term depression - Mus musculus (house mouse),1.8652537041227184e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Nicotine addiction - Mus musculus (house mouse),3.2218904025936145e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),6.198827634874398e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Cholinergic synapse - Mus musculus (house mouse),6.198827634874398e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Calcium signaling pathway - Mus musculus (house mouse),6.240361810864523e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),9.486679812529807e-4,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+GABAergic synapse - Mus musculus (house mouse),0.0012146453891456327,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+GnRH secretion - Mus musculus (house mouse),0.0018530797954371225,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.003130220410155523,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.0050872532408669045,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Axon guidance - Mus musculus (house mouse),0.006844823371577898,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Polycomb repressive complex - Mus musculus (house mouse),0.007029894911846532,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+GnRH signaling pathway - Mus musculus (house mouse),0.007218508677607474,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Serotonergic synapse - Mus musculus (house mouse),0.007218508677607474,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),0.007218508677607474,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.008958828312277359,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Phospholipase D signaling pathway - Mus musculus (house mouse),0.010251524903950301,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.011450212618752271,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+"Parathyroid hormone synthesis, secretion and action - Mus musculus (house mouse)",0.017338699475989285,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Circadian rhythm - Mus musculus (house mouse),0.017338699475989285,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.018028791245049868,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+MAPK signaling pathway - Mus musculus (house mouse),0.01925606762235157,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.019556010276874713,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Neuroactive ligand-receptor interaction - Mus musculus (house mouse),0.02773673589429254,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Purine metabolism - Mus musculus (house mouse),0.027869805713568417,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),0.02908808281968796,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Longevity regulating pathway - Mus musculus (house mouse),0.03316477616755413,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Taste transduction - Mus musculus (house mouse),0.034823254206186594,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Fc gamma R-mediated phagocytosis - Mus musculus (house mouse),0.03652164797776565,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.04875591683787945,Up,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),1.748526263774295e-7,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Salmonella infection - Mus musculus (house mouse),2.5571536724891253e-7,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),8.668832441288078e-7,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),2.0205792856569337e-6,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),5.096489476852169e-6,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),6.955736397790273e-6,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),2.307888094954531e-5,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),6.225622954769176e-5,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),6.225622954769176e-5,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),6.225622954769176e-5,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),8.120819044354872e-5,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),1.0851580497656337e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),1.2269016174161024e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),1.2306233580887464e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),2.3033425670957957e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),2.537987980862671e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),6.435986610689557e-4,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.002783168471499473,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.002783168471499473,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Amphetamine addiction - Mus musculus (house mouse),0.003036783301772791,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Hippo signaling pathway - Mus musculus (house mouse),0.0037097857828074813,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.004322482047356936,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.0048157239406112304,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.004996371629002033,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Oocyte meiosis - Mus musculus (house mouse),0.004996371629002033,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.004996371629002033,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.006280146339608453,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Cell adhesion molecules - Mus musculus (house mouse),0.006280146339608453,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Phototransduction - Mus musculus (house mouse),0.010718779782207189,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Circadian entrainment - Mus musculus (house mouse),0.010718779782207189,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Melanogenesis - Mus musculus (house mouse),0.010718779782207189,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.011481309915285356,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.011481309915285356,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Glucagon signaling pathway - Mus musculus (house mouse),0.011604754010335493,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.011604754010335493,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.012452089642567069,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.013553793854154565,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Kaposi sarcoma-associated herpesvirus infection - Mus musculus (house mouse),0.015775037054948763,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),0.016974380447305266,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.018219673447428718,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.018665436855492153,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Glioma - Mus musculus (house mouse),0.018990320134073986,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Renin secretion - Mus musculus (house mouse),0.01945594686031269,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Bacterial invasion of epithelial cells - Mus musculus (house mouse),0.019486549989664776,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Pertussis - Mus musculus (house mouse),0.019486549989664776,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Axon guidance - Mus musculus (house mouse),0.019756601120553188,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.02674595039849553,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Apelin signaling pathway - Mus musculus (house mouse),0.029561934748855965,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Cardiac muscle contraction - Mus musculus (house mouse),0.02993635420815429,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+GnRH signaling pathway - Mus musculus (house mouse),0.03050956724378836,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Proteoglycans in cancer - Mus musculus (house mouse),0.03167859726936504,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Adherens junction - Mus musculus (house mouse),0.03167859726936504,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.035551989223643984,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.040711442976773426,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Mineral absorption - Mus musculus (house mouse),0.044507389560050674,Down,L45ExcitatoryNeurons,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.02539620240294618,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),0.030387970184873218,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Retrograde endocannabinoid signaling - Mus musculus (house mouse),0.030387970184873218,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.030387970184873218,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.030387970184873218,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Type II diabetes mellitus - Mus musculus (house mouse),0.0363628159009172,Down,L45ExcitatoryNeurons,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),9.683589211318261e-7,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Prion disease - Mus musculus (house mouse),9.683589211318261e-7,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),7.449330945572103e-6,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Alzheimer disease - Mus musculus (house mouse),7.449330945572103e-6,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Parkinson disease - Mus musculus (house mouse),8.806483718749863e-6,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Huntington disease - Mus musculus (house mouse),1.612216055011798e-5,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Gap junction - Mus musculus (house mouse),2.0298817725050394e-4,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Phagosome - Mus musculus (house mouse),2.0298817725050394e-4,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),2.0298817725050394e-4,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Motor proteins - Mus musculus (house mouse),2.460177217374875e-4,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Antigen processing and presentation - Mus musculus (house mouse),0.004002404632470322,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Cardiac muscle contraction - Mus musculus (house mouse),0.004002404632470322,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Diabetic cardiomyopathy - Mus musculus (house mouse),0.004236323448612366,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Thermogenesis - Mus musculus (house mouse),0.0055525069122425415,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Estrogen signaling pathway - Mus musculus (house mouse),0.0104350393354435,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Oxidative phosphorylation - Mus musculus (house mouse),0.011308395304126329,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.012445817275800491,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Non-alcoholic fatty liver disease - Mus musculus (house mouse),0.014882029496579808,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Protein processing in endoplasmic reticulum - Mus musculus (house mouse),0.01806758646959137,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Lipid and atherosclerosis - Mus musculus (house mouse),0.030144780745973983,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Chemical carcinogenesis - reactive oxygen species - Mus musculus (house mouse),0.03325052916351212,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.04451701862940307,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+IL-17 signaling pathway - Mus musculus (house mouse),0.04451701862940307,Up,L45ExcitatoryNeurons,PTZvsSAL_24hr
+Axon guidance - Mus musculus (house mouse),0.003251843798508446,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Type II diabetes mellitus - Mus musculus (house mouse),0.005177647529577123,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Cholinergic synapse - Mus musculus (house mouse),0.009296072754584848,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.016288592007879493,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Nicotine addiction - Mus musculus (house mouse),0.020273689647906885,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+GABAergic synapse - Mus musculus (house mouse),0.020273689647906885,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.025710574034707157,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Prion disease - Mus musculus (house mouse),0.03178733330148457,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.03411812916069407,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+MAPK signaling pathway - Mus musculus (house mouse),0.04001108760238566,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Serotonergic synapse - Mus musculus (house mouse),0.04609399894531303,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Amphetamine addiction - Mus musculus (house mouse),0.04609399894531303,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.04609399894531303,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Vascular smooth muscle contraction - Mus musculus (house mouse),0.04609399894531303,Up,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Spinocerebellar ataxia - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Dilated cardiomyopathy - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+cGMP-PKG signaling pathway - Mus musculus (house mouse),0.0016352854633289126,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Lipid and atherosclerosis - Mus musculus (house mouse),0.004677920244178597,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Renin secretion - Mus musculus (house mouse),0.004677920244178597,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+cAMP signaling pathway - Mus musculus (house mouse),0.004677920244178597,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.005308325935006202,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.006103758892679137,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.015859618262195396,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+"Growth hormone synthesis, secretion and action - Mus musculus (house mouse)",0.016529212573525714,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.016864183506371103,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Endocrine and other factor-regulated calcium reabsorption - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Estrogen signaling pathway - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Dopaminergic synapse - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Cytoskeleton in muscle cells - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Apelin signaling pathway - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Ras signaling pathway - Mus musculus (house mouse),0.021565360728094302,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Calcium signaling pathway - Mus musculus (house mouse),0.026650207968592902,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Human cytomegalovirus infection - Mus musculus (house mouse),0.026650207968592902,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Gastric acid secretion - Mus musculus (house mouse),0.026650207968592902,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.02725955599315362,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Efferocytosis - Mus musculus (house mouse),0.028888746741389408,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+ErbB signaling pathway - Mus musculus (house mouse),0.03247132288671303,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Salivary secretion - Mus musculus (house mouse),0.034259785606948964,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Cardiac muscle contraction - Mus musculus (house mouse),0.034259785606948964,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+GnRH signaling pathway - Mus musculus (house mouse),0.034259785606948964,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Tuberculosis - Mus musculus (house mouse),0.034259785606948964,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Endocrine resistance - Mus musculus (house mouse),0.035036584371012855,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.035036584371012855,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Viral myocarditis - Mus musculus (house mouse),0.035036584371012855,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Chemokine signaling pathway - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Mucin type O-glycan biosynthesis - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Circadian entrainment - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+AGE-RAGE signaling pathway in diabetic complications - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Chagas disease - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Glucagon signaling pathway - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Focal adhesion - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Th17 cell differentiation - Mus musculus (house mouse),0.037379416836208317,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.04356534648191891,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+NOD-like receptor signaling pathway - Mus musculus (house mouse),0.043762819724827096,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Diabetic cardiomyopathy - Mus musculus (house mouse),0.043762819724827096,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Pancreatic secretion - Mus musculus (house mouse),0.043763321893930826,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Glutamatergic synapse - Mus musculus (house mouse),0.044885448051951424,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+TNF signaling pathway - Mus musculus (house mouse),0.044976323249784504,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.04715529878601087,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+T cell receptor signaling pathway - Mus musculus (house mouse),0.04725063314685096,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Other types of O-glycan biosynthesis - Mus musculus (house mouse),0.047625549832737826,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Sphingolipid signaling pathway - Mus musculus (house mouse),0.04862188463725098,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Platelet activation - Mus musculus (house mouse),0.04862188463725098,Down,L56ExcitatoryNeurons,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),1.7791282218481767e-7,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),7.1346963188688864e-6,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),7.1346963188688864e-6,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),1.272834419300058e-4,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),1.272834419300058e-4,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),1.8658397152533472e-4,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),1.8894968985338367e-4,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),1.8894968985338367e-4,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),0.0011663463176717944,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),0.0012819380561125563,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),0.003779328882281529,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),0.005028181982319148,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),0.005028181982319148,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),0.005028181982319148,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),0.00786600862930516,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.012996637391339185,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.013654967842897544,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.014853858699674781,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.021451864228663044,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.027074427929295722,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.027074427929295722,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.030325281747660218,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.045443067737397785,Down,L56ExcitatoryNeurons,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.0047756734712518815,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.0047756734712518815,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cholinergic synapse - Mus musculus (house mouse),0.0071209130260808575,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+"Growth hormone synthesis, secretion and action - Mus musculus (house mouse)",0.0071209130260808575,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Oocyte meiosis - Mus musculus (house mouse),0.007204761409565386,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Inflammatory mediator regulation of TRP channels - Mus musculus (house mouse),0.007775154960170979,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Gastric acid secretion - Mus musculus (house mouse),0.00808808686059794,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Lipid and atherosclerosis - Mus musculus (house mouse),0.00808808686059794,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+ErbB signaling pathway - Mus musculus (house mouse),0.01017933125998603,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+GnRH signaling pathway - Mus musculus (house mouse),0.011902737716791748,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Endocrine resistance - Mus musculus (house mouse),0.012246982907691236,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Autophagy - animal - Mus musculus (house mouse),0.01227353546852326,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Circadian entrainment - Mus musculus (house mouse),0.013610925105665455,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.014633186665467212,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+C-type lectin receptor signaling pathway - Mus musculus (house mouse),0.017984651159726566,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Glutamatergic synapse - Mus musculus (house mouse),0.01980896054733978,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.019922396803854197,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Neurotrophin signaling pathway - Mus musculus (house mouse),0.019922396803854197,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),0.029655981763198943,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Spinocerebellar ataxia - Mus musculus (house mouse),0.03125145702274492,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.034499718943575765,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Oxytocin signaling pathway - Mus musculus (house mouse),0.03893835071352807,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Human cytomegalovirus infection - Mus musculus (house mouse),0.04082115595504214,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cushing syndrome - Mus musculus (house mouse),0.04269852065052277,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Insulin secretion - Mus musculus (house mouse),0.047317525343679785,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Salivary secretion - Mus musculus (house mouse),0.047317525343679785,Up,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Prion disease - Mus musculus (house mouse),4.05339005331667e-6,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),4.491222346733211e-5,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Alzheimer disease - Mus musculus (house mouse),3.1760461165456795e-4,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),3.1760461165456795e-4,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Arrhythmogenic right ventricular cardiomyopathy - Mus musculus (house mouse),3.1760461165456795e-4,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Phagosome - Mus musculus (house mouse),8.554758392479362e-4,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Parkinson disease - Mus musculus (house mouse),8.554758392479362e-4,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Motor proteins - Mus musculus (house mouse),0.0010582217475025295,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Huntington disease - Mus musculus (house mouse),0.0013887047301976718,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),0.0032288324599852084,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.0038693920194190364,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Type II diabetes mellitus - Mus musculus (house mouse),0.00603013003320549,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+MAPK signaling pathway - Mus musculus (house mouse),0.00603013003320549,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Dopaminergic synapse - Mus musculus (house mouse),0.012013459622894445,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Amphetamine addiction - Mus musculus (house mouse),0.014689753620715722,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cortisol synthesis and secretion - Mus musculus (house mouse),0.014689753620715722,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Calcium signaling pathway - Mus musculus (house mouse),0.014689753620715722,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Tight junction - Mus musculus (house mouse),0.020474952686956444,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Axon guidance - Mus musculus (house mouse),0.023026836204005436,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cell adhesion molecules - Mus musculus (house mouse),0.023026836204005436,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+GABAergic synapse - Mus musculus (house mouse),0.023026836204005436,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Circadian entrainment - Mus musculus (house mouse),0.027350558283933603,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Hypertrophic cardiomyopathy - Mus musculus (house mouse),0.027350558283933603,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Dilated cardiomyopathy - Mus musculus (house mouse),0.028448991249522375,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Cholinergic synapse - Mus musculus (house mouse),0.036111125764450316,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Glutamatergic synapse - Mus musculus (house mouse),0.03708657199518302,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.03708657199518302,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.03708657199518302,Down,L56ExcitatoryNeurons,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.004703640509682843,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Phagosome - Mus musculus (house mouse),0.005364729197484219,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Motor proteins - Mus musculus (house mouse),0.005364729197484219,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Salmonella infection - Mus musculus (house mouse),0.006945521211118699,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Prion disease - Mus musculus (house mouse),0.006945521211118699,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Parkinson disease - Mus musculus (house mouse),0.006945521211118699,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Huntington disease - Mus musculus (house mouse),0.008362655029319153,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Gap junction - Mus musculus (house mouse),0.010512740067475053,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Alzheimer disease - Mus musculus (house mouse),0.012750183454728838,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Apoptosis - Mus musculus (house mouse),0.019099960935307022,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.019099960935307022,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Tight junction - Mus musculus (house mouse),0.02667683358799318,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Thermogenesis - Mus musculus (house mouse),0.04710679168426139,Up,L56ExcitatoryNeurons,PTZvsSAL_24hr
+Insulin secretion - Mus musculus (house mouse),0.029121935874713633,Down,MGE,24hrvs1hr_PTZ
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.029121935874713633,Down,MGE,24hrvs1hr_PTZ
+Proximal tubule bicarbonate reclamation - Mus musculus (house mouse),0.029121935874713633,Down,MGE,24hrvs1hr_PTZ
+Salmonella infection - Mus musculus (house mouse),5.127501208727704e-10,Down,MGE,24hrvs1hr_SAL
+Parkinson disease - Mus musculus (house mouse),1.543380413022005e-8,Down,MGE,24hrvs1hr_SAL
+Phagosome - Mus musculus (house mouse),1.094655686284369e-7,Down,MGE,24hrvs1hr_SAL
+Gap junction - Mus musculus (house mouse),2.0209818818158574e-7,Down,MGE,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),2.3458554104877386e-6,Down,MGE,24hrvs1hr_SAL
+Motor proteins - Mus musculus (house mouse),2.3458554104877386e-6,Down,MGE,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),2.5436129589351077e-6,Down,MGE,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),1.6007437195026676e-5,Down,MGE,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),1.8331234483776554e-5,Down,MGE,24hrvs1hr_SAL
+Estrogen signaling pathway - Mus musculus (house mouse),4.075372311595383e-5,Down,MGE,24hrvs1hr_SAL
+Gastric acid secretion - Mus musculus (house mouse),4.075372311595383e-5,Down,MGE,24hrvs1hr_SAL
+Fluid shear stress and atherosclerosis - Mus musculus (house mouse),6.33163383592129e-5,Down,MGE,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),3.601617794513462e-4,Down,MGE,24hrvs1hr_SAL
+Apoptosis - Mus musculus (house mouse),5.887117181819359e-4,Down,MGE,24hrvs1hr_SAL
+Rap1 signaling pathway - Mus musculus (house mouse),0.004452980378543416,Down,MGE,24hrvs1hr_SAL
+Lipid and atherosclerosis - Mus musculus (house mouse),0.004452980378543416,Down,MGE,24hrvs1hr_SAL
+Thyroid hormone signaling pathway - Mus musculus (house mouse),0.004452980378543416,Down,MGE,24hrvs1hr_SAL
+Platelet activation - Mus musculus (house mouse),0.005061627844496572,Down,MGE,24hrvs1hr_SAL
+Oxytocin signaling pathway - Mus musculus (house mouse),0.010159201131202205,Down,MGE,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.010159201131202205,Down,MGE,24hrvs1hr_SAL
+Tight junction - Mus musculus (house mouse),0.013301222036818614,Down,MGE,24hrvs1hr_SAL
+Antigen processing and presentation - Mus musculus (house mouse),0.01713297487501654,Down,MGE,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),0.01713297487501654,Down,MGE,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.01965813399125805,Down,MGE,24hrvs1hr_SAL
+Fc gamma R-mediated phagocytosis - Mus musculus (house mouse),0.01965813399125805,Down,MGE,24hrvs1hr_SAL
+Proteoglycans in cancer - Mus musculus (house mouse),0.02090134490363055,Down,MGE,24hrvs1hr_SAL
+Dilated cardiomyopathy - Mus musculus (house mouse),0.02257003813953237,Down,MGE,24hrvs1hr_SAL
+Glucagon signaling pathway - Mus musculus (house mouse),0.02257003813953237,Down,MGE,24hrvs1hr_SAL
+Aldosterone synthesis and secretion - Mus musculus (house mouse),0.02257003813953237,Down,MGE,24hrvs1hr_SAL
+Prostate cancer - Mus musculus (house mouse),0.02363911126982261,Down,MGE,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.024525081749063496,Down,MGE,24hrvs1hr_SAL
+Chemical carcinogenesis - receptor activation - Mus musculus (house mouse),0.02650976961339896,Down,MGE,24hrvs1hr_SAL
+Regulation of actin cytoskeleton - Mus musculus (house mouse),0.026799071136214922,Down,MGE,24hrvs1hr_SAL
+HIF-1 signaling pathway - Mus musculus (house mouse),0.026799071136214922,Down,MGE,24hrvs1hr_SAL
+Thermogenesis - Mus musculus (house mouse),0.026943598685535395,Down,MGE,24hrvs1hr_SAL
+Yersinia infection - Mus musculus (house mouse),0.03814463841382125,Down,MGE,24hrvs1hr_SAL
+Dopaminergic synapse - Mus musculus (house mouse),0.03814463841382125,Down,MGE,24hrvs1hr_SAL
+Carbohydrate digestion and absorption - Mus musculus (house mouse),0.0470888248868714,Down,MGE,24hrvs1hr_SAL
+Progesterone-mediated oocyte maturation - Mus musculus (house mouse),0.020060410460534583,Up,MGE,PTZvsSAL_1hr
+Oocyte meiosis - Mus musculus (house mouse),0.020060410460534583,Up,MGE,PTZvsSAL_1hr
+Propanoate metabolism - Mus musculus (house mouse),0.020060410460534583,Up,MGE,PTZvsSAL_1hr
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),4.337589555415525e-4,Down,MGE,PTZvsSAL_1hr
+Phagosome - Mus musculus (house mouse),9.745629556750712e-4,Down,MGE,PTZvsSAL_1hr
+Motor proteins - Mus musculus (house mouse),9.745629556750712e-4,Down,MGE,PTZvsSAL_1hr
+Salmonella infection - Mus musculus (house mouse),0.0023463813885391312,Down,MGE,PTZvsSAL_1hr
+Prion disease - Mus musculus (house mouse),0.0026843110965666618,Down,MGE,PTZvsSAL_1hr
+Huntington disease - Mus musculus (house mouse),0.003925583164965748,Down,MGE,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),0.007376402697926384,Down,MGE,PTZvsSAL_1hr
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.02214066778796793,Down,MGE,PTZvsSAL_1hr
+Nicotine addiction - Mus musculus (house mouse),0.02573855414527586,Down,MGE,PTZvsSAL_1hr
+Cocaine addiction - Mus musculus (house mouse),0.03317958693351141,Down,MGE,PTZvsSAL_1hr
+Cell adhesion molecules - Mus musculus (house mouse),0.039471283199723005,Down,MGE,PTZvsSAL_1hr
+Alzheimer disease - Mus musculus (house mouse),0.04558304420232478,Down,MGE,PTZvsSAL_1hr
+Long-term potentiation - Mus musculus (house mouse),0.04806493848497924,Down,MGE,PTZvsSAL_1hr
+Amphetamine addiction - Mus musculus (house mouse),0.04806493848497924,Down,MGE,PTZvsSAL_1hr
+Gap junction - Mus musculus (house mouse),0.0023908352727301345,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),0.00559043283467981,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.006322253876441821,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.006322253876441821,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Calcium signaling pathway - Mus musculus (house mouse),0.011168608923106414,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Prion disease - Mus musculus (house mouse),0.011168608923106414,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Long-term potentiation - Mus musculus (house mouse),0.011168608923106414,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Huntington disease - Mus musculus (house mouse),0.012795503783846775,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Amyotrophic lateral sclerosis - Mus musculus (house mouse),0.020125730876248554,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Glutamatergic synapse - Mus musculus (house mouse),0.023468104593108923,Down,NdnfRelnInhibitoryInterneurons,24hrvs1hr_SAL
+Fatty acid degradation - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+Fatty acid metabolism - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+Adipocytokine signaling pathway - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+PPAR signaling pathway - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+Glucagon signaling pathway - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+AMPK signaling pathway - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+Alcoholic liver disease - Mus musculus (house mouse),0.03801803229529515,Up,OPCs,24hrvs1hr_PTZ
+Efferocytosis - Mus musculus (house mouse),0.038415722542934766,Up,OPCs,24hrvs1hr_PTZ
+Thermogenesis - Mus musculus (house mouse),0.04968023730603677,Up,OPCs,24hrvs1hr_PTZ
+Biosynthesis of unsaturated fatty acids - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+Fatty acid metabolism - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+Insulin secretion - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+PPAR signaling pathway - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+AMPK signaling pathway - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+Serotonergic synapse - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+Alcoholic liver disease - Mus musculus (house mouse),0.03965401563335591,Down,OPCs,24hrvs1hr_PTZ
+Cell cycle - Mus musculus (house mouse),0.014915447463423881,Up,OPCs,24hrvs1hr_SAL
+Axon guidance - Mus musculus (house mouse),1.2563716806584715e-5,Down,OPCs,24hrvs1hr_SAL
+Nicotine addiction - Mus musculus (house mouse),1.2563716806584715e-5,Down,OPCs,24hrvs1hr_SAL
+Calcium signaling pathway - Mus musculus (house mouse),0.00638389328443161,Down,OPCs,24hrvs1hr_SAL
+Morphine addiction - Mus musculus (house mouse),0.00638389328443161,Down,OPCs,24hrvs1hr_SAL
+Aldosterone-regulated sodium reabsorption - Mus musculus (house mouse),0.00638389328443161,Down,OPCs,24hrvs1hr_SAL
+Neuroactive ligand signaling - Mus musculus (house mouse),0.009806136534708966,Down,OPCs,24hrvs1hr_SAL
+Adrenergic signaling in cardiomyocytes - Mus musculus (house mouse),0.027753802265059753,Down,OPCs,24hrvs1hr_SAL
+Alzheimer disease - Mus musculus (house mouse),0.027753802265059753,Down,OPCs,24hrvs1hr_SAL
+Insulin secretion - Mus musculus (house mouse),0.03208587873790317,Down,OPCs,24hrvs1hr_SAL
+Salivary secretion - Mus musculus (house mouse),0.03208587873790317,Down,OPCs,24hrvs1hr_SAL
+Cardiac muscle contraction - Mus musculus (house mouse),0.03208587873790317,Down,OPCs,24hrvs1hr_SAL
+GABAergic synapse - Mus musculus (house mouse),0.03208587873790317,Down,OPCs,24hrvs1hr_SAL
+Taste transduction - Mus musculus (house mouse),0.03208587873790317,Down,OPCs,24hrvs1hr_SAL
+Pathways of neurodegeneration - multiple diseases - Mus musculus (house mouse),0.04515398503153849,Down,OPCs,24hrvs1hr_SAL
+Pancreatic secretion - Mus musculus (house mouse),0.048963348384164454,Down,OPCs,24hrvs1hr_SAL
+cAMP signaling pathway - Mus musculus (house mouse),0.048963348384164454,Down,OPCs,24hrvs1hr_SAL

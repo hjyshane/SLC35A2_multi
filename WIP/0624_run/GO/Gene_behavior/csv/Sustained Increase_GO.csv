@@ -1,0 +1,4 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"GO:0009101","GO:0009101","glycoprotein biosynthetic process","2/4","270/17643",0.00137186281945457,0.0468193774615146,0.0198724012994544,"Hs6st3/Galntl6",2
+"GO:0009100","GO:0009100","glycoprotein metabolic process","2/4","328/17643",0.00201694251377584,0.0468193774615146,0.0198724012994544,"Hs6st3/Galntl6",2
+"GO:0003056","GO:0003056","regulation of vascular associated smooth muscle contraction","1/4","10/17643",0.0022654537481378,0.0468193774615146,0.0198724012994544,"Atp2b1",1

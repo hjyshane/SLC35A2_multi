@@ -1,0 +1,8 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005244","GO:0005244",1,"GO:0005244",2.9420729941448,197,"voltage-gated monoatomic ion channel activity","voltage-gated monoatomic ion channel activity",0.359142857142857,0.252333333333333,0
+"GO:0022832","GO:0022832",1,"GO:0005244",2.92397504071185,198,"voltage-gated channel activity","voltage-gated monoatomic ion channel activity",0.364857142857143,0.259,0.994
+"GO:0005261","GO:0005261",1,"GO:0005244",1.54781711873182,322,"monoatomic cation channel activity","voltage-gated monoatomic ion channel activity",0.396714285714286,0.296166666666667,0.805
+"GO:0050839","GO:0050839",2,"GO:0050839",1.51552320823208,306,"cell adhesion molecule binding","cell adhesion molecule binding",1,1,0
+"GO:0022839","GO:0022839",1,"GO:0005244",1.47309907487152,315,"monoatomic ion gated channel activity","voltage-gated monoatomic ion channel activity",0.340857142857143,0.231,0.917
+"GO:0022836","GO:0022836",1,"GO:0005244",1.45215308838307,320,"gated channel activity","voltage-gated monoatomic ion channel activity",0.347,0.238166666666667,0.916
+"GO:0005216","GO:0005216",1,"GO:0005244",1.39718814827129,437,"monoatomic ion channel activity","voltage-gated monoatomic ion channel activity",0.366571428571429,0.261,0.854

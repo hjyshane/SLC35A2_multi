@@ -1,0 +1,2 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
+"GO:0050839","GO:0050839","cell adhesion molecule binding","14/173","280/17543",7.50763086648123e-07,0.000313068207132267,0.000287660803726228,"Cpe/Tenm2/Ctnna3/Itgb1/Tnr/Ptpro/Neo1/Tenm1/Nrcam/Numb/Tjp1/Gfra1/Cdh11/Adgrl1",14,3.50436103384616,0.0809248554913295,0.0159607820783218,5.07023121387283,17.7679206984865,"OPCs","24hrvs1hr_SAL"

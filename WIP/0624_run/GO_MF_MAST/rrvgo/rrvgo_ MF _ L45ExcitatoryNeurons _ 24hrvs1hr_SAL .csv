@@ -1,0 +1,24 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0044325","GO:0044325",1,"GO:0044325",6.43793960009663,169,"transmembrane transporter binding","transmembrane transporter binding",0.920173913043478,1,0
+"GO:0016247","GO:0016247",2,"GO:0016247",4.93309693181543,145,"channel regulator activity","channel regulator activity",0.916913043478261,0.363,0
+"GO:0099106","GO:0099106",2,"GO:0016247",4.40490518039464,136,"ion channel regulator activity","channel regulator activity",0.916652173913043,0.361,0.992
+"GO:0003729","GO:0003729",3,"GO:0003729",4.19890094214055,386,"mRNA binding","mRNA binding",0.968652173913043,1,0
+"GO:0044389","GO:0044389",4,"GO:0044389",3.65699677335507,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.851652173913043,0.474666666666667,0
+"GO:0031625","GO:0031625",4,"GO:0044389",3.49174187843033,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.852260869565217,0.476,0.99
+"GO:0050839","GO:0050839",5,"GO:0050839",3.41526737285588,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.886086956521739,0.5665,0
+"GO:0035254","GO:0035254",6,"GO:0035254",3.24337517230652,76,"glutamate receptor binding","glutamate receptor binding",0.891695652173913,0.5495,0
+"GO:0005216","GO:0005216",7,"GO:0005216",3.01729692688973,437,"monoatomic ion channel activity","monoatomic ion channel activity",0.887608695652174,0.35375,0
+"GO:0099507","GO:0099507",7,"GO:0005216",2.95896941731689,24,"ligand-gated monoatomic ion channel activity involved in regulation of presynaptic membrane potential","monoatomic ion channel activity",0.916565217391304,0.52025,0.647
+"GO:0015459","GO:0015459",2,"GO:0016247",2.94960759266981,50,"potassium channel regulator activity","channel regulator activity",0.919826086956522,0.385333333333333,0.919
+"GO:0045296","GO:0045296",5,"GO:0050839",2.93314561612674,70,"cadherin binding","cell adhesion molecule binding",0.895521739130435,0.5665,0.867
+"GO:0015631","GO:0015631",8,"GO:0015631",2.92968533325591,387,"tubulin binding","tubulin binding",0.913652173913043,1,0
+"GO:0050998","GO:0050998",9,"GO:0050998",2.54121910983291,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.890782608695652,1,0
+"GO:0051020","GO:0051020",4,"GO:0044389",2.49314330123374,337,"GTPase binding","ubiquitin-like protein ligase binding",0.869913043478261,0.610666666666667,0.586
+"GO:0030165","GO:0030165",10,"GO:0030165",2.28627251685009,121,"PDZ domain binding","PDZ domain binding",0.92295652173913,1,0
+"GO:0022803","GO:0022803",7,"GO:0005216",2.22896734363321,501,"passive transmembrane transporter activity","monoatomic ion channel activity",0.887608695652174,0.35375,0.969
+"GO:0015267","GO:0015267",7,"GO:0005216",2.22896734363321,501,"channel activity","monoatomic ion channel activity",0.887608695652174,0.35375,0.969
+"GO:0035256","GO:0035256",6,"GO:0035254",1.96698379581055,15,"G protein-coupled glutamate receptor binding","glutamate receptor binding",0.898913043478261,0.5495,0.901
+"GO:0004843","GO:0004843",11,"GO:0004843",1.68280166387074,93,"cysteine-type deubiquitinase activity","cysteine-type deubiquitinase activity",0.983217391304348,1,0
+"GO:0003735","GO:0003735",12,"GO:0003735",1.57628341199067,178,"structural constituent of ribosome","structural constituent of ribosome",1,1,0
+"GO:0003924","GO:0003924",13,"GO:0003924",1.56819886650146,305,"GTPase activity","GTPase activity",0.983217391304348,1,0
+"GO:0031386","GO:0031386",14,"GO:0031386",1.32313892830826,13,"protein tag activity","protein tag activity",1,1,0

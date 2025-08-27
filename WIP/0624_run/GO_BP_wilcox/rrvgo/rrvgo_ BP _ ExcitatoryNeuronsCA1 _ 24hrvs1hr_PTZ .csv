@@ -1,0 +1,88 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0002181","GO:0002181",1,"GO:0002181",21.8251899369538,148,"cytoplasmic translation","cytoplasmic translation",0.93832183908046,0.534,0
+"GO:0099003","GO:0099003",2,"GO:0099003",14.9087148499401,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.801816091954023,0.43925,0
+"GO:0099504","GO:0099504",2,"GO:0099003",12.281957739777,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.796494252873563,0.4435,0.982
+"GO:0007409","GO:0007409",3,"GO:0007409",10.0437666758205,501,"axonogenesis","axonogenesis",0.800494252873563,0.447,0
+"GO:0140236","GO:0140236",1,"GO:0002181",8.66583131644539,47,"translation at presynapse","cytoplasmic translation",0.935137931034483,0.379,0.612
+"GO:0140242","GO:0140242",1,"GO:0002181",8.49126917786525,48,"translation at postsynapse","cytoplasmic translation",0.935172413793103,0.3795,0.611
+"GO:0140241","GO:0140241",1,"GO:0002181",8.49126917786525,48,"translation at synapse","cytoplasmic translation",0.932540229885057,0.362,0.641
+"GO:0016079","GO:0016079",4,"GO:0016079",8.00281486192937,115,"synaptic vesicle exocytosis","synaptic vesicle exocytosis",0.671344827586207,0.199555555555556,0
+"GO:0031346","GO:0031346",5,"GO:0031346",7.85185088460949,463,"positive regulation of cell projection organization","positive regulation of cell projection organization",0.76548275862069,0.407166666666667,0
+"GO:0048167","GO:0048167",6,"GO:0048167",7.8084320147609,393,"regulation of synaptic plasticity","regulation of synaptic plasticity",0.83035632183908,0.38075,0
+"GO:0050803","GO:0050803",7,"GO:0050803",6.92818223289557,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.878954022988506,0.476,0
+"GO:0048588","GO:0048588",8,"GO:0048588",6.72020749337066,291,"developmental cell growth","developmental cell growth",0.880195402298851,0.210375,0
+"GO:0050807","GO:0050807",7,"GO:0050803",6.67804103225665,309,"regulation of synapse organization","regulation of synapse structure or activity",0.726977011494253,0.4766,0.995
+"GO:0001505","GO:0001505",7,"GO:0050803",6.54207705502106,220,"regulation of neurotransmitter levels","regulation of synapse structure or activity",0.865459770114942,0.5712,0.53
+"GO:0006836","GO:0006836",9,"GO:0006836",6.1204978282754,230,"neurotransmitter transport","neurotransmitter transport",0.831091954022989,0.33625,0
+"GO:2000300","GO:2000300",9,"GO:0006836",6.07412117072277,59,"regulation of synaptic vesicle exocytosis","neurotransmitter transport",0.657126436781609,0.3065,0.858
+"GO:0099173","GO:0099173",10,"GO:0099173",5.88191077949597,252,"postsynapse organization","postsynapse organization",0.844793103448276,0.35825,0
+"GO:1990138","GO:1990138",8,"GO:0048588",5.68538100130458,211,"neuron projection extension","developmental cell growth",0.775689655172414,0.200375,0.973
+"GO:0051588","GO:0051588",9,"GO:0006836",5.60592819580425,126,"regulation of neurotransmitter transport","neurotransmitter transport",0.776448275862069,0.289,0.905
+"GO:0099643","GO:0099643",4,"GO:0016079",5.57856657698407,174,"signal release from synapse","synaptic vesicle exocytosis",0.754505747126437,0.282777777777778,0.97
+"GO:0007269","GO:0007269",4,"GO:0016079",5.57856657698407,174,"neurotransmitter secretion","synaptic vesicle exocytosis",0.695758620689655,0.282777777777778,0.97
+"GO:0046928","GO:0046928",9,"GO:0006836",5.45120170441336,106,"regulation of neurotransmitter secretion","neurotransmitter transport",0.675793103448276,0.28925,0.892
+"GO:0060560","GO:0060560",8,"GO:0048588",5.37863914225361,292,"developmental growth involved in morphogenesis","developmental cell growth",0.904264367816092,0.258625,0.825
+"GO:0042391","GO:0042391",7,"GO:0050803",5.27607215333748,491,"regulation of membrane potential","regulation of synapse structure or activity",0.884551724137931,0.5532,0.56
+"GO:0045055","GO:0045055",4,"GO:0016079",4.77299537478868,267,"regulated exocytosis","synaptic vesicle exocytosis",0.784137931034483,0.230777777777778,0.941
+"GO:0032409","GO:0032409",11,"GO:0032409",4.23486289787826,307,"regulation of transporter activity","regulation of transporter activity",0.931195402298851,0.337666666666667,0
+"GO:0010976","GO:0010976",5,"GO:0031346",4.21917221799176,239,"positive regulation of neuron projection development","positive regulation of cell projection organization",0.754724137931035,0.417333333333333,0.929
+"GO:0016049","GO:0016049",8,"GO:0048588",4.15145006853888,556,"cell growth","developmental cell growth",0.909505747126437,0.2135,0.95
+"GO:0007611","GO:0007611",12,"GO:0007611",4.02818497677063,331,"learning or memory","learning or memory",0.95548275862069,0.365,0
+"GO:0099072","GO:0099072",13,"GO:0099072",4.00079968792029,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.89535632183908,1,0
+"GO:0050890","GO:0050890",12,"GO:0007611",3.87217789296104,371,"cognition","learning or memory",0.961988505747126,0.368333333333333,0.988
+"GO:0016188","GO:0016188",14,"GO:0016188",3.76965532559931,28,"synaptic vesicle maturation","synaptic vesicle maturation",0.863390804597701,0.37,0
+"GO:0022898","GO:0022898",11,"GO:0032409",3.55038465959545,294,"regulation of transmembrane transporter activity","regulation of transporter activity",0.749528735632184,0.336666666666667,0.995
+"GO:0060291","GO:0060291",6,"GO:0048167",3.47919475008525,260,"long-term synaptic potentiation","regulation of synaptic plasticity",0.819494252873563,0.3495,0.948
+"GO:0050770","GO:0050770",3,"GO:0007409",3.42218454680887,186,"regulation of axonogenesis","axonogenesis",0.754666666666667,0.457666666666667,0.882
+"GO:0050806","GO:0050806",6,"GO:0048167",3.35550700450962,348,"positive regulation of synaptic transmission","regulation of synaptic plasticity",0.848459770114943,0.37925,0.806
+"GO:0048791","GO:0048791",4,"GO:0016079",3.29518949331535,25,"calcium ion-regulated exocytosis of neurotransmitter","synaptic vesicle exocytosis",0.713034482758621,0.278222222222222,0.862
+"GO:1902600","GO:1902600",15,"GO:1902600",3.29358885067857,117,"proton transmembrane transport","proton transmembrane transport",0.826724137931034,0.411222222222222,0
+"GO:0006887","GO:0006887",4,"GO:0016079",3.22124165216035,395,"exocytosis","synaptic vesicle exocytosis",0.781022988505747,0.238,0.904
+"GO:0034765","GO:0034765",15,"GO:1902600",3.1942065384296,490,"regulation of monoatomic ion transmembrane transport","proton transmembrane transport",0.741103448275862,0.219222222222222,0.721
+"GO:0048675","GO:0048675",8,"GO:0048588",3.13979777412906,143,"axon extension","developmental cell growth",0.780114942528736,0.219375,0.946
+"GO:1904062","GO:1904062",15,"GO:1902600",3.08373475933055,367,"regulation of monoatomic cation transmembrane transport","proton transmembrane transport",0.744632183908046,0.220444444444444,0.739
+"GO:0043254","GO:0043254",16,"GO:0043254",3.07654418320032,437,"regulation of protein-containing complex assembly","regulation of protein-containing complex assembly",0.799689655172414,0.38475,0
+"GO:0043270","GO:0043270",15,"GO:1902600",2.95977556591279,277,"positive regulation of monoatomic ion transport","proton transmembrane transport",0.762390804597701,0.247111111111111,0.577
+"GO:0032535","GO:0032535",7,"GO:0050803",2.87090486475475,411,"regulation of cellular component size","regulation of synapse structure or activity",0.793919540229885,0.5682,0.535
+"GO:0007015","GO:0007015",17,"GO:0007015",2.80609824392255,471,"actin filament organization","actin filament organization",0.855873563218391,0.593,0
+"GO:0017156","GO:0017156",4,"GO:0016079",2.74889665987342,77,"calcium-ion regulated exocytosis","synaptic vesicle exocytosis",0.802057471264368,0.277222222222222,0.85
+"GO:1903305","GO:1903305",4,"GO:0016079",2.72455133093621,161,"regulation of regulated secretory pathway","synaptic vesicle exocytosis",0.732218390804598,0.262666666666667,0.872
+"GO:0007613","GO:0007613",12,"GO:0007611",2.63427606232788,164,"memory","learning or memory",0.958172413793103,0.392,0.917
+"GO:0031503","GO:0031503",18,"GO:0031503",2.49204665520063,244,"protein-containing complex localization","protein-containing complex localization",0.881850574712644,1,0
+"GO:0001558","GO:0001558",8,"GO:0048588",2.48026249388924,459,"regulation of cell growth","developmental cell growth",0.754528735632184,0.2105,0.926
+"GO:0034767","GO:0034767",15,"GO:1902600",2.43862441811932,209,"positive regulation of monoatomic ion transmembrane transport","proton transmembrane transport",0.744367816091954,0.202777777777778,0.661
+"GO:0007626","GO:0007626",19,"GO:0007626",2.38579510932595,273,"locomotory behavior","locomotory behavior",0.967494252873563,1,0
+"GO:0099175","GO:0099175",10,"GO:0099173",2.33111848408992,139,"regulation of postsynapse organization","postsynapse organization",0.739919540229885,0.37875,0.937
+"GO:0048638","GO:0048638",8,"GO:0048588",2.32319363037153,405,"regulation of developmental growth","developmental cell growth",0.859597701149425,0.2675,0.832
+"GO:0099188","GO:0099188",10,"GO:0099173",2.28976836812438,23,"postsynaptic cytoskeleton organization","postsynapse organization",0.856505747126437,0.35275,0.815
+"GO:0098974","GO:0098974",10,"GO:0099173",2.28976836812438,23,"postsynaptic actin cytoskeleton organization","postsynapse organization",0.854034482758621,0.35275,0.815
+"GO:0032412","GO:0032412",11,"GO:0032409",2.25095858251093,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transporter activity",0.750149425287356,0.337666666666667,0.992
+"GO:0031623","GO:0031623",2,"GO:0099003",2.23450975083562,150,"receptor internalization","vesicle-mediated transport in synapse",0.832080459770115,0.50525,0.608
+"GO:0030307","GO:0030307",8,"GO:0048588",2.1899585963897,210,"positive regulation of cell growth","developmental cell growth",0.755862068965517,0.25525,0.865
+"GO:0031345","GO:0031345",5,"GO:0031346",2.1093317211517,221,"negative regulation of cell projection organization","positive regulation of cell projection organization",0.793724137931034,0.450333333333333,0.823
+"GO:0097061","GO:0097061",5,"GO:0031346",2.07204448680078,108,"dendritic spine organization","positive regulation of cell projection organization",0.826632183908046,0.458333333333333,0.58
+"GO:0010959","GO:0010959",15,"GO:1902600",2.05221490258823,461,"regulation of metal ion transport","proton transmembrane transport",0.764172413793103,0.268222222222222,0.673
+"GO:0022604","GO:0022604",3,"GO:0007409",1.99087772991397,277,"regulation of cell morphogenesis","axonogenesis",0.893379310344828,0.492666666666667,0.777
+"GO:0097401","GO:0097401",14,"GO:0016188",1.98869805173739,18,"synaptic vesicle lumen acidification","synaptic vesicle maturation",0.681091954022988,0.37625,0.985
+"GO:0031338","GO:0031338",14,"GO:0016188",1.95770701982504,33,"regulation of vesicle fusion","synaptic vesicle maturation",0.672390804597701,0.44225,0.707
+"GO:0016050","GO:0016050",14,"GO:0016188",1.94353702217687,359,"vesicle organization","synaptic vesicle maturation",0.854367816091954,0.383,0.828
+"GO:0000377","GO:0000377",20,"GO:0000377",1.92778030178948,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.909793103448276,0.254142857142857,0
+"GO:0000375","GO:0000375",20,"GO:0000377",1.92778030178948,304,"RNA splicing, via transesterification reactions","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.909747126436782,0.254142857142857,0.996
+"GO:0000398","GO:0000398",20,"GO:0000377",1.92778030178948,304,"mRNA splicing, via spliceosome","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.906436781609195,0.212428571428571,0.997
+"GO:0030100","GO:0030100",2,"GO:0099003",1.91828686290168,344,"regulation of endocytosis","vesicle-mediated transport in synapse",0.63767816091954,0.483,0.653
+"GO:1904064","GO:1904064",15,"GO:1902600",1.82281854322983,176,"positive regulation of cation transmembrane transport","proton transmembrane transport",0.746252873563218,0.201666666666667,0.682
+"GO:0051258","GO:0051258",16,"GO:0043254",1.81423200804028,282,"protein polymerization","regulation of protein-containing complex assembly",0.868,0.43275,0.741
+"GO:0034764","GO:0034764",15,"GO:1902600",1.79961465884214,282,"positive regulation of transmembrane transport","proton transmembrane transport",0.748298850574713,0.267222222222222,0.591
+"GO:0006397","GO:0006397",20,"GO:0000377",1.76157239689278,496,"mRNA processing","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.911333333333333,0.291142857142857,0.784
+"GO:0050684","GO:0050684",20,"GO:0000377",1.74126818344262,139,"regulation of mRNA processing","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.871965517241379,0.329571428571429,0.686
+"GO:0048024","GO:0048024",20,"GO:0000377",1.66573137587278,114,"regulation of mRNA splicing, via spliceosome","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.863494252873563,0.212428571428571,0.906
+"GO:0045010","GO:0045010",17,"GO:0007015",1.62984090536751,58,"actin nucleation","actin filament organization",0.878390804597701,0.593,0.814
+"GO:0106027","GO:0106027",5,"GO:0031346",1.59384953630401,118,"neuron projection organization","positive regulation of cell projection organization",0.859045977011494,0.455166666666667,0.585
+"GO:0032271","GO:0032271",16,"GO:0043254",1.59179940965403,206,"regulation of protein polymerization","regulation of protein-containing complex assembly",0.806908045977011,0.33825,0.941
+"GO:1901888","GO:1901888",16,"GO:0043254",1.55786557952194,246,"regulation of cell junction assembly","regulation of protein-containing complex assembly",0.789425287356322,0.48175,0.779
+"GO:0043484","GO:0043484",20,"GO:0000377",1.49657859965542,187,"regulation of RNA splicing","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.867609195402299,0.298714285714286,0.852
+"GO:0017157","GO:0017157",4,"GO:0016079",1.4761697046691,226,"regulation of exocytosis","synaptic vesicle exocytosis",0.728114942528736,0.271333333333333,0.835
+"GO:1904427","GO:1904427",15,"GO:1902600",1.42586596837156,109,"positive regulation of calcium ion transmembrane transport","proton transmembrane transport",0.756425287356322,0.227444444444444,0.655
+"GO:0099171","GO:0099171",6,"GO:0048167",1.39502885322459,61,"presynaptic modulation of chemical synaptic transmission","regulation of synaptic plasticity",0.879804597701149,0.468,0.723
+"GO:1902414","GO:1902414",21,"GO:1902414",1.36967486829485,133,"protein localization to cell junction","protein localization to cell junction",0.866655172413793,1,0
+"GO:0016358","GO:0016358",5,"GO:0031346",1.33657989665765,327,"dendrite development","positive regulation of cell projection organization",0.825022988505747,0.486666666666667,0.64

@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0022898","GO:0022898",1,"GO:0022898",2.75228075082866,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.497,0.336666666666667,0
+"GO:0032409","GO:0032409",1,"GO:0022898",2.53918626359581,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.50325,0.337666666666667,0.995
+"GO:0032412","GO:0032412",1,"GO:0022898",2.14069134813622,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.49775,0.337666666666667,0.995
+"GO:0030032","GO:0030032",2,"GO:0030032",1.61978030195448,73,"lamellipodium assembly","lamellipodium assembly",0.989,1,0

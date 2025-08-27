@@ -1,0 +1,44 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0099003","GO:0099003",1,"GO:0099003",6.19477720444899,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.736139534883721,0.455,0
+"GO:0099504","GO:0099504",1,"GO:0099003",5.47981004741535,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.723488372093023,0.458,0.982
+"GO:0032409","GO:0032409",2,"GO:0032409",5.035802865855,307,"regulation of transporter activity","regulation of transporter activity",0.914558139534884,0.337666666666667,0
+"GO:0022898","GO:0022898",2,"GO:0032409",4.44648608687659,294,"regulation of transmembrane transporter activity","regulation of transporter activity",0.720651162790698,0.336666666666667,0.995
+"GO:0046928","GO:0046928",3,"GO:0046928",3.6690105446221,106,"regulation of neurotransmitter secretion","regulation of neurotransmitter secretion",0.628953488372093,0.28925,0
+"GO:2000300","GO:2000300",3,"GO:0046928",3.51449688517751,59,"regulation of synaptic vesicle exocytosis","regulation of neurotransmitter secretion",0.609906976744186,0.3065,0.964
+"GO:0016079","GO:0016079",4,"GO:0016079",3.27474526088822,115,"synaptic vesicle exocytosis","synaptic vesicle exocytosis",0.617697674418605,0.254714285714286,0
+"GO:0043484","GO:0043484",5,"GO:0043484",3.25668523374338,187,"regulation of RNA splicing","regulation of RNA splicing",0.814395348837209,0.274875,0
+"GO:0032412","GO:0032412",2,"GO:0032409",2.98126111594587,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transporter activity",0.721348837209302,0.337666666666667,0.992
+"GO:0051588","GO:0051588",3,"GO:0046928",2.95368297430428,126,"regulation of neurotransmitter transport","regulation of neurotransmitter secretion",0.699418604651163,0.289,0.987
+"GO:0099643","GO:0099643",4,"GO:0016079",2.52368191784469,174,"signal release from synapse","synaptic vesicle exocytosis",0.709232558139535,0.288285714285714,0.97
+"GO:0007269","GO:0007269",4,"GO:0016079",2.52368191784469,174,"neurotransmitter secretion","synaptic vesicle exocytosis",0.644441860465116,0.288285714285714,0.97
+"GO:0007409","GO:0007409",6,"GO:0007409",2.50327094709038,501,"axonogenesis","axonogenesis",0.889162790697674,0.586,0
+"GO:0043954","GO:0043954",7,"GO:0043954",2.40000001041165,86,"cellular component maintenance","cellular component maintenance",0.940279069767442,1,0
+"GO:0099173","GO:0099173",8,"GO:0099173",2.31759308584387,252,"postsynapse organization","postsynapse organization",0.920581395348837,0.5485,0
+"GO:0030100","GO:0030100",1,"GO:0099003",2.1912451017512,344,"regulation of endocytosis","vesicle-mediated transport in synapse",0.674813953488372,0.567666666666667,0.653
+"GO:0000377","GO:0000377",5,"GO:0043484",2.01817089723088,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","regulation of RNA splicing",0.844372093023256,0.22925,0.852
+"GO:0000375","GO:0000375",5,"GO:0043484",2.01817089723088,304,"RNA splicing, via transesterification reactions","regulation of RNA splicing",0.844302325581395,0.229,0.853
+"GO:0000398","GO:0000398",5,"GO:0043484",2.01817089723088,304,"mRNA splicing, via spliceosome","regulation of RNA splicing",0.837581395348837,0.19275,0.852
+"GO:0048791","GO:0048791",4,"GO:0016079",1.98342868101396,25,"calcium ion-regulated exocytosis of neurotransmitter","synaptic vesicle exocytosis",0.666674418604651,0.336571428571429,0.862
+"GO:0006941","GO:0006941",9,"GO:0006941",1.92963945356039,178,"striated muscle contraction","striated muscle contraction",0.904441860465116,0.2582,0
+"GO:0006397","GO:0006397",5,"GO:0043484",1.89452018303714,496,"mRNA processing","regulation of RNA splicing",0.852511627906977,0.276625,0.74
+"GO:0008380","GO:0008380",5,"GO:0043484",1.88966482543623,449,"RNA splicing","regulation of RNA splicing",0.844697674418605,0.23425,0.892
+"GO:0055117","GO:0055117",9,"GO:0006941",1.87349279685358,72,"regulation of cardiac muscle contraction","striated muscle contraction",0.867325581395349,0.282,0.914
+"GO:0050684","GO:0050684",5,"GO:0043484",1.8411228494508,139,"regulation of mRNA processing","regulation of RNA splicing",0.824674418604651,0.32375,0.651
+"GO:0043270","GO:0043270",10,"GO:0043270",1.81931632055878,277,"positive regulation of monoatomic ion transport","positive regulation of monoatomic ion transport",0.751418604651163,0.44,0
+"GO:1990138","GO:1990138",6,"GO:0007409",1.71362053426328,211,"neuron projection extension","axonogenesis",0.897069767441861,0.586,0.828
+"GO:0048024","GO:0048024",5,"GO:0043484",1.62663683211572,114,"regulation of mRNA splicing, via spliceosome","regulation of RNA splicing",0.803023255813954,0.204,0.961
+"GO:1902414","GO:1902414",12,"GO:1902414",1.61939460340224,133,"protein localization to cell junction","protein localization to cell junction",0.820581395348837,1,0
+"GO:0099072","GO:0099072",11,"GO:0099072",1.61939460340224,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.897604651162791,1,0
+"GO:0006936","GO:0006936",9,"GO:0006941",1.60904491854016,324,"muscle contraction","striated muscle contraction",0.905162790697674,0.2686,0.946
+"GO:0140029","GO:0140029",4,"GO:0016079",1.59460000450155,104,"exocytic process","synaptic vesicle exocytosis",0.730953488372093,0.326571428571429,0.805
+"GO:0034765","GO:0034765",10,"GO:0043270",1.57658499508115,490,"regulation of monoatomic ion transmembrane transport","positive regulation of monoatomic ion transport",0.717511627906977,0.4175,0.874
+"GO:0001505","GO:0001505",13,"GO:0001505",1.53278584364929,220,"regulation of neurotransmitter levels","regulation of neurotransmitter levels",0.833883720930233,1,0
+"GO:0097061","GO:0097061",8,"GO:0099173",1.47003779083779,108,"dendritic spine organization","postsynapse organization",0.913627906976744,0.5485,0.903
+"GO:0003012","GO:0003012",9,"GO:0006941",1.42492524591141,446,"muscle system process","striated muscle contraction",0.906976744186047,0.2868,0.915
+"GO:0031629","GO:0031629",4,"GO:0016079",1.40705545647422,31,"synaptic vesicle fusion to presynaptic active zone membrane","synaptic vesicle exocytosis",0.616744186046512,0.248571428571429,0.879
+"GO:0140056","GO:0140056",14,"GO:0140056",1.38815837878322,81,"organelle localization by membrane tethering","organelle localization by membrane tethering",0.850279069767442,1,0
+"GO:0006836","GO:0006836",3,"GO:0046928",1.37987986220136,230,"neurotransmitter transport","regulation of neurotransmitter secretion",0.735651162790698,0.33625,0.892
+"GO:0006942","GO:0006942",9,"GO:0006941",1.35162469205975,90,"regulation of striated muscle contraction","striated muscle contraction",0.864906976744186,0.2704,0.934
+"GO:0051924","GO:0051924",10,"GO:0043270",1.34172445528991,296,"regulation of calcium ion transport","positive regulation of monoatomic ion transport",0.743255813953488,0.38425,0.831
+"GO:0070296","GO:0070296",10,"GO:0043270",1.33689747445682,33,"sarcoplasmic reticulum calcium ion transport","positive regulation of monoatomic ion transport",0.828651162790698,0.53875,0.535
+"GO:0099500","GO:0099500",4,"GO:0016079",1.33689747445682,32,"vesicle fusion to plasma membrane","synaptic vesicle exocytosis",0.718348837209302,0.351,0.731

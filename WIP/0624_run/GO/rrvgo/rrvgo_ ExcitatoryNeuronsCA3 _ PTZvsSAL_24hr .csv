@@ -1,0 +1,6 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0000398","GO:0000398",1,"GO:0000398",2.06400614888881,304,"mRNA splicing, via spliceosome","mRNA splicing, via spliceosome",0.4124,0.2655,0
+"GO:0000377","GO:0000377",1,"GO:0000398",2.06400614888881,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","mRNA splicing, via spliceosome",0.4124,0.2655,0.997
+"GO:0000375","GO:0000375",1,"GO:0000398",2.06400614888881,304,"RNA splicing, via transesterification reactions","mRNA splicing, via spliceosome",0.4122,0.26525,0.996
+"GO:0021987","GO:0021987",2,"GO:0021987",1.6306720203122,120,"cerebral cortex development","cerebral cortex development",1,1,0
+"GO:0008380","GO:0008380",1,"GO:0000398",1.33545719656121,449,"RNA splicing","mRNA splicing, via spliceosome",0.4326,0.29075,0.945

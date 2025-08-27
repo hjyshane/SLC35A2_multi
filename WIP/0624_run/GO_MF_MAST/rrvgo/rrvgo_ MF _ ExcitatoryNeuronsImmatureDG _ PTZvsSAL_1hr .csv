@@ -1,0 +1,7 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0050839","GO:0050839",1,"GO:0050839",2.10488073985213,306,"cell adhesion molecule binding","cell adhesion molecule binding",1,1,0
+"GO:0008046","GO:0008046",3,"GO:0008046",2.08090945444099,11,"axon guidance receptor activity","axon guidance receptor activity",0.823166666666667,1,0
+"GO:0005005","GO:0005005",2,"GO:0005005",2.08090945444099,11,"transmembrane-ephrin receptor activity","transmembrane-ephrin receptor activity",0.520333333333333,0.363,0
+"GO:0019199","GO:0019199",2,"GO:0005005",1.84147734668699,77,"transmembrane receptor protein kinase activity","transmembrane-ephrin receptor activity",0.545166666666667,0.41425,0.823
+"GO:0005003","GO:0005003",2,"GO:0005005",1.74252872414008,16,"ephrin receptor activity","transmembrane-ephrin receptor activity",0.502333333333333,0.33975,0.952
+"GO:0004713","GO:0004713",2,"GO:0005005",1.63117278464494,132,"protein tyrosine kinase activity","transmembrane-ephrin receptor activity",0.626333333333333,0.4395,0.773

@@ -1,0 +1,9 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0022898","GO:0022898",1,"GO:0022898",3.76917466900359,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.303375,0.236,0
+"GO:0032409","GO:0032409",1,"GO:0022898",3.60286890186671,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.499375,0.2368,0.995
+"GO:0032411","GO:0032411",1,"GO:0022898",2.98010871055211,136,"positive regulation of transporter activity","regulation of transmembrane transporter activity",0.370625,0.2524,0.914
+"GO:0034767","GO:0034767",2,"GO:0034767",1.91810135156237,209,"positive regulation of monoatomic ion transmembrane transport","positive regulation of monoatomic ion transmembrane transport",0.4615,0.549,0
+"GO:0032414","GO:0032414",1,"GO:0022898",1.89886094669268,129,"positive regulation of ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.30125,0.2512,0.916
+"GO:0032412","GO:0032412",1,"GO:0022898",1.83901546124898,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.30425,0.2364,0.995
+"GO:0034765","GO:0034765",2,"GO:0034767",1.8231430917394,490,"regulation of monoatomic ion transmembrane transport","positive regulation of monoatomic ion transmembrane transport",0.46175,0.549,0.902
+"GO:0007409","GO:0007409",3,"GO:0007409",1.6020417552409,501,"axonogenesis","axonogenesis",0.983875,1,0

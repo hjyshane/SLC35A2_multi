@@ -1,0 +1,9 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003729","GO:0003729",1,"GO:0003729",7.63262126247167,386,"mRNA binding","mRNA binding",0.70525,0.46425,0
+"GO:0003730","GO:0003730",1,"GO:0003729",4.25971196489645,119,"mRNA 3'-UTR binding","mRNA binding",0.7225,0.49325,0.891
+"GO:0003725","GO:0003725",1,"GO:0003729",3.45476019099743,82,"double-stranded RNA binding","mRNA binding",0.75875,0.5645,0.62
+"GO:0015631","GO:0015631",2,"GO:0015631",3.16850805208774,387,"tubulin binding","tubulin binding",0.91425,1,0
+"GO:0005200","GO:0005200",3,"GO:0005200",2.23355249203937,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0003727","GO:0003727",1,"GO:0003729",2.21818754631069,101,"single-stranded RNA binding","mRNA binding",0.755625,0.559,0.632
+"GO:0031625","GO:0031625",4,"GO:0031625",1.83484427049758,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.818,0.505,0
+"GO:0044389","GO:0044389",4,"GO:0031625",1.45880912450084,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.817625,0.505,0.99

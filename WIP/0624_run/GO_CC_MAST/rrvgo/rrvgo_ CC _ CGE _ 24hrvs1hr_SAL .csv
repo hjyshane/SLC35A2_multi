@@ -1,0 +1,43 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0097060","GO:0097060",1,"GO:0097060",20.2987778053057,514,"synaptic membrane","synaptic membrane",0.645785714285714,0.392,0
+"GO:0098984","GO:0098984",2,"GO:0098984",14.3465001642089,448,"neuron to neuron synapse","neuron to neuron synapse",0.724214285714286,0.350333333333333,0
+"GO:0014069","GO:0014069",2,"GO:0098984",13.121290979937,384,"postsynaptic density","neuron to neuron synapse",0.688238095238095,0.348333333333333,0.97
+"GO:0032279","GO:0032279",2,"GO:0098984",12.9495284094611,407,"asymmetric synapse","neuron to neuron synapse",0.726238095238095,0.345333333333333,0.979
+"GO:0099572","GO:0099572",3,"GO:0099572",12.7265722949538,436,"postsynaptic specialization","postsynaptic specialization",0.707142857142857,0.407,0
+"GO:0043209","GO:0043209",4,"GO:0043209",12.3456019164431,208,"myelin sheath","myelin sheath",0.997809523809524,1,0
+"GO:0042734","GO:0042734",1,"GO:0097060",11.87406244011,238,"presynaptic membrane","synaptic membrane",0.640714285714286,0.423666666666667,0.886
+"GO:0045211","GO:0045211",1,"GO:0097060",11.4566214879002,352,"postsynaptic membrane","synaptic membrane",0.637690476190476,0.406333333333333,0.938
+"GO:0150034","GO:0150034",5,"GO:0150034",10.1365204759876,397,"distal axon","distal axon",0.861761904761905,0.665,0
+"GO:0060076","GO:0060076",6,"GO:0060076",8.32593459794693,99,"excitatory synapse","excitatory synapse",0.773309523809524,0.536,0
+"GO:0031252","GO:0031252",7,"GO:0031252",7.37690827839307,415,"cell leading edge","cell leading edge",0.975809523809524,0.5435,0
+"GO:0044306","GO:0044306",8,"GO:0044306",6.49196408070299,224,"neuron projection terminus","neuron projection terminus",0.873904761904762,0.3866,0
+"GO:0098839","GO:0098839",3,"GO:0099572",6.27141591381538,114,"postsynaptic density membrane","postsynaptic specialization",0.635285714285714,0.381333333333333,0.879
+"GO:0099634","GO:0099634",3,"GO:0099572",5.97087617110852,154,"postsynaptic specialization membrane","postsynaptic specialization",0.648,0.374333333333333,0.9
+"GO:0043679","GO:0043679",8,"GO:0044306",5.9044063922508,202,"axon terminus","neuron projection terminus",0.622071428571429,0.3868,0.989
+"GO:0048786","GO:0048786",9,"GO:0048786",5.16877457548159,121,"presynaptic active zone","presynaptic active zone",0.739166666666667,0.5295,0
+"GO:0070382","GO:0070382",10,"GO:0070382",5.10126477842357,281,"exocytic vesicle","exocytic vesicle",0.898785714285714,0.2358,0
+"GO:0008021","GO:0008021",10,"GO:0070382",5.08775311212754,259,"synaptic vesicle","exocytic vesicle",0.655285714285714,0.237,0.988
+"GO:0044309","GO:0044309",8,"GO:0044306",5.00145084723322,214,"neuron spine","neuron projection terminus",0.883,0.4628,0.582
+"GO:1902495","GO:1902495",11,"GO:1902495",4.56875529958083,396,"transmembrane transporter complex","transmembrane transporter complex",0.84002380952381,0.292,0
+"GO:1990351","GO:1990351",11,"GO:1902495",4.56735752462322,421,"transporter complex","transmembrane transporter complex",0.905857142857143,0.294,0.989
+"GO:0043197","GO:0043197",8,"GO:0044306",4.51975768962294,208,"dendritic spine","neuron projection terminus",0.651214285714286,0.4644,0.579
+"GO:0030426","GO:0030426",12,"GO:0030426",4.27696725519666,213,"growth cone","growth cone",0.844595238095238,0.5025,0
+"GO:0098688","GO:0098688",6,"GO:0060076",4.22263510518154,37,"parallel fiber to Purkinje cell synapse","excitatory synapse",0.788595238095238,0.536,0.928
+"GO:0030427","GO:0030427",12,"GO:0030426",4.04468275747607,221,"site of polarized growth","growth cone",0.974166666666667,0.5025,0.995
+"GO:0048787","GO:0048787",9,"GO:0048786",4.03784016574964,66,"presynaptic active zone membrane","presynaptic active zone",0.6705,0.5295,0.941
+"GO:0098685","GO:0098685",13,"GO:0098685",4.02145874877873,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.775238095238095,1,0
+"GO:0099243","GO:0099243",14,"GO:0099243",3.85156118322113,31,"extrinsic component of synaptic membrane","extrinsic component of synaptic membrane",0.691880952380952,0.420666666666667,0
+"GO:0030133","GO:0030133",10,"GO:0070382",3.49205361599143,366,"transport vesicle","exocytic vesicle",0.900119047619048,0.2506,0.971
+"GO:0034702","GO:0034702",11,"GO:1902495",3.00786923033208,301,"monoatomic ion channel complex","transmembrane transporter complex",0.841071428571429,0.2915,0.969
+"GO:0030027","GO:0030027",7,"GO:0031252",2.73375571577255,181,"lamellipodium","cell leading edge",0.890833333333333,0.5435,0.913
+"GO:0099501","GO:0099501",10,"GO:0070382",2.56507504027173,147,"exocytic vesicle membrane","exocytic vesicle",0.840642857142857,0.2482,0.931
+"GO:0030672","GO:0030672",10,"GO:0070382",2.56507504027173,147,"synaptic vesicle membrane","exocytic vesicle",0.638523809523809,0.2452,0.931
+"GO:0005911","GO:0005911",15,"GO:0005911",2.51356006243259,543,"cell-cell junction","cell-cell junction",0.772309523809524,1,0
+"GO:0043195","GO:0043195",8,"GO:0044306",1.8448620783593,93,"terminal bouton","neuron projection terminus",0.647928571428571,0.4178,0.917
+"GO:0019898","GO:0019898",14,"GO:0099243",1.82420638579375,227,"extrinsic component of membrane","extrinsic component of synaptic membrane",0.892642857142857,0.397,0.85
+"GO:0043194","GO:0043194",5,"GO:0150034",1.75384280817089,29,"axon initial segment","distal axon",0.892809523809524,0.665,0.67
+"GO:0098982","GO:0098982",16,"GO:0098982",1.54885110302474,135,"GABA-ergic synapse","GABA-ergic synapse",0.77797619047619,1,0
+"GO:0008328","GO:0008328",17,"GO:0008328",1.52115397868921,44,"ionotropic glutamate receptor complex","ionotropic glutamate receptor complex",0.825452380952381,0.5015,0
+"GO:0019897","GO:0019897",14,"GO:0099243",1.51680512165499,147,"extrinsic component of plasma membrane","extrinsic component of synaptic membrane",0.868380952380952,0.384333333333333,0.888
+"GO:0098878","GO:0098878",17,"GO:0008328",1.45638472823646,46,"neurotransmitter receptor complex","ionotropic glutamate receptor complex",0.853071428571429,0.5015,0.997
+"GO:0034705","GO:0034705",11,"GO:1902495",1.33425913434947,91,"potassium channel complex","transmembrane transporter complex",0.853809523809524,0.339,0.874

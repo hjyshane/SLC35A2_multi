@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",2.23773389515323,501,"axonogenesis","axonogenesis",0.623666666666667,0.6865,0
+"GO:0021543","GO:0021543",2,"GO:0021543",1.55010020010635,182,"pallium development","pallium development",0.681333333333333,1,0
+"GO:0001764","GO:0001764",1,"GO:0007409",1.41078991036965,206,"neuron migration","axonogenesis",0.639666666666667,0.6865,0.627

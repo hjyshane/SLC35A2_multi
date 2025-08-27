@@ -1,0 +1,19 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0030900","GO:0030900",1,"GO:0030900",4.68465743963255,425,"forebrain development","forebrain development",0.837388888888889,0.500666666666667,0
+"GO:0007416","GO:0007416",2,"GO:0007416",3.8081393824465,222,"synapse assembly","synapse assembly",0.682166666666667,0.37975,0
+"GO:0021537","GO:0021537",1,"GO:0030900",2.80616265704768,281,"telencephalon development","forebrain development",0.842888888888889,0.511,0.941
+"GO:0030534","GO:0030534",3,"GO:0030534",2.76871757389537,191,"adult behavior","adult behavior",0.843055555555556,0.53075,0
+"GO:0034329","GO:0034329",2,"GO:0007416",2.39952784454669,481,"cell junction assembly","synapse assembly",0.7965,0.38725,0.948
+"GO:0099173","GO:0099173",2,"GO:0007416",2.21167584333297,252,"postsynapse organization","synapse assembly",0.802777777777778,0.41525,0.818
+"GO:0050807","GO:0050807",4,"GO:0050807",2.14304158151297,309,"regulation of synapse organization","regulation of synapse organization",0.711444444444444,0.501333333333333,0
+"GO:0099072","GO:0099072",4,"GO:0050807",2.11640454936281,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of synapse organization",0.939166666666667,0.665666666666667,0.501
+"GO:0007409","GO:0007409",1,"GO:0030900",2.08258089497955,501,"axonogenesis","forebrain development",0.777166666666667,0.639,0.557
+"GO:0050803","GO:0050803",4,"GO:0050807",2.01655887442752,317,"regulation of synapse structure or activity","regulation of synapse organization",0.911333333333333,0.501,0.995
+"GO:0031503","GO:0031503",5,"GO:0031503",1.69500465151562,244,"protein-containing complex localization","protein-containing complex localization",0.948833333333333,0.5395,0
+"GO:0001662","GO:0001662",3,"GO:0030534",1.63250833092942,57,"behavioral fear response","adult behavior",0.784111111111111,0.4525,0.636
+"GO:0002209","GO:0002209",3,"GO:0030534",1.58548155637199,58,"behavioral defense response","adult behavior",0.820611111111111,0.45175,0.638
+"GO:0051347","GO:0051347",6,"GO:0051347",1.55492289263282,510,"positive regulation of transferase activity","positive regulation of transferase activity",0.983944444444444,1,0
+"GO:0097120","GO:0097120",5,"GO:0031503",1.48861845247749,87,"receptor localization to synapse","protein-containing complex localization",0.948833333333333,0.5395,0.921
+"GO:0042596","GO:0042596",7,"GO:0042596",1.36389429537577,63,"fear response","fear response",0.869777777777778,1,0
+"GO:0099560","GO:0099560",2,"GO:0007416",1.34229623542913,36,"synaptic membrane adhesion","synapse assembly",0.823055555555556,0.46725,0.715
+"GO:0071625","GO:0071625",3,"GO:0030534",1.31160290936115,22,"vocalization behavior","adult behavior",0.859611111111111,0.571,0.603

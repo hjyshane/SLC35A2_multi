@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",4.33303731545635,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0003729","GO:0003729",2,"GO:0003729",3.64178455117865,386,"mRNA binding","mRNA binding",0.9655,1,0
+"GO:0005516","GO:0005516",3,"GO:0005516",2.67569665848621,195,"calmodulin binding","calmodulin binding",0.93525,1,0
+"GO:0050839","GO:0050839",4,"GO:0050839",2.16797683082974,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.93425,1,0

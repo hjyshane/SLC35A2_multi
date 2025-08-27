@@ -1,0 +1,3 @@
+"p_val","avg_log2FC","pct.1","pct.2","p_val_adj","ranges","cell_type","comparison","closestgene","distance","Regulation"
+4.8598183068607e-09,-0.657158821515442,0.326,0.508,0.000804654696521847,"chr9-35304951-35305862","ExcitatoryNeuronsMatureDG","PTZvsSAL_1hr","Gm33838",0,"Down"
+2.68296274824919e-07,1.92083186814703,0.111,0.031,0.0444226191115863,"chr14-75770994-75771933","ExcitatoryNeuronsMatureDG","PTZvsSAL_1hr","Slc25a30",0,"Up"

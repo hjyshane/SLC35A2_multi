@@ -1,0 +1,8 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",2.91068887752309,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0019787","GO:0019787",2,"GO:0019787",1.67792223568706,457,"ubiquitin-like protein transferase activity","ubiquitin-like protein transferase activity",0.585428571428571,0.2745,0
+"GO:0016755","GO:0016755",2,"GO:0019787",1.52985230907284,473,"aminoacyltransferase activity","ubiquitin-like protein transferase activity",0.586428571428571,0.27625,0.987
+"GO:0005267","GO:0005267",3,"GO:0005267",1.42100300839293,122,"potassium channel activity","potassium channel activity",0.860285714285714,0.511,0
+"GO:0015079","GO:0015079",3,"GO:0005267",1.41544272367339,160,"potassium ion transmembrane transporter activity","potassium channel activity",0.860285714285714,0.511,0.978
+"GO:0061659","GO:0061659",2,"GO:0019787",1.40572804570911,362,"ubiquitin-like protein ligase activity","ubiquitin-like protein transferase activity",0.601285714285714,0.30225,0.935
+"GO:0004842","GO:0004842",2,"GO:0019787",1.34986636863001,431,"ubiquitin-protein transferase activity","ubiquitin-like protein transferase activity",0.588285714285714,0.2795,0.98

@@ -1,0 +1,13 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0019902","GO:0019902",1,"GO:0019902",3.48220988560564,243,"phosphatase binding","phosphatase binding",0.88125,0.5125,0
+"GO:0022839","GO:0022839",2,"GO:0022839",2.57581053738828,315,"monoatomic ion gated channel activity","monoatomic ion gated channel activity",0.620666666666667,0.241333333333333,0
+"GO:0022836","GO:0022836",2,"GO:0022839",2.52314614337622,320,"gated channel activity","monoatomic ion gated channel activity",0.633916666666667,0.267833333333333,0.988
+"GO:0005244","GO:0005244",2,"GO:0022839",2.45587388336779,197,"voltage-gated monoatomic ion channel activity","monoatomic ion gated channel activity",0.631083333333333,0.262166666666667,0.917
+"GO:0022832","GO:0022832",2,"GO:0022839",2.42129673105651,198,"voltage-gated channel activity","monoatomic ion gated channel activity",0.643416666666667,0.286833333333333,0.916
+"GO:0019903","GO:0019903",1,"GO:0019902",2.09605881638882,191,"protein phosphatase binding","phosphatase binding",0.882166666666667,0.5125,0.975
+"GO:0005216","GO:0005216",2,"GO:0022839",1.9484495316028,437,"monoatomic ion channel activity","monoatomic ion gated channel activity",0.63575,0.2715,0.925
+"GO:0003729","GO:0003729",3,"GO:0003729",1.90904688601656,386,"mRNA binding","mRNA binding",0.977166666666667,1,0
+"GO:0046873","GO:0046873",2,"GO:0022839",1.81750556201605,437,"metal ion transmembrane transporter activity","monoatomic ion gated channel activity",0.692166666666667,0.384333333333333,0.806
+"GO:0050839","GO:0050839",4,"GO:0050839",1.67859457456234,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.946,1,0
+"GO:0099106","GO:0099106",5,"GO:0099106",1.46356646890411,136,"ion channel regulator activity","ion channel regulator activity",1,1,0
+"GO:0044325","GO:0044325",6,"GO:0044325",1.38323472469104,169,"transmembrane transporter binding","transmembrane transporter binding",0.948083333333333,1,0

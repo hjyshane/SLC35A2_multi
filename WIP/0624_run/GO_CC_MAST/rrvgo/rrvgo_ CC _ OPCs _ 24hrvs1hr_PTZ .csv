@@ -1,0 +1,25 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0097060","GO:0097060",1,"GO:0097060",10.6298175824866,514,"synaptic membrane","synaptic membrane",0.597875,0.392,0
+"GO:0099572","GO:0099572",2,"GO:0099572",8.63927460352238,436,"postsynaptic specialization","postsynaptic specialization",0.665583333333333,0.36875,0
+"GO:0014069","GO:0014069",3,"GO:0014069",8.30200212352452,384,"postsynaptic density","postsynaptic density",0.630416666666667,0.348333333333333,0
+"GO:0032279","GO:0032279",3,"GO:0014069",7.73020734735574,407,"asymmetric synapse","postsynaptic density",0.694666666666667,0.345333333333333,0.985
+"GO:0045211","GO:0045211",1,"GO:0097060",7.59595103892396,352,"postsynaptic membrane","synaptic membrane",0.573583333333333,0.406333333333333,0.938
+"GO:0098984","GO:0098984",3,"GO:0014069",6.82842960465491,448,"neuron to neuron synapse","postsynaptic density",0.693375,0.350333333333333,0.97
+"GO:0099634","GO:0099634",2,"GO:0099572",5.09194212539342,154,"postsynaptic specialization membrane","postsynaptic specialization",0.5765,0.3605,0.9
+"GO:0042734","GO:0042734",1,"GO:0097060",4.31427950130239,238,"presynaptic membrane","synaptic membrane",0.6215,0.423666666666667,0.886
+"GO:0098982","GO:0098982",4,"GO:0098982",3.97697158697332,135,"GABA-ergic synapse","GABA-ergic synapse",0.7705,1,0
+"GO:0042383","GO:0042383",5,"GO:0042383",3.90768216239861,170,"sarcolemma","sarcolemma",0.841416666666667,0.5405,0
+"GO:0098839","GO:0098839",2,"GO:0099572",3.73548916098501,114,"postsynaptic density membrane","postsynaptic specialization",0.550166666666667,0.3695,0.879
+"GO:0048786","GO:0048786",6,"GO:0048786",3.58395002629833,121,"presynaptic active zone","presynaptic active zone",0.764791666666667,1,0
+"GO:0031252","GO:0031252",7,"GO:0031252",3.53534828415021,415,"cell leading edge","cell leading edge",0.960125,0.551,0
+"GO:0030315","GO:0030315",5,"GO:0042383",2.70461033150871,72,"T-tubule","sarcolemma",0.851166666666667,0.5405,0.919
+"GO:0031594","GO:0031594",8,"GO:0031594",2.25888948035695,109,"neuromuscular junction","neuromuscular junction",0.77725,1,0
+"GO:0005681","GO:0005681",9,"GO:0005681",2.22000762743003,221,"spliceosomal complex","spliceosomal complex",0.93725,1,0
+"GO:0099535","GO:0099535",10,"GO:0099535",2.05008998531532,13,"synapse-associated extracellular matrix","synapse-associated extracellular matrix",0.899291666666667,1,0
+"GO:0034702","GO:0034702",11,"GO:0034702",1.95439741347172,301,"monoatomic ion channel complex","monoatomic ion channel complex",0.860166666666667,0.513,0
+"GO:0008328","GO:0008328",11,"GO:0034702",1.94883257835228,44,"ionotropic glutamate receptor complex","monoatomic ion channel complex",0.807375,0.384333333333333,0.85
+"GO:0098878","GO:0098878",11,"GO:0034702",1.89162629584859,46,"neurotransmitter receptor complex","monoatomic ion channel complex",0.817,0.464,0.611
+"GO:0055037","GO:0055037",12,"GO:0055037",1.88117689489945,161,"recycling endosome","recycling endosome",0.978416666666667,1,0
+"GO:0001726","GO:0001726",7,"GO:0031252",1.7074345065955,156,"ruffle","cell leading edge",0.922166666666667,0.551,0.898
+"GO:0150034","GO:0150034",13,"GO:0150034",1.55817202589018,397,"distal axon","distal axon",0.9525,1,0
+"GO:0043197","GO:0043197",2,"GO:0099572",1.3246306469918,208,"dendritic spine","postsynaptic specialization",0.671333333333333,0.47675,0.746

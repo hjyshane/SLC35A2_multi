@@ -1,0 +1,38 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0050807","GO:0050807",1,"GO:0050807",7.95426901857863,309,"regulation of synapse organization","regulation of synapse organization",0.763972972972973,0.5025,0
+"GO:0050803","GO:0050803",1,"GO:0050807",7.68413036692376,317,"regulation of synapse structure or activity","regulation of synapse organization",0.92827027027027,0.5025,0.995
+"GO:0050684","GO:0050684",2,"GO:0050684",5.71783450789756,139,"regulation of mRNA processing","regulation of mRNA processing",0.787810810810811,0.308,0
+"GO:0000398","GO:0000398",3,"GO:0000398",5.22643177790915,304,"mRNA splicing, via spliceosome","mRNA splicing, via spliceosome",0.778675675675676,0.242,0
+"GO:0000377","GO:0000377",3,"GO:0000398",5.22643177790915,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","mRNA splicing, via spliceosome",0.79672972972973,0.242,0.997
+"GO:0000375","GO:0000375",3,"GO:0000398",5.22643177790915,304,"RNA splicing, via transesterification reactions","mRNA splicing, via spliceosome",0.796621621621622,0.2416,0.996
+"GO:0006397","GO:0006397",2,"GO:0050684",5.11636483454293,496,"mRNA processing","regulation of mRNA processing",0.794351351351351,0.3595,0.863
+"GO:1903311","GO:1903311",2,"GO:0050684",4.89595724494501,304,"regulation of mRNA metabolic process","regulation of mRNA processing",0.813594594594595,0.331,0.92
+"GO:0048813","GO:0048813",4,"GO:0048813",4.70997201281014,192,"dendrite morphogenesis","dendrite morphogenesis",0.687189189189189,0.371625,0
+"GO:0016358","GO:0016358",4,"GO:0048813",4.44546032599872,327,"dendrite development","dendrite morphogenesis",0.687135135135135,0.36075,0.95
+"GO:0048024","GO:0048024",2,"GO:0050684",4.1292111995458,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA processing",0.762837837837838,0.3145,0.985
+"GO:0032870","GO:0032870",5,"GO:0032870",3.86667186867926,580,"cellular response to hormone stimulus","cellular response to hormone stimulus",0.981108108108108,1,0
+"GO:0043484","GO:0043484",3,"GO:0000398",3.68265912372259,187,"regulation of RNA splicing","mRNA splicing, via spliceosome",0.788567567567568,0.3102,0.852
+"GO:0008380","GO:0008380",3,"GO:0000398",3.67682714913814,449,"RNA splicing","mRNA splicing, via spliceosome",0.796027027027027,0.2542,0.945
+"GO:0060560","GO:0060560",6,"GO:0060560",3.54220707710201,292,"developmental growth involved in morphogenesis","developmental growth involved in morphogenesis",0.829081081081081,0.2896,0
+"GO:0099173","GO:0099173",7,"GO:0099173",3.52061439828037,252,"postsynapse organization","postsynapse organization",0.814891891891892,0.436666666666667,0
+"GO:0060996","GO:0060996",4,"GO:0048813",3.48914805498855,134,"dendritic spine development","dendrite morphogenesis",0.707972972972973,0.3985,0.883
+"GO:0007409","GO:0007409",4,"GO:0048813",3.28341028806261,501,"axonogenesis","dendrite morphogenesis",0.66654054054054,0.3825,0.83
+"GO:0001764","GO:0001764",8,"GO:0001764",3.04851318092814,206,"neuron migration","neuron migration",0.808594594594595,1,0
+"GO:0048588","GO:0048588",6,"GO:0060560",2.94490457450324,291,"developmental cell growth","developmental growth involved in morphogenesis",0.788351351351351,0.2612,0.825
+"GO:1990138","GO:1990138",6,"GO:0060560",2.74617052964336,211,"neuron projection extension","developmental growth involved in morphogenesis",0.639837837837838,0.2324,0.968
+"GO:0010976","GO:0010976",4,"GO:0048813",2.5908828331172,239,"positive regulation of neuron projection development","dendrite morphogenesis",0.67372972972973,0.4075,0.651
+"GO:0021987","GO:0021987",9,"GO:0021987",2.44495717145688,120,"cerebral cortex development","cerebral cortex development",0.827162162162162,0.392,0
+"GO:0030900","GO:0030900",9,"GO:0021987",2.42264436027971,425,"forebrain development","cerebral cortex development",0.811054054054054,0.413333333333333,0.862
+"GO:0097061","GO:0097061",4,"GO:0048813",2.08470142050019,108,"dendritic spine organization","dendrite morphogenesis",0.756243243243243,0.45,0.55
+"GO:0018105","GO:0018105",10,"GO:0018105",2.04684033976102,331,"peptidyl-serine phosphorylation","peptidyl-serine phosphorylation",0.903675675675676,0.5025,0
+"GO:0060047","GO:0060047",11,"GO:0060047",1.98443509615872,239,"heart contraction","heart contraction",0.887297297297297,0.344666666666667,0
+"GO:0018209","GO:0018209",10,"GO:0018105",1.79223419348932,343,"peptidyl-serine modification","peptidyl-serine phosphorylation",0.915216216216216,0.5025,0.995
+"GO:0048675","GO:0048675",6,"GO:0060560",1.78653034691224,143,"axon extension","developmental growth involved in morphogenesis",0.646783783783784,0.2486,0.941
+"GO:0106027","GO:0106027",4,"GO:0048813",1.73343397891685,118,"neuron projection organization","dendrite morphogenesis",0.807351351351351,0.446375,0.555
+"GO:0099175","GO:0099175",7,"GO:0099173",1.68743871287102,139,"regulation of postsynapse organization","postsynapse organization",0.771621621621622,0.451666666666667,0.937
+"GO:0003015","GO:0003015",11,"GO:0060047",1.67727295286002,252,"heart process","heart contraction",0.887189189189189,0.346,0.993
+"GO:0016049","GO:0016049",6,"GO:0060560",1.58785485804226,556,"cell growth","developmental growth involved in morphogenesis",0.886378378378378,0.2814,0.818
+"GO:0008016","GO:0008016",11,"GO:0060047",1.57312562485915,197,"regulation of heart contraction","heart contraction",0.864891891891892,0.352666666666667,0.973
+"GO:0031346","GO:0031346",4,"GO:0048813",1.39741637563393,463,"positive regulation of cell projection organization","dendrite morphogenesis",0.758783783783784,0.4225,0.608
+"GO:0021543","GO:0021543",9,"GO:0021987",1.32519805694004,182,"pallium development","cerebral cortex development",0.821324324324324,0.38,0.962
+"GO:1901888","GO:1901888",7,"GO:0099173",1.32386077750949,246,"regulation of cell junction assembly","postsynapse organization",0.802918918918919,0.513,0.753

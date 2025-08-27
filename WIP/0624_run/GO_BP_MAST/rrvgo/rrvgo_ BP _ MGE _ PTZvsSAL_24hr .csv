@@ -1,0 +1,6 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0048024","GO:0048024",1,"GO:0048024",2.3999200991302,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA splicing, via spliceosome",0.7798,0.5075,0
+"GO:0007409","GO:0007409",2,"GO:0007409",2.28418151464351,501,"axonogenesis","axonogenesis",0.9266,1,0
+"GO:0045793","GO:0045793",3,"GO:0045793",1.81752466931229,19,"positive regulation of cell size","positive regulation of cell size",0.9096,1,0
+"GO:0050684","GO:0050684",1,"GO:0048024",1.551825961025,139,"regulation of mRNA processing","regulation of mRNA splicing, via spliceosome",0.7796,0.5075,0.985
+"GO:1902414","GO:1902414",4,"GO:1902414",1.31228712715552,133,"protein localization to cell junction","protein localization to cell junction",0.9824,1,0

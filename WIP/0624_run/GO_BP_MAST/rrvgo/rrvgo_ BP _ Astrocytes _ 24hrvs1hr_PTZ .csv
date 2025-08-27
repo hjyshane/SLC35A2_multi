@@ -1,0 +1,45 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0030900","GO:0030900",1,"GO:0030900",8.28793911773625,425,"forebrain development","forebrain development",0.755318181818182,0.439,0
+"GO:0050807","GO:0050807",2,"GO:0050807",6.7636422833309,309,"regulation of synapse organization","regulation of synapse organization",0.817159090909091,0.5025,0
+"GO:0007409","GO:0007409",3,"GO:0007409",6.73352673586572,501,"axonogenesis","axonogenesis",0.648113636363636,0.330166666666667,0
+"GO:0050803","GO:0050803",2,"GO:0050807",6.49278783959393,317,"regulation of synapse structure or activity","regulation of synapse organization",0.947636363636364,0.5025,0.995
+"GO:0099173","GO:0099173",4,"GO:0099173",6.35677963536209,252,"postsynapse organization","postsynapse organization",0.880090909090909,0.459333333333333,0
+"GO:0034329","GO:0034329",4,"GO:0099173",4.33039747832681,481,"cell junction assembly","postsynapse organization",0.874590909090909,0.416,0.804
+"GO:0050890","GO:0050890",5,"GO:0050890",4.0817323525192,371,"cognition","cognition",0.883363636363636,0.506,0
+"GO:0021953","GO:0021953",1,"GO:0030900",3.74140714041707,212,"central nervous system neuron differentiation","forebrain development",0.747022727272727,0.517666666666667,0.742
+"GO:0048638","GO:0048638",6,"GO:0048638",3.58494704591421,405,"regulation of developmental growth","regulation of developmental growth",0.815181818181818,0.602,0
+"GO:0010720","GO:0010720",7,"GO:0010720",3.54271412249488,560,"positive regulation of cell development","positive regulation of cell development",0.741727272727273,0.3645,0
+"GO:0071407","GO:0071407",8,"GO:0071407",3.28969740517658,589,"cellular response to organic cyclic compound","cellular response to organic cyclic compound",0.970954545454545,0.6575,0
+"GO:0021537","GO:0021537",1,"GO:0030900",3.16578958580713,281,"telencephalon development","forebrain development",0.767,0.451333333333333,0.941
+"GO:0007611","GO:0007611",5,"GO:0050890",3.13854973656694,331,"learning or memory","cognition",0.884272727272727,0.506,0.988
+"GO:0006898","GO:0006898",9,"GO:0006898",2.83095938143225,272,"receptor-mediated endocytosis","receptor-mediated endocytosis",0.945704545454545,0.5915,0
+"GO:0008037","GO:0008037",10,"GO:0008037",2.73498721674633,160,"cell recognition","cell recognition",0.967113636363636,0.5445,0
+"GO:0001525","GO:0001525",11,"GO:0001525",2.58502234331185,561,"angiogenesis","angiogenesis",0.792477272727273,0.6435,0
+"GO:1902430","GO:1902430",12,"GO:1902430",2.44234581950672,19,"negative regulation of amyloid-beta formation","negative regulation of amyloid-beta formation",0.946818181818182,0.511,0
+"GO:0051962","GO:0051962",7,"GO:0010720",2.39976010336127,391,"positive regulation of nervous system development","positive regulation of cell development",0.715204545454545,0.33925,0.737
+"GO:0003007","GO:0003007",11,"GO:0001525",2.35997089812778,294,"heart morphogenesis","angiogenesis",0.791272727272727,0.6435,0.713
+"GO:0016358","GO:0016358",3,"GO:0007409",2.33064505512275,327,"dendrite development","axonogenesis",0.678022727272727,0.377166666666667,0.762
+"GO:0097485","GO:0097485",3,"GO:0007409",2.30229273317819,252,"neuron projection guidance","axonogenesis",0.666136363636364,0.3445,0.859
+"GO:0007411","GO:0007411",3,"GO:0007409",2.30229273317819,252,"axon guidance","axonogenesis",0.664931818181818,0.331,0.927
+"GO:0042886","GO:0042886",13,"GO:0042886",2.25376097984438,432,"amide transport","amide transport",0.962227272727273,0.7175,0
+"GO:0030100","GO:0030100",9,"GO:0006898",2.23857572390881,344,"regulation of endocytosis","receptor-mediated endocytosis",0.829590909090909,0.5915,0.817
+"GO:0050767","GO:0050767",7,"GO:0010720",2.21474918402726,494,"regulation of neurogenesis","positive regulation of cell development",0.688454545454545,0.31525,0.861
+"GO:0035264","GO:0035264",6,"GO:0048638",2.16878432164891,230,"multicellular organism growth","regulation of developmental growth",0.867431818181818,0.602,0.796
+"GO:0071396","GO:0071396",8,"GO:0071407",2.0392131905337,696,"cellular response to lipid","cellular response to organic cyclic compound",0.970886363636364,0.6575,0.685
+"GO:0050769","GO:0050769",7,"GO:0010720",2.030948265421,329,"positive regulation of neurogenesis","positive regulation of cell development",0.691909090909091,0.2815,0.944
+"GO:0043113","GO:0043113",14,"GO:0043113",2.02105126087683,75,"receptor clustering","receptor clustering",0.9615,1,0
+"GO:1902992","GO:1902992",12,"GO:1902430",1.96983073270786,22,"negative regulation of amyloid precursor protein catabolic process","negative regulation of amyloid-beta formation",0.945977272727273,0.511,0.978
+"GO:0007416","GO:0007416",4,"GO:0099173",1.9118957336475,222,"synapse assembly","postsynapse organization",0.705340909090909,0.411333333333333,0.818
+"GO:0051347","GO:0051347",15,"GO:0051347",1.89515731222755,510,"positive regulation of transferase activity","positive regulation of transferase activity",0.953727272727273,0.646,0
+"GO:0001654","GO:0001654",16,"GO:0001654",1.84020249264083,428,"eye development","eye development",0.78225,0.336333333333333,0
+"GO:0043484","GO:0043484",17,"GO:0043484",1.82948294804761,187,"regulation of RNA splicing","regulation of RNA splicing",0.944113636363636,1,0
+"GO:0150063","GO:0150063",16,"GO:0001654",1.78115956775231,431,"visual system development","eye development",0.787431818181818,0.336,0.996
+"GO:0042063","GO:0042063",3,"GO:0007409",1.74218812315572,397,"gliogenesis","axonogenesis",0.748590909090909,0.499166666666667,0.641
+"GO:0048880","GO:0048880",16,"GO:0001654",1.74218812315572,435,"sensory system development","eye development",0.787409090909091,0.336333333333333,0.995
+"GO:0008038","GO:0008038",10,"GO:0008037",1.70435916701539,47,"neuron recognition","cell recognition",0.757522727272727,0.5445,0.911
+"GO:0031346","GO:0031346",18,"GO:0031346",1.49303838876263,463,"positive regulation of cell projection organization","positive regulation of cell projection organization",0.811636363636364,0.684,0
+"GO:0015800","GO:0015800",13,"GO:0042886",1.39424683281421,74,"acidic amino acid transport","amide transport",0.965477272727273,0.7175,0.565
+"GO:0043523","GO:0043523",19,"GO:0043523",1.39024589781826,310,"regulation of neuron apoptotic process","regulation of neuron apoptotic process",0.952977272727273,1,0
+"GO:0050678","GO:0050678",18,"GO:0031346",1.35921595793238,426,"regulation of epithelial cell proliferation","positive regulation of cell projection organization",0.886590909090909,0.684,0.632
+"GO:0048813","GO:0048813",3,"GO:0007409",1.35501263015039,192,"dendrite morphogenesis","axonogenesis",0.680409090909091,0.351666666666667,0.83
+"GO:0043087","GO:0043087",15,"GO:0051347",1.30636071015155,345,"regulation of GTPase activity","positive regulation of transferase activity",0.954795454545455,0.646,0.708

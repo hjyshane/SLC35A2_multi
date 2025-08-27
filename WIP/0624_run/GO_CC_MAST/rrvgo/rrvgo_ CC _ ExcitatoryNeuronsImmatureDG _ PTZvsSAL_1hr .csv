@@ -1,0 +1,14 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0045211","GO:0045211",1,"GO:0045211",6.55560342288354,352,"postsynaptic membrane","postsynaptic membrane",0.457230769230769,0.2906,0
+"GO:0044309","GO:0044309",2,"GO:0044309",6.14248912017135,214,"neuron spine","neuron spine",0.879076923076923,0.484666666666667,0
+"GO:0097060","GO:0097060",1,"GO:0045211",6.06692227711122,514,"synaptic membrane","postsynaptic membrane",0.513769230769231,0.3628,0.938
+"GO:0043197","GO:0043197",2,"GO:0044309",5.20255443832675,208,"dendritic spine","neuron spine",0.425846153846154,0.485666666666667,0.992
+"GO:0099572","GO:0099572",1,"GO:0045211",4.45280358055518,436,"postsynaptic specialization","postsynaptic membrane",0.471769230769231,0.3742,0.8
+"GO:0098984","GO:0098984",3,"GO:0098984",4.2690712237941,448,"neuron to neuron synapse","neuron to neuron synapse",0.510076923076923,0.350333333333333,0
+"GO:0099634","GO:0099634",1,"GO:0045211",4.26804891058357,154,"postsynaptic specialization membrane","postsynaptic membrane",0.457538461538462,0.2698,0.915
+"GO:0032279","GO:0032279",3,"GO:0098984",3.92212382727867,407,"asymmetric synapse","neuron to neuron synapse",0.511384615384615,0.345333333333333,0.979
+"GO:0014069","GO:0014069",3,"GO:0098984",3.37101809809313,384,"postsynaptic density","neuron to neuron synapse",0.405692307692308,0.348333333333333,0.97
+"GO:0098839","GO:0098839",1,"GO:0045211",2.97331859138063,114,"postsynaptic density membrane","postsynaptic membrane",0.403846153846154,0.2822,0.894
+"GO:0048786","GO:0048786",4,"GO:0048786",1.80786134183813,121,"presynaptic active zone","presynaptic active zone",0.653153846153846,1,0
+"GO:0098982","GO:0098982",5,"GO:0098982",1.53758703649658,135,"GABA-ergic synapse","GABA-ergic synapse",0.644923076923077,1,0
+"GO:0044304","GO:0044304",2,"GO:0044309",1.50236681904896,88,"main axon","neuron spine",0.913384615384615,0.631666666666667,0.554

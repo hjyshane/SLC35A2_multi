@@ -1,0 +1,7 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005516","GO:0005516",1,"GO:0005516",3.27262050775465,195,"calmodulin binding","calmodulin binding",0.900666666666667,1,0
+"GO:0005200","GO:0005200",2,"GO:0005200",3.18465344024526,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0044325","GO:0044325",3,"GO:0044325",3.05045451361248,169,"transmembrane transporter binding","transmembrane transporter binding",0.901,1,0
+"GO:0031625","GO:0031625",4,"GO:0031625",1.5476035961774,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.845666666666667,1,0
+"GO:0003729","GO:0003729",5,"GO:0003729",1.48447643265821,386,"mRNA binding","mRNA binding",0.9565,1,0
+"GO:0043274","GO:0043274",6,"GO:0043274",1.40221397293949,29,"phospholipase binding","phospholipase binding",0.858833333333333,1,0

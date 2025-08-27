@@ -1,0 +1,50 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",10.5492273885276,501,"axonogenesis","axonogenesis",0.494469387755102,0.293888888888889,0
+"GO:0050807","GO:0050807",2,"GO:0050807",8.93083534147666,309,"regulation of synapse organization","regulation of synapse organization",0.632061224489796,0.5025,0
+"GO:0050803","GO:0050803",2,"GO:0050807",8.70775858141925,317,"regulation of synapse structure or activity","regulation of synapse organization",0.907183673469388,0.5025,0.995
+"GO:0099173","GO:0099173",3,"GO:0099173",8.42627105309756,252,"postsynapse organization","postsynapse organization",0.682469387755102,0.3287,0
+"GO:0034329","GO:0034329",3,"GO:0099173",7.57208802951093,481,"cell junction assembly","postsynapse organization",0.669959183673469,0.2361,0.804
+"GO:0021955","GO:0021955",4,"GO:0021955",6.37457532370565,45,"central nervous system neuron axonogenesis","central nervous system neuron axonogenesis",0.539979591836735,0.3234,0
+"GO:0021952","GO:0021952",4,"GO:0021955",6.132029330253,32,"central nervous system projection neuron axonogenesis","central nervous system neuron axonogenesis",0.547387755102041,0.3307,0.983
+"GO:0021954","GO:0021954",4,"GO:0021955",5.89451147411717,98,"central nervous system neuron development","central nervous system neuron axonogenesis",0.639612244897959,0.3116,0.95
+"GO:0021953","GO:0021953",4,"GO:0021955",5.57021109219156,212,"central nervous system neuron differentiation","central nervous system neuron axonogenesis",0.636959183673469,0.308,0.882
+"GO:1901888","GO:1901888",3,"GO:0099173",5.07623144906595,246,"regulation of cell junction assembly","postsynapse organization",0.653571428571429,0.2409,0.753
+"GO:0016358","GO:0016358",1,"GO:0007409",4.826578971145,327,"dendrite development","axonogenesis",0.540836734693878,0.377333333333333,0.762
+"GO:0051962","GO:0051962",5,"GO:0051962",4.71548037675414,391,"positive regulation of nervous system development","positive regulation of nervous system development",0.677612244897959,1,0
+"GO:0030900","GO:0030900",4,"GO:0021955",4.44436490132741,425,"forebrain development","central nervous system neuron axonogenesis",0.663938775510204,0.3201,0.649
+"GO:0097485","GO:0097485",1,"GO:0007409",4.33175001012104,252,"neuron projection guidance","axonogenesis",0.523612244897959,0.313333333333333,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",4.33175001012104,252,"axon guidance","axonogenesis",0.517530612244898,0.297555555555556,0.927
+"GO:0048813","GO:0048813",1,"GO:0007409",4.31528943178358,192,"dendrite morphogenesis","axonogenesis",0.535367346938776,0.341888888888889,0.83
+"GO:0031346","GO:0031346",1,"GO:0007409",4.21120749599485,463,"positive regulation of cell projection organization","axonogenesis",0.651448979591837,0.419888888888889,0.687
+"GO:0097061","GO:0097061",6,"GO:0097061",3.93596893550018,108,"dendritic spine organization","dendritic spine organization",0.624571428571429,0.27025,0
+"GO:1902667","GO:1902667",1,"GO:0007409",3.91521812452653,13,"regulation of axon guidance","axonogenesis",0.591673469387755,0.411555555555556,0.711
+"GO:0051965","GO:0051965",3,"GO:0099173",3.8862601382226,82,"positive regulation of synapse assembly","postsynapse organization",0.498816326530612,0.2698,0.73
+"GO:0051963","GO:0051963",3,"GO:0099173",3.81090525353641,144,"regulation of synapse assembly","postsynapse organization",0.497632653061225,0.2409,0.779
+"GO:0007416","GO:0007416",3,"GO:0099173",3.64630821109653,222,"synapse assembly","postsynapse organization",0.52130612244898,0.2427,0.818
+"GO:0106027","GO:0106027",6,"GO:0097061",3.59390346198479,118,"neuron projection organization","dendritic spine organization",0.712673469387755,0.27425,0.991
+"GO:1901890","GO:1901890",3,"GO:0099173",3.38253320461239,129,"positive regulation of cell junction assembly","postsynapse organization",0.661591836734694,0.2707,0.704
+"GO:0008344","GO:0008344",7,"GO:0008344",2.93003351159244,112,"adult locomotory behavior","adult locomotory behavior",0.867469387755102,0.372333333333333,0
+"GO:0050905","GO:0050905",8,"GO:0050905",2.78907795989798,204,"neuromuscular process","neuromuscular process",0.892775510204082,1,0
+"GO:0021543","GO:0021543",4,"GO:0021955",2.76430152990558,182,"pallium development","central nervous system neuron axonogenesis",0.686163265306122,0.343,0.597
+"GO:0021537","GO:0021537",4,"GO:0021955",2.65184330845042,281,"telencephalon development","central nervous system neuron axonogenesis",0.675224489795918,0.3278,0.62
+"GO:0050770","GO:0050770",1,"GO:0007409",2.61905038464487,186,"regulation of axonogenesis","axonogenesis",0.499224489795918,0.330555555555556,0.882
+"GO:0021987","GO:0021987",4,"GO:0021955",2.46023723344957,120,"cerebral cortex development","central nervous system neuron axonogenesis",0.696877551020408,0.3631,0.577
+"GO:0021957","GO:0021957",4,"GO:0021955",2.44001215681157,10,"corticospinal tract morphogenesis","central nervous system neuron axonogenesis",0.583959183673469,0.3791,0.907
+"GO:0060560","GO:0060560",9,"GO:0060560",2.41452805165204,292,"developmental growth involved in morphogenesis","developmental growth involved in morphogenesis",0.754795918367347,0.316,0
+"GO:0051493","GO:0051493",10,"GO:0051493",2.12329828472126,526,"regulation of cytoskeleton organization","regulation of cytoskeleton organization",0.735285714285714,0.661,0
+"GO:0007043","GO:0007043",3,"GO:0099173",2.106260966603,168,"cell-cell junction assembly","postsynapse organization",0.691244897959184,0.2544,0.718
+"GO:0007626","GO:0007626",7,"GO:0008344",2.04009099165533,273,"locomotory behavior","adult locomotory behavior",0.865428571428571,0.451333333333333,0.928
+"GO:0060997","GO:0060997",6,"GO:0097061",1.82484246785092,76,"dendritic spine morphogenesis","dendritic spine organization",0.464734693877551,0.27025,0.974
+"GO:0030534","GO:0030534",7,"GO:0008344",1.76924156149684,191,"adult behavior","adult locomotory behavior",0.867489795918367,0.442333333333333,0.955
+"GO:0048638","GO:0048638",9,"GO:0060560",1.75383232341395,405,"regulation of developmental growth","developmental growth involved in morphogenesis",0.774959183673469,0.3156,0.837
+"GO:0048588","GO:0048588",9,"GO:0060560",1.69870065418648,291,"developmental cell growth","developmental growth involved in morphogenesis",0.726489795918367,0.3168,0.825
+"GO:0045216","GO:0045216",3,"GO:0099173",1.62316653732482,231,"cell-cell junction organization","postsynapse organization",0.696959183673469,0.3098,0.745
+"GO:1903311","GO:1903311",11,"GO:1903311",1.6181965873239,304,"regulation of mRNA metabolic process","regulation of mRNA metabolic process",0.954979591836735,1,0
+"GO:0001764","GO:0001764",12,"GO:0001764",1.56254846677161,206,"neuron migration","neuron migration",0.695428571428572,1,0
+"GO:0140058","GO:0140058",1,"GO:0007409",1.50628752281975,33,"neuron projection arborization","axonogenesis",0.608530612244898,0.451777777777778,0.697
+"GO:0034332","GO:0034332",3,"GO:0099173",1.49520243395095,58,"adherens junction organization","postsynapse organization",0.72734693877551,0.3748,0.662
+"GO:0048639","GO:0048639",9,"GO:0060560",1.36849311988592,221,"positive regulation of developmental growth","developmental growth involved in morphogenesis",0.773959183673469,0.343,0.79
+"GO:1990138","GO:1990138",9,"GO:0060560",1.36849311988592,211,"neuron projection extension","developmental growth involved in morphogenesis",0.502448979591837,0.2958,0.968
+"GO:0030902","GO:0030902",4,"GO:0021955",1.36681732158042,179,"hindbrain development","central nervous system neuron axonogenesis",0.695367346938776,0.3944,0.601
+"GO:0061001","GO:0061001",6,"GO:0097061",1.36275331028956,59,"regulation of dendritic spine morphogenesis","dendritic spine organization",0.427408163265306,0.28025,0.954
+"GO:0031032","GO:0031032",10,"GO:0051493",1.31254690380056,218,"actomyosin structure organization","regulation of cytoskeleton organization",0.80265306122449,0.661,0.678

@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",3.66953497506881,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0044325","GO:0044325",2,"GO:0044325",1.46543121223319,169,"transmembrane transporter binding","transmembrane transporter binding",0.937,1,0
+"GO:0051020","GO:0051020",3,"GO:0051020",1.35769720523891,337,"GTPase binding","GTPase binding",0.937,1,0

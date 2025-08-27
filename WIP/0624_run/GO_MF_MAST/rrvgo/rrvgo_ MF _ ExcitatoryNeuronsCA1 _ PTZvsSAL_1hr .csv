@@ -1,0 +1,16 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003735","GO:0003735",1,"GO:0003735",9.29820772088178,178,"structural constituent of ribosome","structural constituent of ribosome",0.907333333333333,0.536666666666667,0
+"GO:0003729","GO:0003729",2,"GO:0003729",9.2305200171439,386,"mRNA binding","mRNA binding",0.761066666666667,0.448833333333333,0
+"GO:0044389","GO:0044389",3,"GO:0044389",6.43050263494725,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.883133333333333,0.505,0
+"GO:0031625","GO:0031625",3,"GO:0044389",6.13535828470559,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.8834,0.505,0.99
+"GO:0003730","GO:0003730",2,"GO:0003729",5.68020284483274,119,"mRNA 3'-UTR binding","mRNA binding",0.777333333333333,0.485,0.891
+"GO:0060589","GO:0060589",4,"GO:0060589",3.47364296245756,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.933733333333333,0.503,0
+"GO:0030695","GO:0030695",4,"GO:0060589",3.47364296245756,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.933733333333333,0.503,0.994
+"GO:0035254","GO:0035254",5,"GO:0035254",3.28083127728648,76,"glutamate receptor binding","glutamate receptor binding",0.941733333333333,1,0
+"GO:0035198","GO:0035198",2,"GO:0003729",2.20305868340142,37,"miRNA binding","mRNA binding",0.778,0.4825,0.573
+"GO:0003725","GO:0003725",2,"GO:0003729",2.08856184640325,82,"double-stranded RNA binding","mRNA binding",0.798333333333333,0.536333333333333,0.62
+"GO:0015631","GO:0015631",6,"GO:0015631",1.94030900125381,387,"tubulin binding","tubulin binding",0.934,1,0
+"GO:0061980","GO:0061980",2,"GO:0003729",1.84359516271066,51,"regulatory RNA binding","mRNA binding",0.7734,0.472166666666667,0.591
+"GO:0099186","GO:0099186",1,"GO:0003735",1.82682015439306,27,"structural constituent of postsynapse","structural constituent of ribosome",0.889866666666667,0.449333333333333,0.683
+"GO:0003727","GO:0003727",2,"GO:0003729",1.45188852089387,101,"single-stranded RNA binding","mRNA binding",0.795466666666667,0.529833333333333,0.632
+"GO:0098918","GO:0098918",1,"GO:0003735",1.45077249085478,37,"structural constituent of synapse","structural constituent of ribosome",0.888266666666667,0.441333333333333,0.707

@@ -1,0 +1,4 @@
+"","p_val","avg_log2FC","pct.1","pct.2","p_val_adj","gene","cell_type","comparison","Regulation"
+"Cst3",2.67522146805176e-07,0.453407372411884,0.957,0.915,0.00670062721102925,"Cst3","Astrocytes","PTZvsSAL_1hr","Up"
+"Slc1a3",9.7171752119378e-07,0.415571529379939,0.981,0.96,0.0243386087533406,"Slc1a3","Astrocytes","PTZvsSAL_1hr","Up"
+"Kcnn2",1.36246832558749e-06,0.926898172510244,0.698,0.542,0.0341257441509898,"Kcnn2","Astrocytes","PTZvsSAL_1hr","Up"

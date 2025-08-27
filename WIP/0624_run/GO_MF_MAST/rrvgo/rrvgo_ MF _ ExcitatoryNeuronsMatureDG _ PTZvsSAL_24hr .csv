@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003729","GO:0003729",1,"GO:0003729",7.50281901789743,386,"mRNA binding","mRNA binding",0.971,1,0
+"GO:0097718","GO:0097718",2,"GO:0097718",2.06342896036618,36,"disordered domain specific binding","disordered domain specific binding",0.971,1,0

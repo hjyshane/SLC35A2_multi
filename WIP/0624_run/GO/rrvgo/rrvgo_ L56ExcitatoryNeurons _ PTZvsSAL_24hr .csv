@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0071248","GO:0071248",1,"GO:0071248",2.23991692657558,187,"cellular response to metal ion","cellular response to metal ion",0.360333333333333,0.360333333333333,0
+"GO:0071277","GO:0071277",1,"GO:0071248",2.01901081322645,91,"cellular response to calcium ion","cellular response to metal ion",0.378333333333333,0.378333333333333,0.944
+"GO:0071241","GO:0071241",1,"GO:0071248",1.96813772797092,258,"cellular response to inorganic substance","cellular response to metal ion",0.368,0.368,0.975

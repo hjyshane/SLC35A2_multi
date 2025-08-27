@@ -1,0 +1,3 @@
+"p_val","avg_log2FC","pct.1","pct.2","p_val_adj","ranges","cell_type","comparison","closestgene","distance","Regulation"
+1.51275987703375e-18,-1.19821160747712,0.444,0.699,2.5047219112011e-13,"chr2-77945820-77946697","CGE","24hrvs1hr_PTZ","Cwc22",0,"Down"
+1.65886658994834e-07,5.04039059093104,0.075,0.003,0.0274663517897517,"chr17-78715398-78716171","CGE","24hrvs1hr_PTZ","Strn",0,"Up"

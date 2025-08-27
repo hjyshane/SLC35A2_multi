@@ -1,0 +1,47 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0035418","GO:0035418",1,"GO:0035418",5.4475441268687,100,"protein localization to synapse","protein localization to synapse",0.763695652173913,0.230571428571429,0
+"GO:0042391","GO:0042391",2,"GO:0042391",4.94895936105118,491,"regulation of membrane potential","regulation of membrane potential",0.849260869565217,0.411666666666667,0
+"GO:0050890","GO:0050890",3,"GO:0050890",4.88214367784031,371,"cognition","cognition",0.879869565217391,0.298285714285714,0
+"GO:1902414","GO:1902414",1,"GO:0035418",4.6998094255234,133,"protein localization to cell junction","protein localization to synapse",0.76295652173913,0.237714285714286,0.985
+"GO:1903539","GO:1903539",1,"GO:0035418",4.41856231401431,67,"protein localization to postsynaptic membrane","protein localization to synapse",0.758673913043478,0.179571428571429,0.977
+"GO:0007611","GO:0007611",3,"GO:0050890",4.38645922938588,331,"learning or memory","cognition",0.867173913043478,0.295428571428571,0.988
+"GO:0062237","GO:0062237",1,"GO:0035418",4.34713720129485,68,"protein localization to postsynapse","protein localization to synapse",0.765652173913044,0.226571428571429,0.979
+"GO:0099643","GO:0099643",4,"GO:0099643",4.20750648628542,174,"signal release from synapse","signal release from synapse",0.663630434782609,0.341142857142857,0
+"GO:0007269","GO:0007269",4,"GO:0099643",4.20750648628542,174,"neurotransmitter secretion","signal release from synapse",0.55904347826087,0.336857142857143,0.998
+"GO:0006836","GO:0006836",5,"GO:0006836",4.03245203465574,230,"neurotransmitter transport","neurotransmitter transport",0.799326086956522,1,0
+"GO:1990806","GO:1990806",6,"GO:1990806",3.97701427885997,32,"ligand-gated ion channel signaling pathway","ligand-gated ion channel signaling pathway",0.904369565217391,0.5165,0
+"GO:0007613","GO:0007613",3,"GO:0050890",3.63729292239268,164,"memory","cognition",0.875913043478261,0.339714285714286,0.907
+"GO:0007612","GO:0007612",3,"GO:0050890",3.60580372551092,192,"learning","cognition",0.871152173913043,0.312,0.929
+"GO:0007215","GO:0007215",7,"GO:0007215",3.54003697657547,49,"glutamate receptor signaling pathway","glutamate receptor signaling pathway",0.902673913043478,1,0
+"GO:0001505","GO:0001505",8,"GO:0001505",3.5200285099962,220,"regulation of neurotransmitter levels","regulation of neurotransmitter levels",0.841913043478261,0.549,0
+"GO:1990778","GO:1990778",1,"GO:0035418",3.41371504259613,400,"protein localization to cell periphery","protein localization to synapse",0.776347826086957,0.389,0.567
+"GO:0099173","GO:0099173",9,"GO:0099173",3.1511284370889,252,"postsynapse organization","postsynapse organization",0.968630434782609,1,0
+"GO:0099504","GO:0099504",10,"GO:0099504",3.14207456847259,230,"synaptic vesicle cycle","synaptic vesicle cycle",0.747478260869565,0.408714285714286,0
+"GO:0060078","GO:0060078",2,"GO:0042391",3.14099544784839,130,"regulation of postsynaptic membrane potential","regulation of membrane potential",0.865217391304348,0.448333333333333,0.862
+"GO:0050905","GO:0050905",3,"GO:0050890",3.08510042017934,204,"neuromuscular process","cognition",0.913,0.510857142857143,0.604
+"GO:0016079","GO:0016079",4,"GO:0099643",2.97506057834311,115,"synaptic vesicle exocytosis","signal release from synapse",0.532326086956522,0.350714285714286,0.97
+"GO:0017156","GO:0017156",10,"GO:0099504",2.97330925262643,77,"calcium-ion regulated exocytosis","synaptic vesicle cycle",0.75345652173913,0.347714285714286,0.589
+"GO:0045055","GO:0045055",10,"GO:0099504",2.8701027674511,267,"regulated exocytosis","synaptic vesicle cycle",0.728804347826087,0.288571428571429,0.657
+"GO:0099003","GO:0099003",10,"GO:0099504",2.79842388352109,270,"vesicle-mediated transport in synapse","synaptic vesicle cycle",0.776369565217391,0.402571428571429,0.982
+"GO:0048167","GO:0048167",4,"GO:0099643",2.46508749997436,393,"regulation of synaptic plasticity","signal release from synapse",0.783065217391304,0.399714285714286,0.722
+"GO:0001508","GO:0001508",2,"GO:0042391",2.44023873247127,158,"action potential","regulation of membrane potential",0.860108695652174,0.434666666666667,0.903
+"GO:0050806","GO:0050806",4,"GO:0099643",2.42190098158337,348,"positive regulation of synaptic transmission","signal release from synapse",0.847608695652174,0.406142857142857,0.712
+"GO:0017157","GO:0017157",10,"GO:0099504",2.28430683204461,226,"regulation of exocytosis","synaptic vesicle cycle",0.711804347826087,0.312142857142857,0.625
+"GO:0006887","GO:0006887",10,"GO:0099504",2.2128908209428,395,"exocytosis","synaptic vesicle cycle",0.724826086956522,0.288285714285714,0.68
+"GO:0021953","GO:0021953",11,"GO:0021953",2.20430845663648,212,"central nervous system neuron differentiation","central nervous system neuron differentiation",0.93795652173913,0.629,0
+"GO:0030900","GO:0030900",11,"GO:0021953",2.20082070363927,425,"forebrain development","central nervous system neuron differentiation",0.9485,0.629,0.742
+"GO:0050807","GO:0050807",12,"GO:0050807",1.99544608509934,309,"regulation of synapse organization","regulation of synapse organization",0.830217391304348,0.5025,0
+"GO:0008306","GO:0008306",3,"GO:0050890",1.84021647347763,123,"associative learning","cognition",0.875652173913044,0.334857142857143,0.889
+"GO:0050803","GO:0050803",12,"GO:0050807",1.83460189944478,317,"regulation of synapse structure or activity","regulation of synapse organization",0.860086956521739,0.5025,0.995
+"GO:0099645","GO:0099645",1,"GO:0035418",1.80343195878419,41,"neurotransmitter receptor localization to postsynaptic specialization membrane","protein localization to synapse",0.674369565217391,0.195285714285714,0.939
+"GO:0099633","GO:0099633",1,"GO:0035418",1.80343195878419,41,"protein localization to postsynaptic specialization membrane","protein localization to synapse",0.765847826086957,0.195285714285714,0.939
+"GO:0035249","GO:0035249",4,"GO:0099643",1.76846887669949,129,"synaptic transmission, glutamatergic","signal release from synapse",0.861239130434783,0.450285714285714,0.661
+"GO:0007626","GO:0007626",13,"GO:0007626",1.76195301695712,273,"locomotory behavior","locomotory behavior",0.916108695652174,1,0
+"GO:1903305","GO:1903305",10,"GO:0099504",1.75711022036631,161,"regulation of regulated secretory pathway","synaptic vesicle cycle",0.715521739130435,0.310857142857143,0.606
+"GO:0002790","GO:0002790",14,"GO:0002790",1.74975566021897,329,"peptide secretion","peptide secretion",0.759195652173913,0.504,0
+"GO:0046928","GO:0046928",8,"GO:0001505",1.64381919448806,106,"regulation of neurotransmitter secretion","regulation of neurotransmitter levels",0.585369565217391,0.549,0.902
+"GO:0031644","GO:0031644",3,"GO:0050890",1.60315812480919,167,"regulation of nervous system process","cognition",0.87495652173913,0.516571428571429,0.595
+"GO:0015833","GO:0015833",14,"GO:0002790",1.4898624168641,343,"peptide transport","peptide secretion",0.82454347826087,0.504,0.992
+"GO:0035235","GO:0035235",6,"GO:1990806",1.39456465171986,19,"ionotropic glutamate receptor signaling pathway","ligand-gated ion channel signaling pathway",0.892108695652174,0.5165,0.967
+"GO:0097120","GO:0097120",15,"GO:0097120",1.34394663400613,87,"receptor localization to synapse","receptor localization to synapse",0.84495652173913,1,0
+"GO:0007207","GO:0007207",4,"GO:0099643",1.30747549875857,10,"phospholipase C-activating G protein-coupled acetylcholine receptor signaling pathway","signal release from synapse",0.880673913043478,0.535428571428571,0.549

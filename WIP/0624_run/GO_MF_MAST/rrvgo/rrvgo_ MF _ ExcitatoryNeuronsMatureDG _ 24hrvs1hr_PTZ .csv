@@ -1,0 +1,50 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0031267","GO:0031267",1,"GO:0031267",8.66897107086001,297,"small GTPase binding","small GTPase binding",0.938714285714286,0.5075,0
+"GO:0051020","GO:0051020",1,"GO:0031267",8.64938606902716,337,"GTPase binding","small GTPase binding",0.938285714285714,0.5075,0.985
+"GO:0060589","GO:0060589",2,"GO:0060589",6.9915174046115,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.902795918367347,0.319571428571429,0
+"GO:0030695","GO:0030695",2,"GO:0060589",6.9915174046115,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.902795918367347,0.319571428571429,0.994
+"GO:0035254","GO:0035254",3,"GO:0035254",6.72871997508491,76,"glutamate receptor binding","glutamate receptor binding",0.94230612244898,0.518,0
+"GO:0044325","GO:0044325",4,"GO:0044325",6.43651529830842,169,"transmembrane transporter binding","transmembrane transporter binding",0.956285714285714,1,0
+"GO:0003729","GO:0003729",5,"GO:0003729",6.32422521175168,386,"mRNA binding","mRNA binding",0.965204081632653,0.5545,0
+"GO:0022890","GO:0022890",6,"GO:0022890",5.98123279319982,538,"inorganic cation transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.742530612244898,0.331642857142857,0
+"GO:0030165","GO:0030165",7,"GO:0030165",5.80863768290828,121,"PDZ domain binding","PDZ domain binding",0.947142857142857,0.6525,0
+"GO:0015631","GO:0015631",8,"GO:0015631",5.71085064685154,387,"tubulin binding","tubulin binding",0.925816326530612,0.420333333333333,0
+"GO:0008017","GO:0008017",8,"GO:0015631",5.59874092467198,269,"microtubule binding","tubulin binding",0.927979591836735,0.431666666666667,0.952
+"GO:0015085","GO:0015085",6,"GO:0022890",5.5392207668951,134,"calcium ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.741204081632653,0.326,0.839
+"GO:0005085","GO:0005085",2,"GO:0060589",5.4543078225252,201,"guanyl-nucleotide exchange factor activity","nucleoside-triphosphatase regulator activity",0.908612244897959,0.360285714285714,0.917
+"GO:0098918","GO:0098918",9,"GO:0098918",5.3437347941472,37,"structural constituent of synapse","structural constituent of synapse",0.981204081632653,0.5395,0
+"GO:0046873","GO:0046873",6,"GO:0022890",4.67327489047655,437,"metal ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.718734693877551,0.274428571428571,0.967
+"GO:0005216","GO:0005216",6,"GO:0022890",4.52846838515084,437,"monoatomic ion channel activity","inorganic cation transmembrane transporter activity",0.695510204081633,0.218214285714286,0.721
+"GO:0005516","GO:0005516",10,"GO:0005516",4.48749573118575,195,"calmodulin binding","calmodulin binding",0.956,1,0
+"GO:0017124","GO:0017124",7,"GO:0030165",4.42805605131811,130,"SH3 domain binding","PDZ domain binding",0.946918367346939,0.6525,0.695
+"GO:0050839","GO:0050839",11,"GO:0050839",4.06190216834833,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.954,1,0
+"GO:0022803","GO:0022803",6,"GO:0022890",3.64181427501983,501,"passive transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.703857142857143,0.239214285714286,0.729
+"GO:0015267","GO:0015267",6,"GO:0022890",3.64181427501983,501,"channel activity","inorganic cation transmembrane transporter activity",0.703857142857143,0.239214285714286,0.729
+"GO:0005261","GO:0005261",6,"GO:0022890",3.31660370478626,322,"monoatomic cation channel activity","inorganic cation transmembrane transporter activity",0.700081632653061,0.225214285714286,0.674
+"GO:0005262","GO:0005262",6,"GO:0022890",3.22933867677149,114,"calcium channel activity","inorganic cation transmembrane transporter activity",0.716204081632653,0.2545,0.822
+"GO:0022839","GO:0022839",6,"GO:0022890",3.03321525548254,315,"monoatomic ion gated channel activity","inorganic cation transmembrane transporter activity",0.692408163265306,0.216571428571429,0.68
+"GO:0022836","GO:0022836",6,"GO:0022890",2.95451618811495,320,"gated channel activity","inorganic cation transmembrane transporter activity",0.701081632653061,0.239214285714286,0.681
+"GO:0008066","GO:0008066",12,"GO:0008066",2.80733829083437,27,"glutamate receptor activity","glutamate receptor activity",0.948612244897959,1,0
+"GO:0003779","GO:0003779",8,"GO:0015631",2.69023174653628,448,"actin binding","tubulin binding",0.929204081632653,0.486666666666667,0.787
+"GO:0022843","GO:0022843",6,"GO:0022890",2.54751921333698,143,"voltage-gated monoatomic cation channel activity","inorganic cation transmembrane transporter activity",0.705530612244898,0.239142857142857,0.599
+"GO:0005244","GO:0005244",6,"GO:0022890",2.38850806110976,197,"voltage-gated monoatomic ion channel activity","inorganic cation transmembrane transporter activity",0.704204081632653,0.240142857142857,0.628
+"GO:0035255","GO:0035255",3,"GO:0035254",2.36830781761067,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.943775510204082,0.518,0.964
+"GO:0022832","GO:0022832",6,"GO:0022890",2.34020337305902,198,"voltage-gated channel activity","inorganic cation transmembrane transporter activity",0.712326530612245,0.261357142857143,0.629
+"GO:0003730","GO:0003730",5,"GO:0003729",2.32174300121108,119,"mRNA 3'-UTR binding","mRNA binding",0.966816326530612,0.5545,0.891
+"GO:0008047","GO:0008047",2,"GO:0060589",2.22650758654551,554,"enzyme activator activity","nucleoside-triphosphatase regulator activity",0.911591836734694,0.381142857142857,0.77
+"GO:0030594","GO:0030594",13,"GO:0030594",2.17534247268733,94,"neurotransmitter receptor activity","neurotransmitter receptor activity",0.905795918367347,0.2412,0
+"GO:0098960","GO:0098960",13,"GO:0030594",1.97933429260504,72,"postsynaptic neurotransmitter receptor activity","neurotransmitter receptor activity",0.907224489795918,0.2488,0.95
+"GO:0016247","GO:0016247",2,"GO:0060589",1.95754248611949,145,"channel regulator activity","nucleoside-triphosphatase regulator activity",0.922081632653061,0.454571428571429,0.579
+"GO:0099106","GO:0099106",2,"GO:0060589",1.94431238637059,136,"ion channel regulator activity","nucleoside-triphosphatase regulator activity",0.922469387755102,0.457285714285714,0.575
+"GO:0005096","GO:0005096",2,"GO:0060589",1.85498930431502,238,"GTPase activator activity","nucleoside-triphosphatase regulator activity",0.903734693877551,0.326142857142857,0.928
+"GO:0022835","GO:0022835",13,"GO:0030594",1.85490880651278,57,"transmitter-gated channel activity","neurotransmitter receptor activity",0.675142857142857,0.2334,0.963
+"GO:0022824","GO:0022824",13,"GO:0030594",1.85490880651278,57,"transmitter-gated monoatomic ion channel activity","neurotransmitter receptor activity",0.667551020408163,0.2334,0.963
+"GO:0015662","GO:0015662",14,"GO:0015662",1.84863185865524,30,"P-type ion transporter activity","P-type ion transporter activity",0.798326530612245,0.389,0
+"GO:0004674","GO:0004674",15,"GO:0004674",1.79953722324671,441,"protein serine/threonine kinase activity","protein serine/threonine kinase activity",1,1,0
+"GO:0008046","GO:0008046",16,"GO:0008046",1.75023605688987,11,"axon guidance receptor activity","axon guidance receptor activity",0.955285714285714,1,0
+"GO:0098919","GO:0098919",9,"GO:0098918",1.75023605688987,11,"structural constituent of postsynaptic density","structural constituent of synapse",0.981204081632653,0.5395,0.921
+"GO:0008331","GO:0008331",6,"GO:0022890",1.75023605688987,11,"high voltage-gated calcium channel activity","inorganic cation transmembrane transporter activity",0.746122448979592,0.334285714285714,0.659
+"GO:0019829","GO:0019829",14,"GO:0015662",1.42842779255852,57,"ATPase-coupled monoatomic cation transmembrane transporter activity","P-type ion transporter activity",0.764795918367347,0.44,0.838
+"GO:0140358","GO:0140358",14,"GO:0015662",1.41640079597059,33,"P-type transmembrane transporter activity","P-type ion transporter activity",0.797326530612245,0.387666666666667,0.995
+"GO:0003712","GO:0003712",17,"GO:0003712",1.34498708086798,497,"transcription coregulator activity","transcription coregulator activity",1,1,0
+"GO:1904315","GO:1904315",13,"GO:0030594",1.33696453296449,55,"transmitter-gated monoatomic ion channel activity involved in regulation of postsynaptic membrane potential","neurotransmitter receptor activity",0.680857142857143,0.2424,0.918

@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0050684","GO:0050684",1,"GO:0050684",2.18024702291079,139,"regulation of mRNA processing","regulation of mRNA processing",0.571666666666667,0.5075,0
+"GO:0048024","GO:0048024",1,"GO:0050684",1.62029401942454,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA processing",0.571666666666667,0.5075,0.985
+"GO:2000765","GO:2000765",2,"GO:2000765",1.57618809156454,31,"regulation of cytoplasmic translation","regulation of cytoplasmic translation",0.8,1,0

@@ -1,0 +1,36 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0099504","GO:0099504",1,"GO:0099504",4.88426770548651,230,"synaptic vesicle cycle","synaptic vesicle cycle",0.835171428571429,0.325,0
+"GO:0099003","GO:0099003",1,"GO:0099504",4.2331022562845,270,"vesicle-mediated transport in synapse","synaptic vesicle cycle",0.843885714285714,0.33225,0.982
+"GO:0007409","GO:0007409",2,"GO:0007409",4.077962617492,501,"axonogenesis","axonogenesis",0.883771428571429,0.539,0
+"GO:0008380","GO:0008380",3,"GO:0008380",2.96413107191041,449,"RNA splicing","RNA splicing",0.861171428571429,0.270166666666667,0
+"GO:0050684","GO:0050684",3,"GO:0008380",2.70258698485228,139,"regulation of mRNA processing","RNA splicing",0.838742857142857,0.371,0.717
+"GO:0099173","GO:0099173",4,"GO:0099173",2.69245939593995,252,"postsynapse organization","postsynapse organization",0.898257142857143,0.481,0
+"GO:0098815","GO:0098815",5,"GO:0098815",2.63664255902226,63,"modulation of excitatory postsynaptic potential","modulation of excitatory postsynaptic potential",0.745428571428571,0.375,0
+"GO:0060079","GO:0060079",5,"GO:0098815",2.5637311904323,95,"excitatory postsynaptic potential","modulation of excitatory postsynaptic potential",0.750514285714286,0.3716,0.964
+"GO:0006397","GO:0006397",3,"GO:0008380",2.5250260917936,496,"mRNA processing","RNA splicing",0.866285714285714,0.3005,0.825
+"GO:0042391","GO:0042391",6,"GO:0042391",2.50605694920556,491,"regulation of membrane potential","regulation of membrane potential",0.839571428571429,0.569,0
+"GO:0050803","GO:0050803",7,"GO:0050803",2.40991994739448,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.860285714285714,0.49175,0
+"GO:0099565","GO:0099565",5,"GO:0098815",2.34472712625677,117,"chemical synaptic transmission, postsynaptic","modulation of excitatory postsynaptic potential",0.827114285714286,0.3706,0.942
+"GO:0000377","GO:0000377",3,"GO:0008380",2.26571553988197,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","RNA splicing",0.860971428571429,0.265333333333333,0.945
+"GO:0000375","GO:0000375",3,"GO:0008380",2.26571553988197,304,"RNA splicing, via transesterification reactions","RNA splicing",0.860914285714286,0.265,0.947
+"GO:0000398","GO:0000398",3,"GO:0008380",2.26571553988197,304,"mRNA splicing, via spliceosome","RNA splicing",0.852628571428571,0.216666666666667,0.945
+"GO:1901888","GO:1901888",4,"GO:0099173",1.96342795261627,246,"regulation of cell junction assembly","postsynapse organization",0.857428571428571,0.439,0.753
+"GO:0036465","GO:0036465",1,"GO:0099504",1.96320529232819,90,"synaptic vesicle recycling","synaptic vesicle cycle",0.843657142857143,0.32475,0.896
+"GO:0001505","GO:0001505",7,"GO:0050803",1.88760085429141,220,"regulation of neurotransmitter levels","regulation of synapse structure or activity",0.861514285714286,0.4965,0.53
+"GO:0060078","GO:0060078",6,"GO:0042391",1.81267358390212,130,"regulation of postsynaptic membrane potential","regulation of membrane potential",0.842828571428571,0.569,0.862
+"GO:0031644","GO:0031644",8,"GO:0031644",1.77577781963185,167,"regulation of nervous system process","regulation of nervous system process",0.896142857142857,1,0
+"GO:0016079","GO:0016079",7,"GO:0050803",1.72945144752723,115,"synaptic vesicle exocytosis","regulation of synapse structure or activity",0.639457142857143,0.5075,0.508
+"GO:0006836","GO:0006836",9,"GO:0006836",1.66777537911379,230,"neurotransmitter transport","neurotransmitter transport",0.902542857142857,1,0
+"GO:1902414","GO:1902414",10,"GO:1902414",1.62626126541984,133,"protein localization to cell junction","protein localization to cell junction",0.881857142857143,0.5075,0
+"GO:0048588","GO:0048588",2,"GO:0007409",1.53577394815219,291,"developmental cell growth","axonogenesis",0.941314285714286,0.490666666666667,0.555
+"GO:1990138","GO:1990138",2,"GO:0007409",1.50774592672951,211,"neuron projection extension","axonogenesis",0.878771428571429,0.399666666666667,0.828
+"GO:0050807","GO:0050807",7,"GO:0050803",1.46820774293676,309,"regulation of synapse organization","regulation of synapse structure or activity",0.761485714285714,0.49225,0.995
+"GO:0032409","GO:0032409",11,"GO:0032409",1.4671702224604,307,"regulation of transporter activity","regulation of transporter activity",0.930228571428571,0.63,0
+"GO:0034329","GO:0034329",4,"GO:0099173",1.46265000449725,481,"cell junction assembly","postsynapse organization",0.892171428571429,0.422,0.804
+"GO:0051966","GO:0051966",5,"GO:0098815",1.41592436116303,88,"regulation of synaptic transmission, glutamatergic","modulation of excitatory postsynaptic potential",0.862657142857143,0.4436,0.629
+"GO:0035418","GO:0035418",10,"GO:1902414",1.41081686829647,100,"protein localization to synapse","protein localization to cell junction",0.883228571428571,0.5075,0.985
+"GO:0032092","GO:0032092",11,"GO:0032409",1.41081686829647,104,"positive regulation of protein binding","regulation of transporter activity",0.923371428571429,0.503333333333333,0.54
+"GO:0051099","GO:0051099",11,"GO:0032409",1.38018341210956,197,"positive regulation of binding","regulation of transporter activity",0.9208,0.493333333333333,0.57
+"GO:0035249","GO:0035249",5,"GO:0098815",1.37447438551159,129,"synaptic transmission, glutamatergic","modulation of excitatory postsynaptic potential",0.861885714285714,0.442,0.59
+"GO:0051648","GO:0051648",12,"GO:0051648",1.31920211721682,214,"vesicle localization","vesicle localization",0.926857142857143,1,0
+"GO:1903421","GO:1903421",1,"GO:0099504",1.30830274485688,37,"regulation of synaptic vesicle recycling","synaptic vesicle cycle",0.8216,0.3615,0.822

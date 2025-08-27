@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0030177","GO:0030177",1,"GO:0030177",2.30702922318513,142,"positive regulation of Wnt signaling pathway","positive regulation of Wnt signaling pathway",0.5565,0.5565,0
+"GO:0060828","GO:0060828",1,"GO:0030177",1.37446970930366,251,"regulation of canonical Wnt signaling pathway","positive regulation of Wnt signaling pathway",0.5565,0.5565,0.887

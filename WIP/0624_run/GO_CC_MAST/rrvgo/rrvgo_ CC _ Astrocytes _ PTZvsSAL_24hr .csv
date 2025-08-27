@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043197","GO:0043197",1,"GO:0043197",1.40737743919642,208,"dendritic spine","dendritic spine",0.504,0.504,0
+"GO:0044309","GO:0044309",1,"GO:0043197",1.32097751245792,214,"neuron spine","dendritic spine",0.504,0.504,0.992

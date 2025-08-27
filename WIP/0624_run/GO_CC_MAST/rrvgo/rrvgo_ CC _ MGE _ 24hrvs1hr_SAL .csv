@@ -1,0 +1,39 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0150034","GO:0150034",1,"GO:0150034",10.7052011207458,397,"distal axon","distal axon",0.900421052631579,0.446,0
+"GO:0043209","GO:0043209",2,"GO:0043209",10.2286195624177,208,"myelin sheath","myelin sheath",0.997842105263158,1,0
+"GO:0099572","GO:0099572",3,"GO:0099572",10.1240151778165,436,"postsynaptic specialization","postsynaptic specialization",0.766552631578947,0.3742,0
+"GO:0014069","GO:0014069",4,"GO:0014069",9.52375985421486,384,"postsynaptic density","postsynaptic density",0.744552631578947,0.348333333333333,0
+"GO:0032279","GO:0032279",4,"GO:0014069",9.25015327435568,407,"asymmetric synapse","postsynaptic density",0.796236842105263,0.345333333333333,0.985
+"GO:0098984","GO:0098984",4,"GO:0014069",8.98515868913975,448,"neuron to neuron synapse","postsynaptic density",0.795289473684211,0.350333333333333,0.97
+"GO:0097060","GO:0097060",3,"GO:0099572",7.08042380360463,514,"synaptic membrane","postsynaptic specialization",0.725052631578947,0.3628,0.55
+"GO:0030427","GO:0030427",5,"GO:0030427",6.61734898207535,221,"site of polarized growth","site of polarized growth",0.971710526315789,0.5025,0
+"GO:0030426","GO:0030426",5,"GO:0030427",6.26864105324276,213,"growth cone","site of polarized growth",0.878657894736842,0.5025,0.995
+"GO:0005751","GO:0005751",6,"GO:0005751",6.157634809265,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.773526315789474,0.354333333333333,0
+"GO:0045211","GO:0045211",3,"GO:0099572",5.4343965829579,352,"postsynaptic membrane","postsynaptic specialization",0.710526315789474,0.2906,0.8
+"GO:0045277","GO:0045277",6,"GO:0005751",5.41382487128809,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.788631578947368,0.348666666666667,0.983
+"GO:0070382","GO:0070382",7,"GO:0070382",5.22632690404686,281,"exocytic vesicle","exocytic vesicle",0.918815789473684,0.347,0
+"GO:0070069","GO:0070069",6,"GO:0005751",4.84910354654614,41,"cytochrome complex","mitochondrial respiratory chain complex IV",0.877315789473684,0.358333333333333,0.954
+"GO:0008021","GO:0008021",7,"GO:0070382",4.77775818435236,259,"synaptic vesicle","exocytic vesicle",0.754631578947368,0.349333333333333,0.988
+"GO:0031252","GO:0031252",8,"GO:0031252",4.73017847912957,415,"cell leading edge","cell leading edge",0.973868421052632,0.5495,0
+"GO:0044306","GO:0044306",1,"GO:0150034",4.41716246897244,224,"neuron projection terminus","distal axon",0.910157894736842,0.4474,0.613
+"GO:1902495","GO:1902495",9,"GO:1902495",4.16663115569632,396,"transmembrane transporter complex","transmembrane transporter complex",0.771342105263158,0.27625,0
+"GO:0022626","GO:0022626",10,"GO:0022626",3.85572745480499,142,"cytosolic ribosome","cytosolic ribosome",0.964342105263158,1,0
+"GO:0030133","GO:0030133",7,"GO:0070382",3.71999067962352,366,"transport vesicle","exocytic vesicle",0.918578947368421,0.355,0.971
+"GO:1990351","GO:1990351",9,"GO:1902495",3.54530680178845,421,"transporter complex","transmembrane transporter complex",0.831973684210526,0.27825,0.989
+"GO:0099634","GO:0099634",3,"GO:0099572",3.02007312717634,154,"postsynaptic specialization membrane","postsynaptic specialization",0.707236842105263,0.2698,0.9
+"GO:0043679","GO:0043679",1,"GO:0150034",2.84316235544697,202,"axon terminus","distal axon",0.737657894736842,0.385,0.935
+"GO:0034702","GO:0034702",9,"GO:1902495",2.73860224948057,301,"monoatomic ion channel complex","transmembrane transporter complex",0.772368421052632,0.2755,0.969
+"GO:0008328","GO:0008328",11,"GO:0008328",2.31884528003065,44,"ionotropic glutamate receptor complex","ionotropic glutamate receptor complex",0.764736842105263,0.346666666666667,0
+"GO:0098878","GO:0098878",11,"GO:0008328",2.23438652291102,46,"neurotransmitter receptor complex","ionotropic glutamate receptor complex",0.795657894736842,0.347666666666667,0.997
+"GO:0098833","GO:0098833",12,"GO:0098833",2.11443203378749,18,"presynaptic endocytic zone","presynaptic endocytic zone",0.855973684210526,1,0
+"GO:0044309","GO:0044309",1,"GO:0150034",2.08217684250996,214,"neuron spine","distal axon",0.910157894736842,0.4472,0.613
+"GO:0098839","GO:0098839",3,"GO:0099572",2.02495616191651,114,"postsynaptic density membrane","postsynaptic specialization",0.691210526315789,0.2822,0.879
+"GO:0097470","GO:0097470",13,"GO:0097470",1.81104594034564,29,"ribbon synapse","ribbon synapse",0.864184210526316,1,0
+"GO:0032281","GO:0032281",11,"GO:0008328",1.81104594034564,29,"AMPA glutamate receptor complex","ionotropic glutamate receptor complex",0.773052631578947,0.359,0.963
+"GO:0071013","GO:0071013",14,"GO:0071013",1.73917878652252,110,"catalytic step 2 spliceosome","catalytic step 2 spliceosome",0.8575,0.5495,0
+"GO:0043197","GO:0043197",1,"GO:0150034",1.73723074680756,208,"dendritic spine","distal axon",0.734473684210526,0.4492,0.609
+"GO:0031256","GO:0031256",8,"GO:0031252",1.72945163502249,159,"leading edge membrane","cell leading edge",0.885026315789474,0.5495,0.901
+"GO:0034703","GO:0034703",9,"GO:1902495",1.55884127801739,194,"cation channel complex","transmembrane transporter complex",0.778473684210526,0.2915,0.937
+"GO:0098685","GO:0098685",15,"GO:0098685",1.53863121684942,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.843157894736842,1,0
+"GO:0005681","GO:0005681",14,"GO:0071013",1.51207620254887,221,"spliceosomal complex","catalytic step 2 spliceosome",0.863210526315789,0.5495,0.901
+"GO:0005746","GO:0005746",16,"GO:0005746",1.33417248094781,95,"mitochondrial respirasome","mitochondrial respirasome",0.870631578947368,1,0

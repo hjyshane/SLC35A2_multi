@@ -1,0 +1,25 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003735","GO:0003735",1,"GO:0003735",19.579200575469,178,"structural constituent of ribosome","structural constituent of ribosome",0.940666666666667,0.525333333333333,0
+"GO:0003729","GO:0003729",2,"GO:0003729",15.3642091997154,386,"mRNA binding","mRNA binding",0.782,0.446666666666667,0
+"GO:0044389","GO:0044389",3,"GO:0044389",7.58057787220495,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.882791666666667,0.505,0
+"GO:0031625","GO:0031625",3,"GO:0044389",6.70715593717476,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.883333333333333,0.505,0.99
+"GO:0035254","GO:0035254",4,"GO:0035254",5.95174243689931,76,"glutamate receptor binding","glutamate receptor binding",0.858958333333333,0.378333333333333,0
+"GO:0019843","GO:0019843",5,"GO:0019843",4.47788995218398,75,"rRNA binding","rRNA binding",0.82525,0.7265,0
+"GO:0019001","GO:0019001",6,"GO:0019001",4.44238727494094,387,"guanyl nucleotide binding","guanyl nucleotide binding",0.8075,0.346666666666667,0
+"GO:0032561","GO:0032561",6,"GO:0019001",4.44238727494094,387,"guanyl ribonucleotide binding","guanyl nucleotide binding",0.807708333333333,0.345666666666667,0.992
+"GO:0015631","GO:0015631",7,"GO:0015631",4.25947752630138,387,"tubulin binding","tubulin binding",0.882083333333333,0.524,0
+"GO:0044325","GO:0044325",8,"GO:0044325",3.998249568595,169,"transmembrane transporter binding","transmembrane transporter binding",0.919708333333333,1,0
+"GO:0005525","GO:0005525",6,"GO:0019001",3.97036210122352,363,"GTP binding","guanyl nucleotide binding",0.811,0.353666666666667,0.968
+"GO:0098918","GO:0098918",1,"GO:0003735",2.91498787479263,37,"structural constituent of synapse","structural constituent of ribosome",0.943666666666667,0.549333333333333,0.707
+"GO:0005200","GO:0005200",1,"GO:0003735",2.76276842384862,73,"structural constituent of cytoskeleton","structural constituent of ribosome",0.94325,0.546,0.717
+"GO:0045182","GO:0045182",9,"GO:0045182",2.7623046364639,144,"translation regulator activity","translation regulator activity",0.919083333333333,0.352666666666667,0
+"GO:0043021","GO:0043021",10,"GO:0043021",2.4958433117634,195,"ribonucleoprotein complex binding","ribonucleoprotein complex binding",0.953708333333333,1,0
+"GO:0035255","GO:0035255",4,"GO:0035254",2.4399978265142,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.862625,0.388,0.964
+"GO:0003924","GO:0003924",11,"GO:0003924",2.34181307265658,305,"GTPase activity","GTPase activity",1,1,0
+"GO:0003727","GO:0003727",5,"GO:0019843",2.22487108089619,101,"single-stranded RNA binding","rRNA binding",0.819083333333333,0.7265,0.547
+"GO:0048027","GO:0048027",2,"GO:0003729",1.88583003511717,26,"mRNA 5'-UTR binding","mRNA binding",0.821166666666667,0.508333333333333,0.769
+"GO:0008135","GO:0008135",9,"GO:0045182",1.69151296008976,90,"translation factor activity, RNA binding","translation regulator activity",0.791458333333333,0.351333333333333,0.963
+"GO:0003730","GO:0003730",2,"GO:0003729",1.55293592848341,119,"mRNA 3'-UTR binding","mRNA binding",0.798875,0.467666666666667,0.891
+"GO:0008017","GO:0008017",7,"GO:0015631",1.53720958354034,269,"microtubule binding","tubulin binding",0.885125,0.524,0.952
+"GO:0035256","GO:0035256",4,"GO:0035254",1.32455740624039,15,"G protein-coupled glutamate receptor binding","glutamate receptor binding",0.869583333333333,0.409,0.901
+"GO:0090079","GO:0090079",9,"GO:0045182",1.30458392017763,109,"translation regulator activity, nucleic acid binding","translation regulator activity",0.788791666666667,0.346,0.979

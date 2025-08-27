@@ -1,0 +1,65 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",14.0779593331951,501,"axonogenesis","axonogenesis",0.576359375,0.2824,0
+"GO:0016358","GO:0016358",1,"GO:0007409",11.2743280401717,327,"dendrite development","axonogenesis",0.61509375,0.329866666666667,0.762
+"GO:0050770","GO:0050770",1,"GO:0007409",7.82784725793362,186,"regulation of axonogenesis","axonogenesis",0.575546875,0.263333333333333,0.882
+"GO:0048813","GO:0048813",1,"GO:0007409",7.54145003821846,192,"dendrite morphogenesis","axonogenesis",0.609609375,0.314066666666667,0.83
+"GO:0048588","GO:0048588",2,"GO:0048588",6.66887423754073,291,"developmental cell growth","developmental cell growth",0.71546875,0.21975,0
+"GO:1990138","GO:1990138",2,"GO:0048588",6.12499120373307,211,"neuron projection extension","developmental cell growth",0.5568125,0.19825,0.973
+"GO:0060560","GO:0060560",2,"GO:0048588",5.81746270442062,292,"developmental growth involved in morphogenesis","developmental cell growth",0.757515625,0.238125,0.825
+"GO:0048675","GO:0048675",2,"GO:0048588",5.61186087039506,143,"axon extension","developmental cell growth",0.560859375,0.210375,0.946
+"GO:0034329","GO:0034329",3,"GO:0034329",5.53788727095541,481,"cell junction assembly","cell junction assembly",0.8098125,0.36775,0
+"GO:0043087","GO:0043087",4,"GO:0043087",5.31271255671291,345,"regulation of GTPase activity","regulation of GTPase activity",0.936484375,0.456,0
+"GO:0030534","GO:0030534",5,"GO:0030534",5.29593868607052,191,"adult behavior","adult behavior",0.854546875,0.442333333333333,0
+"GO:0097485","GO:0097485",1,"GO:0007409",5.28810195969742,252,"neuron projection guidance","axonogenesis",0.6001875,0.3292,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",5.28810195969742,252,"axon guidance","axonogenesis",0.59371875,0.308933333333333,0.927
+"GO:0061387","GO:0061387",6,"GO:0061387",5.21288236780178,129,"regulation of extent of cell growth","regulation of extent of cell growth",0.68209375,0.287,0
+"GO:0099173","GO:0099173",3,"GO:0034329",5.15498317469422,252,"postsynapse organization","cell junction assembly",0.81765625,0.40825,0.804
+"GO:0050807","GO:0050807",7,"GO:0050807",5.0505738823548,309,"regulation of synapse organization","regulation of synapse organization",0.73621875,0.482,0
+"GO:0050803","GO:0050803",7,"GO:0050807",4.82269362200871,317,"regulation of synapse structure or activity","regulation of synapse organization",0.912953125,0.481666666666667,0.995
+"GO:0031346","GO:0031346",1,"GO:0007409",4.71228821213061,463,"positive regulation of cell projection organization","axonogenesis",0.7008125,0.3278,0.687
+"GO:0140058","GO:0140058",8,"GO:0140058",4.60875684688491,33,"neuron projection arborization","neuron projection arborization",0.667515625,0.527,0
+"GO:0010977","GO:0010977",1,"GO:0007409",4.46877130254527,165,"negative regulation of neuron projection development","axonogenesis",0.60834375,0.3084,0.72
+"GO:0008361","GO:0008361",6,"GO:0061387",4.1835217490038,222,"regulation of cell size","regulation of extent of cell growth",0.78128125,0.28725,0.962
+"GO:0030516","GO:0030516",6,"GO:0061387",4.15869334800218,113,"regulation of axon extension","regulation of extent of cell growth",0.522265625,0.294,0.985
+"GO:0031345","GO:0031345",1,"GO:0007409",4.08343743118909,221,"negative regulation of cell projection organization","axonogenesis",0.71896875,0.347133333333333,0.644
+"GO:0050772","GO:0050772",1,"GO:0007409",3.86868219415342,101,"positive regulation of axonogenesis","axonogenesis",0.573078125,0.285066666666667,0.831
+"GO:0050771","GO:0050771",1,"GO:0007409",3.65772875202793,71,"negative regulation of axonogenesis","axonogenesis",0.580625,0.284933333333333,0.814
+"GO:0007612","GO:0007612",9,"GO:0007612",3.63282339122092,192,"learning","learning",0.80725,0.427714285714286,0
+"GO:0007611","GO:0007611",9,"GO:0007612",3.44694843098895,331,"learning or memory","learning",0.79671875,0.400428571428571,0.939
+"GO:0048638","GO:0048638",2,"GO:0048588",3.40062974063998,405,"regulation of developmental growth","developmental cell growth",0.747109375,0.3095,0.832
+"GO:0001764","GO:0001764",10,"GO:0001764",3.35993588056912,206,"neuron migration","neuron migration",0.732234375,1,0
+"GO:0008038","GO:0008038",11,"GO:0008038",3.24668807173169,47,"neuron recognition","neuron recognition",0.727265625,0.5445,0
+"GO:0042391","GO:0042391",7,"GO:0050807",3.2426003408424,491,"regulation of membrane potential","regulation of synapse organization",0.917046875,0.627,0.559
+"GO:0043547","GO:0043547",4,"GO:0043087",3.05468834761595,253,"positive regulation of GTPase activity","regulation of GTPase activity",0.9379375,0.46525,0.967
+"GO:0008344","GO:0008344",5,"GO:0030534",2.71645850779805,112,"adult locomotory behavior","adult behavior",0.856640625,0.372333333333333,0.955
+"GO:0007416","GO:0007416",3,"GO:0034329",2.65102735828727,222,"synapse assembly","cell junction assembly",0.6813125,0.37275,0.948
+"GO:0050890","GO:0050890",9,"GO:0007612",2.64362624033303,371,"cognition","learning",0.821296875,0.398857142857143,0.929
+"GO:0003015","GO:0003015",12,"GO:0003015",2.62248039597472,252,"heart process","heart process",0.82221875,0.382333333333333,0
+"GO:0032535","GO:0032535",6,"GO:0061387",2.54109807833071,411,"regulation of cellular component size","regulation of extent of cell growth",0.775015625,0.31575,0.905
+"GO:0016049","GO:0016049",2,"GO:0048588",2.54016651290555,556,"cell growth","developmental cell growth",0.853125,0.244875,0.95
+"GO:0007626","GO:0007626",5,"GO:0030534",2.32741468950325,273,"locomotory behavior","adult behavior",0.851796875,0.451333333333333,0.718
+"GO:0006941","GO:0006941",9,"GO:0007612",2.32658996647134,178,"striated muscle contraction","learning",0.830484375,0.437,0.503
+"GO:0051962","GO:0051962",13,"GO:0051962",2.19458857773109,391,"positive regulation of nervous system development","positive regulation of nervous system development",0.696859375,0.39225,0
+"GO:0050767","GO:0050767",13,"GO:0051962",2.16875428992236,494,"regulation of neurogenesis","positive regulation of nervous system development",0.66603125,0.39575,0.927
+"GO:0006936","GO:0006936",9,"GO:0007612",2.0546696188686,324,"muscle contraction","learning",0.822671875,0.414571428571429,0.528
+"GO:0035249","GO:0035249",14,"GO:0035249",2.04075478801915,129,"synaptic transmission, glutamatergic","synaptic transmission, glutamatergic",0.955546875,1,0
+"GO:0140059","GO:0140059",8,"GO:0140058",2.03590021840908,13,"dendrite arborization","neuron projection arborization",0.671140625,0.527,0.946
+"GO:0045216","GO:0045216",3,"GO:0034329",2.01700886364063,231,"cell-cell junction organization","cell junction assembly",0.82440625,0.43375,0.777
+"GO:0030900","GO:0030900",13,"GO:0051962",1.9098512410234,425,"forebrain development","positive regulation of nervous system development",0.755921875,0.60525,0.525
+"GO:0098742","GO:0098742",15,"GO:0098742",1.87527764249211,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.98565625,1,0
+"GO:0086065","GO:0086065",12,"GO:0003015",1.83692105256861,40,"cell communication involved in cardiac conduction","heart process",0.797140625,0.425333333333333,0.86
+"GO:1902284","GO:1902284",2,"GO:0048588",1.83692105256861,37,"neuron projection extension involved in neuron projection guidance","developmental cell growth",0.597921875,0.252625,0.858
+"GO:0048846","GO:0048846",2,"GO:0048588",1.83692105256861,37,"axon extension involved in axon guidance","developmental cell growth",0.591796875,0.2465,0.858
+"GO:0032409","GO:0032409",4,"GO:0043087",1.78626925159766,307,"regulation of transporter activity","regulation of GTPase activity",0.936203125,0.45325,0.605
+"GO:0008037","GO:0008037",11,"GO:0008038",1.77975080181081,160,"cell recognition","neuron recognition",0.97225,0.5445,0.911
+"GO:0050905","GO:0050905",9,"GO:0007612",1.70007460143167,204,"neuromuscular process","learning",0.841265625,0.521285714285714,0.565
+"GO:0050769","GO:0050769",13,"GO:0051962",1.69240509549427,329,"positive regulation of neurogenesis","positive regulation of nervous system development",0.67234375,0.38875,0.979
+"GO:0003012","GO:0003012",9,"GO:0007612",1.67587670217417,446,"muscle system process","learning",0.819015625,0.410142857142857,0.542
+"GO:0045773","GO:0045773",1,"GO:0007409",1.660946438172,54,"positive regulation of axon extension","axonogenesis",0.508765625,0.317133333333333,0.787
+"GO:0060047","GO:0060047",12,"GO:0003015",1.60584621739,239,"heart contraction","heart process",0.82271875,0.381,0.993
+"GO:1990090","GO:1990090",16,"GO:1990090",1.59260651420977,49,"cellular response to nerve growth factor stimulus","cellular response to nerve growth factor stimulus",0.984375,0.5,0
+"GO:1990089","GO:1990089",16,"GO:1990090",1.59260651420977,49,"response to nerve growth factor","cellular response to nerve growth factor stimulus",0.984375,0.5,1
+"GO:0060996","GO:0060996",1,"GO:0007409",1.53637766719575,134,"dendritic spine development","axonogenesis",0.6411875,0.372866666666667,0.702
+"GO:0106027","GO:0106027",1,"GO:0007409",1.43799531189915,118,"neuron projection organization","axonogenesis",0.77815625,0.4796,0.618
+"GO:0022898","GO:0022898",4,"GO:0043087",1.4303275712875,294,"regulation of transmembrane transporter activity","regulation of GTPase activity",0.9205,0.454,0.604
+"GO:0050773","GO:0050773",1,"GO:0007409",1.37227299748483,145,"regulation of dendrite development","axonogenesis",0.6024375,0.298333333333333,0.701

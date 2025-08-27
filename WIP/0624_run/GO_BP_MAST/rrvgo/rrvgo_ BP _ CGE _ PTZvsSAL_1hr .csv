@@ -1,0 +1,7 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",4.25671265941088,501,"axonogenesis","axonogenesis",0.510666666666667,0.6895,0
+"GO:0030307","GO:0030307",2,"GO:0030307",2.05149041200217,210,"positive regulation of cell growth","positive regulation of cell growth",0.544,0.4095,0
+"GO:0097484","GO:0097484",2,"GO:0030307",1.69939024159075,44,"dendrite extension","positive regulation of cell growth",0.370333333333333,0.35975,0.737
+"GO:0008038","GO:0008038",1,"GO:0007409",1.42684884280121,47,"neuron recognition","axonogenesis",0.652666666666667,0.6895,0.621
+"GO:1903859","GO:1903859",2,"GO:0030307",1.41541392925234,33,"regulation of dendrite extension","positive regulation of cell growth",0.374666666666667,0.35925,0.76
+"GO:0048588","GO:0048588",2,"GO:0030307",1.30190484556093,291,"developmental cell growth","positive regulation of cell growth",0.411333333333333,0.3665,0.865

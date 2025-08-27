@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",3.22023659135524,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.791666666666667,0.6875,0
+"GO:0019888","GO:0019888",2,"GO:0019888",1.66155121871859,86,"protein phosphatase regulator activity","protein phosphatase regulator activity",1,1,0
+"GO:0099186","GO:0099186",1,"GO:0005200",1.60422623214748,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.791666666666667,0.6875,0.625

@@ -1,0 +1,2 @@
+"","p_val","avg_log2FC","pct.1","pct.2","p_val_adj","gene","cell_type","comparison","Regulation"
+"Cwc22",6.09772705890105e-08,-1.19598968499432,0.422,0.805,0.00152729769644295,"Cwc22","NdnfRelnInhibitoryInterneurons","PTZvsSAL_24hr","Down"

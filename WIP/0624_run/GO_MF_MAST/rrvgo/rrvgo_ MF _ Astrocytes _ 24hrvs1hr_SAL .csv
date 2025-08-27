@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0031625","GO:0031625",1,"GO:0031625",4.65665830008123,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.7075,0.505,0
+"GO:0044389","GO:0044389",1,"GO:0031625",4.21488915217118,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.707,0.505,0.99
+"GO:0098918","GO:0098918",2,"GO:0098918",2.03757804213923,37,"structural constituent of synapse","structural constituent of synapse",1,1,0
+"GO:0008013","GO:0008013",3,"GO:0008013",1.39113112234683,97,"beta-catenin binding","beta-catenin binding",0.9095,1,0

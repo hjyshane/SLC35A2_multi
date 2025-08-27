@@ -1,0 +1,21 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0099173","GO:0099173",1,"GO:0099173",4.20062906518482,252,"postsynapse organization","postsynapse organization",0.8941,0.5565,0
+"GO:0008090","GO:0008090",2,"GO:0008090",3.73096570554275,24,"retrograde axonal transport","retrograde axonal transport",0.8083,0.5485,0
+"GO:0097120","GO:0097120",3,"GO:0097120",3.41350966236283,87,"receptor localization to synapse","receptor localization to synapse",0.8575,1,0
+"GO:0042886","GO:0042886",4,"GO:0042886",3.33037053138053,432,"amide transport","amide transport",0.77945,0.46625,0
+"GO:0048813","GO:0048813",5,"GO:0048813",3.2148838231715,192,"dendrite morphogenesis","dendrite morphogenesis",0.81805,0.406666666666667,0
+"GO:0014047","GO:0014047",4,"GO:0042886",2.93157867045701,37,"glutamate secretion","amide transport",0.76605,0.32325,0.795
+"GO:0007612","GO:0007612",6,"GO:0007612",2.24821310999747,192,"learning","learning",0.86755,0.377333333333333,0
+"GO:0016358","GO:0016358",5,"GO:0048813",2.20822268550199,327,"dendrite development","dendrite morphogenesis",0.8168,0.429333333333333,0.95
+"GO:0014048","GO:0014048",4,"GO:0042886",2.00107373652679,26,"regulation of glutamate secretion","amide transport",0.7705,0.3335,0.775
+"GO:0050890","GO:0050890",6,"GO:0007612",1.90565665508185,371,"cognition","learning",0.86235,0.361,0.929
+"GO:0099084","GO:0099084",1,"GO:0099173",1.83052371242813,56,"postsynaptic specialization organization","postsynapse organization",0.9008,0.5565,0.887
+"GO:0035418","GO:0035418",7,"GO:0035418",1.77340525779871,100,"protein localization to synapse","protein localization to synapse",0.7599,0.348,0
+"GO:0007409","GO:0007409",5,"GO:0048813",1.60159234139897,501,"axonogenesis","dendrite morphogenesis",0.81595,0.469333333333333,0.83
+"GO:0030900","GO:0030900",8,"GO:0030900",1.51853002922176,425,"forebrain development","forebrain development",0.8901,1,0
+"GO:0015800","GO:0015800",4,"GO:0042886",1.47797064273566,74,"acidic amino acid transport","amide transport",0.77945,0.3975,0.565
+"GO:1903539","GO:1903539",7,"GO:0035418",1.47797064273566,67,"protein localization to postsynaptic membrane","protein localization to synapse",0.75115,0.342,0.977
+"GO:0098930","GO:0098930",2,"GO:0008090",1.44594618485842,67,"axonal transport","retrograde axonal transport",0.7924,0.5485,0.903
+"GO:0062237","GO:0062237",7,"GO:0035418",1.44594618485842,68,"protein localization to postsynapse","protein localization to synapse",0.76175,0.341333333333333,0.979
+"GO:0007611","GO:0007611",6,"GO:0007612",1.43814116965485,331,"learning or memory","learning",0.8622,0.357666666666667,0.939
+"GO:0043113","GO:0043113",9,"GO:0043113",1.32284309422414,75,"receptor clustering","receptor clustering",0.80165,1,0

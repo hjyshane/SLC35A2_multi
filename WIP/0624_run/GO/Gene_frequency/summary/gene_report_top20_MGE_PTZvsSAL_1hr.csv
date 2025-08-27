@@ -1,0 +1,12 @@
+gene,frequency,go_terms
+Ddx5,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Snrnp70,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Son,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Mbnl2,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Celf4,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Celf2,2,"regulation of mRNA processing (GO:0050684, p=6.60e-03); regulation of mRNA splicing, via spliceosome (GO:0048024, p=2.40e-02)"
+Pabpn1,1,"regulation of mRNA processing (GO:0050684, p=6.60e-03)"
+Cpeb4,1,"regulation of cytoplasmic translation (GO:2000765, p=2.65e-02)"
+Cpeb1,1,"regulation of cytoplasmic translation (GO:2000765, p=2.65e-02)"
+Cpeb3,1,"regulation of cytoplasmic translation (GO:2000765, p=2.65e-02)"
+Impact,1,"regulation of cytoplasmic translation (GO:2000765, p=2.65e-02)"

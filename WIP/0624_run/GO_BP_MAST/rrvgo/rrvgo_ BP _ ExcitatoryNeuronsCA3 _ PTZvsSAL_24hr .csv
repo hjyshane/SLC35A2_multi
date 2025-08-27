@@ -1,0 +1,13 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",3.45614753715643,501,"axonogenesis","axonogenesis",0.5545,0.404666666666667,0
+"GO:0099072","GO:0099072",2,"GO:0099072",2.95510892737846,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.916416666666667,0.665666666666667,0
+"GO:0050807","GO:0050807",2,"GO:0099072",2.19233753120847,309,"regulation of synapse organization","regulation of postsynaptic membrane neurotransmitter receptor levels",0.652916666666667,0.501333333333333,0.501
+"GO:1902414","GO:1902414",3,"GO:1902414",2.16434860940759,133,"protein localization to cell junction","protein localization to cell junction",0.9845,1,0
+"GO:1990138","GO:1990138",4,"GO:1990138",2.12817905206909,211,"neuron projection extension","neuron projection extension",0.499416666666667,0.272,0
+"GO:0048675","GO:0048675",4,"GO:1990138",2.05422343480569,143,"axon extension","neuron projection extension",0.500666666666667,0.2855,0.971
+"GO:0050803","GO:0050803",2,"GO:0099072",2.01625983609305,317,"regulation of synapse structure or activity","regulation of postsynaptic membrane neurotransmitter receptor levels",0.87525,0.501,0.502
+"GO:0048588","GO:0048588",4,"GO:1990138",1.63470172496967,291,"developmental cell growth","neuron projection extension",0.63225,0.314,0.973
+"GO:0060560","GO:0060560",4,"GO:1990138",1.56854065815839,292,"developmental growth involved in morphogenesis","neuron projection extension",0.646333333333333,0.3165,0.968
+"GO:0097485","GO:0097485",1,"GO:0007409",1.5444208125614,252,"neuron projection guidance","axonogenesis",0.571833333333333,0.382,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",1.5444208125614,252,"axon guidance","axonogenesis",0.5615,0.359333333333333,0.927
+"GO:0099173","GO:0099173",5,"GO:0099173",1.53702218734916,252,"postsynapse organization","postsynapse organization",0.780416666666667,1,0

@@ -1,0 +1,9 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",6.20217491478499,501,"axonogenesis","axonogenesis",0.751375,1,0
+"GO:1990138","GO:1990138",2,"GO:1990138",3.54781187415392,211,"neuron projection extension","neuron projection extension",0.532125,0.28325,0
+"GO:0048588","GO:0048588",2,"GO:1990138",3.12437433118847,291,"developmental cell growth","neuron projection extension",0.580875,0.313,0.973
+"GO:0060560","GO:0060560",2,"GO:1990138",3.07307144187772,292,"developmental growth involved in morphogenesis","neuron projection extension",0.608,0.34725,0.968
+"GO:0016049","GO:0016049",2,"GO:1990138",1.79199519156059,556,"cell growth","neuron projection extension",0.65325,0.3265,0.926
+"GO:0048167","GO:0048167",3,"GO:0048167",1.75251268649982,393,"regulation of synaptic plasticity","regulation of synaptic plasticity",0.959375,1,0
+"GO:0022898","GO:0022898",4,"GO:0022898",1.54457309052372,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.846875,0.5025,0
+"GO:0032409","GO:0032409",4,"GO:0022898",1.39027931563675,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.863875,0.5025,0.995

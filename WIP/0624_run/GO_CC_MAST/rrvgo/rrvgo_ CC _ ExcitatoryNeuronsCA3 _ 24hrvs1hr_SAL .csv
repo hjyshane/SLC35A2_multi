@@ -1,0 +1,49 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043209","GO:0043209",1,"GO:0043209",26.8771324722512,208,"myelin sheath","myelin sheath",0.997979166666667,1,0
+"GO:0022626","GO:0022626",2,"GO:0022626",13.0196228113187,142,"cytosolic ribosome","cytosolic ribosome",0.840895833333333,0.257,0
+"GO:0150034","GO:0150034",3,"GO:0150034",9.96974542847798,397,"distal axon","distal axon",0.900229166666667,0.446,0
+"GO:0070382","GO:0070382",4,"GO:0070382",7.86900622967608,281,"exocytic vesicle","exocytic vesicle",0.808645833333333,0.211666666666667,0
+"GO:0030133","GO:0030133",4,"GO:0070382",7.77694498544904,366,"transport vesicle","exocytic vesicle",0.807666666666667,0.2205,0.971
+"GO:0008021","GO:0008021",4,"GO:0070382",7.60078126975318,259,"synaptic vesicle","exocytic vesicle",0.71325,0.213833333333333,0.988
+"GO:0022625","GO:0022625",2,"GO:0022626",7.45782416112424,79,"cytosolic large ribosomal subunit","cytosolic ribosome",0.7751875,0.252333333333333,0.932
+"GO:0005840","GO:0005840",2,"GO:0022626",6.46151404942888,267,"ribosome","cytosolic ribosome",0.852895833333333,0.261333333333333,0.917
+"GO:0044391","GO:0044391",2,"GO:0022626",6.14979955685342,215,"ribosomal subunit","cytosolic ribosome",0.771708333333333,0.242666666666667,0.875
+"GO:0030427","GO:0030427",5,"GO:0030427",5.89983982287886,221,"site of polarized growth","site of polarized growth",0.977291666666667,0.5025,0
+"GO:0031252","GO:0031252",6,"GO:0031252",5.79758854511975,415,"cell leading edge","cell leading edge",0.96,0.395333333333333,0
+"GO:0030426","GO:0030426",5,"GO:0030427",5.61923780251473,213,"growth cone","site of polarized growth",0.8841875,0.5025,0.995
+"GO:0098984","GO:0098984",7,"GO:0098984",5.59076095956386,448,"neuron to neuron synapse","neuron to neuron synapse",0.875229166666667,0.379,0
+"GO:0099572","GO:0099572",7,"GO:0098984",5.57914056913498,436,"postsynaptic specialization","neuron to neuron synapse",0.846791666666667,0.48925,0.535
+"GO:0032279","GO:0032279",7,"GO:0098984",5.40517574806083,407,"asymmetric synapse","neuron to neuron synapse",0.8760625,0.37725,0.979
+"GO:0014069","GO:0014069",7,"GO:0098984",5.17100812455999,384,"postsynaptic density","neuron to neuron synapse",0.829520833333333,0.266,0.97
+"GO:0044306","GO:0044306",3,"GO:0150034",5.1037368649366,224,"neuron projection terminus","distal axon",0.908958333333333,0.4474,0.613
+"GO:0043197","GO:0043197",3,"GO:0150034",4.73258088461816,208,"dendritic spine","distal axon",0.812125,0.4492,0.609
+"GO:0044309","GO:0044309",3,"GO:0150034",4.4659160269868,214,"neuron spine","distal axon",0.908958333333333,0.4472,0.613
+"GO:0030132","GO:0030132",9,"GO:0030132",4.02137869995139,19,"clathrin coat of coated pit","clathrin coat of coated pit",0.752416666666667,0.4935,0
+"GO:0005751","GO:0005751",8,"GO:0005751",4.02137869995139,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.773104166666667,0.354333333333333,0
+"GO:0042788","GO:0042788",10,"GO:0042788",3.72284616173348,37,"polysomal ribosome","polysomal ribosome",0.807625,0.506666666666667,0
+"GO:0043679","GO:0043679",3,"GO:0150034",3.71883172019705,202,"axon terminus","distal axon",0.793979166666667,0.385,0.935
+"GO:0022627","GO:0022627",2,"GO:0022626",3.59713917358762,45,"cytosolic small ribosomal subunit","cytosolic ribosome",0.784291666666667,0.289,0.897
+"GO:0005844","GO:0005844",10,"GO:0042788",3.58491539782148,78,"polysome","polysomal ribosome",0.858895833333333,0.496,0.945
+"GO:0045277","GO:0045277",8,"GO:0005751",3.3994519113858,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.808916666666667,0.348666666666667,0.983
+"GO:0098685","GO:0098685",11,"GO:0098685",3.38714348297015,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.902479166666667,1,0
+"GO:0099501","GO:0099501",4,"GO:0070382",3.38714348297015,147,"exocytic vesicle membrane","exocytic vesicle",0.768833333333333,0.211166666666667,0.931
+"GO:0030672","GO:0030672",4,"GO:0070382",3.38714348297015,147,"synaptic vesicle membrane","exocytic vesicle",0.682125,0.208666666666667,0.931
+"GO:0070069","GO:0070069",8,"GO:0005751",2.95468635679367,41,"cytochrome complex","mitochondrial respiratory chain complex IV",0.862854166666667,0.358333333333333,0.954
+"GO:0005905","GO:0005905",9,"GO:0030132",2.94100050060819,72,"clathrin-coated pit","clathrin coat of coated pit",0.864291666666667,0.46775,0.923
+"GO:0015934","GO:0015934",2,"GO:0022626",2.79939381501853,137,"large ribosomal subunit","cytosolic ribosome",0.778604166666667,0.254333333333333,0.837
+"GO:0030665","GO:0030665",12,"GO:0030665",2.6907160056434,52,"clathrin-coated vesicle membrane","clathrin-coated vesicle membrane",0.791020833333333,0.2438,0
+"GO:1990351","GO:1990351",13,"GO:1990351",2.53596127466483,421,"transporter complex","transporter complex",0.8751875,0.5055,0
+"GO:0097060","GO:0097060",9,"GO:0030132",2.37648058010062,514,"synaptic membrane","clathrin coat of coated pit",0.798541666666667,0.52525,0.57
+"GO:0016514","GO:0016514",14,"GO:0016514",2.3215679419667,28,"SWI/SNF complex","SWI/SNF complex",0.8381875,0.5755,0
+"GO:1904949","GO:1904949",14,"GO:0016514",2.30304282538351,148,"ATPase complex","SWI/SNF complex",0.8615,0.5755,0.849
+"GO:1902495","GO:1902495",13,"GO:1990351",2.28530618879163,396,"transmembrane transporter complex","transporter complex",0.8015,0.5055,0.989
+"GO:0030658","GO:0030658",4,"GO:0070382",2.13970134260198,190,"transport vesicle membrane","exocytic vesicle",0.766666666666667,0.2185,0.909
+"GO:0031253","GO:0031253",9,"GO:0030132",1.75933625626692,327,"cell projection membrane","clathrin coat of coated pit",0.8359375,0.5455,0.533
+"GO:0030125","GO:0030125",12,"GO:0030665",1.74709899381149,34,"clathrin vesicle coat","clathrin-coated vesicle membrane",0.7126875,0.24,0.981
+"GO:0031256","GO:0031256",6,"GO:0031252",1.73514255134152,159,"leading edge membrane","cell leading edge",0.895270833333333,0.422,0.901
+"GO:0030122","GO:0030122",12,"GO:0030665",1.7026755516227,12,"AP-2 adaptor complex","clathrin-coated vesicle membrane",0.689645833333333,0.2506,0.931
+"GO:0030136","GO:0030136",12,"GO:0030665",1.69454610601838,119,"clathrin-coated vesicle","clathrin-coated vesicle membrane",0.832791666666667,0.2818,0.936
+"GO:0098833","GO:0098833",15,"GO:0098833",1.59797634785865,18,"presynaptic endocytic zone","presynaptic endocytic zone",0.903583333333333,1,0
+"GO:0071013","GO:0071013",10,"GO:0042788",1.51488096577901,110,"catalytic step 2 spliceosome","polysomal ribosome",0.808541666666667,0.632666666666667,0.535
+"GO:0030128","GO:0030128",12,"GO:0030665",1.48285903763532,13,"clathrin coat of endocytic vesicle","clathrin-coated vesicle membrane",0.724333333333333,0.2494,0.933
+"GO:0030027","GO:0030027",6,"GO:0031252",1.39745950235913,181,"lamellipodium","cell leading edge",0.894270833333333,0.418,0.913

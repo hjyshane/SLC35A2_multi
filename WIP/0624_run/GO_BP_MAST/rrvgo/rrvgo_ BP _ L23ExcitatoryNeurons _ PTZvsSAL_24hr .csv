@@ -1,0 +1,56 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",14.8162662014708,501,"axonogenesis","axonogenesis",0.715981818181818,0.2987,0
+"GO:0030534","GO:0030534",2,"GO:0030534",6.32892356591652,191,"adult behavior","adult behavior",0.885363636363636,0.3594,0
+"GO:0034329","GO:0034329",3,"GO:0034329",6.23908997633594,481,"cell junction assembly","cell junction assembly",0.834018181818182,0.3584,0
+"GO:0007626","GO:0007626",2,"GO:0030534",5.23835903438763,273,"locomotory behavior","adult behavior",0.880418181818182,0.3214,0.718
+"GO:0050803","GO:0050803",4,"GO:0050803",5.04692261144112,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.874909090909091,0.49125,0
+"GO:0007416","GO:0007416",3,"GO:0034329",4.77076300766784,222,"synapse assembly","cell junction assembly",0.751745454545454,0.349,0.948
+"GO:0050807","GO:0050807",4,"GO:0050803",4.72169927320002,309,"regulation of synapse organization","regulation of synapse structure or activity",0.729654545454545,0.49175,0.995
+"GO:0099173","GO:0099173",3,"GO:0034329",4.67411926195335,252,"postsynapse organization","cell junction assembly",0.836272727272727,0.3438,0.804
+"GO:0042391","GO:0042391",5,"GO:0042391",4.4910183853548,491,"regulation of membrane potential","regulation of membrane potential",0.868145454545455,0.569,0
+"GO:0021955","GO:0021955",6,"GO:0021955",3.88885233966343,45,"central nervous system neuron axonogenesis","central nervous system neuron axonogenesis",0.758418181818182,0.467,0
+"GO:0099565","GO:0099565",7,"GO:0099565",3.80784661180227,117,"chemical synaptic transmission, postsynaptic","chemical synaptic transmission, postsynaptic",0.831236363636364,0.3508,0
+"GO:0050905","GO:0050905",8,"GO:0050905",3.73788891119215,204,"neuromuscular process","neuromuscular process",0.910563636363636,1,0
+"GO:0008344","GO:0008344",2,"GO:0030534",3.66309105358802,112,"adult locomotory behavior","adult behavior",0.879818181818182,0.2708,0.955
+"GO:0006874","GO:0006874",9,"GO:0006874",3.33539424551874,327,"intracellular calcium ion homeostasis","intracellular calcium ion homeostasis",0.964890909090909,0.356333333333333,0
+"GO:0001764","GO:0001764",10,"GO:0001764",3.07733847827972,206,"neuron migration","neuron migration",0.830272727272727,1,0
+"GO:0016049","GO:0016049",11,"GO:0016049",3.07568515017966,556,"cell growth","cell growth",0.951672727272727,0.408,0
+"GO:0016358","GO:0016358",1,"GO:0007409",2.99863194270204,327,"dendrite development","axonogenesis",0.734672727272727,0.3339,0.762
+"GO:0061621","GO:0061621",12,"GO:0061621",2.94675987528376,17,"canonical glycolysis","canonical glycolysis",0.898745454545455,0.5,0
+"GO:0006735","GO:0006735",12,"GO:0061621",2.94675987528376,17,"NADH regeneration","canonical glycolysis",0.973854545454545,0.5,1
+"GO:0061718","GO:0061718",13,"GO:0061718",2.94675987528376,17,"glucose catabolic process to pyruvate","glucose catabolic process to pyruvate",0.922872727272727,0.37975,0
+"GO:0031346","GO:0031346",1,"GO:0007409",2.89014863918461,463,"positive regulation of cell projection organization","axonogenesis",0.777563636363636,0.3746,0.687
+"GO:0048588","GO:0048588",11,"GO:0016049",2.73427976594022,291,"developmental cell growth","cell growth",0.849909090909091,0.406,0.95
+"GO:0060079","GO:0060079",7,"GO:0099565",2.71614493497949,95,"excitatory postsynaptic potential","chemical synaptic transmission, postsynaptic",0.771090909090909,0.3526,0.977
+"GO:0055074","GO:0055074",9,"GO:0006874",2.60777422246501,353,"calcium ion homeostasis","intracellular calcium ion homeostasis",0.964763636363636,0.354,0.99
+"GO:0099175","GO:0099175",3,"GO:0034329",2.58109258474865,139,"regulation of postsynapse organization","cell junction assembly",0.745909090909091,0.3716,0.753
+"GO:0006816","GO:0006816",14,"GO:0006816",2.56614180794126,469,"calcium ion transport","calcium ion transport",0.985581818181818,1,0
+"GO:0097485","GO:0097485",1,"GO:0007409",2.54027563783137,252,"neuron projection guidance","axonogenesis",0.731981818181818,0.331,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",2.54027563783137,252,"axon guidance","axonogenesis",0.728745454545455,0.3172,0.927
+"GO:0007528","GO:0007528",3,"GO:0034329",2.46463562177401,61,"neuromuscular junction development","cell junction assembly",0.856836363636364,0.4344,0.703
+"GO:0019722","GO:0019722",15,"GO:0019722",2.41730249198953,214,"calcium-mediated signaling","calcium-mediated signaling",0.903981818181818,0.372666666666667,0
+"GO:0060078","GO:0060078",5,"GO:0042391",2.38443633846655,130,"regulation of postsynaptic membrane potential","regulation of membrane potential",0.873927272727273,0.569,0.862
+"GO:0061620","GO:0061620",13,"GO:0061718",2.37960579346109,20,"glycolytic process through glucose-6-phosphate","glucose catabolic process to pyruvate",0.923727272727273,0.38925,0.742
+"GO:0010977","GO:0010977",1,"GO:0007409",2.32101982127916,165,"negative regulation of neuron projection development","axonogenesis",0.719727272727273,0.3391,0.72
+"GO:0019932","GO:0019932",15,"GO:0019722",2.24449758966036,328,"second-messenger-mediated signaling","calcium-mediated signaling",0.902272727272727,0.386,0.959
+"GO:0050770","GO:0050770",1,"GO:0007409",2.15671785159465,186,"regulation of axonogenesis","axonogenesis",0.704490909090909,0.3072,0.882
+"GO:0021954","GO:0021954",6,"GO:0021955",2.15639433753877,98,"central nervous system neuron development","central nervous system neuron axonogenesis",0.815872727272727,0.454333333333333,0.95
+"GO:0098771","GO:0098771",9,"GO:0006874",1.97274972431876,557,"inorganic ion homeostasis","intracellular calcium ion homeostasis",0.965654545454545,0.370333333333333,0.941
+"GO:0048813","GO:0048813",1,"GO:0007409",1.94429548416279,192,"dendrite morphogenesis","axonogenesis",0.737636363636364,0.3223,0.83
+"GO:0090659","GO:0090659",2,"GO:0030534",1.94257259204549,53,"walking behavior","adult behavior",0.888581818181818,0.335,0.633
+"GO:0030900","GO:0030900",6,"GO:0021955",1.9098781371819,425,"forebrain development","central nervous system neuron axonogenesis",0.842218181818182,0.554666666666667,0.649
+"GO:0050848","GO:0050848",15,"GO:0019722",1.88821705812517,93,"regulation of calcium-mediated signaling","calcium-mediated signaling",0.901945454545455,0.398,0.923
+"GO:1903829","GO:1903829",16,"GO:1903829",1.79748148065519,531,"positive regulation of protein localization","positive regulation of protein localization",0.924927272727273,0.7395,0
+"GO:0008361","GO:0008361",4,"GO:0050803",1.77028065852526,222,"regulation of cell size","regulation of synapse structure or activity",0.800872727272727,0.5125,0.505
+"GO:0048167","GO:0048167",7,"GO:0099565",1.73945376577378,393,"regulation of synaptic plasticity","chemical synaptic transmission, postsynaptic",0.838072727272727,0.4012,0.679
+"GO:0031345","GO:0031345",1,"GO:0007409",1.67659996879442,221,"negative regulation of cell projection organization","axonogenesis",0.792163636363636,0.3842,0.644
+"GO:0061615","GO:0061615",13,"GO:0061718",1.64269862366745,26,"glycolytic process through fructose-6-phosphate","glucose catabolic process to pyruvate",0.922890909090909,0.3785,0.763
+"GO:0032535","GO:0032535",4,"GO:0050803",1.53807409843096,411,"regulation of cellular component size","regulation of synapse structure or activity",0.790527272727273,0.4975,0.535
+"GO:0006007","GO:0006007",13,"GO:0061718",1.51757609690532,26,"glucose catabolic process","glucose catabolic process to pyruvate",0.935563636363636,0.3855,0.976
+"GO:0007628","GO:0007628",2,"GO:0030534",1.49813206752741,47,"adult walking behavior","adult behavior",0.882109090909091,0.2598,0.897
+"GO:0051402","GO:0051402",17,"GO:0051402",1.48270029154822,369,"neuron apoptotic process","neuron apoptotic process",0.983909090909091,1,0
+"GO:0060996","GO:0060996",1,"GO:0007409",1.4457057754581,134,"dendritic spine development","axonogenesis",0.752490909090909,0.3758,0.702
+"GO:0060291","GO:0060291",7,"GO:0099565",1.44570294008258,260,"long-term synaptic potentiation","chemical synaptic transmission, postsynaptic",0.838090909090909,0.4194,0.648
+"GO:0098815","GO:0098815",7,"GO:0099565",1.43536083482225,63,"modulation of excitatory postsynaptic potential","chemical synaptic transmission, postsynaptic",0.774072727272727,0.3432,0.942
+"GO:0099504","GO:0099504",16,"GO:1903829",1.40666175575868,230,"synaptic vesicle cycle","positive regulation of protein localization",0.967327272727273,0.7395,0.521
+"GO:0048638","GO:0048638",11,"GO:0016049",1.36556344958012,405,"regulation of developmental growth","cell growth",0.876018181818182,0.447333333333333,0.826

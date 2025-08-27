@@ -1,0 +1,5 @@
+"p_val","avg_log2FC","pct.1","pct.2","p_val_adj","ranges","cell_type","comparison","closestgene","distance","Regulation"
+3.26196981480295e-22,-0.914389715486398,0.343,0.598,5.40094128146369e-17,"chr2-77897231-77898068","ExcitatoryNeuronsImmatureDG","PTZvsSAL_24hr","Cwc22",0,"Down"
+2.51890314215912e-20,-0.780130729312425,0.432,0.676,4.17062349956711e-15,"chr2-77945820-77946697","ExcitatoryNeuronsImmatureDG","PTZvsSAL_24hr","Cwc22",0,"Down"
+9.98992002044589e-11,-1.31302657273881,0.089,0.241,1.65406102754529e-05,"chr2-78021505-78022372","ExcitatoryNeuronsImmatureDG","PTZvsSAL_24hr","4930440I19Rik",28804,"Down"
+1.24945141168909e-07,-0.91532785454154,0.133,0.263,0.0206875418587598,"chr2-77933432-77934324","ExcitatoryNeuronsImmatureDG","PTZvsSAL_24hr","Cwc22",0,"Down"

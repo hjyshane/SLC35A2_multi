@@ -1,0 +1,12 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0014069","GO:0014069",1,"GO:0014069",2.71016831532261,384,"postsynaptic density","postsynaptic density",0.524,0.348333333333333,0
+"GO:0150034","GO:0150034",2,"GO:0150034",2.68386730453375,397,"distal axon","distal axon",0.856818181818182,0.482666666666667,0
+"GO:0043209","GO:0043209",3,"GO:0043209",2.59488738451168,208,"myelin sheath","myelin sheath",0.997636363636364,1,0
+"GO:0032279","GO:0032279",1,"GO:0014069",2.41795102129996,407,"asymmetric synapse","postsynaptic density",0.610909090909091,0.345333333333333,0.985
+"GO:0099572","GO:0099572",4,"GO:0099572",2.12386260731548,436,"postsynaptic specialization","postsynaptic specialization",0.605,0.407,0
+"GO:0098984","GO:0098984",1,"GO:0014069",1.95801047509211,448,"neuron to neuron synapse","postsynaptic density",0.612,0.350333333333333,0.97
+"GO:0099634","GO:0099634",4,"GO:0099572",1.71590210188084,154,"postsynaptic specialization membrane","postsynaptic specialization",0.617272727272727,0.374333333333333,0.9
+"GO:0098839","GO:0098839",4,"GO:0099572",1.64589602183475,114,"postsynaptic density membrane","postsynaptic specialization",0.548,0.381333333333333,0.879
+"GO:0044304","GO:0044304",2,"GO:0150034",1.47683411914664,88,"main axon","distal axon",0.875,0.547,0.744
+"GO:0005874","GO:0005874",5,"GO:0005874",1.47544101263332,467,"microtubule","microtubule",0.965181818181818,1,0
+"GO:0044305","GO:0044305",2,"GO:0150034",1.33183430249317,32,"calyx of Held","distal axon",0.649090909090909,0.525666666666667,0.808

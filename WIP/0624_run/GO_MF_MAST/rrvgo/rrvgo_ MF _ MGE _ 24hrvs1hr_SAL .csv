@@ -1,0 +1,12 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003729","GO:0003729",1,"GO:0003729",6.40719441718095,386,"mRNA binding","mRNA binding",0.817909090909091,0.492333333333333,0
+"GO:0033218","GO:0033218",2,"GO:0033218",2.88779275353272,457,"amide binding","amide binding",0.862181818181818,0.5125,0
+"GO:0044325","GO:0044325",3,"GO:0044325",2.6496930172034,169,"transmembrane transporter binding","transmembrane transporter binding",0.905363636363636,1,0
+"GO:0003730","GO:0003730",1,"GO:0003729",2.32661482865792,119,"mRNA 3'-UTR binding","mRNA binding",0.827545454545455,0.512,0.891
+"GO:0031625","GO:0031625",4,"GO:0031625",2.20985939271701,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.829727272727273,0.505,0
+"GO:0042277","GO:0042277",2,"GO:0033218",2.18472143282863,370,"peptide binding","amide binding",0.863090909090909,0.5125,0.975
+"GO:0051219","GO:0051219",5,"GO:0051219",2.18046285708844,112,"phosphoprotein binding","phosphoprotein binding",0.908545454545455,1,0
+"GO:0035254","GO:0035254",6,"GO:0035254",1.85928080657769,76,"glutamate receptor binding","glutamate receptor binding",0.910272727272727,1,0
+"GO:0044389","GO:0044389",4,"GO:0031625",1.82273238214371,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.829181818181818,0.505,0.99
+"GO:0003727","GO:0003727",1,"GO:0003729",1.72279932391216,101,"single-stranded RNA binding","mRNA binding",0.851454545454545,0.598333333333333,0.632
+"GO:0005200","GO:0005200",7,"GO:0005200",1.62722776768329,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0

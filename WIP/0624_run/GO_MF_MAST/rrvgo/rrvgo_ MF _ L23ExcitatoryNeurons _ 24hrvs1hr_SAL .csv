@@ -1,0 +1,10 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005246","GO:0005246",1,"GO:0005246",1.98213741698913,42,"calcium channel regulator activity","calcium channel regulator activity",0.900111111111111,0.5505,0
+"GO:0019903","GO:0019903",2,"GO:0019903",1.94658553218561,191,"protein phosphatase binding","protein phosphatase binding",0.725444444444444,0.477,0
+"GO:0015631","GO:0015631",3,"GO:0015631",1.91118944497886,387,"tubulin binding","tubulin binding",0.887222222222222,1,0
+"GO:0005200","GO:0005200",4,"GO:0005200",1.89849520901633,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0044389","GO:0044389",2,"GO:0019903",1.88680173872174,358,"ubiquitin-like protein ligase binding","protein phosphatase binding",0.719777777777778,0.46925,0.56
+"GO:0044325","GO:0044325",5,"GO:0044325",1.83522033496774,169,"transmembrane transporter binding","transmembrane transporter binding",0.895333333333333,1,0
+"GO:0031625","GO:0031625",2,"GO:0019903",1.78960077304963,338,"ubiquitin protein ligase binding","protein phosphatase binding",0.720666666666667,0.47075,0.557
+"GO:0019902","GO:0019902",2,"GO:0019903",1.6200213849979,243,"phosphatase binding","protein phosphatase binding",0.721555555555556,0.4705,0.975
+"GO:0099106","GO:0099106",1,"GO:0005246",1.34577949526041,136,"ion channel regulator activity","calcium channel regulator activity",0.900111111111111,0.5505,0.899

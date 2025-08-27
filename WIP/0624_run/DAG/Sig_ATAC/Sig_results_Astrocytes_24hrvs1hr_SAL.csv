@@ -1,0 +1,2 @@
+"p_val","avg_log2FC","pct.1","pct.2","p_val_adj","ranges","cell_type","comparison","closestgene","distance","Regulation"
+1.39121191476091e-07,-1.22015681147569,0.207,0.452,0.0230347130362708,"chr17-39845560-39846509","Astrocytes","24hrvs1hr_SAL","Gm26917",0,"Down"

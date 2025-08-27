@@ -1,0 +1,33 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",5.65532262657403,501,"axonogenesis","axonogenesis",0.64203125,0.360714285714286,0
+"GO:0034329","GO:0034329",2,"GO:0034329",4.77791023326129,481,"cell junction assembly","cell junction assembly",0.67090625,0.256,0
+"GO:0050803","GO:0050803",3,"GO:0050803",4.73564523788205,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.8624375,0.47925,0
+"GO:0042391","GO:0042391",3,"GO:0050803",4.64094945749921,491,"regulation of membrane potential","regulation of synapse structure or activity",0.89925,0.58225,0.56
+"GO:0050807","GO:0050807",3,"GO:0050803",4.42148366239576,309,"regulation of synapse organization","regulation of synapse structure or activity",0.6078125,0.47975,0.995
+"GO:0048167","GO:0048167",3,"GO:0050803",4.39687035016533,393,"regulation of synaptic plasticity","regulation of synapse structure or activity",0.886375,0.59825,0.528
+"GO:0099173","GO:0099173",2,"GO:0034329",4.39687035016533,252,"postsynapse organization","cell junction assembly",0.6853125,0.295333333333333,0.804
+"GO:0048588","GO:0048588",4,"GO:0048588",3.61637400313393,291,"developmental cell growth","developmental cell growth",0.77878125,0.314,0
+"GO:0007416","GO:0007416",2,"GO:0034329",3.23440702952394,222,"synapse assembly","cell junction assembly",0.607125,0.248555555555556,0.948
+"GO:1990138","GO:1990138",4,"GO:0048588",3.10436563129797,211,"neuron projection extension","developmental cell growth",0.6395625,0.272,0.973
+"GO:0060560","GO:0060560",4,"GO:0048588",2.95159939993608,292,"developmental growth involved in morphogenesis","developmental cell growth",0.8074375,0.3165,0.825
+"GO:0035418","GO:0035418",5,"GO:0035418",2.93262208446743,100,"protein localization to synapse","protein localization to synapse",0.8885625,0.5075,0
+"GO:1902414","GO:1902414",5,"GO:0035418",2.67762652062946,133,"protein localization to cell junction","protein localization to synapse",0.88753125,0.5075,0.985
+"GO:1901890","GO:1901890",2,"GO:0034329",2.54937864637994,129,"positive regulation of cell junction assembly","cell junction assembly",0.66546875,0.281444444444444,0.867
+"GO:0051965","GO:0051965",2,"GO:0034329",2.49753903268508,82,"positive regulation of synapse assembly","cell junction assembly",0.53984375,0.268666666666667,0.841
+"GO:0099504","GO:0099504",6,"GO:0099504",2.32293995134129,230,"synaptic vesicle cycle","synaptic vesicle cycle",0.8615,0.374,0
+"GO:0099003","GO:0099003",6,"GO:0099504",2.19034959323254,270,"vesicle-mediated transport in synapse","synaptic vesicle cycle",0.87590625,0.379,0.982
+"GO:0051962","GO:0051962",1,"GO:0007409",1.99877614132858,391,"positive regulation of nervous system development","axonogenesis",0.761,0.494714285714286,0.534
+"GO:0048675","GO:0048675",4,"GO:0048588",1.86009664287498,143,"axon extension","developmental cell growth",0.642875,0.2855,0.946
+"GO:0051654","GO:0051654",7,"GO:0051654",1.81449234973118,32,"establishment of mitochondrion localization","establishment of mitochondrion localization",0.8929375,0.346666666666667,0
+"GO:0060999","GO:0060999",1,"GO:0007409",1.75875574188013,66,"positive regulation of dendritic spine development","axonogenesis",0.69603125,0.422857142857143,0.653
+"GO:0097485","GO:0097485",1,"GO:0007409",1.75875112116784,252,"neuron projection guidance","axonogenesis",0.6611875,0.380714285714286,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",1.75875112116784,252,"axon guidance","axonogenesis",0.6558125,0.363428571428571,0.927
+"GO:0051963","GO:0051963",2,"GO:0034329",1.73460191880032,144,"regulation of synapse assembly","cell junction assembly",0.54775,0.242222222222222,0.9
+"GO:0099084","GO:0099084",2,"GO:0034329",1.60095518933366,56,"postsynaptic specialization organization","cell junction assembly",0.7098125,0.337666666666667,0.711
+"GO:0047497","GO:0047497",7,"GO:0051654",1.5579920094712,25,"mitochondrion transport along microtubule","establishment of mitochondrion localization",0.86225,0.341,0.979
+"GO:0034643","GO:0034643",7,"GO:0051654",1.5579920094712,25,"establishment of mitochondrion localization, microtubule-mediated","establishment of mitochondrion localization",0.881125,0.340333333333333,0.981
+"GO:0097106","GO:0097106",2,"GO:0034329",1.55750002457005,45,"postsynaptic density organization","cell junction assembly",0.7155,0.349666666666667,0.695
+"GO:1901888","GO:1901888",2,"GO:0034329",1.54765461890315,246,"regulation of cell junction assembly","cell junction assembly",0.65915625,0.254666666666667,0.93
+"GO:0050772","GO:0050772",1,"GO:0007409",1.48179517858265,101,"positive regulation of axonogenesis","axonogenesis",0.63128125,0.374857142857143,0.831
+"GO:0060998","GO:0060998",1,"GO:0007409",1.3633963488927,86,"regulation of dendritic spine development","axonogenesis",0.69653125,0.429285714285714,0.671
+"GO:0036465","GO:0036465",6,"GO:0099504",1.31086904255572,90,"synaptic vesicle recycling","synaptic vesicle cycle",0.87178125,0.407666666666667,0.896

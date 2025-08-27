@@ -1,0 +1,34 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007626","GO:0007626",1,"GO:0007626",6.69641485152983,273,"locomotory behavior","locomotory behavior",0.901909090909091,0.451333333333333,0
+"GO:0007409","GO:0007409",2,"GO:0007409",5.97585240209731,501,"axonogenesis","axonogenesis",0.781515151515151,0.353,0
+"GO:0097485","GO:0097485",2,"GO:0007409",5.06002041376024,252,"neuron projection guidance","axonogenesis",0.789484848484848,0.3574,0.859
+"GO:0007411","GO:0007411",2,"GO:0007409",5.06002041376024,252,"axon guidance","axonogenesis",0.787757575757576,0.3446,0.927
+"GO:0043113","GO:0043113",3,"GO:0043113",4.8517947533206,75,"receptor clustering","receptor clustering",0.827909090909091,0.533333333333333,0
+"GO:0010959","GO:0010959",4,"GO:0010959",3.59088043476265,461,"regulation of metal ion transport","regulation of metal ion transport",0.741606060606061,0.2922,0
+"GO:0035418","GO:0035418",3,"GO:0043113",3.3098848413282,100,"protein localization to synapse","receptor clustering",0.815333333333333,0.481833333333333,0.501
+"GO:1904062","GO:1904062",4,"GO:0010959",3.29204941797129,367,"regulation of monoatomic cation transmembrane transport","regulation of metal ion transport",0.730030303030303,0.2938,0.917
+"GO:0034329","GO:0034329",5,"GO:0034329",3.15917378419794,481,"cell junction assembly","cell junction assembly",0.85569696969697,0.416,0
+"GO:1902414","GO:1902414",3,"GO:0043113",2.91306023021501,133,"protein localization to cell junction","receptor clustering",0.813151515151515,0.476666666666667,0.508
+"GO:0050890","GO:0050890",6,"GO:0050890",2.84889337526454,371,"cognition","cognition",0.938090909090909,1,0
+"GO:0099173","GO:0099173",5,"GO:0034329",2.79403891194188,252,"postsynapse organization","cell junction assembly",0.862,0.459333333333333,0.804
+"GO:0042391","GO:0042391",7,"GO:0042391",2.75871431056288,491,"regulation of membrane potential","regulation of membrane potential",0.901484848484848,0.577,0
+"GO:0002028","GO:0002028",4,"GO:0010959",2.60429119190409,102,"regulation of sodium ion transport","regulation of metal ion transport",0.762848484848485,0.3136,0.866
+"GO:0034765","GO:0034765",4,"GO:0010959",2.56493027854847,490,"regulation of monoatomic ion transmembrane transport","regulation of metal ion transport",0.726090909090909,0.291,0.938
+"GO:0086001","GO:0086001",7,"GO:0042391",2.43420020617293,60,"cardiac muscle cell action potential","regulation of membrane potential",0.911787878787879,0.577,0.846
+"GO:0050807","GO:0050807",8,"GO:0050807",2.40738464310291,309,"regulation of synapse organization","regulation of synapse organization",0.753242424242424,0.5025,0
+"GO:0050803","GO:0050803",8,"GO:0050807",2.24976469258443,317,"regulation of synapse structure or activity","regulation of synapse organization",0.901060606060606,0.5025,0.995
+"GO:0032409","GO:0032409",9,"GO:0032409",2.24199110052443,307,"regulation of transporter activity","regulation of transporter activity",0.903666666666667,0.5025,0
+"GO:0008344","GO:0008344",1,"GO:0007626",2.19225139607126,112,"adult locomotory behavior","locomotory behavior",0.898272727272727,0.372333333333333,0.928
+"GO:0008088","GO:0008088",10,"GO:0008088",1.9041432901448,87,"axo-dendritic transport","axo-dendritic transport",0.82630303030303,0.5745,0
+"GO:0031346","GO:0031346",2,"GO:0007409",1.82585552539179,463,"positive regulation of cell projection organization","axonogenesis",0.801,0.4774,0.687
+"GO:0051962","GO:0051962",11,"GO:0051962",1.82567802813207,391,"positive regulation of nervous system development","positive regulation of nervous system development",0.813939393939394,0.5365,0
+"GO:0022898","GO:0022898",9,"GO:0032409",1.79098961660765,294,"regulation of transmembrane transporter activity","regulation of transporter activity",0.721818181818182,0.5025,0.995
+"GO:1905475","GO:1905475",3,"GO:0043113",1.74597755098838,212,"regulation of protein localization to membrane","receptor clustering",0.73969696969697,0.443333333333333,0.74
+"GO:1903829","GO:1903829",3,"GO:0043113",1.64508764921589,531,"positive regulation of protein localization","receptor clustering",0.716727272727273,0.452166666666667,0.55
+"GO:0050767","GO:0050767",11,"GO:0051962",1.60965749981782,494,"regulation of neurogenesis","positive regulation of nervous system development",0.799030303030303,0.5365,0.927
+"GO:1904375","GO:1904375",3,"GO:0043113",1.56655565050185,156,"regulation of protein localization to cell periphery","receptor clustering",0.752272727272727,0.490666666666667,0.501
+"GO:0030534","GO:0030534",1,"GO:0007626",1.49364737764417,191,"adult behavior","locomotory behavior",0.902393939393939,0.442333333333333,0.718
+"GO:2000649","GO:2000649",4,"GO:0010959",1.46565658351101,59,"regulation of sodium ion transmembrane transporter activity","regulation of metal ion transport",0.729727272727273,0.3146,0.818
+"GO:0007416","GO:0007416",5,"GO:0034329",1.44965841000822,222,"synapse assembly","cell junction assembly",0.787090909090909,0.411333333333333,0.948
+"GO:0016358","GO:0016358",2,"GO:0007409",1.41433898975733,327,"dendrite development","axonogenesis",0.801787878787879,0.434,0.762
+"GO:0099640","GO:0099640",10,"GO:0008088",1.40192066995323,11,"axo-dendritic protein transport","axo-dendritic transport",0.834969696969697,0.5745,0.851

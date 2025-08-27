@@ -1,0 +1,39 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003729","GO:0003729",1,"GO:0003729",11.6432062356388,386,"mRNA binding","mRNA binding",0.927947368421053,0.492333333333333,0
+"GO:0003735","GO:0003735",2,"GO:0003735",8.60413835355576,178,"structural constituent of ribosome","structural constituent of ribosome",0.910342105263158,0.432166666666667,0
+"GO:0060589","GO:0060589",3,"GO:0060589",7.54340274900246,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.949710526315789,0.363,0
+"GO:0030695","GO:0030695",3,"GO:0060589",7.54340274900246,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.949710526315789,0.363,0.994
+"GO:0035254","GO:0035254",4,"GO:0035254",7.49231770171297,76,"glutamate receptor binding","glutamate receptor binding",0.888263157894737,0.501333333333333,0
+"GO:0051020","GO:0051020",5,"GO:0051020",7.34021030802438,337,"GTPase binding","GTPase binding",0.840973684210526,0.453666666666667,0
+"GO:0098918","GO:0098918",2,"GO:0003735",7.20262973170431,37,"structural constituent of synapse","structural constituent of ribosome",0.890157894736842,0.304333333333333,0.707
+"GO:0031267","GO:0031267",5,"GO:0051020",6.07817594521242,297,"small GTPase binding","GTPase binding",0.842394736842105,0.457833333333333,0.985
+"GO:0099186","GO:0099186",2,"GO:0003735",5.80606933195178,27,"structural constituent of postsynapse","structural constituent of ribosome",0.88971052631579,0.3015,0.683
+"GO:0044325","GO:0044325",6,"GO:0044325",5.67946610440357,169,"transmembrane transporter binding","transmembrane transporter binding",0.913526315789474,1,0
+"GO:0005085","GO:0005085",3,"GO:0060589",5.62907524893295,201,"guanyl-nucleotide exchange factor activity","nucleoside-triphosphatase regulator activity",0.951736842105263,0.388666666666667,0.917
+"GO:0004674","GO:0004674",7,"GO:0004674",5.14796951240989,441,"protein serine/threonine kinase activity","protein serine/threonine kinase activity",0.937,0.6245,0
+"GO:0031625","GO:0031625",5,"GO:0051020",4.87477408324527,338,"ubiquitin protein ligase binding","GTPase binding",0.840947368421053,0.454166666666667,0.582
+"GO:0044389","GO:0044389",5,"GO:0051020",4.82645135314863,358,"ubiquitin-like protein ligase binding","GTPase binding",0.840157894736842,0.452,0.586
+"GO:0015631","GO:0015631",8,"GO:0015631",4.74314271793762,387,"tubulin binding","tubulin binding",0.845815789473684,0.3814,0
+"GO:0005516","GO:0005516",9,"GO:0005516",4.45868365897655,195,"calmodulin binding","calmodulin binding",0.912973684210526,1,0
+"GO:0035255","GO:0035255",4,"GO:0035254",4.20975168076688,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.891605263157895,0.508666666666667,0.964
+"GO:0019894","GO:0019894",8,"GO:0015631",3.74088208700621,53,"kinesin binding","tubulin binding",0.874315789473684,0.5042,0.631
+"GO:0019903","GO:0019903",5,"GO:0051020",3.58679611312535,191,"protein phosphatase binding","GTPase binding",0.846131578947368,0.467,0.556
+"GO:0019902","GO:0019902",5,"GO:0051020",3.3337156454991,243,"phosphatase binding","GTPase binding",0.843157894736842,0.458333333333333,0.569
+"GO:0098919","GO:0098919",2,"GO:0003735",3.29940666387946,11,"structural constituent of postsynaptic density","structural constituent of ribosome",0.892131578947368,0.316833333333333,0.646
+"GO:0008017","GO:0008017",8,"GO:0015631",3.14257558208763,269,"microtubule binding","tubulin binding",0.850842105263158,0.3984,0.952
+"GO:0003730","GO:0003730",1,"GO:0003729",3.01082174901617,119,"mRNA 3'-UTR binding","mRNA binding",0.932578947368421,0.512,0.891
+"GO:0003779","GO:0003779",8,"GO:0015631",2.94326584008117,448,"actin binding","tubulin binding",0.844552631578947,0.3816,0.787
+"GO:0032451","GO:0032451",10,"GO:0032451",2.79596536280368,44,"demethylase activity","demethylase activity",0.911184210526316,0.296,0
+"GO:0140457","GO:0140457",10,"GO:0032451",2.72593037267123,29,"protein demethylase activity","demethylase activity",0.898421052631579,0.284,0.975
+"GO:0032452","GO:0032452",10,"GO:0032451",2.72593037267123,29,"histone demethylase activity","demethylase activity",0.898447368421053,0.284,0.973
+"GO:0005078","GO:0005078",11,"GO:0005078",2.47840661718977,13,"MAP-kinase scaffold activity","MAP-kinase scaffold activity",1,1,0
+"GO:0098879","GO:0098879",2,"GO:0003735",2.47840661718977,13,"structural constituent of postsynaptic specialization","structural constituent of ribosome",0.891105263157895,0.310333333333333,0.654
+"GO:0051864","GO:0051864",10,"GO:0032451",1.98000905835391,11,"histone H3K36 demethylase activity","demethylase activity",0.888289473684211,0.3365,0.868
+"GO:0051015","GO:0051015",8,"GO:0015631",1.8624371991542,219,"actin filament binding","tubulin binding",0.854421052631579,0.4148,0.723
+"GO:0003727","GO:0003727",1,"GO:0003729",1.64613675893569,101,"single-stranded RNA binding","mRNA binding",0.939631578947368,0.598333333333333,0.632
+"GO:0005200","GO:0005200",2,"GO:0003735",1.60856275081907,73,"structural constituent of cytoskeleton","structural constituent of ribosome",0.916289473684211,0.469833333333333,0.717
+"GO:0001664","GO:0001664",4,"GO:0035254",1.46938470408626,335,"G protein-coupled receptor binding","glutamate receptor binding",0.887078947368421,0.652666666666667,0.532
+"GO:0017124","GO:0017124",12,"GO:0017124",1.46168732697996,130,"SH3 domain binding","SH3 domain binding",0.916289473684211,1,0
+"GO:0050998","GO:0050998",13,"GO:0050998",1.42496811567444,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.877868421052632,1,0
+"GO:0004713","GO:0004713",7,"GO:0004674",1.33755192559608,132,"protein tyrosine kinase activity","protein serine/threonine kinase activity",0.940342105263158,0.6245,0.751
+"GO:0016706","GO:0016706",14,"GO:0016706",1.30423198633055,60,"2-oxoglutarate-dependent dioxygenase activity","2-oxoglutarate-dependent dioxygenase activity",0.953684210526316,1,0

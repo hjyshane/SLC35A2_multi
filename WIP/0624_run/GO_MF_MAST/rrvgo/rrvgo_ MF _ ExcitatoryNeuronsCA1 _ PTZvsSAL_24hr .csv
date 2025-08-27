@@ -1,0 +1,12 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0098918","GO:0098918",1,"GO:0098918",3.5139675314026,37,"structural constituent of synapse","structural constituent of synapse",0.853272727272727,0.462,0
+"GO:0005200","GO:0005200",1,"GO:0098918",3.24951571912128,73,"structural constituent of cytoskeleton","structural constituent of synapse",0.884545454545455,0.576666666666667,0.645
+"GO:0044389","GO:0044389",2,"GO:0044389",2.84887255251367,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.827272727272727,0.505,0
+"GO:0031625","GO:0031625",2,"GO:0044389",2.64528072150632,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.827727272727273,0.505,0.99
+"GO:0044325","GO:0044325",3,"GO:0044325",2.33630883679336,169,"transmembrane transporter binding","transmembrane transporter binding",0.930181818181818,1,0
+"GO:0099186","GO:0099186",1,"GO:0098918",2.22358716218466,27,"structural constituent of postsynapse","structural constituent of synapse",0.855090909090909,0.468666666666667,0.969
+"GO:0060589","GO:0060589",4,"GO:0060589",2.09415712763219,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.909636363636364,0.503,0
+"GO:0030695","GO:0030695",4,"GO:0060589",2.09415712763219,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.909636363636364,0.503,0.994
+"GO:0003729","GO:0003729",5,"GO:0003729",2.03787904769714,386,"mRNA binding","mRNA binding",0.970363636363636,1,0
+"GO:0035254","GO:0035254",6,"GO:0035254",1.82639574462773,76,"glutamate receptor binding","glutamate receptor binding",0.933545454545455,1,0
+"GO:0050998","GO:0050998",7,"GO:0050998",1.35148488644169,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.882363636363636,1,0
