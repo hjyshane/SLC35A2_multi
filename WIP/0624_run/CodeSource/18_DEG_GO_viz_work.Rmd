@@ -1,0 +1,89 @@
+---
+title: "Viz_multi"
+author: "JY"
+date: "2025-08-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Setup
+```{r library load}
+library(tidyverse)
+library(ggplot2)
+library(EnhancedVolcano)
+library(ComplexHeatmap)
+```
+
+```{r set seed for reproducibility}
+set.seed(42)
+```
+
+```{r directory setup}
+base_dir <- "./WIP/0624_run/"
+plot_dir <- file.path(base_dir, "Plot_DEG_GO")
+deg_dir <- file.path(base_dir, "DEG_MAST", "sig_csv")
+go_bp_dir <- file.path(base_dir, "GO_BP_MAST", "csv")
+go_mf_dir <- file.path(base_dir, "GO_MF_MAST", "csv")
+go_cc_dir <- file.path(base_dir, "GO_CC_MAST", "csv")
+```
+
+# Data process
+```{r file load}
+# get only hippocampus cell type files
+deg_list <- list.files(deg_dir, full.names = T, pattern = "^Excitatory")
+go_bp_list <- list.files(go_bp_dir, full.names = T, pattern = "^GO_BP_Excitatory")
+go_mf_list <- list.files(go_mf_dir, full.names = T, pattern = "^GO_MF_Excitatory")
+go_cc_list <- list.files(go_cc_dir, full.names = T, pattern = "^GO_CC_Excitatory")
+
+# check file numbers match
+length(go_bp_list) == length(deg_list) & 
+  length(go_mf_list) == length(deg_list) & 
+  length(go_cc_list) == length(deg_list)
+```
+
+```{r create full data fream for each}
+deg_df <- data.frame()
+bp_df <- data.frame()
+mf_df <- data.frame()
+cc_df <- data.frame()
+
+for (i in seq_along(deg_list)) {
+  temp_df <- read_csv(deg_list[i]) %>%
+    dplyr::select(gene, p_val, p_val_adj, avg_log2FC, pct.1, pct.2, cell_type, comparison, Regulation, Viz) %>%
+    dplyr::arrange(p_val_adj, avg_log2FC) %>%
+    slice(10)
+  deg_df <- rbind(deg_df, temp_df)
+  
+  temp_bp <- read_csv(go_bp_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    dplyr::arrange(pvalue, Fold_enrichment) %>%
+    slice(10)
+  bp_df <- rbind(bp_df, temp_bp)
+  
+  temp_mf <- read_csv(go_mf_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    dplyr::arrange(pvalue, Fold_enrichment) %>%
+    slice(10)
+  mf_df <- rbind(mf_df, temp_mf)
+  
+  temp_cc <- read_csv(go_cc_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    dplyr::arrange(pvalue, Fold_enrichment) %>%
+    slice(10)
+  cc_df <- rbind(cc_df, temp_cc)
+  }
+```
+
+```{r clean up environment}
+rm(temp_bp, temp_cc, temp_mf, temp_df, i, deg_list, go_bp_list, go_mf_list, go_cc_list, deg_dir, go_bp_dir, go_cc_dir, go_mf_dir)
+```
+
+```{r get top 10 each}
+
+  
+```
+
+
