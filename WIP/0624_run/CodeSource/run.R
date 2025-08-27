@@ -306,16 +306,16 @@ run_dg(
 
 # Set GO analysis save directory
 go_dir <- file.path(save_dir, "GO_BP_MAST")
-cnet_dir <- file.path(save_dir, go_dir, "cnet")
-rrvgo_dir <- file.path(save_dir, go_dir, "rrvgo")
+cnet_dir <- file.path(go_dir, "cnet")
+rrvgo_dir <- file.path(go_dir, "rrvgo")
 
 go_dir <- file.path(save_dir, "GO_MF_MAST")
-cnet_dir <- file.path(save_dir, go_dir, "cnet")
-rrvgo_dir <- file.path(save_dir, go_dir, "rrvgo")
+cnet_dir <- file.path(go_dir, "cnet")
+rrvgo_dir <- file.path(go_dir, "rrvgo")
 
 go_dir <- file.path(save_dir, "GO_CC_MAST")
-cnet_dir <- file.path(save_dir, go_dir, "cnet")
-rrvgo_dir <- file.path(save_dir, go_dir, "rrvgo")
+cnet_dir <- file.path(go_dir, "cnet")
+rrvgo_dir <- file.path(go_dir, "rrvgo")
 
 
 dir.create(go_dir, recursive = TRUE)
