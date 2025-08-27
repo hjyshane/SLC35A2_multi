@@ -1,0 +1,1935 @@
+---
+title: "CleanedPTZEXP1Script"
+output: html_document
+date: "2023-05-23"
+---
+# seurat v4.
+
+##LIBRARIES
+```{r}
+library(Signac)
+library(Seurat)
+library(ggplot2)
+library(patchwork)
+library(tidyverse)
+library(clustree)
+library(plyr)
+library(dplyr)
+library(cowplot)
+library(readr)
+library(Matrix)
+library(sctransform)
+library(glmGamPoi)
+library(ROCR)
+library(parallel)
+library(fields)
+library(DoubletFinder)
+library(DESeq2)
+library(ggrepel)
+library(tibble)
+library(clusterProfiler)
+library(org.Mm.eg.db)
+library(igraph)
+library(ggvenn)
+dyn.load("/igm/apps/hdf5/hdf5-1.12.1/lib/libhdf5_hl.so.200")
+library(hdf5r)
+library(rtracklayer)
+
+```
+
+###
+```{r}
+ptz1hr.counts <- Read10X_h5("~/PTZ_ATAC_scRNA_072024/File/PTZ-1hr/outs/filtered_feature_bc_matrix.h5")
+sal1hr.counts <- Read10X_h5("~/PTZ_ATAC_scRNA_072024/File/SAL-1hr/outs/filtered_feature_bc_matrix.h5")
+ptz24hr.counts <- Read10X_h5("~/PTZ_ATAC_scRNA_072024/File/PTZ-24hr/outs/filtered_feature_bc_matrix.h5")
+sal24hr.counts <- Read10X_h5("~/PTZ_ATAC_scRNA_072024/File/SAL-24hr/outs/filtered_feature_bc_matrix.h5")
+
+ptz1hr.fragpath <- "~/PTZ_ATAC_scRNA_072024/File/PTZ-1hr/outs/atac_fragments.tsv.gz"
+sal1hr.fragpath <- "~/PTZ_ATAC_scRNA_072024/File/SAL-1hr/outs/atac_fragments.tsv.gz"
+ptz24hr.fragpath <- "~/PTZ_ATAC_scRNA_072024/File/PTZ-24hr/outs/atac_fragments.tsv.gz"
+sal24hr.fragpath <- "~/PTZ_ATAC_scRNA_072024/File/SAL-24hr/outs/atac_fragments.tsv.gz"
+
+# Annotation data insert
+mm10 <- import("/igm/apps/10X_chromium/refdata-cellranger-arc-mm10-2020-A-2.0.0/genes/genes.gtf.gz")
+genome(mm10) <- "mm10"
+seqlevelsStyle(mm10) <- "UCSC"
+mm10$gene_biotype <- mm10$gene_type
+annotations <- mm10
+
+
+ptz1hr.metadata <- read.csv(
+  file = "~/PTZ_ATAC_scRNA_072024/File/PTZ-1hr/outs/per_barcode_metrics.csv",
+  header = TRUE,
+  row.names = 1
+)
+
+sal1hr.metadata <- read.csv(
+  file = "~/PTZ_ATAC_scRNA_072024/File/SAL-1hr/outs/per_barcode_metrics.csv",
+  header = TRUE,
+  row.names = 1
+)
+
+ptz24hr.metadata <- read.csv(
+  file = "~/PTZ_ATAC_scRNA_072024/File/PTZ-24hr/outs/per_barcode_metrics.csv",
+  header = TRUE,
+  row.names = 1
+)
+
+sal24hr.metadata <- read.csv(
+  file = "~/PTZ_ATAC_scRNA_072024/File/SAL-24hr/outs/per_barcode_metrics.csv",
+  header = TRUE,
+  row.names = 1
+)
+
+ptz1hr <- CreateSeuratObject(
+  counts = ptz1hr.counts$`Gene Expression`,
+  project = "PTZ1hr",
+  assay = "RNA",
+  meta.data = ptz1hr.metadata
+)
+
+sal1hr <- CreateSeuratObject(
+  counts = sal1hr.counts$`Gene Expression`,
+  project = "SAL1hr",
+  assay = "RNA",
+  meta.data = sal1hr.metadata
+)
+
+ptz24hr <- CreateSeuratObject(
+  counts = ptz24hr.counts$`Gene Expression`,
+  project = "PTZ24hr",
+  assay = "RNA",
+  meta.data = ptz24hr.metadata
+)
+
+sal24hr <- CreateSeuratObject(
+  counts = sal24hr.counts$`Gene Expression`,
+  project = "SAL24hr",
+  assay = "RNA",
+  meta.data = sal24hr.metadata
+)
+
+
+ptz1hr[["ATAC"]] <- CreateChromatinAssay(
+  counts = ptz1hr.counts$Peaks,
+  sep = c(":", "-"),
+  fragments = ptz1hr.fragpath,
+  annotation = annotations
+)
+
+sal1hr[["ATAC"]] <- CreateChromatinAssay(
+  counts = sal1hr.counts$Peaks,
+  sep = c(":", "-"),
+  fragments = sal1hr.fragpath,
+  annotation = annotations
+)
+
+ptz24hr[["ATAC"]] <- CreateChromatinAssay(
+  counts = ptz24hr.counts$Peaks,
+  sep = c(":", "-"),
+  fragments = ptz24hr.fragpath,
+  annotation = annotations
+)
+
+sal24hr[["ATAC"]] <- CreateChromatinAssay(
+  counts = sal24hr.counts$Peaks,
+  sep = c(":", "-"),
+  fragments = sal24hr.fragpath,
+  annotation = annotations
+)
+
+DefaultAssay(ptz1hr) <- "ATAC"
+DefaultAssay(sal1hr) <- "ATAC"
+DefaultAssay(ptz24hr) <- "ATAC"
+DefaultAssay(sal24hr) <- "ATAC"
+
+seqlevelsStyle(annotations) <- 'UCSC' #change to UCSC style since the data was mapped to hg19
+Annotation(ptz1hr) <- annotations 
+Annotation(sal1hr) <- annotations 
+Annotation(ptz24hr) <- annotations 
+Annotation(sal24hr) <- annotations 
+
+ptz1hr <- NucleosomeSignal(ptz1hr)
+sal1hr <- NucleosomeSignal(sal1hr)
+ptz24hr <- NucleosomeSignal(ptz24hr)
+sal24hr <- NucleosomeSignal(sal24hr)
+
+ptz1hr <- TSSEnrichment(ptz1hr, fast = F)
+sal1hr <- TSSEnrichment(sal1hr, fast = F)
+ptz24hr <- TSSEnrichment(ptz24hr, fast = F)
+sal24hr <- TSSEnrichment(sal24hr, fast = F)
+
+ptz1hr$high.tss <- ifelse(ptz1hr$TSS.enrichment > 2, 'High', 'Low')
+TSSPlot(ptz1hr, group.by = 'high.tss') + NoLegend()
+TSSPlot(ptz1hr)
+
+ptz24hr$high.tss <- ifelse(ptz24hr$TSS.enrichment > 2, 'High', 'Low')
+TSSPlot(ptz24hr, group.by = 'high.tss') + NoLegend()
+TSSPlot(ptz24hr)
+
+sal1hr$high.tss <- ifelse(sal1hr$TSS.enrichment > 2, 'High', 'Low')
+TSSPlot(sal1hr, group.by = 'high.tss') + NoLegend()
+TSSPlot(sal1hr)
+
+sal24hr$high.tss <- ifelse(sal24hr$TSS.enrichment > 2, 'High', 'Low')
+TSSPlot(sal24hr, group.by = 'high.tss') + NoLegend()
+TSSPlot(sal24hr)
+
+ptz1hr$pct_reads_in_peaks <- ptz1hr$atac_peak_region_fragments / ptz1hr$atac_fragments * 100
+sal1hr$pct_reads_in_peaks <- sal1hr$atac_peak_region_fragments / sal1hr$atac_fragments * 100
+ptz24hr$pct_reads_in_peaks <- ptz24hr$atac_peak_region_fragments / ptz24hr$atac_fragments * 100
+sal24hr$pct_reads_in_peaks <- sal24hr$atac_peak_region_fragments / sal24hr$atac_fragments * 100
+
+ptz1hr[["percent.mt"]] <- PercentageFeatureSet(ptz1hr, pattern = "^mt-")
+sal1hr[["percent.mt"]] <- PercentageFeatureSet(sal1hr, pattern = "^mt-")
+ptz24hr[["percent.mt"]] <- PercentageFeatureSet(ptz24hr, pattern = "^mt-")
+sal24hr[["percent.mt"]] <- PercentageFeatureSet(sal24hr, pattern = "^mt-")
+
+ptz1hr[["percent.ribo"]] <- PercentageFeatureSet(ptz1hr, pattern = "^RP[SL]")
+sal1hr[["percent.ribo"]] <- PercentageFeatureSet(sal1hr, pattern = "^RP[SL]")
+ptz24hr[["percent.ribo"]] <- PercentageFeatureSet(ptz24hr, pattern = "^RP[SL]")
+sal24hr[["percent.ribo"]] <- PercentageFeatureSet(sal24hr, pattern = "^RP[SL]")
+
+ptz1hr <- subset(
+  x = ptz1hr,
+  subset = nCount_ATAC < 100000 &
+    nCount_RNA < 25000 &
+    nCount_ATAC > 1000 &
+    nCount_RNA > 1000 &
+    nucleosome_signal < 2 &
+    TSS.enrichment > 2 &
+    percent.mt < 5
+)
+
+sal1hr <- subset(
+  x = sal1hr,
+  subset = nCount_ATAC < 100000 &
+    nCount_RNA < 25000 &
+    nCount_ATAC > 1000 &
+    nCount_RNA > 1000 &
+    nucleosome_signal < 2 &
+    TSS.enrichment > 2 &
+    percent.mt < 5
+)
+
+ptz24hr <- subset(
+  x = ptz24hr,
+  subset = nCount_ATAC < 100000 &
+    nCount_RNA < 25000 &
+    nCount_ATAC > 1000 &
+    nCount_RNA > 1000 &
+    nucleosome_signal < 2 &
+    TSS.enrichment > 2 &
+    percent.mt < 5
+)
+
+sal24hr <- subset(
+  x = sal24hr,
+  subset = nCount_ATAC < 100000 &
+    nCount_RNA < 25000 &
+    nCount_ATAC > 1000 &
+    nCount_RNA > 1000 &
+    nucleosome_signal < 2 &
+    TSS.enrichment > 2 &
+    percent.mt < 5
+)
+
+DefaultAssay(ptz1hr) <- "RNA"
+DefaultAssay(sal1hr) <- "RNA"
+DefaultAssay(ptz24hr) <- "RNA"
+DefaultAssay(sal24hr) <- "RNA"
+
+ptz1hr <- SCTransform(ptz1hr, method = "glmGamPoi",verbose = T)
+sal1hr <- SCTransform(sal1hr, method = "glmGamPoi",verbose = T)
+ptz24hr <- SCTransform(ptz24hr, method = "glmGamPoi",verbose = T)
+sal24hr <- SCTransform(sal24hr, method = "glmGamPoi",verbose = T)
+
+ptz1hr <- RunPCA(ptz1hr,verbose = T)
+sal1hr <- RunPCA(sal1hr,verbose = T)
+ptz24hr <- RunPCA(ptz24hr,verbose = T)
+sal24hr <- RunPCA(sal24hr,verbose = T)
+
+ptz1hr <- RunUMAP(ptz1hr, dims = 1:30, verbose = T)
+sal1hr <- RunUMAP(sal1hr, dims = 1:30, verbose = T)
+ptz24hr <- RunUMAP(ptz24hr, dims = 1:30, verbose = T)
+sal24hr <- RunUMAP(sal24hr, dims = 1:30, verbose = T)
+
+ptz1hr <- RunTSNE(ptz1hr, dims = 1:30, verbose = T)
+sal1hr <- RunTSNE(sal1hr, dims = 1:30, verbose = T)
+ptz24hr <- RunTSNE(ptz24hr, dims = 1:30, verbose = T)
+sal24hr <- RunTSNE(sal24hr, dims = 1:30, verbose = T)
+
+# sweep.res.ptz1hr <- paramSweep_v3(ptz1hr, PCs = 1:30, sct = T)
+# sweep.res.sal1hr <- paramSweep_v3(sal1hr, PCs = 1:30, sct = T)
+# sweep.res.ptz24hr <- paramSweep_v3(ptz24hr, PCs = 1:30, sct = T)
+# sweep.res.sal24hr <- paramSweep_v3(sal24hr, PCs = 1:30, sct = T)
+# 
+# sweep.stats.ptz1hr<- summarizeSweep(sweep.res.ptz1hr, GT = FALSE)
+# sweep.stats.sal1hr<- summarizeSweep(sweep.res.sal1hr, GT = FALSE)
+# sweep.stats.ptz24hr<- summarizeSweep(sweep.res.ptz1hr, GT = FALSE)
+# sweep.stats.sal24hr<- summarizeSweep(sweep.res.sal1hr, GT = FALSE)
+# 
+# bcmvn_ptz1hr <- find.pK(sweep.stats.ptz1hr)
+# bcmvn_sal1hr <- find.pK(sweep.stats.sal1hr)
+# bcmvn_ptz24hr <- find.pK(sweep.stats.ptz24hr)
+# bcmvn_sal24hr <- find.pK(sweep.stats.sal24hr)
+# 
+# ptz1hrpk <- as.numeric(as.vector(top_n(bcmvn_ptz1hr,1,BCmetric)[["pK"]]))
+# sal1hrpk <- as.numeric(as.vector(top_n(bcmvn_sal1hr,1,BCmetric)[["pK"]]))
+# ptz24hrpk <- as.numeric(as.vector(top_n(bcmvn_ptz24hr,1,BCmetric)[["pK"]]))
+# sal24hrpk <- as.numeric(as.vector(top_n(bcmvn_sal24hr,1,BCmetric)[["pK"]]))
+# 
+# nExp_poi.ptz1hr <- round(0.075*nrow(ptz1hr@meta.data))
+# nExp_poi.sal1hr <- round(0.075*nrow(sal1hr@meta.data))
+# nExp_poi.ptz24hr <- round(0.075*nrow(ptz24hr@meta.data))
+# nExp_poi.sal24hr <- round(0.075*nrow(sal24hr@meta.data))
+# 
+# ptz1hr <- doubletFinder_v3(ptz1hr, PCs = 1:30, pN = 0.25, pK = ptz1hrpk, nExp = nExp_poi.ptz1hr, reuse.pANN = FALSE, sct = T)
+# sal1hr <- doubletFinder_v3(sal1hr, PCs = 1:30, pN = 0.25, pK = sal1hrpk, nExp = nExp_poi.sal1hr, reuse.pANN = FALSE, sct = T)
+# ptz24hr <- doubletFinder_v3(ptz24hr, PCs = 1:30, pN = 0.25, pK = ptz24hrpk, nExp = nExp_poi.ptz24hr, reuse.pANN = FALSE, sct = T)
+# sal24hr <- doubletFinder_v3(sal24hr, PCs = 1:30, pN = 0.25, pK = sal24hrpk, nExp = nExp_poi.sal24hr, reuse.pANN = FALSE, sct = T)
+# 
+# Idents(ptz1hr) <- ptz1hr@meta.data[[paste0("DF.classifications_0.25_",ptz1hrpk,"_",nExp_poi.ptz1hr)]]
+# Idents(sal1hr) <- sal1hr@meta.data[[paste0("DF.classifications_0.25_",sal1hrpk,"_",nExp_poi.sal1hr)]]
+# Idents(ptz24hr) <- ptz24hr@meta.data[[paste0("DF.classifications_0.25_",ptz24hrpk,"_",nExp_poi.ptz24hr)]]
+# Idents(sal24hr) <- sal24hr@meta.data[[paste0("DF.classifications_0.25_",sal24hrpk,"_",nExp_poi.sal24hr)]]
+# 
+# ptz1hr <- subset(ptz1hr, idents = "Singlet")
+# sal1hr <- subset(sal1hr, idents = "Singlet")
+# ptz24hr <- subset(ptz24hr, idents = "Singlet")
+# sal24hr <- subset(sal24hr, idents = "Singlet")
+
+ptz1hr$sample <- "PTZ_1hr"
+sal1hr$sample <- "Saline_1hr"
+ptz24hr$sample <- "PTZ_24hr"
+sal24hr$sample <- "Saline_24hr"
+
+ptz1hr$time <- "1hr"
+sal1hr$time <- "1hr"
+ptz24hr$time <- "24hr"
+sal24hr$time <- "24hr"
+
+ptz1hr$treatment <- "PTZ"
+sal1hr$treatment <- "Saline"
+ptz24hr$treatment <- "PTZ"
+sal24hr$treatment <- "Saline"
+
+
+DefaultAssay(sal1hr) <- "SCT"
+DefaultAssay(sal24hr) <- "SCT"
+DefaultAssay(ptz1hr) <- "SCT"
+DefaultAssay(ptz24hr) <- "SCT"
+
+saveRDS(sal1hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/sal1hr_0913.rds")
+saveRDS(sal24hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/sal24hr_0913.rds")
+saveRDS(ptz1hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/ptz1hr_0913.rds")
+saveRDS(ptz24hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/ptz24hr_0913.rds")
+
+#RNA Integration
+combo.list <- list("PTZ1Hour" = ptz1hr,"Saline1Hour" = sal1hr,"PTZ24Hour" = ptz24hr,"Saline24Hour" = sal24hr)
+
+features <- SelectIntegrationFeatures(object.list = combo.list, nfeatures = 3000)
+
+combo.list <- PrepSCTIntegration(object.list = combo.list, anchor.features = features)
+
+combo.anchors <- FindIntegrationAnchors(object.list = combo.list, normalization.method = "SCT", anchor.features = features)
+
+combo.all <- IntegrateData(anchorset = combo.anchors, normalization.method = "SCT")
+
+combo.all <- RunPCA(combo.all, verbose = FALSE)
+combo.all <- RunUMAP(combo.all, dims = 1:30, verbose = FALSE)
+combo.all <- RunTSNE(combo.all, dims = 1:30, verbose = FALSE)
+combo.all <- FindNeighbors(combo.all, dims = 1:30, verbose = FALSE)
+combo.all <- FindClusters(combo.all, verbose = FALSE)
+
+saveRDS(combo.all, file = '~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/combo.allRNAintegration_0913.rds')
+
+####ATAC Integration ####
+DefaultAssay(combo.all) <- "ATAC"
+DefaultAssay(combo.all) <- "peaks"
+combo.all <- FindTopFeatures(combo.all, min.cutoff = 10)
+combo.all <- RunTFIDF(combo.all)
+combo.all <- RunSVD(combo.all)
+combo.all <- RunUMAP(combo.all, reduction = "lsi", dims = 2:30)
+#ATAC Integration
+DefaultAssay(combo.all) <- "ATAC"
+DefaultAssay(sal24hr) <- "ATAC"
+DefaultAssay(ptz1hr) <- "ATAC"
+DefaultAssay(ptz24hr) <- "ATAC"
+# 
+# ## find integration anchors
+combo.all <- RunTFIDF(ptz1hr)
+combo.all <- FindTopFeatures(combo.all, min.cutoff = 'q0')
+combo.all <- RunSVD(object = combo.all)
+
+ptz1hr <- RunTFIDF(ptz1hr)
+ptz1hr <- FindTopFeatures(ptz1hr, min.cutoff = 'q0')
+ptz1hr <- RunSVD(object = ptz1hr)
+
+ptz24hr <- RunTFIDF(ptz24hr)
+ptz24hr <- FindTopFeatures(ptz24hr, min.cutoff = 'q0')
+ptz24hr <- RunSVD(object = ptz24hr)
+
+sal1hr <- RunTFIDF(sal1hr)
+sal1hr <- FindTopFeatures(sal1hr, min.cutoff = 'q0')
+sal1hr <- RunSVD(object = sal1hr)
+
+sal24hr <- RunTFIDF(sal24hr )
+sal24hr  <- FindTopFeatures(sal24hr, min.cutoff = 'q0')
+sal24hr  <- RunSVD(object = sal24hr)
+
+# add information to identify dataset of origin
+ptz1hr$dataset <- 'PTZ1Hour'
+ptz24hr$dataset <- 'PTZ24Hour'
+sal1hr$dataset <- 'SAL1Hour'
+sal24hr$dataset <- 'SAL24Hour'
+
+saveRDS(sal1hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/sal1hr_atac_0913.rds")
+saveRDS(sal24hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/sal24hr_atac_0913.rds")
+saveRDS(ptz1hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/ptz1hr_atac_0913.rds")
+saveRDS(ptz24hr, file = "~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/ptz24hr_atac_0913.rds")
+#merge datasets - might not merge instead I did RNA integration and then DNA integration
+# all.combined <- merge(x = sal1hr, y= list(ptz24hr, ptz1hr, sal24hr), add.cell.ids = c('SAL1hr', 'PTZ24hr', 'PTZ1hr', 'SAL24hr'))
+# all.combined[["ATAC"]]
+
+
+# process the combined dataset
+combo.all <- RunTFIDF(combo.all)
+combo.all <- FindTopFeatures(combo.all, min.cutoff = 10)
+combo.all <- RunSVD(combo.all)
+combo.all <- RunUMAP(combo.all, reduction = "lsi", dims = 2:30)
+
+
+atac.integration.anchors <- FindIntegrationAnchors(
+  object.list = list(ptz1hr, ptz24hr, sal1hr, sal24hr),
+  anchor.features = rownames(ptz1hr),  # Features from the ATAC assay
+  reduction = "rlsi",  # Reciprocal LSI for ATAC data
+  dims = 2:30
+)
+
+
+# integrate LSI embeddings
+combo.all <- IntegrateEmbeddings(
+  anchorset = atac.integration.anchors,
+  reductions = combo.all[["lsi"]],
+  new.reduction.name = "integrated_lsi",
+  dims.to.integrate = 1:30
+)
+
+# create a new UMAP using the integrated embeddings
+#integrated <- RunUMAP(combo.all
+#                      , reduction = "integrated_lsi", dims = 2:30)
+
+#p2 <- DimPlot(integrated, group.by = "sample")
+
+#####Normalize ATAC-seq data#####
+
+DefaultAssay(combo.all) <- "ATAC"
+
+combo.all <- RunTFIDF(combo.all)
+combo.all <- FindTopFeatures(combo.all, min.cutoff = 5)
+combo.all <- RunSVD(combo.all)
+
+saveRDS(combo.all, file = '~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/combo.allATACintegration.rds')
+
+
+
+#####Dim reduction and clustering#####
+
+DefaultAssay(combo.all) <- "integrated"
+
+# Run PCA
+
+combo.all <- RunPCA(combo.all)
+
+
+# Let's find neighbors, clusters, markers and identify our clusters
+
+combo.all <- FindNeighbors(combo.all, dims = 1:30, verbose = T)
+
+combo.all <- RunUMAP(combo.all, dims = 1:30, verbose = T)
+combo.all <- RunTSNE(combo.all, dims = 1:30, verbose = T)
+
+combo.all <- FindClusters(combo.all,resolution = 0.1, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.2, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.4, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.5, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.6, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.7, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.8, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 0.9, verbose = T)
+combo.all <- FindClusters(combo.all,resolution = 1, verbose = T)
+#Final resolution is .3 as it allowed for separation between OPCs and Oligodendrocytes
+combo.all <- FindClusters(combo.all,resolution = 0.3, verbose = T)
+
+
+#saveRDS(combo.all, file = '~/01_PTZExp1/02_Scripts//combo.allaftclusteringredo.rds')
+```
+
+
+#CELL TYPING
+```{r}
+####Manual Cell Typing####
+#Find Markers
+combo.all.markers <- FindAllMarkers(combo.all, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+combo.all.markers %>%
+  group_by(cluster) %>%
+  slice_max(n = 2, order_by = avg_log2FC)
+write.csv(combo.all.markers, file="~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/combo.all.markers.csv")
+
+#Markers for each
+DefaultAssay(combo.all) <- "SCT"
+
+#Rename Idents - at .3 resolution - FINAL RESOLUTION
+combo.all <- RenameIdents(combo.all, 
+                          "0" = "Excitatory Neurons (CA1)",
+                          "1" = "Granule Neurons",
+                          "2" = "Excitatory Neurons (CA3)",
+                          "3" = "Excitatory Neurons 1",
+                          "4" = "Atrocytes",
+                          "5" = "Granule Neurons",
+                          "6" = "MGE-Derived Interneurons",
+                          "7" = "Excitatory Neurons (Layer 6)",
+                          "8" = "Excitatory Neurons (CA1)",
+                          "9" = "OPCs",
+                          "10" = "Granuale Neuroblasts",
+                          "11" = "Excitatory Neurons 3",
+                          "12" = "Excitatory Neurons (CA1)",
+                          "13" = "Excitatory Neurons 2",
+                          "14" = "Excitatory Neurons 2",
+                          "15" = "CGE-Derived Interneurons",
+                          "16" = "Excitatory Neurons (CA3)",
+                          "17" = "Cajal Retzius",
+                          "18" = "Oligodendrocytes",
+                          "19" = "Excitatory Neurons (Layer 6)",
+                          "20" = "Microglia",
+                          "21" = "unknown")
+
+FeaturePlot(combo.all, features = c("Skap1","P2ry12"), label = T)
+DimPlot(combo.all) + NoAxes()
+
+#save new identities
+Idents(combo.all) -> combo.all@meta.data$manualcelltyping
+saveRDS(combo.all, file = ("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds"))
+combo.all <- readRDS("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds")
+
+
+mouseatlas.cut <- readRDS("/igm/home/hxy008/PTZ_ATAC_scRNA_072024/WIP/File/mouseatlas_cut_processed.rds")
+library(future)
+options(future.globals.maxSize = 16000 * 1024^2)
+mouseatlas.cut <-SCTransform(mouseatlas.cut, verbose = FALSE)
+
+#
+DefaultAssay(combo.all) <- "SCT"
+#
+anchors <- FindTransferAnchors(reference = mouseatlas.cut,
+                               query = combo.all,
+                               dims = 1:30,
+                               normalization.method = "SCT")
+#
+predictions <- TransferData(anchorset = anchors,
+                            refdata = mouseatlas.cut$Description,
+                            dims = 1:30)
+combo.all <- AddMetaData(object = combo.all, metadata = predictions)
+
+#
+combo.all$cell_types <- combo.all$predicted.id
+Idents(combo.all) <- combo.all$cell_types
+unique(combo.all$cell_types)
+
+
+long_names <- c(
+  "Excitatory neurons, hippocampus CA1",
+  "Granule neuroblasts, dentate gyrus",
+  "Granule neurons, dentate gyrus",
+  "Basket and bistratified cells, cortex/hippocampus",
+  "Axo-axonic, cortex/hippocampus",
+  "Excitatory neurons, hippocampus CA3",
+  "Excitatory neurons, cerebral cortex",
+  "CGE-derived neurogliaform cells, cortex/hippocampus",
+  "Dentate gyrus radial glia-like cells",
+  "CGE-derived neurogliaform cells Cxcl14+, cortex/hippocampus",
+  "Interneuron-selective interneurons, cortex/hippocampus",
+  "Oligodendrocytes precursor cells",
+  "Telencephalon astrocytes, protoplasmic",
+  "Committed oligodendrocytes cells (COP)",
+  "Trilaminar cells, hippocampus",
+  "Hippocamposeptal projection, cortex/hippocampus",
+  "Neuronal intermidate progenitor cells",
+  "Microglia, activated",
+  "Cajal-Retzius cells, hippocampus",
+  "Telencephalon astrocytes, fibrous",
+  "Myelin forming oligodendrocytes (MFOL)",
+  "R-LM border Cck interneurons, cortex/hippocampus",
+  "Vasucular endothelial cells, capillary",
+  "Inhibitory interneurons, hippocampus",
+  "Mature oligodendrocytes",
+  "Sleep-active, long-range projection interneurons, cortex/hippocampus",
+  "Vascular leptomeningeal cells",
+  "Ivy and MGE-derived neurogliaform cells, cortex/hippocampus",
+  "Microglia",
+  "Ependymal cells",
+  "Newly formed oligodendrocytes (NFOL)",
+  "Perivascular macrophages",
+  "Vasucular endothelial cells, venous",
+  "Pericytes"
+  )
+
+short_names <- c(
+  "Ex_Neu_CA1",
+  "Gran_NB_DG",
+  "Gran_Neu_DG",
+  "Basket_Bistrat",
+  "Axo_Axonic",
+  "Ex_Neu_CA3",
+  "Ex_Neu_Cortex",
+  "CGE_Neurogli",
+  "DG_RGCs",
+  "CGE_Neurogli_Cxcl14",
+  "Int_Sel_Int",
+  "OPC",
+  "Astro_Proto",
+  "COP",
+  "Trilaminar_Hippo",
+  "Hippocampo_Proj",
+  "Neu_Int_Prog",
+  "Microglia, activated",
+  "Cajal-Retzius, hippocampus",
+  "Astro_Fibrous",
+  "MFOL",
+  "RLM_Cck_Int",
+  "Vasu_Endo_capillary",
+  "Inh_Int_Hippo",
+  "MOPC",
+  "Sleep_Proj_Int",
+  "Vasc_Lepto",
+  "Ivy_MGE_Neurogli",
+  "Microglia",
+  "Ependymal",
+  "NFOL",
+  "Peri_Macro",
+  "Vasc_Endo_venous",
+  "Pericytes"
+  )
+
+
+
+# Create a named vector for easy mapping
+name_map <- setNames(short_names, long_names)
+#
+# # Function to shorten names
+shorten_names <- function(x) {
+  ifelse(x %in% names(name_map), name_map[x], x)
+}
+#
+combo.all$celltype_short <- shorten_names(combo.all$cell_types)
+Idents(combo.all) <- combo.all$celltype_short
+Idents(combo.all) <- combo.all$seurat_clusters
+DimPlot(combo.all, reduction = "umap.harmony", label = T, repel = T) + NoAxes() + NoLegend()
+saveRDS(combo.all, file = '~/PTZ_ATAC_scRNA_072024/WIP/File/V4seurat/combo.allAnnotation.rds')
+```
+
+
+
+#MARKER SCORE
+```{Marker Score}
+# Get the top 10 marker genes for each cluster (unkown, Excitatory 1, Excitatory Neurons 2, Excitatory Neurons 3)
+#subset
+combo.allunknown <- subset(combo.all, idents = "unknown")
+combo.allunknown <- FindVariableFeatures(combo.allunknown, selection.method = "vst", nfeatures = 2000)
+top10unknown <- head(VariableFeatures(combo.allunknown), 10)
+top10unknown <- as.data.frame(top10unknown)
+
+#Add cell type column
+top10unknown$CellType <- c('unknown', 
+                        'unknown', 
+                        'unknown', 
+                        'unknown', 
+                        'unknown', 
+                        'unknown',
+                        'unknown',
+                        'unknown',
+                        'unknown',
+                        'unknown')
+#rearrange columns 
+top10unknown <- top10unknown[c(2,1)]
+
+#change row 2's name to top10 (need for rbind later)
+colnames(top10unknown)[2] <- "top10"
+
+#Excitatory Neurons 1
+#subset
+combo.allExc1 <- subset(combo.all, idents = "Excitatory Neurons 1")
+combo.allExc1 <- FindVariableFeatures(combo.allExc1, selection.method = "vst", nfeatures = 2000)
+top10Exc1 <- head(VariableFeatures(combo.allExc1), 10)
+top10Exc1 <- as.data.frame(top10Exc1)
+
+#Add cell type column
+top10Exc1$CellType <- c('Excitatory Neurons 1', 
+               'Excitatory Neurons 1', 
+               'Excitatory Neurons 1', 
+               'Excitatory Neurons 1', 
+               'Excitatory Neurons 1', 
+               'Excitatory Neurons 1',
+               'Excitatory Neurons 1',
+               'Excitatory Neurons 1',
+               'Excitatory Neurons 1',
+               'Excitatory Neurons 1')
+#rearrange columns 
+top10Exc1 <- top10Exc1[c(2,1)]
+
+#change row 2's name to top10 (need for rbind later)
+colnames(top10Exc1)[2] <- "top10"
+
+
+#Excitatory Neurons 2
+#subset
+combo.allExc2 <- subset(combo.all, idents = "Excitatory Neurons 2")
+#unknown
+combo.allExc2 <- FindVariableFeatures(combo.allExc2, selection.method = "vst", nfeatures = 2000)
+top10Exc2 <- head(VariableFeatures(combo.allExc2), 10)
+top10Exc2 <- as.data.frame(top10Exc2)
+
+#Add cell type column
+top10Exc2$CellType <- c('Excitatory Neurons 2', 
+                        'Excitatory Neurons 2', 
+                        'Excitatory Neurons 2', 
+                        'Excitatory Neurons 2', 
+                        'Excitatory Neurons 2', 
+                        'Excitatory Neurons 2',
+                        'Excitatory Neurons 2',
+                        'Excitatory Neurons 2',
+                        'Excitatory Neurons 2',
+                        'Excitatory Neurons 2')
+#rearrange columns 
+top10Exc2 <- top10Exc2[c(2,1)]
+
+#change row 2's name to top10 (need for rbind later)
+colnames(top10Exc2)[2] <- "top10"
+
+#Excitatory Neurons 3
+#subset
+combo.allExc3 <- subset(combo.all, idents = "Excitatory Neurons 3")
+#unknown
+combo.allExc3 <- FindVariableFeatures(combo.allExc3, selection.method = "vst", nfeatures = 2000)
+top10Exc3 <- head(VariableFeatures(combo.allExc3), 10)
+top10Exc3 <- as.data.frame(top10Exc3)
+
+#Add cell type column
+top10Exc3$CellType <- c('Excitatory Neurons 3', 
+                        'Excitatory Neurons 3', 
+                        'Excitatory Neurons 3', 
+                        'Excitatory Neurons 3', 
+                        'Excitatory Neurons 3', 
+                        'Excitatory Neurons 3',
+                        'Excitatory Neurons 3',
+                        'Excitatory Neurons 3',
+                        'Excitatory Neurons 3',
+                        'Excitatory Neurons 3')
+#rearrange columns 
+top10Exc3 <- top10Exc3[c(2,1)]
+
+#change row 2's name to top10 (need for rbind later)
+colnames(top10Exc3)[2] <- "top10"
+
+###Create csv of top 10 markers for each cell type of interest
+top10markerscore <- rbind(top10unknown, top10Exc1, top10Exc2, top10Exc3)
+write_csv(top10markerscore, file = "~/PTZEXP1/ptzexp1markerscoregenes.csv")
+
+###Create subset for marker score
+combo.allmarkerscore <- subset(combo.all, idents = c("unknown","Excitatory Neurons 1", "Excitatory Neurons 2", "Excitatory Neurons 3"))
+# Get CPMs per https://satijalab.org/seurat/reference/normalizedata, They will be stored in RNA assay, counts slot.
+DefaultAssay(combo.allmarkerscore) <- "RNA"
+combo.allmarkerscore <- NormalizeData(combo.all, normalization.method = "RC", scale.factor = 1e6)
+
+# Make a list of the marker genes to use for calculating proportions
+genes <- unique(top10markerscore$top10)
+
+
+result <- c()
+clusters <- levels(combo.allmarkerscore@meta.data$manualcelltyping)
+
+#Marker Score Loop combo.all
+#Marker Score Loop PTZ1hrvs24hr
+for (i in 1:length(clusters)){
+  subset <- subset(combo.allmarkerscore, manualcelltyping == clusters[i])
+  DefaultAssay(subset) <- "RNA"
+  prop_cluster <- c()
+  for (i in 1:length(genes)){
+    gene <- FetchData(subset, vars = genes[i], slot = "counts")
+    prop <- (sum(gene[[1]] >1)) / (nrow(gene))
+    prop_cluster <- append(prop_cluster, prop)
+  }
+  result <- cbind(result, prop_cluster)
+}
+result <- as.data.frame(result)
+rownames(result) <- genes
+colnames(result) <- clusters
+result <- tibble::rownames_to_column(result, "genes")
+
+#make csv for further calculations
+write_csv(result, file = "~/PTZEXP1/ptzexp1markerscore.csv")
+#Subset so object just contains Unknown and Excitatory Neurons 1,2,3
+combo.allsub <- subset(combo.all, idents = c("Excitatory Neurons 3", "Excitatory Neurons 1", "Excitatory Neurons 2", "unknown"), invert = T)
+#Visualizations of Markers
+#Layer 2/3 Neurons
+FeaturePlot(combo.allsub, features = "Dpp10")
+FeaturePlot(combo.all, features = c("Dpp10", "Calb1", "Rasgrf2"), label =T)
+#might be layer 5?
+```
+
+#Module Score - Re-Celltyping
+```{r}
+#Look at resokution again
+combo.all <- FindClusters(combo.all,resolution = 0.3, verbose = T)
+DimPlot(combo.all, label=T)
+combo.all <- FindClusters(combo.all,resolution = 0.2, verbose = T)
+FeaturePlot(combo.all, features = c("Cntc6", "Bc11B", "Ctip2", "Ctgf", "Foxp2", "Pcp4"))
+##Module Score
+#Make list of genes for each layer
+l1 <- c("Reln")
+l2and3 <- c('Rasgrf2', 'Calb1', 'Cux1', 'Pou3F2', 'Brn2', 'Necab1')
+l4 <- c('Cux1', 'Pou3F2', 'Brn2')
+l5 <- c('Pcp4', 'Cntc6', 'Bcl11b', 'Ctip2', 'Pou3F2', 'Brn2', 'Necab1')
+l6 <- c('Tle4', 'Foxp2', 'Ctgf')
+
+#Use list of genes for module score for each cortical layer
+#Layer 1 Neurons
+combo.all <- AddModuleScore(combo.all, features = list(l1), name = 'Layer_1_Neurons')
+FeaturePlot(combo.all,
+            features = "Layer_1_Neurons1", label = TRUE, repel = TRUE)
+#Layer 2&3 Neurons
+combo.all <- AddModuleScore(combo.all, features = list(l2and3), name = 'Layer_2.3_Neurons')
+FeaturePlot(combo.all,
+            features = "Layer_2.3_Neurons1", label = TRUE, repel = TRUE)
+#Layer 4 Neurons
+combo.all <- AddModuleScore(combo.all, features = list(l4), name = 'Layer_4_Neurons')
+FeaturePlot(combo.all,
+            features = "Layer_4_Neurons1", label = TRUE, repel = TRUE)
+#Layer 5 Neurons
+combo.all <- AddModuleScore(combo.all, features = list(l5), name = 'Layer_5_Neurons')
+FeaturePlot(combo.all,
+            features = "Layer_5_Neurons1", label = TRUE, repel = TRUE)
+#Layer 6 Neurons
+combo.all <- AddModuleScore(combo.all, features = list(l5), name = 'Layer_6_Neurons')
+FeaturePlot(combo.all,
+            features = "Layer_6_Neurons1", label = TRUE, repel = TRUE)
+
+saveRDS(combo.all, file = "~/ ")
+```
+
+#DE ANALYSIS - Loops
+###Condition 1
+```{Condition 1 - Saline_1hr vs. Saline_24hr}
+
+##Load Object
+combo.all <- readRDS("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds")
+combined <- combo.all
+
+{
+  DefaultAssay(combined) <- "RNA"
+  Idents(combined) <- "manualcelltyping"
+  combined $celltype.sample <- paste(Idents(combined), combined$sample, sep = "_")
+  combined $celltype <- Idents(combined)
+  Idents(combined) <- "celltype.sample"
+}
+
+print(unique(combined$celltype.sample))
+
+#Define clusters to pass in ident.1 and ident.2 
+{
+  sample.class <- levels(combined @active.ident)
+  SAL_1hr <- sort(sample.class[grep("_Saline_1hr" , sample.class)])
+  SAL_24hr <- sort(sample.class[grep("_Saline_24hr", sample.class)])
+}
+
+#Check each of these lists and make sure they are the same items and in the same order. If not, it might mean a particular cluster is not present in one of the samples and needs to be removed. Items must match up between the two lists for this to work.
+
+SAL_1hr
+SAL_24hr
+
+#Open new data frames to store temp individual and binded outputs - empty dataframe
+{
+  response <- data.frame()
+  all.response <- data.frame()
+}
+
+#set working directory to save all output files to
+setwd("~/01_PTZExp1/06_DEAnalysis/DEloopOutput/")
+
+#Normalize data
+combined <- NormalizeData(combined) #adds normalized data to data slot
+
+for(i in 1:length(PTZ_1hr)){
+  skip_to_next <- FALSE
+  response <-  FindMarkers(combined, assay = "RNA", slot = "data", ident.1 = SAL_1hr[i], ident.2 = SAL_24hr[i]) 
+  response[,"Cluster Comparison"] <- paste(SAL_1hr[i],"vs", SAL_24hr[i], sep = " ", collapse = NULL) 
+  response[, "original_gene_names"] <- row.names(x = response)
+  tryCatch(
+    if( i == 1 )
+    {
+      all.response <- response
+    }
+    else
+    {
+      all.response <- rbind(all.response, response)
+    }
+    , error = function(e) {skip_to_next <<- TRUE})
+  
+  if(skip_to_next) { next } 
+  
+  write.csv(all.response, "SAL_1hr_vs_SAL_24hr.csv")
+}
+
+
+
+```
+
+###Condition 2
+```{Condition 2 - PTZ_1hr vs. PTZ_24hr}
+
+##Load Object
+combo.all <- readRDS("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds")
+combined <- combo.all
+
+{
+  DefaultAssay(combined) <- "RNA"
+  Idents(combined) <- "manualcelltyping"
+  combined $celltype.sample <- paste(Idents(combined), combined$sample, sep = "_")
+  combined $celltype <- Idents(combined)
+  Idents(combined) <- "celltype.sample"
+}
+
+print(unique(combined$celltype.sample))
+
+#Define clusters to pass in ident.1 and ident.2 
+{
+  sample.class <- levels(combined @active.ident)
+  PTZ_1hr <- sort(sample.class[grep("_PTZ_1hr" , sample.class)])
+  PTZ_24hr <- sort(sample.class[grep("_PTZ_24hr", sample.class)])
+}
+
+#Check each of these lists and make sure they are the same items and in the same order. If not, it might mean a particular cluster is not present in one of the samples and needs to be removed. Items must match up between the two lists for this to work.
+
+PTZ_1hr
+PTZ_24hr
+
+#Open new data frames to store temp individual and binded outputs - empty dataframe
+{
+  response <- data.frame()
+  all.response <- data.frame()
+}
+
+#set working directory to save all output files to
+setwd("~/01_PTZExp1/06_DEAnalysis/DEloopOutput/")
+
+#Normalize data
+combined <- NormalizeData(combined) #adds normalized data to data slot
+
+for(i in 1:length(PTZ_1hr)){
+  skip_to_next <- FALSE
+  response <-  FindMarkers(combined, assay = "RNA", slot = "data", ident.1 = PTZ_1hr[i], ident.2 = PTZ_24hr[i], min.pct = 0.25, logfc.threshold = 0.0, return.threshold = 1.01) 
+  response[,"Cluster Comparison"] <- paste(PTZ_1hr[i],"vs", PTZ_24hr[i], sep = " ", collapse = NULL) 
+  response[, "original_gene_names"] <- row.names(x = response)
+  tryCatch(
+    if( i == 1 )
+    {
+      all.response <- response
+    }
+    else
+    {
+      all.response <- rbind(all.response, response)
+    }
+    , error = function(e) {skip_to_next <<- TRUE})
+  
+  if(skip_to_next) { next } 
+  
+  write.csv(all.response, "PTZ_1hr_vs_PTZ_24hr.csv")
+}
+
+```
+
+###Condition 3
+```{Condition 3 - PTZ_1hr vs. Saline_1hr}
+
+##Load Object
+combo.all <- readRDS("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds")
+combined <- combo.all
+
+##Append each cluster with sample
+combined <- combo.all
+{
+  DefaultAssay(combined) <- "SCT"
+  Idents(combined) <- "manualcelltyping"
+  combined $celltype.sample <- paste(Idents(combined), combined$sample, sep = "_")
+  combined $celltype <- Idents(combined)
+  Idents(combined) <- "celltype.sample"
+}
+
+print(unique(combined$celltype.sample))
+
+#Define clusters to pass in ident.1 and ident.2 
+{
+  sample.class <- levels(combined @active.ident)
+  PTZ_1hr <- sort(sample.class[grep("_PTZ_1hr" , sample.class)])
+  SAL_1hr <- sort(sample.class[grep("_Saline_1hr", sample.class)])
+}
+
+#Check each of these lists and make sure they are the same items and in the same order. If not, it might mean a particular cluster is not present in one of the samples and needs to be removed. Items must match up between the two lists for this to work.
+
+PTZ_1hr
+SAL_1hr
+#SAL_1hr <- SAL_1hr[-c(22)] #had to remove one small cluster of venous vascular cells not in the ptz set
+
+#Open new data frames to store temp individual and binded outputs - empty dataframe
+{
+  response <- data.frame()
+  all.response <- data.frame()
+}
+
+#set working directory to save all output files to
+
+#Normalize data
+combined <- NormalizeData(combined) #adds normalized data to data slot
+
+for(i in 1:length(PTZ_1hr)){
+  skip_to_next <- FALSE
+  response <-  FindMarkers(combined, assay = "RNA", slot = "data", ident.1 = PTZ_1hr[i], ident.2 = SAL_1hr[i], min.pct = 0.25, logfc.threshold = 0.0, return.threshold = 1.01) 
+  response[,"Cluster Comparison"] <- paste(PTZ_1hr[i],"vs", SAL_1hr[i], sep = " ", collapse = NULL) 
+  response[, "original_gene_names"] <- row.names(x = response)
+  tryCatch(
+    if( i == 1 )
+    {
+      all.response <- response
+    }
+    else
+    {
+      all.response <- rbind(all.response, response)
+    }
+    , error = function(e) {skip_to_next <<- TRUE})
+  
+  if(skip_to_next) { next } 
+  
+  write.csv(all.response, "PTZ_1hr_vs_SAL_1hr.csv")
+}
+
+```
+
+###Condition 4
+```{Condition 4 - PTZ_24hr vs. Saline_24hr}
+
+##Load Object
+combo.all <- readRDS("~/01_PTZExp1/02_Scripts/combo.all.manualcelltyping.rds")
+combined <- combo.all
+
+##Append each cluster with sample
+combined <- combo.all
+{
+  DefaultAssay(combined) <- "SCT"
+  Idents(combined) <- "manualcelltyping"
+  combined $celltype.sample <- paste(Idents(combined), combined$sample, sep = "_")
+  combined $celltype <- Idents(combined)
+  Idents(combined) <- "celltype.sample"
+}
+
+print(unique(combined$celltype.sample))
+
+#Define clusters to pass in ident.1 and ident.2 
+{
+  sample.class <- levels(combined @active.ident)
+  PTZ_24hr <- sort(sample.class[grep("_PTZ_24hr" , sample.class)])
+  SAL_24hr <- sort(sample.class[grep("_Saline_24hr", sample.class)])
+}
+
+#Check each of these lists and make sure they are the same items and in the same order. If not, it might mean a particular cluster is not present in one of the samples and needs to be removed. Items must match up between the two lists for this to work.
+
+PTZ_24hr
+SAL_24hr
+#SAL_1hr <- SAL_1hr[-c(22)] #had to remove one small cluster of venous vascular cells not in the ptz set
+
+#Open new data frames to store temp individual and binded outputs - empty dataframe
+{
+  response <- data.frame()
+  all.response <- data.frame()
+}
+
+#set working directory to save all output files to
+
+#Normalize data
+combined <- NormalizeData(combined) #adds normalized data to data slot
+
+for(i in 1:length(PTZ_24hr)){
+  skip_to_next <- FALSE
+  response <-  FindMarkers(combined, assay = "RNA", slot = "data", ident.1 = PTZ_24hr[i], ident.2 = SAL_24hr[i],min.pct = 0.25, logfc.threshold = 0.0, return.threshold = 1.01) 
+  response[,"Cluster Comparison"] <- paste(PTZ_24hr[i],"vs", SAL_24hr[i], sep = " ", collapse = NULL) 
+  response[, "original_gene_names"] <- row.names(x = response)
+  tryCatch(
+    if( i == 1 )
+    {
+      all.response <- response
+    }
+    else
+    {
+      all.response <- rbind(all.response, response)
+    }
+    , error = function(e) {skip_to_next <<- TRUE})
+  
+  if(skip_to_next) { next } 
+  
+  write.csv(all.response, "PTZ_24hr_vs_SAL_24hr.csv")
+}
+```
+
+
+
+#GO-ANALYSIS
+```{r}
+##Cluster Profiler
+#https://yulab-smu.top/biomedical-knowledge-mining-book/clusterprofiler-go.html
+```
+
+
+##Excitatory Neurons 1
+```{r}
+#Load Lists
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Excitatory Neurons 1
+PTZ_1hr_vs_PTZ_24hrEXC1 <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 1_PTZ_1hr vs Excitatory Neurons 1_PTZ_24hr')
+SAL_1hr_vs_SAL_24hrEXC1 <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Excitatory Neurons 1_Saline_1hr vs Excitatory Neurons 1_Saline_24hr')
+SAL_1hr_vs_PTZ_1hrEXC1 <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Excitatory Neurons 1_PTZ_1hr vs Excitatory Neurons 1_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrEXC1 <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 1_PTZ_24hr vs Excitatory Neurons 1_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrEXC1$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrEXC1$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrEXC1$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrEXC1$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrEXC1$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC1$avg_log2FC > 0.25  & PTZ_1hr_vs_PTZ_24hrEXC1$p_val_adj< 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrEXC1$diffexpressed[SAL_1hr_vs_SAL_24hrEXC1$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrEXC1$p_val_adj< 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrEXC1$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC1$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrEXC1$p_val_adj< 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrEXC1$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC1$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrEXC1$p_val_adj< 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrEXC1$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC1$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrEXC1$p_val_adj< 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrEXC1$diffexpressed[SAL_1hr_vs_SAL_24hrEXC1$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrEXC1$p_val_adj< 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrEXC1$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC1$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrEXC1$p_val_adj< 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrEXC1$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC1$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrEXC1$p_val_adj< 0.05] <- "DOWN"
+
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrEXC1UP <- subset(PTZ_1hr_vs_PTZ_24hrEXC1, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrEXC1UP <- subset(SAL_1hr_vs_SAL_24hrEXC1, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrEXC1UP <- subset(SAL_1hr_vs_PTZ_1hrEXC1, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrEXC1UP <- subset(SAL_24hr_vs_PTZ_24hrEXC1, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrEXC1D <- subset(PTZ_1hr_vs_PTZ_24hrEXC1, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrEXC1D <- subset(SAL_1hr_vs_SAL_24hrEXC1, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrEXC1D <- subset(SAL_1hr_vs_PTZ_1hrEXC1, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrEXC1D <- subset(SAL_24hr_vs_PTZ_24hrEXC1, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC1 <- rbind(PTZ_1hr_vs_PTZ_24hrEXC1UP, PTZ_1hr_vs_PTZ_24hrEXC1D)
+DEfinalSAL_1hr_vs_SAL_24hrEXC1 <- rbind(SAL_1hr_vs_SAL_24hrEXC1UP, SAL_1hr_vs_SAL_24hrEXC1D)
+DEfinalSAL_1hr_vs_PTZ_1hrEXC1 <- rbind(SAL_1hr_vs_PTZ_1hrEXC1UP, SAL_1hr_vs_PTZ_1hrEXC1D)
+DEfinalSAL_24hr_vs_PTZ_24hrEXC1 <- rbind(SAL_24hr_vs_PTZ_24hrEXC1UP, SAL_24hr_vs_PTZ_24hrEXC1D)
+
+#Make list using shorthand 
+
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrEXC1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC1.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrEXC1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrEXC1.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrEXC1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC1.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrEXC1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC1.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC1 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC1.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrEXC1 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC1.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrEXC1 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC1.csv")
+```
+
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrEXC1 <- c(DEfinalPTZ_1hr_vs_PTZ_24hrEXC1$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrEXC1)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrEXC1 <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrEXC1$original_gene_names,
+                                       universe      = names(GLPTZ_1hr_vs_PTZ_24hrEXC1),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrEXC1, showCategory=20, repel = T) + ggtitle("EXC1 PTZ 1hr vs PTZ 24hr")
+```
+
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrEXC1 <- c(DEfinalSAL_1hr_vs_PTZ_1hrEXC1$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrEXC1)
+
+egoSAL_1hr_vs_PTZ_1hrEXC1 <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrEXC1$original_gene_names,
+                                      universe      = names(GLSAL_1hr_vs_PTZ_1hrEXC1),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrEXC1, showCategory=20, repel = T) + ggtitle("EXC1 SAL 1hr vs PTZ_1hr")
+
+```
+
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrEXC1 <- c(DEfinalSAL_24hr_vs_PTZ_24hrEXC1$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrEXC1)
+
+egoSAL_24hr_vs_PTZ_24hrEXC1 <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrEXC1$original_gene_names,
+                                        universe      = names(GLSAL_24hr_vs_PTZ_24hrEXC1),
+                                        OrgDb         = org.Mm.eg.db,
+                                        keyType       = "SYMBOL",
+                                        ont           = "BP",
+                                        pAdjustMethod = "BH",
+                                        pvalueCutoff  = 0.01,
+                                        qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrEXC1, showCategory=20, repel = T) + ggtitle("EXC1 SAL 24hr vs PTZ 24hr")
+
+```
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrEXC1$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrEXC1$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrEXC1$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+```
+
+
+##Excitatory Neurons 2
+```{r}
+#Load Lists
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Excitatory Neurons 2
+PTZ_1hr_vs_PTZ_24hrEXC2 <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 2_PTZ_1hr vs Excitatory Neurons 2_PTZ_24hr')
+SAL_1hr_vs_SAL_24hrEXC2 <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Excitatory Neurons 2_Saline_1hr vs Excitatory Neurons 2_Saline_24hr')
+SAL_1hr_vs_PTZ_1hrEXC2 <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Excitatory Neurons 2_PTZ_1hr vs Excitatory Neurons 2_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrEXC2 <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 2_PTZ_24hr vs Excitatory Neurons 2_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrEXC2$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrEXC2$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrEXC2$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrEXC2$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrEXC2$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC2$avg_log2FC > 0.25 & PTZ_1hr_vs_PTZ_24hrEXC2$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrEXC2$diffexpressed[SAL_1hr_vs_SAL_24hrEXC2$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrEXC2$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrEXC2$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC2$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrEXC2$p_val_adj< 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrEXC2$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC2$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrEXC2$p_val_adj < 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrEXC2$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC2$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrEXC2$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrEXC2$diffexpressed[SAL_1hr_vs_SAL_24hrEXC2$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrEXC2$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrEXC2$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC2$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrEXC2$p_val_adj < 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrEXC2$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC2$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrEXC2$p_val_adj< 0.05] <- "DOWN"
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrEXC2UP <- subset(PTZ_1hr_vs_PTZ_24hrEXC2, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrEXC2UP <- subset(SAL_1hr_vs_SAL_24hrEXC2, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrEXC2UP <- subset(SAL_1hr_vs_PTZ_1hrEXC2, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrEXC2UP <- subset(SAL_24hr_vs_PTZ_24hrEXC2, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrEXC2D <- subset(PTZ_1hr_vs_PTZ_24hrEXC2, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrEXC2D <- subset(SAL_1hr_vs_SAL_24hrEXC2, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrEXC2D <- subset(SAL_1hr_vs_PTZ_1hrEXC2, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrEXC2D <- subset(SAL_24hr_vs_PTZ_24hrEXC2, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC2 <- rbind(PTZ_1hr_vs_PTZ_24hrEXC2UP, PTZ_1hr_vs_PTZ_24hrEXC2D)
+DEfinalSAL_1hr_vs_SAL_24hrEXC2 <- rbind(SAL_1hr_vs_SAL_24hrEXC2UP, SAL_1hr_vs_SAL_24hrEXC2D)
+DEfinalSAL_1hr_vs_PTZ_1hrEXC2 <- rbind(SAL_1hr_vs_PTZ_1hrEXC2UP, SAL_1hr_vs_PTZ_1hrEXC2D)
+DEfinalSAL_24hr_vs_PTZ_24hrEXC2 <- rbind(SAL_24hr_vs_PTZ_24hrEXC2UP, SAL_24hr_vs_PTZ_24hrEXC2D)
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrEXC2, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC2.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrEXC2, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrEXC2.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrEXC2, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC2.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrEXC2, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC2.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC2 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC2.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrEXC2 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC2.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrEXC2 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC2.csv")
+```
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrEXC2 <- c(DEfinalPTZ_1hr_vs_PTZ_24hrEXC2$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrEXC2)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrEXC2 <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrEXC2$original_gene_names,
+                                       universe      = names(GLPTZ_1hr_vs_PTZ_24hrEXC2),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrEXC2, showCategory=20, repel = T) + ggtitle("EXC2 PTZ 1hr vs PTZ 24hr")
+```
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrEXC2 <- c(DEfinalSAL_1hr_vs_PTZ_1hrEXC2$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrEXC2)
+
+egoSAL_1hr_vs_PTZ_1hrEXC2 <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrEXC2$original_gene_names,
+                                      universe      = names(GLSAL_1hr_vs_PTZ_1hrEXC2),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrEXC2, showCategory=20, repel = T) + ggtitle(" EXC2 SAL 1hr vs PTZ 1hr")
+```
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrEXC2 <- c(DEfinalSAL_24hr_vs_PTZ_24hrEXC2$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrEXC2)
+
+egoSAL_24hr_vs_PTZ_24hrEXC2 <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrEXC2$original_gene_names,
+                                        universe      = names(GLSAL_24hr_vs_PTZ_24hrEXC2),
+                                        OrgDb         = org.Mm.eg.db,
+                                        keyType       = "SYMBOL",
+                                        ont           = "BP",
+                                        pAdjustMethod = "BH",
+                                        pvalueCutoff  = 0.01,
+                                        qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrEXC2, showCategory=20, repel = T) + ggtitle("EXC2 SAL 24hr vs PTZ 24hr")
+```
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrEXC2$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrEXC2$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrEXC2$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+
+```
+
+###Table EXC2 Analysis
+
+##Excitatory Neurons 3
+```{r}
+#Load Lists
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Excitatory Neurons 2
+PTZ_1hr_vs_PTZ_24hrEXC3 <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 3_PTZ_1hr vs Excitatory Neurons 3_PTZ_24hr')
+SAL_1hr_vs_SAL_24hrEXC3 <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Excitatory Neurons 3_Saline_1hr vs Excitatory Neurons 3_Saline_24hr')
+SAL_1hr_vs_PTZ_1hrEXC3 <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Excitatory Neurons 3_PTZ_1hr vs Excitatory Neurons 3_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrEXC3 <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons 3_PTZ_24hr vs Excitatory Neurons 3_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrEXC3$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrEXC3$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrEXC3$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrEXC3$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrEXC3$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC3$avg_log2FC > 0.25 & PTZ_1hr_vs_PTZ_24hrEXC3$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrEXC3$diffexpressed[SAL_1hr_vs_SAL_24hrEXC3$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrEXC3$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrEXC3$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC3$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrEXC3$p_val_adj < 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrEXC3$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC3$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrEXC3$p_val_adj < 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrEXC3$diffexpressed[PTZ_1hr_vs_PTZ_24hrEXC3$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrEXC3$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrEXC3$diffexpressed[SAL_1hr_vs_SAL_24hrEXC3$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrEXC3$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrEXC3$diffexpressed[SAL_1hr_vs_PTZ_1hrEXC3$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrEXC3$p_val_adj < 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrEXC3$diffexpressed[SAL_24hr_vs_PTZ_24hrEXC3$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrEXC3$p_val_adj < 0.05] <- "DOWN"
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrEXC3UP <- subset(PTZ_1hr_vs_PTZ_24hrEXC3, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrEXC3UP <- subset(SAL_1hr_vs_SAL_24hrEXC3, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrEXC3UP <- subset(SAL_1hr_vs_PTZ_1hrEXC3, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrEXC3UP <- subset(SAL_24hr_vs_PTZ_24hrEXC3, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrEXC3D <- subset(PTZ_1hr_vs_PTZ_24hrEXC3, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrEXC3D <- subset(SAL_1hr_vs_SAL_24hrEXC3, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrEXC3D <- subset(SAL_1hr_vs_PTZ_1hrEXC3, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrEXC3D <- subset(SAL_24hr_vs_PTZ_24hrEXC3, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC3 <- rbind(PTZ_1hr_vs_PTZ_24hrEXC3UP, PTZ_1hr_vs_PTZ_24hrEXC3D)
+DEfinalSAL_1hr_vs_SAL_24hrEXC3 <- rbind(SAL_1hr_vs_SAL_24hrEXC3UP, SAL_1hr_vs_SAL_24hrEXC3D)
+DEfinalSAL_1hr_vs_PTZ_1hrEXC3 <- rbind(SAL_1hr_vs_PTZ_1hrEXC3UP, SAL_1hr_vs_PTZ_1hrEXC3D)
+DEfinalSAL_24hr_vs_PTZ_24hrEXC3 <- rbind(SAL_24hr_vs_PTZ_24hrEXC3UP, SAL_24hr_vs_PTZ_24hrEXC3D)
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrEXC3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC3.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrEXC3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrEXC3.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrEXC3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC3.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrEXC3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC3.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrEXC3 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrEXC3.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrEXC3 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrEXC3.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrEXC3 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrEXC3.csv")
+```
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrEXC3 <- c(DEfinalPTZ_1hr_vs_PTZ_24hrEXC3$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrEXC3)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrEXC3 <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrEXC3$original_gene_names,
+                                       universe      = names(GLPTZ_1hr_vs_PTZ_24hrEXC3),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrEXC3, showCategory=20, repel = T) + ggtitle("EXC3 PTZ 1hr vs PTZ 24hr")
+```
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrEXC3 <- c(DEfinalSAL_1hr_vs_PTZ_1hrEXC3$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrEXC3)
+
+egoSAL_1hr_vs_PTZ_1hrEXC3 <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrEXC3$original_gene_names,
+                                      universe      = names(GLSAL_1hr_vs_PTZ_1hrEXC3),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrEXC3, showCategory=20, repel = T) + ggtitle("EXC3 SAL 1hr vs PTZ 1hr")
+```
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrEXC3 <- c(DEfinalSAL_24hr_vs_PTZ_24hrEXC3$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrEXC3)
+
+egoSAL_24hr_vs_PTZ_24hrEXC3 <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrEXC3$original_gene_names,
+                                        universe      = names(GLSAL_24hr_vs_PTZ_24hrEXC3),
+                                        OrgDb         = org.Mm.eg.db,
+                                        keyType       = "SYMBOL",
+                                        ont           = "BP",
+                                        pAdjustMethod = "BH",
+                                        pvalueCutoff  = 0.01,
+                                        qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrEXC3, showCategory=20, repel = T) + ggtitle("EXC3 SAL 24hr vs PTZ 24hr")
+```
+
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrEXC3$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrEXC3$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrEXC3$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+```
+
+##Excitatory Neurons (CA1)
+```{r}
+#Load Lists
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Excitatory Neurons 1
+PTZ_1hr_vs_PTZ_24hrCA1 <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA1)_PTZ_1hr vs Excitatory Neurons (CA1)_PTZ_24hr')
+SAL_1hr_vs_SAL_24hrCA1 <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA1)_Saline_1hr vs Excitatory Neurons (CA1)_Saline_24hr')
+SAL_1hr_vs_PTZ_1hrCA1 <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Excitatory Neurons (CA1)_PTZ_1hr vs Excitatory Neurons (CA1)_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrCA1 <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA1)_PTZ_24hr vs Excitatory Neurons (CA1)_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrCA1$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrCA1$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrCA1$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrCA1$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrCA1$diffexpressed[PTZ_1hr_vs_PTZ_24hrCA1$avg_log2FC > 0.25 & PTZ_1hr_vs_PTZ_24hrCA1$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrCA1$diffexpressed[SAL_1hr_vs_SAL_24hrCA1$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrCA1$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrCA1$diffexpressed[SAL_1hr_vs_PTZ_1hrCA1$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrCA1$p_val_adj < 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrCA1$diffexpressed[SAL_24hr_vs_PTZ_24hrCA1$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrCA1$p_val_adj< 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrCA1$diffexpressed[PTZ_1hr_vs_PTZ_24hrCA1$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrCA1$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrCA1$diffexpressed[SAL_1hr_vs_SAL_24hrCA1$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrCA1$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrCA1$diffexpressed[SAL_1hr_vs_PTZ_1hrCA1$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrCA1$p_val_adj < 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrCA1$diffexpressed[SAL_24hr_vs_PTZ_24hrCA1$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrCA1$p_val_adj  < 0.05] <- "DOWN"
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrCA1UP <- subset(PTZ_1hr_vs_PTZ_24hrCA1, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrCA1UP <- subset(SAL_1hr_vs_SAL_24hrCA1, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrCA1UP <- subset(SAL_1hr_vs_PTZ_1hrCA1, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrCA1UP <- subset(SAL_24hr_vs_PTZ_24hrCA1, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrCA1D <- subset(PTZ_1hr_vs_PTZ_24hrCA1, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrCA1D <- subset(SAL_1hr_vs_SAL_24hrCA1, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrCA1D <- subset(SAL_1hr_vs_PTZ_1hrCA1, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrCA1D <- subset(SAL_24hr_vs_PTZ_24hrCA1, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrCA1 <- rbind(PTZ_1hr_vs_PTZ_24hrCA1UP, PTZ_1hr_vs_PTZ_24hrCA1D)
+DEfinalSAL_1hr_vs_SAL_24hrCA1 <- rbind(SAL_1hr_vs_SAL_24hrCA1UP, SAL_1hr_vs_SAL_24hrCA1D)
+DEfinalSAL_1hr_vs_PTZ_1hrCA1 <- rbind(SAL_1hr_vs_PTZ_1hrCA1UP, SAL_1hr_vs_PTZ_1hrCA1D)
+DEfinalSAL_24hr_vs_PTZ_24hrCA1 <- rbind(SAL_24hr_vs_PTZ_24hrCA1UP, SAL_24hr_vs_PTZ_24hrCA1D)
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrCA1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrCA1.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrCA1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrCA1.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrCA1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrCA1.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrCA1, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrCA1.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrCA1 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrCA1.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrCA1 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrCA1.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrCA1 <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrCA3.csv")
+```
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrCA1 <- c(DEfinalPTZ_1hr_vs_PTZ_24hrCA1$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrCA1)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrCA1 <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrCA1$original_gene_names,
+                                      universe      = names(GLPTZ_1hr_vs_PTZ_24hrCA1),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrCA1, showCategory=20, repel = T) + ggtitle("CA1 PTZ 1hr vs PTZ 24hr")
+```
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrCA1 <- c(DEfinalSAL_1hr_vs_PTZ_1hrCA1$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrCA1)
+
+egoSAL_1hr_vs_PTZ_1hrCA1 <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrCA1$original_gene_names,
+                                     universe      = names(GLSAL_1hr_vs_PTZ_1hrCA1),
+                                     OrgDb         = org.Mm.eg.db,
+                                     keyType       = "SYMBOL",
+                                     ont           = "BP",
+                                     pAdjustMethod = "BH",
+                                     pvalueCutoff  = 0.01,
+                                     qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrCA1, showCategory=20, repel = T) + ggtitle("CA1 SAL 1hr vs PTZ 1hr")
+```
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrCA1 <- c(DEfinalSAL_24hr_vs_PTZ_24hrCA1$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrCA1)
+
+egoSAL_24hr_vs_PTZ_24hrCA1 <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrCA1$original_gene_names,
+                                       universe      = names(GLSAL_24hr_vs_PTZ_24hrCA1),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrCA1, showCategory=20, repel = T) + ggtitle("CA1 SAL 24hr vs PTZ 24hr")
+```
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrCA1$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrCA1$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrCA1$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+```
+
+##Excitatory Neurons (CA3)
+###Make list for each
+```{r}
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Excitatory Neurons CA3
+PTZ_1hr_vs_PTZ_24hrCA3 <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA3)_PTZ_1hr vs Excitatory Neurons (CA3)_PTZ_24hr')
+SAL_1hr_vs_SAL_24hrCA3 <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA3)_Saline_1hr vs Excitatory Neurons (CA3)_Saline_24hr')
+SAL_1hr_vs_PTZ_1hrCA3 <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Excitatory Neurons (CA3)_PTZ_1hr vs Excitatory Neurons (CA3)_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrCA3 <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Excitatory Neurons (CA3)_PTZ_24hr vs Excitatory Neurons (CA3)_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrCA3$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrCA3$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrCA3$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrCA3$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrCA3$diffexpressed[PTZ_1hr_vs_PTZ_24hrCA3$avg_log2FC > 0.25 & PTZ_1hr_vs_PTZ_24hrCA3$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrCA3$diffexpressed[SAL_1hr_vs_SAL_24hrCA3$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrCA3$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrCA3$diffexpressed[SAL_1hr_vs_PTZ_1hrCA3$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrCA3$p_val_adj < 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrCA3$diffexpressed[SAL_24hr_vs_PTZ_24hrCA3$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrCA3$p_val_adj < 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrCA3$diffexpressed[PTZ_1hr_vs_PTZ_24hrCA3$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrCA3$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrCA3$diffexpressed[SAL_1hr_vs_SAL_24hrCA3$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrCA3$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrCA3$diffexpressed[SAL_1hr_vs_PTZ_1hrCA3$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrCA3$p_val_adj < 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrCA3$diffexpressed[SAL_24hr_vs_PTZ_24hrCA3$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrCA3$p_val_adj < 0.05] <- "DOWN"
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrCA3UP <- subset(PTZ_1hr_vs_PTZ_24hrCA3, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrCA3UP <- subset(SAL_1hr_vs_SAL_24hrCA3, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrCA3UP <- subset(SAL_1hr_vs_PTZ_1hrCA3, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrCA3UP <- subset(SAL_24hr_vs_PTZ_24hrCA3, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrCA3D <- subset(PTZ_1hr_vs_PTZ_24hrCA3, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrCA3D <- subset(SAL_1hr_vs_SAL_24hrCA3, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrCA3D <- subset(SAL_1hr_vs_PTZ_1hrCA3, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrCA3D <- subset(SAL_24hr_vs_PTZ_24hrCA3, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrCA3 <- rbind(PTZ_1hr_vs_PTZ_24hrCA3UP, PTZ_1hr_vs_PTZ_24hrCA3D)
+DEfinalSAL_1hr_vs_SAL_24hrCA3 <- rbind(SAL_1hr_vs_SAL_24hrCA3UP, SAL_1hr_vs_SAL_24hrCA3D)
+DEfinalSAL_1hr_vs_PTZ_1hrCA3 <- rbind(SAL_1hr_vs_PTZ_1hrCA3UP, SAL_1hr_vs_PTZ_1hrCA3D)
+DEfinalSAL_24hr_vs_PTZ_24hrCA3 <- rbind(SAL_24hr_vs_PTZ_24hrCA3UP, SAL_24hr_vs_PTZ_24hrCA3D)
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrCA3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrCA3.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrCA3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrCA3.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrCA3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrCA3.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrCA3, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrCA3.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrCA3 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrCA3.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrCA3 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrCA3.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrCA3 <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrCA3.csv")
+```
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrCA3 <- c(DEfinalPTZ_1hr_vs_PTZ_24hrCA3$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrCA3)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrCA3 <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrCA3$original_gene_names,
+                                       universe      = names(GLPTZ_1hr_vs_PTZ_24hrCA3),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrCA3, showCategory=20, repel = T) + ggtitle("CA3 PTZ 1hr vs PTZ 24hr")
+```
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrCA3 <- c(DEfinalSAL_1hr_vs_PTZ_1hrCA3$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrCA3)
+
+egoSAL_1hr_vs_PTZ_1hrCA3 <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrCA3$original_gene_names,
+                                      universe      = names(GLSAL_1hr_vs_PTZ_1hrCA3),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrCA3, showCategory=20, repel = T) + ggtitle("CA3 SAL 1hr vs PTZ 1hr")
+```
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrCA3 <- c(DEfinalSAL_24hr_vs_PTZ_24hrCA1$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrCA3)
+
+egoSAL_24hr_vs_PTZ_24hrCA3 <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrCA3$original_gene_names,
+                                        universe      = names(GLSAL_24hr_vs_PTZ_24hrCA3),
+                                        OrgDb         = org.Mm.eg.db,
+                                        keyType       = "SYMBOL",
+                                        ont           = "BP",
+                                        pAdjustMethod = "BH",
+                                        pvalueCutoff  = 0.01,
+                                        qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrCA3, showCategory=20, repel = T) + ggtitle("CA3 SAL 24hr vs PTZ 24hr")
+```
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrCA3$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrCA3$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrCA3$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+```
+
+##Granule Neurons
+```{r}
+#Load Lists
+PTZ_1hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_PTZ_24hr.csv")
+SAL_1hr_vs_SAL_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/SAL_1hr_vs_SAL_24hr.csv")
+SAL_1hr_vs_PTZ_1hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_1hr_vs_SAL_1hr.csv")
+SAL_24hr_vs_PTZ_24hr <- read_csv(file = "~/01_PTZExp1/06_DEAnalysis/DEloopOutput/PTZ_24hr_vs_SAL_24hr.csv")
+
+#Subset Granule Neurons
+PTZ_1hr_vs_PTZ_24hrGN <- subset(PTZ_1hr_vs_PTZ_24hr, `Cluster Comparison` == 'Granule Neurons_PTZ_1hr vs Granule NeuronsPTZ_24hr')
+SAL_1hr_vs_SAL_24hrGN <- subset(SAL_1hr_vs_SAL_24hr, `Cluster Comparison` == 'Granule Neurons_Saline_1hr vs Granule Neurons_24hr')
+SAL_1hr_vs_PTZ_1hrGN <- subset(SAL_1hr_vs_PTZ_1hr, `Cluster Comparison` == 'Granule Neurons_PTZ_1hr vs Granule Neurons_Saline_1hr')
+SAL_24hr_vs_PTZ_24hrGN <- subset(SAL_24hr_vs_PTZ_24hr, `Cluster Comparison` == 'Granule Neurons_PTZ_24hr vs Granule Neurons_Saline_24hr')
+
+# add a column of NAs
+PTZ_1hr_vs_PTZ_24hrGN$diffexpressed <- "NO"
+SAL_1hr_vs_SAL_24hrGN$diffexpressed <- "NO"
+SAL_1hr_vs_PTZ_1hrGN$diffexpressed <- "NO"
+SAL_24hr_vs_PTZ_24hrGN$diffexpressed <- "NO"
+
+# if log2Foldchange > 0.6 and pvalue < 0.05, set as "UP" 
+PTZ_1hr_vs_PTZ_24hrGN$diffexpressed[PTZ_1hr_vs_PTZ_24hrGN$avg_log2FC > 0.25 & PTZ_1hr_vs_PTZ_24hrGN$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_SAL_24hrGN$diffexpressed[SAL_1hr_vs_SAL_24hrGN$avg_log2FC > 0.25 & SAL_1hr_vs_SAL_24hrGN$p_val_adj < 0.05] <- "UP"
+SAL_1hr_vs_PTZ_1hrGN$diffexpressed[SAL_1hr_vs_PTZ_1hrGN$avg_log2FC > 0.25 & SAL_1hr_vs_PTZ_1hrGN$p_val_adj < 0.05] <- "UP"
+SAL_24hr_vs_PTZ_24hrGN$diffexpressed[SAL_24hr_vs_PTZ_24hrGN$avg_log2FC > 0.25 & SAL_24hr_vs_PTZ_24hrGN$p_val_adj < 0.05] <- "UP"
+
+# if log2Foldchange < -0.6 and pvalue < 0.05, set as "DOWN"
+PTZ_1hr_vs_PTZ_24hrGN$diffexpressed[PTZ_1hr_vs_PTZ_24hrGN$avg_log2FC < -0.25 & PTZ_1hr_vs_PTZ_24hrGN$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_SAL_24hrGN$diffexpressed[SAL_1hr_vs_SAL_24hrGN$avg_log2FC < -0.25 & SAL_1hr_vs_SAL_24hrGN$p_val_adj < 0.05] <- "DOWN"
+SAL_1hr_vs_PTZ_1hrGN$diffexpressed[SAL_1hr_vs_PTZ_1hrGN$avg_log2FC < -0.25 & SAL_1hr_vs_PTZ_1hrGN$p_val_adj < 0.05] <- "DOWN"
+SAL_24hr_vs_PTZ_24hrGN$diffexpressed[SAL_24hr_vs_PTZ_24hrGN$avg_log2FC < -0.25 & SAL_24hr_vs_PTZ_24hrGN$p_val_adj < 0.05] <- "DOWN"
+
+#Subset based on UP
+PTZ_1hr_vs_PTZ_24hrGNUP <- subset(PTZ_1hr_vs_PTZ_24hrGN, `diffexpressed` == 'UP')
+SAL_1hr_vs_SAL_24hrGNUP <- subset(SAL_1hr_vs_SAL_24hrGN, `diffexpressed` == 'UP')
+SAL_1hr_vs_PTZ_1hrGNUP <- subset(SAL_1hr_vs_PTZ_1hrGN, `diffexpressed` == 'UP')
+SAL_24hr_vs_PTZ_24hrGNUP <- subset(SAL_24hr_vs_PTZ_24hrGN, `diffexpressed` == 'UP')
+
+#Subset based on Down
+PTZ_1hr_vs_PTZ_24hrGND <- subset(PTZ_1hr_vs_PTZ_24hrGN, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_SAL_24hrGND <- subset(SAL_1hr_vs_SAL_24hrGN, `diffexpressed` == 'DOWN')
+SAL_1hr_vs_PTZ_1hrGND <- subset(SAL_1hr_vs_PTZ_1hrGN, `diffexpressed` == 'DOWN')
+SAL_24hr_vs_PTZ_24hrGND <- subset(SAL_24hr_vs_PTZ_24hrGN, `diffexpressed` == 'DOWN')
+
+#Merge Up and down lists
+DEfinalPTZ_1hr_vs_PTZ_24hrGN <- rbind(PTZ_1hr_vs_PTZ_24hrGNUP, PTZ_1hr_vs_PTZ_24hrGND)
+DEfinalSAL_1hr_vs_SAL_24hrGN <- rbind(SAL_1hr_vs_SAL_24hrGNUP, SAL_1hr_vs_SAL_24hrGND)
+DEfinalSAL_1hr_vs_PTZ_1hrGN <- rbind(SAL_1hr_vs_PTZ_1hrGNUP, SAL_1hr_vs_PTZ_1hrGND)
+DEfinalSAL_24hr_vs_PTZ_24hrGN <- rbind(SAL_24hr_vs_PTZ_24hrGNUP, SAL_24hr_vs_PTZ_24hrGND)
+
+#save final lists
+write.csv(DEfinalPTZ_1hr_vs_PTZ_24hrGN, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrGN.csv")
+write.csv(DEfinalSAL_1hr_vs_SAL_24hrGN, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_SAL_24hrGN.csv")
+write.csv(DEfinalSAL_1hr_vs_PTZ_1hrGN, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrGN.csv")
+write.csv(DEfinalSAL_24hr_vs_PTZ_24hrGN, "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrGN.csv")
+
+#Load Lists
+DEfinalPTZ_1hr_vs_PTZ_24hrGN <- read.csv("~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalPTZ_1hr_vs_PTZ_24hrGN.csv")
+DEfinalSAL_1hr_vs_PTZ_1hrGN <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_1hr_vs_PTZ_1hrGN.csv")
+DEfinalSAL_24hr_vs_PTZ_24hrGN <- read.csv( "~/01_PTZExp1/06_DEAnalysis/Clusterprofilerfiles/Raw/DEfinalSAL_24hr_vs_PTZ_24hrGN.csv")
+```
+
+####PTZ1hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLPTZ_1hr_vs_PTZ_24hrGN <- c(DEfinalPTZ_1hr_vs_PTZ_24hrGN$original_gene_names)
+head(GLPTZ_1hr_vs_PTZ_24hrGN)
+
+#Run EnrichGO
+egoPTZ_1hr_vs_PTZ_24hrGN <- enrichGO(gene          = DEfinalPTZ_1hr_vs_PTZ_24hrGN$original_gene_names,
+                                      universe      = names(GLPTZ_1hr_vs_PTZ_24hrGN),
+                                      OrgDb         = org.Mm.eg.db,
+                                      keyType       = "SYMBOL",
+                                      ont           = "BP",
+                                      pAdjustMethod = "BH",
+                                      pvalueCutoff  = 0.01,
+                                      qvalueCutoff  = 0.05)
+#Plot
+barplot(egoPTZ_1hr_vs_PTZ_24hrGN, showCategory=20, repel = T) + ggtitle("GN PTZ 1hr vs PTZ 24hr")
+```
+####SAL1hrvsPTZ1hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_1hr_vs_PTZ_1hrGN <- c(DEfinalSAL_1hr_vs_PTZ_1hrGN$original_gene_names)
+head(GLSAL_1hr_vs_PTZ_1hrGN)
+
+egoSAL_1hr_vs_PTZ_1hrGN <- enrichGO(gene          = DEfinalSAL_1hr_vs_PTZ_1hrGN$original_gene_names,
+                                     universe      = names(GLSAL_1hr_vs_PTZ_1hrGN),
+                                     OrgDb         = org.Mm.eg.db,
+                                     keyType       = "SYMBOL",
+                                     ont           = "BP",
+                                     pAdjustMethod = "BH",
+                                     pvalueCutoff  = 0.01,
+                                     qvalueCutoff  = 0.05)
+
+barplot(egoSAL_1hr_vs_PTZ_1hrGN, showCategory=20, repel = T) + ggtitle("GN SAL 1hr vs PTZ 1hr")
+
+```
+####SAL24hrvsPTZ24hr
+```{r}
+#Make list of genes from final DElist (DEtotal...) - this will be my universe
+GLSAL_24hr_vs_PTZ_24hrGN <- c(DEfinalSAL_24hr_vs_PTZ_24hrGN$original_gene_names)
+head(GLSAL_24hr_vs_PTZ_24hrGN)
+
+egoSAL_24hr_vs_PTZ_24hrGN <- enrichGO(gene          = DEfinalSAL_24hr_vs_PTZ_24hrGN$original_gene_names,
+                                       universe      = names(GLSAL_24hr_vs_PTZ_24hrGN),
+                                       OrgDb         = org.Mm.eg.db,
+                                       keyType       = "SYMBOL",
+                                       ont           = "BP",
+                                       pAdjustMethod = "BH",
+                                       pvalueCutoff  = 0.01,
+                                       qvalueCutoff  = 0.05)
+
+barplot(egoSAL_24hr_vs_PTZ_24hrGN, showCategory=20, repel = T) + ggtitle("GN SAL 24hr vs PTZ 24hr") 
+```
+####Venn Diagram
+```{r}
+list_venn <- list('PTZ1hr vs PTZ24hr'= sort(sample(DEfinalPTZ_1hr_vs_PTZ_24hrGN$original_gene_names)),
+                  'SAL1hr vs PTZ1hr'= sort(sample(DEfinalSAL_1hr_vs_PTZ_1hrGN$original_gene_names)),
+                  'SAL24hr vs PTZ24hr'=sort(sample(DEfinalSAL_24hr_vs_PTZ_24hrGN$original_gene_names)))
+list_venn
+ggvenn(list_venn, c("PTZ1hr vs PTZ24hr", "SAL1hr vs PTZ1hr", "SAL24hr vs PTZ24hr"))
+```
+
+
+```{r}
+genes <- c('Fos', 'Arc', 'Nptx2','Npas4', 'Cd1d1')
+FeaturePlot(combo.all, features = genes)
+
+#Make vln plot based on condition
+#change ident to sample
+Idents(combo.all) <- "sample"
+#Change Assay
+DefaultAssay(combo.all) <- "SCT"
+VlnPlot(combo.all, features = genes, split.by = "sample")
+
+```
+
+##NEXT STEPS
+```{r}
+##GENE EXPRESSION
+# - Sift through EXC2 Gene table of shared genes from Go-analysis
+
+
+
+##CHROMATIN ACCESSABILITY
+#1. Differentially Accessible regions - https://stuartlab.org/signac/articles/pbmc_vignette.html
+#Use Findmarkers but in peaks assay
+#Questions to Address in this analysis:
+#     - What are the difference in accessible peaks between cell types? - Should be different as different cell types have different patterns of accessibility - Just a way to check I am doining it right - Probably won't actually analyze this as it is not what I am looking for 
+#     - How does acute seizure induction change accessibility for each cell type? - Would have to uniquely label each cell type for each condition (new metadata category)
+
+
+#2. Motif Analysis - https://stuartlab.org/signac/articles/motif_vignette.html
+#Motifs are what the transcription factors bind to. So this analysis will give us an idea of there are cell-type specific regulatory sequences and if they change after acute seizure induction and if they are conserved after the 24hr time point. 
+
+#Two ways to do it:
+#     - a. Overrepresented Motifs: (cluster specific (CT))
+#Steps:
+#Use Findmarkers to find differtially accessable peaks 
+#then use this output to generate a table of top f=differetially accessable peaks
+#Can generate a list of enriched motifs using FindMotifs function by comparing list of differetially accessible peaks and a background list
+
+#     - b. Differential Motif Activity:(Cell specific)
+#Steps:
+#Use chromVAR to score activity on a cell-specific bases
+
+#Visualizations of Motif Analysis:
+#Featureplot - Using motif as feature can show what cell type it is expressed in
+#MotifPlot- Allows for us to visualize motif sequences - works great if you make a list 
+
+#Questions to Address in this analysis:
+#     - Does acute seizure induction change the how much these regulatory elements are represented within our data set? 
+
+
+#3.Footprinting (No Tn5 cleavage as these are active dips beteen peaks (Vis)) - https://stuartlab.org/signac/articles/footprint.html
+
+
+```
+
+#HDAC EXpression
+####Module Scores 
+
+
+#MOTIF OF AP1
+```{r}
+library(motifmatchr)
+library(JASPAR2020)
+library(TFBSTools)
+library(org.Mm.eg.db)
+library(BSgenome.Mmusculus.UCSC.mm10)
+library(BSgenome.Hsapiens.UCSC.hg38)
+```
+
+
+```{r}
+# extract position frequency matrices for the motifs
+#Mouse - species = 10090 (https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&id=10090), Human - species= 9606
+pwm <- getMatrixSet(
+  x = JASPAR2020,
+  opts = list(species = 10090, all_versions = FALSE)
+)
+
+#change assay to chromatin assay
+DefaultAssay(combo.all) <- "ATAC"
+combo.all <- AddMotifs(combo.all, genome = BSgenome.Mmusculus.UCSC.mm10, pfm = pwm)
+
+#Email Jesse on why he did annotation file - jjwestfall521@gmail.com -
+
+#Kept getting this error
+#Error in .getOneSeqFromBSgenomeMultipleSequences(x, name, start, NA, width, :
+#sequence GL456216.1 not found
+#Why? - he made custom annotations and is making it hard to map 
+```
+
