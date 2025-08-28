@@ -22,7 +22,7 @@ set.seed(42)
 ```
 
 ```{r directory setup}
-base_dir <- "./WIP/0624_run/"
+base_dir <- "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/"
 plot_dir <- file.path(base_dir, "Plot_DEG_GO")
 deg_dir <- file.path(base_dir, "DEG_MAST", "sig_csv")
 go_bp_dir <- file.path(base_dir, "GO_BP_MAST", "csv")
@@ -44,46 +44,101 @@ length(go_bp_list) == length(deg_list) &
   length(go_cc_list) == length(deg_list)
 ```
 
-```{r create full data fream for each}
-deg_df <- data.frame()
-bp_df <- data.frame()
-mf_df <- data.frame()
-cc_df <- data.frame()
+```{r create top 10 data fream for each GO}
+temp_bp <- list()
+temp_mf <- list()
+temp_cc <- list()
 
 for (i in seq_along(deg_list)) {
-  temp_df <- read_csv(deg_list[i]) %>%
+  temp_bp[[i]] <- read_csv(go_bp_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    mutate(ontology = "BP") %>%
+    dplyr::arrange(qvalue, desc(Fold_enrichment)) %>%
+    slice_head(n = 10)
+  
+  temp_mf[[i]] <- read_csv(go_mf_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    mutate(ontology = "MF") %>%
+    dplyr::arrange(qvalue, desc(Fold_enrichment)) %>%
+    slice_head(n = 10)
+  
+  
+  temp_cc[[i]] <- read_csv(go_cc_list[i]) %>%
+    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
+    mutate(ontology = "CC") %>%
+    dplyr::arrange(qvalue, desc(Fold_enrichment)) %>%
+    slice_head(n = 10)
+  
+}
+
+bp_df <- bind_rows(bp_df, temp_bp)
+mf_df <- bind_rows(mf_df, temp_mf)
+cc_df <- bind_rows(cc_df, temp_cc)
+```
+
+```{r all DEG dataframe}
+temp_list <- list()
+
+for (i in seq_along(deg_list)) {
+  # DEG combined
+  temp_list[[i]] <- read_csv(deg_list[i]) %>%
     dplyr::select(gene, p_val, p_val_adj, avg_log2FC, pct.1, pct.2, cell_type, comparison, Regulation, Viz) %>%
-    dplyr::arrange(p_val_adj, avg_log2FC) %>%
-    slice(10)
-  deg_df <- rbind(deg_df, temp_df)
-  
-  temp_bp <- read_csv(go_bp_list[i]) %>%
-    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
-    dplyr::arrange(pvalue, Fold_enrichment) %>%
-    slice(10)
-  bp_df <- rbind(bp_df, temp_bp)
-  
-  temp_mf <- read_csv(go_mf_list[i]) %>%
-    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
-    dplyr::arrange(pvalue, Fold_enrichment) %>%
-    slice(10)
-  mf_df <- rbind(mf_df, temp_mf)
-  
-  temp_cc <- read_csv(go_cc_list[i]) %>%
-    dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
-    dplyr::arrange(pvalue, Fold_enrichment) %>%
-    slice(10)
-  cc_df <- rbind(cc_df, temp_cc)
+    dplyr::arrange(p_val_adj, desc(abs(avg_log2FC))) %>%
+    mutate(neglogFDR = -log10(p_val_adj),
+           gene_edit = case_when(grepl("Gm47283", gene) ~ "Erdr1y",
+                                 grepl("AY036118", gene) ~ "Erf1",
+                                 TRUE ~ gene))
+}
+
+deg_df <- bind_rows(temp_list)
+```
+
+```{r categorize top 10 go term}
+bp_term <- unique(bp_df$Description)
+category_bp <- list("Synapse Structure" = bp_term[c(3, 5, 8, 15, 27, 44, 45, 52)],
+                    "Synapse Vesicle" = bp_term[c(1, 4)],  
+                    "Translation at Synapse" = bp_term[c(6, 9, 10, 14)],
+                    "RNA Regulation" = bp_term[c(16, 19, 20, 26, 37, 54, 55, 56)],
+                    "Plasticity" = bp_term[c(3, 17, 18, 21, 27, 49)], 
+                    "Development" = bp_term[c(32, 33, 34, 35, 41, 42, 46, 47, 48, 53)], 
+                    "Protein-RNA complex" = bp_term[c(22, 23, 24)], 
+                    "Cell adhesion" = bp_term[c(25, 38, 43, 51)], 
+                    "Neurites" = bp_term[c(2, 7, 11, 12, 13, 28, 29, 30, 31, 36, 39, 40, 50)])
+
+gene_list <- list()
+for (i in seq_along(temp_bp)) {
+  for (j in 1:nrow(temp_bp[[i]])) {
+  gene_list[[paste0(temp_bp[[i]]$cell_type[1], "_", 
+                    temp_bp[[i]]$comparison[1], "_", 
+                    temp_bp[[i]][["Description"]][[j]])]] <- str_split(temp_bp[[i]]$geneID[[j]], "/")[[1]]
   }
+}
+
+gene_term <- data.frame()
+for (i in seq_along(temp_bp)) {
+  for (j in 1:nrow(temp_bp[[i]])) {
+    gene_list[[paste0(temp_bp[[i]]$cell_type[1], "_", 
+                    temp_bp[[i]]$comparison[1], "_", 
+                    temp_bp[[i]][["Description"]][[j]])]] <- str_split(temp_bp[[i]]$geneID[[j]], "/")
+    
+    if (temp_list[[i]]$gene %in% gene_list[[i]]) {
+      gene_term$gene  
+    }
+    
+  }}
+
+unique(mf_df$Description)
+category_mf <- c("RNA Binding", "Transcription", "Kinase Activity", "Channel Activity", "Receptor Activity", )
+
+unique(cc_df$Description)
+category_cc <- c("Pre-synapse", "Post-synaps", "Inter-synapse", "Axon", "Nuclear", "Cytoplasm", "Ribosome", "Vesicle", "Splicesome", "")
+
 ```
 
 ```{r clean up environment}
 rm(temp_bp, temp_cc, temp_mf, temp_df, i, deg_list, go_bp_list, go_mf_list, go_cc_list, deg_dir, go_bp_dir, go_cc_dir, go_mf_dir)
 ```
 
-```{r get top 10 each}
-
-  
+```{r}
 ```
-
 
