@@ -30,8 +30,8 @@ run_dg <- function(
     cell_types,
     comparisons,
     minimum_cnt = 3, # 10 or higher for MAST
-    p_value = 0.05,
-    fc_value = 0.2,
+    p_cutoff = 0.05,
+    fc_cutoff = 0.2,
     mode = "wilcox",
     save = TRUE,
     bg_dir = NULL,
@@ -90,7 +90,7 @@ run_dg <- function(
       
       # Get significant genes - DEGs
       sig_results <- bg_results %>%
-        filter(p_val_adj < p_value & abs(avg_log2FC) >= fc_value)
+        filter(p_val_adj < p_cutoff & abs(avg_log2FC) >= fc_cutoff)
       
       # Create VolcanoPlot
       if (nrow(bg_results) == 0) {
@@ -104,8 +104,8 @@ run_dg <- function(
           y = 'p_val_adj',
           title = paste0('VolcanoPlot for ', ct),
           subtitle = comparison$name,
-          pCutoff = p_value,
-          FCcutoff = fc_value,
+          pCutoff = p_cutoff,
+          FCcutoff = fc_cutoff,
           pointSize = 1.0,
           labSize = 3.0)
       }

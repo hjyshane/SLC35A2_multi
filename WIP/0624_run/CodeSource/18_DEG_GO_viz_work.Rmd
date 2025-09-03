@@ -71,6 +71,10 @@ for (i in seq_along(deg_list)) {
   
 }
 
+bp_df <- data.frame()
+mf_df <- data.frame()
+cc_df <- data.frame()
+
 bp_df <- bind_rows(bp_df, temp_bp)
 mf_df <- bind_rows(mf_df, temp_mf)
 cc_df <- bind_rows(cc_df, temp_cc)
@@ -93,6 +97,169 @@ for (i in seq_along(deg_list)) {
 deg_df <- bind_rows(temp_list)
 ```
 
+```{r clean up environment}
+rm(i, go_bp_list, go_mf_list, go_cc_list, deg_dir, go_bp_dir, go_cc_dir, go_mf_dir)
+```
+
+```{r combiend DEG gene and GO term gene}
+# empty list and df for store
+bp_gene <- data.frame()
+bp_list <- list()
+
+mf_gene <- data.frame()
+mf_list <- list()
+
+cc_gene <- data.frame()
+cc_list <- list()
+
+# loop to separate genes to each row and tidy columns
+for (i in seq_along(temp_bp)) {
+  bp_gene <- temp_bp[[i]] %>%
+    tidyr::separate_rows(geneID, sep = "/") %>%
+    rename(gene = geneID, 
+           GO = Description, 
+           GO_p = pvalue, 
+           GO_q = qvalue, 
+           GO_fc = Fold_enrichment, 
+           GO_r = GeneRatio_numeric, 
+           GO_ont = ontology, 
+           GO_ct = cell_type,
+           GO_cp = comparison) %>%
+    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+  
+  bp_list[[i]] <- bp_gene
+}
+
+for (i in seq_along(temp_mf)) {
+  mf_gene <- temp_mf[[i]] %>%
+    tidyr::separate_rows(geneID, sep = "/") %>%
+    rename(gene = geneID, 
+           GO = Description, 
+           GO_p = pvalue, 
+           GO_q = qvalue, 
+           GO_fc = Fold_enrichment, 
+           GO_r = GeneRatio_numeric, 
+           GO_ont = ontology, 
+           GO_ct = cell_type,
+           GO_cp = comparison) %>%
+    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+  
+  mf_list[[i]] <- mf_gene
+}
+
+for (i in seq_along(temp_cc)) {
+  cc_gene <- temp_cc[[i]] %>%
+    tidyr::separate_rows(geneID, sep = "/") %>%
+    rename(gene = geneID, 
+           GO = Description, 
+           GO_p = pvalue, 
+           GO_q = qvalue, 
+           GO_fc = Fold_enrichment, 
+           GO_r = GeneRatio_numeric, 
+           GO_ont = ontology, 
+           GO_ct = cell_type,
+           GO_cp = comparison) %>%
+    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+  
+  cc_list[[i]] <- cc_gene
+}
+
+
+# Combine all to one data frame each
+bp_unlisted <- bind_rows(bp_list)
+mf_unlisted <- bind_rows(mf_list) 
+cc_unlisted <- bind_rows(cc_list)
+
+all <- bind_rows(bp_unlisted, mf_unlisted, cc_unlisted)
+
+
+# Join with DEG data
+final <- all %>%
+  left_join(deg_df, by = c("gene", "GO_ct"="cell_type", "GO_cp" = "comparison")) %>%
+  rename(DEG_p = p_val,
+         DEG_adjp = p_val_adj,
+         DEG_log2FC = avg_log2FC,
+         DEG_pct1 = pct.1,
+         DEG_pct2 = pct.2,
+         DEG_reg = Regulation,
+         DEG_FDR = neglogFDR,
+         DEG_sig = Viz,
+         DEG_edit = gene_edit) %>% 
+  relocate(gene, GO, GO_q, DEG_adjp, GO_fc, DEG_log2FC, everything())
+```
+
+```{r clean up environment}
+rm(bp_gene, bp_list, mf_gene, mf_list, cc_gene, cc_list, bp_unlisted, mf_unlisted, cc_unlisted, all)
+```
+
+```{r DEG X GO viz}
+# VolcanoPlot with GO highlight
+cell <- unique(final$GO_ct)
+comp <- unique(final$GO_cp)
+
+for (ont in c("BP", "MF", "CC")) {
+  for (ct in cell) {
+    for (cp in comp){
+      temp_df <- final %>%
+        filter(GO_ct == ct & GO_cp == cp, GO_ont == ont) %>%
+        mutate(DEG_sig = case_when(DEG_adjp < 0.05 & abs(DEG_log2FC) > 0.2 ~ "pf_sig",
+                                   DEG_adjp < 0.05 & abs(DEG_log2FC) <= 0.2 ~ "p_only",
+                                   DEG_adjp >= 0.05 & abs(DEG_log2FC) > 0.2 ~ "fc_only",
+                                   DEG_adjp >= 0.05 & abs(DEG_log2FC) <= 0.2 ~ "ns",
+                                   TRUE ~ "?"))
+      
+      temp_plot <- ggplot(temp_df, aes(x = DEG_log2FC, y = -log10(DEG_adjp), col = DEG_sig)) + 
+        geom_point(alpha = 0.6, size = 1.5) + 
+        geom_vline(xintercept = 0.2, alpha = 0.4, color = "black", linetype = "dashed") +
+        geom_vline(xintercept = -0.2, alpha = 0.4, color = "black", linetype = "dashed") +
+        geom_hline(yintercept = 1.31, alpha = 0.4, color = "black", linetype = "dashed") +
+        theme_minimal() + 
+        theme(axis.line = element_line(color='black'),
+              plot.background = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),) +
+        geom_text_repel(data = subset(temp_df, DEG_sig == "pf_sig"), aes(label = gene), max.overlaps = 20, size = 3, color = "black") +
+        facet_wrap(~ GO, ncol = 5) + 
+        Seurat::NoLegend()
+      
+      # save
+      ggsave(filename = file.path(plot_dir, "DEGXGO_VolcanoPlot", paste0(ont, "_", ct, "_", cp, ".png")), 
+             temp_plot, height = 8, width = 20, dpi = 300)
+    }
+  }
+}
+
+
+
+ca1_1hr <- final %>% 
+  filter(GO_ct == "ExcitatoryNeuronsCA1" & GO_cp == "PTZvsSAL_1hr", GO_ont == "BP") %>%
+  mutate(DEG_sig = case_when(DEG_adjp < 0.05 & abs(DEG_log2FC) > 0.2 ~ "pf_sig",
+                             DEG_adjp < 0.05 & abs(DEG_log2FC) <= 0.2 ~ "p_only",
+                             DEG_adjp >= 0.05 & abs(DEG_log2FC) > 0.2 ~ "fc_only",
+                             DEG_adjp >= 0.05 & abs(DEG_log2FC) <= 0.2 ~ "ns",
+                             TRUE ~ "?"))
+
+volcPlot <- ggplot(ca1_1hr, aes(x = DEG_log2FC, y = -log10(DEG_adjp), col = DEG_sig)) + 
+  geom_point(alpha = 0.6, size = 1.5) + 
+  geom_vline(xintercept = 0.2, alpha = 0.4, color = "black", linetype = "dashed") +
+  geom_vline(xintercept = -0.2, alpha = 0.4, color = "black", linetype = "dashed") +
+  geom_hline(yintercept = 1.31, alpha = 0.4, color = "black", linetype = "dashed") +
+  theme_minimal() + 
+  theme(axis.line = element_line(color='black'),
+        plot.background = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),) +
+  geom_text_repel(data = subset(ca1_1hr, DEG_sig == "pf_sig"), aes(label = gene), max.overlaps = 20, size = 3, color = "black") +
+  facet_wrap(~ GO, ncol = 5) + 
+  Seurat::NoLegend()
+
+volcPlot
+
+```
+
+
 ```{r categorize top 10 go term}
 bp_term <- unique(bp_df$Description)
 category_bp <- list("Synapse Structure" = bp_term[c(3, 5, 8, 15, 27, 44, 45, 52)],
@@ -105,16 +272,60 @@ category_bp <- list("Synapse Structure" = bp_term[c(3, 5, 8, 15, 27, 44, 45, 52)
                     "Cell adhesion" = bp_term[c(25, 38, 43, 51)], 
                     "Neurites" = bp_term[c(2, 7, 11, 12, 13, 28, 29, 30, 31, 36, 39, 40, 50)])
 
-gene_list <- list()
+mf_term <- unique(mf_df$Description)
+category_mf <- list("RNA Binding" = mf_term[c(1, 16, 17, 18 , 20, 31, 32, 34, 35)], 
+                    "Nucleotide Signaling" = mf_term[c(4, 5, 6, 8, 21, 22, 25)], 
+                    "Channel Activity" = mf_term[c(40, 41, 42, 43, 44, 45, 46, 48, 49, 51)], 
+                    "Receptor Activity" = mf_term[c(27, 33, 36, 37, 38, 39)], 
+                    "Receptor Binding" = mf_term[c(3, 50)],
+                    "Structural Activity" = mf_term[c(2, 7, 9, 13, 23, 28)],
+                    "Protein-Protein" = mf_term[c(10, 11, 12, 14, 15, 26, 29, 30, 47, 52, 53)],
+                    "Regulatory Modulators" = mf_term[c(19, 24)])
+
+cc_term <- unique(cc_df$Description)
+category_cc <- list("Synapse" = cc_term[c(1, 2, 3, 4, 5, 11, 12, 13, 15, 28, 29, 30)], 
+                    "Axon" = cc_term[c(6, 8, 9, 10)], 
+                    "Nuclear" = cc_term[c(26)], 
+                    "Cytoplasm" = cc_term[c(32, 33)], 
+                    "Membrane" = cc_term[c(31)], 
+                    "Ribosome" = cc_term[c(7, 14, 17, 18, 19)], 
+                    "Vesicle" = cc_term[c(16, 20, 21, 22, 23)], 
+                    "Spliceosome" = cc_term[c(27)], 
+                    "Mitochondria" = cc_term[c(24, 25)])
+
+
+gene_list_bp <- list()
+
 for (i in seq_along(temp_bp)) {
   for (j in 1:nrow(temp_bp[[i]])) {
-  gene_list[[paste0(temp_bp[[i]]$cell_type[1], "_", 
+  gene_list_bp[[paste0(temp_bp[[i]]$cell_type[1], "_", 
                     temp_bp[[i]]$comparison[1], "_", 
                     temp_bp[[i]][["Description"]][[j]])]] <- str_split(temp_bp[[i]]$geneID[[j]], "/")[[1]]
   }
 }
 
-gene_term <- data.frame()
+gene_list_mf <- list()
+
+for (i in seq_along(temp_mf)) {
+  for (j in 1:nrow(temp_mf[[i]])) {
+  gene_list_mf[[paste0(temp_mf[[i]]$cell_type[1], "_", 
+                    temp_mf[[i]]$comparison[1], "_", 
+                    temp_mf[[i]][["Description"]][[j]])]] <- str_split(temp_mf[[i]]$geneID[[j]], "/")[[1]]
+  }
+}
+
+gene_list_cc <- list()
+
+for (i in seq_along(temp_cc)) {
+  for (j in 1:nrow(temp_cc[[i]])) {
+  gene_list_cc[[paste0(temp_cc[[i]]$cell_type[1], "_", 
+                    temp_cc[[i]]$comparison[1], "_", 
+                    temp_cc[[i]][["Description"]][[j]])]] <- str_split(temp_cc[[i]]$geneID[[j]], "/")[[1]]
+  }
+}
+
+gene_term_bp <- data.frame()
+
 for (i in seq_along(temp_bp)) {
   for (j in 1:nrow(temp_bp[[i]])) {
     gene_list[[paste0(temp_bp[[i]]$cell_type[1], "_", 
@@ -127,18 +338,18 @@ for (i in seq_along(temp_bp)) {
     
   }}
 
-unique(mf_df$Description)
-category_mf <- c("RNA Binding", "Transcription", "Kinase Activity", "Channel Activity", "Receptor Activity", )
-
-unique(cc_df$Description)
-category_cc <- c("Pre-synapse", "Post-synaps", "Inter-synapse", "Axon", "Nuclear", "Cytoplasm", "Ribosome", "Vesicle", "Splicesome", "")
-
 ```
 
 ```{r clean up environment}
 rm(temp_bp, temp_cc, temp_mf, temp_df, i, deg_list, go_bp_list, go_mf_list, go_cc_list, deg_dir, go_bp_dir, go_cc_dir, go_mf_dir)
 ```
 
-```{r}
+```{r rrvgo plot}
+go_bp_rrvgo <- file.path(base_dir, "GO_BP_MAST", "rrvgo")
+test_rrvgo <- read_csv(list.files(go_bp_rrvgo, full.names = T)[11])
+
+# **Generate RRVGO Plots**
+print(rrvgo::treemapPlot(test_rrvgo))
+dev.off()
 ```
 

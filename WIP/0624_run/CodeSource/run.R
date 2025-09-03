@@ -33,7 +33,8 @@ source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/10_atac_rna_merge.R')
 source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/11_process_multi.R')
 source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/12_link_atac_rna.R')
 source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_filter_cluster.R')
-source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna.R')
+source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna.R') # wilcox
+source("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna_MAST.R") # MAST
 source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/17_run_go.R')
 
 # set seed
@@ -271,7 +272,7 @@ comparisons <- list(
 # combined_object <- qs::qread('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/filtered_50_sctall.qs')
 
 # Set DEG save directory
-deg_dir <- file.path(save_dir, "DEG_wilcox")
+deg_dir <- file.path(save_dir, "DEG_MAST")
 bg_dir <- file.path(deg_dir, "bg_csv")
 sig_dir <- file.path(deg_dir, "sig_csv")
 plot_dir <- file.path(deg_dir, "Plots", "VolcanoPlot")
@@ -280,28 +281,41 @@ dir.create(deg_dir, recursive = TRUE)
 dir.create(bg_dir, recursive = TRUE)
 dir.create(sig_dir, recursive = TRUE)
 dir.create(plot_dir, recursive = TRUE)
-source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna.R') # wilcox
+
+# source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna.R') # wilcox
 source("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna_MAST.R") # MAST
+
 combined_object <- qs::qread('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/filtered_50_cells.qs')
 
 DefaultAssay(combined_object) <- "RNA"
 combined_object <- NormalizeData(combined_object)
 
 # Run DEG
-run_dg(
+run_dg_MAST(
   combined_object,
   cell_type_meta = 'cell_type',
   comparison_meta = 'Sample',
   cell_types = cell_types,
   comparisons = comparisons,
-  p_value = 0.05,
-  fc_value = 0.2,
-  # minimum_cnt = 10,
-  # mode = "MAST",
+  p_cutoff = 0.05,
+  fc_cutoff = 0.2,
+  minimum_cnt = 10,
+  mode = "MAST",
   save = TRUE,
   bg_dir = bg_dir,
   sig_dir = sig_dir,
   plot_dir = plot_dir)
+
+
+# GO
+source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/17_run_go.R')
+
+# Get background genes (scRNA specific)
+# gene_count <- Seurat::GetAssayData(combined_object, assay = 'RNA', layer = 'counts')
+# bg_gene <- rownames(gene_count)[Matrix::rowSums(gene_count > 0) > 10]
+
+# deg_dir <- file.path(save_dir, "DEG_MAST")
+# sig_dir <- file.path(deg_dir, "sig_csv")
 
 
 # Set GO analysis save directory
@@ -309,27 +323,46 @@ go_dir <- file.path(save_dir, "GO_BP_MAST")
 cnet_dir <- file.path(go_dir, "cnet")
 rrvgo_dir <- file.path(go_dir, "rrvgo")
 
+# Run GO analysis
+run_go(
+  seurat_obj = combined_object,
+  input_sig = sig_dir,
+  orgdb = org.M0m.eg.db,
+  ontology = "BP",
+  bg_gene = bg_gene,
+  top_n = 20,
+  save = TRUE,
+  cnet = TRUE,
+  rrvgo = TRUE,
+  go_dir = go_dir,
+  cnet_dir = cnet_dir,
+  rrvgo_dir = rrvgo_dir)
+
+
 go_dir <- file.path(save_dir, "GO_MF_MAST")
 cnet_dir <- file.path(go_dir, "cnet")
 rrvgo_dir <- file.path(go_dir, "rrvgo")
+
+# Run GO analysis
+run_go(
+  seurat_obj = combined_object,
+  input_sig = sig_dir,
+  orgdb = org.Mm.eg.db,
+  ontology = "MF",
+  bg_gene = bg_gene,
+  top_n = 20,
+  save = TRUE,
+  cnet = TRUE,
+  rrvgo = TRUE,
+  go_dir = go_dir,
+  cnet_dir = cnet_dir,
+  rrvgo_dir = rrvgo_dir)
+
 
 go_dir <- file.path(save_dir, "GO_CC_MAST")
 cnet_dir <- file.path(go_dir, "cnet")
 rrvgo_dir <- file.path(go_dir, "rrvgo")
 
-
-dir.create(go_dir, recursive = TRUE)
-dir.create(cnet_dir, recursive = TRUE)
-dir.create(rrvgo_dir, recursive = TRUE)
-
-deg_dir <- file.path(save_dir, "DEG_MAST")
-sig_dir <- file.path(deg_dir, "sig_csv")
-
-source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/17_run_go.R')
-
-# Get background genes (scRNA specific)
-gene_count <- Seurat::GetAssayData(combined_object, assay = 'RNA', layer = 'counts')
-bg_gene <- rownames(gene_count)[Matrix::rowSums(gene_count > 0) > 10]
 
 # Run GO analysis
 run_go(
@@ -345,5 +378,13 @@ run_go(
   go_dir = go_dir,
   cnet_dir = cnet_dir,
   rrvgo_dir = rrvgo_dir)
+
+
+dir.create(go_dir, recursive = TRUE)
+dir.create(cnet_dir, recursive = TRUE)
+dir.create(rrvgo_dir, recursive = TRUE)
+
+
+
 
 

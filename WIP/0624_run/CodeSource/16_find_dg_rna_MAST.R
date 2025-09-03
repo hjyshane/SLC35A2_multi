@@ -23,7 +23,7 @@
 #' @return None. Results are optionally saved to CSVs and PNGs.
 #' @export
 
-run_dg <- function(
+run_dg_MAST <- function(
     seurat_obj,
     cell_type_meta,
     comparison_meta,
@@ -31,8 +31,8 @@ run_dg <- function(
     comparisons,
     minimum_cnt = 10,
     mode = "MAST", 
-    p_value = 0.05,
-    fc_value = 0.2,
+    p_cutoff = 0.05,
+    fc_cutoff = 0.2,
     save = TRUE,
     bg_dir = NULL,
     sig_dir = NULL,
@@ -50,20 +50,17 @@ run_dg <- function(
   for (ct in cell_types) {
     # For each cell type, loop through each comparison group
     for (comparison in comparisons) {
-      # Subset for cell type
-      
-      # Set idents
-      Seurat::Idents(seurat_obj) <- cell_type_meta
-      
       # subsetting cell type in each condition
-      cell_type_data <- subset(seurat_obj,
-                               subset = cell_type == ct & Sample %in% c(comparison$group1, comparison$group2)) # cell_type is metadata column name for cell type, Sample is for group
-      
-      if (length(cell_type_meta >= minimum_cnt)) {
+      meta <- seurat_obj@meta.data
+      idx <- (meta[[cell_type_meta]] == ct) & (meta[[comparison_meta]] %in% c(comparison$group1, comparison$group2))
+      cell_type_data <- subset(seurat_obj, cells = colnames(seurat_obj)[idx])
+                               
       # Set identities
       Seurat::DefaultAssay(cell_type_data) <- "RNA"
-      Seurat::Idents(cell_type_data) <- "Sample"
+      Seurat::Idents(cell_type_data) <- comparison_meta
       
+      tab <- table(Idents(cell_type_data))
+      if ((min(tab[c(comparison$group1,comparison$group2)])) >= minimum_cnt) {
       # if (mode != "LR") {
       # DE analysis
       bg_results <- Seurat::FindMarkers(
@@ -74,7 +71,7 @@ run_dg <- function(
         logfc.threshold = 0.0,
         min.pct = 0.25,
         test.use = mode,
-        min.cells.group = 10,
+        min.cells.group = minimum_cnt,
         latent.vars = "nFeature_RNA"
       )
       
@@ -92,14 +89,14 @@ run_dg <- function(
 
       bg_results <- bg_results %>%
         mutate(Viz = case_when(
-          abs(avg_log2FC) >= fc_value & p_value <= 0.05  ~ "Sig",
-          abs(avg_log2FC) >= fc_value & p_value > 0.05 ~ "log2FC",
-          abs(avg_log2FC) < fc_value & p_value <= 0.05 ~ "pValue",
+          abs(avg_log2FC) > fc_cutoff & p_val_adj < p_cutoff  ~ "Sig",
+          abs(avg_log2FC) > fc_cutoff & p_val_adj >= p_cutoff ~ "log2FC",
+          abs(avg_log2FC) <= fc_cutoff & p_val_adj <= p_cutoff ~ "pValue",
           TRUE ~ "NoChange"))
       
       # Get significant genes - DEGs
       sig_results <- bg_results %>%
-        filter(p_val < p_value & abs(avg_log2FC) >= fc_value)
+        filter(p_val_adj < p_cutoff & abs(avg_log2FC) >= fc_cutoff)
 
       # Create VolcanoPlot
       if (nrow(bg_results) == 0) {
@@ -113,8 +110,8 @@ run_dg <- function(
           y = 'p_val_adj',       
           title = paste0('MAST (combined p): ', comparison$group1, ' vs ', comparison$group2),
           subtitle = 'latent.vars = nFeature_RNA; RNA log-normalized',
-          pCutoff = p_value,           
-          FCcutoff = fc_value,         
+          pCutoff = p_cutoff,           
+          FCcutoff = fc_cutoff,         
           xlab = bquote(~Log[2]~ 'FC (Seurat/MAST)'),
           ylab = bquote(~-Log[10]~italic(P)),
           pointSize = 1.0,
@@ -126,10 +123,10 @@ run_dg <- function(
        
          
          vplot2 <- ggplot2::ggplot(bg_results, aes(x = avg_log2FC, y = -log10(p_val_adj))) +
-           ggplot2::geom_point(aes(alpha = pmin(1, (pct.1 + pct.2)/2), color = Viz, size = 1)) +
+           ggplot2::geom_point(aes(alpha = pmin(1, (pct.1 + pct.2)/2), color = Viz), size = 1) +
            scale_color_manual(values = c("Sig" = "red", "log2FC" = "green", "pValue" = "blue", "NoChange" = "grey")) +
-           ggplot2::geom_vline(xintercept = c(-fc_value, fc_value), linetype = 2) +
-           ggplot2::geom_hline(yintercept = -log10(p_value), linetype = 2) +
+           ggplot2::geom_vline(xintercept = c(-fc_cutoff, fc_cutoff), linetype = 2) +
+           ggplot2::geom_hline(yintercept = -log10(p_cutoff), linetype = 2) +
            labs(x = "avg_log2FC", y = "-log10(p_val_adj)",
                 title = paste0("MAST (combined p) : ", comparison$group1, " vs ", comparison$group2),
                 subtitle = "latent.vars = nFeature_RNA; min.pct = 0.25, min.cells.group  = 10") +
