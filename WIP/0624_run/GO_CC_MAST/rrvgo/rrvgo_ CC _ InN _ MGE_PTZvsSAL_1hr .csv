@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005874","GO:0005874",1,"GO:0005874",3.02220265891799,467,"microtubule","microtubule",0.906,1,0
+"GO:0150034","GO:0150034",2,"GO:0150034",2.22741249750938,397,"distal axon","distal axon",0.998333333333333,1,0
+"GO:0140288","GO:0140288",3,"GO:0140288",1.38405675099769,14,"GBAF complex","GBAF complex",0.906333333333333,1,0

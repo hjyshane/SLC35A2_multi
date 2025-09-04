@@ -1,0 +1,2 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
+"GO:0005200","GO:0005200","structural constituent of cytoskeleton","1/1","63/17543",0.00359117596762237,0.0215470558057342,NA,"Tubb2b",1,1.66661206353929,1,0.00359117596762241,278.460317460317,464.085324296345,"InN","Ndnf_24hrvs1hr_SAL"

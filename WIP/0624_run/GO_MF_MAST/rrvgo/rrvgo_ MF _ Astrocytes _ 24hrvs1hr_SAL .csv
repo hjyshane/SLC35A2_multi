@@ -1,0 +1,6 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",4.65370696106078,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.746,0.576666666666667,0
+"GO:0098918","GO:0098918",1,"GO:0005200",2.83190167181618,37,"structural constituent of synapse","structural constituent of cytoskeleton",0.6772,0.462,0.645
+"GO:0099186","GO:0099186",1,"GO:0005200",1.71442864316536,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.6812,0.468666666666667,0.625
+"GO:0008066","GO:0008066",2,"GO:0008066",1.60789097456719,27,"glutamate receptor activity","glutamate receptor activity",1,1,0
+"GO:0045499","GO:0045499",3,"GO:0045499",1.50974502498591,29,"chemorepellent activity","chemorepellent activity",1,1,0

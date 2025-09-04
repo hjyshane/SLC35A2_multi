@@ -1,0 +1,26 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0022626","GO:0022626",1,"GO:0022626",18.7381344474891,142,"cytosolic ribosome","cytosolic ribosome",0.76828,0.248,0
+"GO:0043209","GO:0043209",2,"GO:0043209",16.426336085785,208,"myelin sheath","myelin sheath",0.99776,1,0
+"GO:0044391","GO:0044391",1,"GO:0022626",13.5185599543798,215,"ribosomal subunit","cytosolic ribosome",0.75972,0.220142857142857,0.875
+"GO:0005840","GO:0005840",1,"GO:0022626",12.200451278304,267,"ribosome","cytosolic ribosome",0.7654,0.243571428571429,0.917
+"GO:0022627","GO:0022627",1,"GO:0022626",10.4446769864075,45,"cytosolic small ribosomal subunit","cytosolic ribosome",0.77208,0.254428571428571,0.897
+"GO:0022625","GO:0022625",1,"GO:0022626",8.3529735725444,79,"cytosolic large ribosomal subunit","cytosolic ribosome",0.7672,0.239428571428571,0.932
+"GO:0015935","GO:0015935",1,"GO:0022626",6.81086674063865,83,"small ribosomal subunit","cytosolic ribosome",0.76984,0.249714285714286,0.806
+"GO:0099572","GO:0099572",3,"GO:0099572",6.01495338132054,436,"postsynaptic specialization","postsynaptic specialization",0.74716,0.4814,0
+"GO:0098984","GO:0098984",3,"GO:0099572",5.69135459089146,448,"neuron to neuron synapse","postsynaptic specialization",0.76652,0.3918,0.535
+"GO:0150034","GO:0150034",4,"GO:0150034",5.07903020607489,397,"distal axon","distal axon",0.84976,0.446,0
+"GO:0032279","GO:0032279",3,"GO:0099572",4.63426241270457,407,"asymmetric synapse","postsynaptic specialization",0.76804,0.3922,0.527
+"GO:0015934","GO:0015934",1,"GO:0022626",4.58331636995223,137,"large ribosomal subunit","cytosolic ribosome",0.76516,0.235571428571429,0.837
+"GO:0014069","GO:0014069",3,"GO:0099572",4.48304832291983,384,"postsynaptic density","postsynaptic specialization",0.71348,0.3042,0.981
+"GO:0097470","GO:0097470",5,"GO:0097470",3.82225755442271,29,"ribbon synapse","ribbon synapse",0.8162,0.517,0
+"GO:0097060","GO:0097060",3,"GO:0099572",3.41756550481383,514,"synaptic membrane","postsynaptic specialization",0.79756,0.5604,0.55
+"GO:0044306","GO:0044306",4,"GO:0150034",3.05352741232086,224,"neuron projection terminus","distal axon",0.86452,0.4474,0.613
+"GO:0098684","GO:0098684",5,"GO:0097470",2.44100316746017,18,"photoreceptor ribbon synapse","ribbon synapse",0.822,0.517,0.966
+"GO:0098685","GO:0098685",6,"GO:0098685",1.99284543319391,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.81792,1,0
+"GO:0048786","GO:0048786",7,"GO:0048786",1.95801231786994,121,"presynaptic active zone","presynaptic active zone",0.81364,1,0
+"GO:0043197","GO:0043197",4,"GO:0150034",1.82230365276842,208,"dendritic spine","distal axon",0.68192,0.4492,0.609
+"GO:0044309","GO:0044309",4,"GO:0150034",1.69177204959599,214,"neuron spine","distal axon",0.86452,0.4472,0.613
+"GO:0030426","GO:0030426",8,"GO:0030426",1.67049869302871,213,"growth cone","growth cone",0.8166,0.5025,0
+"GO:0043679","GO:0043679",4,"GO:0150034",1.55131584930645,202,"axon terminus","distal axon",0.66748,0.385,0.935
+"GO:0030427","GO:0030427",8,"GO:0030426",1.52526792390222,221,"site of polarized growth","growth cone",0.95804,0.5025,0.995
+"GO:0016514","GO:0016514",9,"GO:0016514",1.44003447846419,28,"SWI/SNF complex","SWI/SNF complex",0.90776,1,0

@@ -1,0 +1,6 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005903","GO:0005903",1,"GO:0005903",1.87076466689013,149,"brush border","brush border",0.8082,0.5235,0
+"GO:0098862","GO:0098862",1,"GO:0005903",1.56421464103293,211,"cluster of actin-based cell projections","brush border",0.8078,0.5235,0.953
+"GO:0043209","GO:0043209",2,"GO:0043209",1.53198510034646,208,"myelin sheath","myelin sheath",0.9984,1,0
+"GO:0036464","GO:0036464",3,"GO:0036464",1.38295349763831,246,"cytoplasmic ribonucleoprotein granule","cytoplasmic ribonucleoprotein granule",0.8004,0.5045,0
+"GO:0035770","GO:0035770",3,"GO:0036464",1.31711056859172,264,"ribonucleoprotein granule","cytoplasmic ribonucleoprotein granule",0.8004,0.5045,0.991

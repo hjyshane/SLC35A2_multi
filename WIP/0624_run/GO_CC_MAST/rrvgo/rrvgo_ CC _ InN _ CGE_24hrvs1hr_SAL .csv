@@ -1,0 +1,17 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043209","GO:0043209",1,"GO:0043209",14.0157869719978,208,"myelin sheath","myelin sheath",0.9979375,1,0
+"GO:0150034","GO:0150034",2,"GO:0150034",10.4646117715642,397,"distal axon","distal axon",0.766625,0.484,0
+"GO:0005874","GO:0005874",3,"GO:0005874",4.36965495283963,467,"microtubule","microtubule",0.911875,0.566666666666667,0
+"GO:0043679","GO:0043679",2,"GO:0150034",4.11017851522822,202,"axon terminus","distal axon",0.7505625,0.358666666666667,0.935
+"GO:0044306","GO:0044306",2,"GO:0150034",3.82686970677989,224,"neuron projection terminus","distal axon",0.8046875,0.466,0.613
+"GO:0030426","GO:0030426",4,"GO:0030426",3.80268462439642,213,"growth cone","growth cone",0.708375,0.402,0
+"GO:0030427","GO:0030427",4,"GO:0030426",3.71989636445384,221,"site of polarized growth","growth cone",0.88625,0.403,0.995
+"GO:0045171","GO:0045171",5,"GO:0045171",2.645287993848,101,"intercellular bridge","intercellular bridge",0.998125,1,0
+"GO:0045121","GO:0045121",6,"GO:0045121",1.89759138372196,301,"membrane raft","membrane raft",0.924875,0.502,0
+"GO:0098857","GO:0098857",6,"GO:0045121",1.89015396266823,302,"membrane microdomain","membrane raft",0.924875,0.502,0.996
+"GO:0031904","GO:0031904",7,"GO:0031904",1.68071304068271,11,"endosome lumen","endosome lumen",0.984375,1,0
+"GO:0072686","GO:0072686",3,"GO:0005874",1.52546932475143,181,"mitotic spindle","microtubule",0.8979375,0.488,0.622
+"GO:0044294","GO:0044294",4,"GO:0030426",1.51523344516965,12,"dendritic growth cone","growth cone",0.757,0.468333333333333,0.799
+"GO:0030027","GO:0030027",8,"GO:0030027",1.49693263259341,181,"lamellipodium","lamellipodium",0.8595,1,0
+"GO:0097524","GO:0097524",9,"GO:0097524",1.44310863953036,29,"sperm plasma membrane","sperm plasma membrane",0.97625,1,0
+"GO:0005819","GO:0005819",3,"GO:0005874",1.44254663530465,367,"spindle","microtubule",0.893625,0.469333333333333,0.678

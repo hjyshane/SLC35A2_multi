@@ -1,0 +1,7 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043209","GO:0043209",1,"GO:0043209",10.6052267751725,208,"myelin sheath","myelin sheath",0.998,1,0
+"GO:0005874","GO:0005874",2,"GO:0005874",5.62693813843316,467,"microtubule","microtubule",0.842166666666667,0.569,0
+"GO:0150034","GO:0150034",3,"GO:0150034",3.73214003168025,397,"distal axon","distal axon",0.998,1,0
+"GO:0045171","GO:0045171",4,"GO:0045171",2.13857497563332,101,"intercellular bridge","intercellular bridge",0.998333333333333,1,0
+"GO:0005881","GO:0005881",2,"GO:0005874",2.06436316447188,114,"cytoplasmic microtubule","microtubule",0.837,0.569,0.862
+"GO:0031904","GO:0031904",5,"GO:0031904",1.4226148657871,11,"endosome lumen","endosome lumen",0.967833333333333,1,0

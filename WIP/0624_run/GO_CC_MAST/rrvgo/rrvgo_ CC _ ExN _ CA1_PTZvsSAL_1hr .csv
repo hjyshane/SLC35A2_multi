@@ -1,0 +1,15 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0098984","GO:0098984",1,"GO:0098984",7.35440538706078,448,"neuron to neuron synapse","neuron to neuron synapse",0.542357142857143,0.350333333333333,0
+"GO:0045211","GO:0045211",2,"GO:0045211",7.04884187832263,352,"postsynaptic membrane","postsynaptic membrane",0.468071428571429,0.406333333333333,0
+"GO:0097060","GO:0097060",2,"GO:0045211",6.95703382634109,514,"synaptic membrane","postsynaptic membrane",0.519,0.392,0.938
+"GO:0099572","GO:0099572",3,"GO:0099572",6.88930142052204,436,"postsynaptic specialization","postsynaptic specialization",0.501,0.407,0
+"GO:0032279","GO:0032279",1,"GO:0098984",5.86854160015636,407,"asymmetric synapse","neuron to neuron synapse",0.543714285714286,0.345333333333333,0.979
+"GO:0014069","GO:0014069",1,"GO:0098984",5.56467682751214,384,"postsynaptic density","neuron to neuron synapse",0.439785714285714,0.348333333333333,0.97
+"GO:0099634","GO:0099634",3,"GO:0099572",5.33170557602457,154,"postsynaptic specialization membrane","postsynaptic specialization",0.465214285714286,0.374333333333333,0.9
+"GO:0098839","GO:0098839",3,"GO:0099572",3.71508084927231,114,"postsynaptic density membrane","postsynaptic specialization",0.416142857142857,0.381333333333333,0.879
+"GO:0042734","GO:0042734",2,"GO:0045211",3.18573464372104,238,"presynaptic membrane","postsynaptic membrane",0.56,0.423666666666667,0.843
+"GO:0098685","GO:0098685",4,"GO:0098685",2.84211522405917,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.664071428571429,1,0
+"GO:0043197","GO:0043197",5,"GO:0043197",2.21309247432041,208,"dendritic spine","dendritic spine",0.455571428571429,0.443666666666667,0
+"GO:0044309","GO:0044309",5,"GO:0043197",2.09615844518316,214,"neuron spine","dendritic spine",0.889928571428571,0.495666666666667,0.992
+"GO:0022627","GO:0022627",6,"GO:0022627",1.47588069403653,45,"cytosolic small ribosomal subunit","cytosolic small ribosomal subunit",0.975857142857143,1,0
+"GO:0043198","GO:0043198",5,"GO:0043197",1.36545816584901,71,"dendritic shaft","dendritic spine",0.912857142857143,0.600666666666667,0.677
