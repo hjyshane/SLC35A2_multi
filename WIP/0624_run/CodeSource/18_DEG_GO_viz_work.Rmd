@@ -24,7 +24,7 @@ set.seed(42)
 ```{r directory setup}
 base_dir <- "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/"
 plot_dir <- file.path(base_dir, "Plot_DEG_GO")
-deg_dir <- file.path(base_dir, "DEG_MAST", "sig_csv")
+deg_dir <- file.path(base_dir, "DEG_MAST", "bg_csv")
 go_bp_dir <- file.path(base_dir, "GO_BP_MAST", "csv")
 go_mf_dir <- file.path(base_dir, "GO_MF_MAST", "csv")
 go_cc_dir <- file.path(base_dir, "GO_CC_MAST", "csv")
@@ -33,10 +33,10 @@ go_cc_dir <- file.path(base_dir, "GO_CC_MAST", "csv")
 # Data process
 ```{r file load}
 # get only hippocampus cell type files
-deg_list <- list.files(deg_dir, full.names = T, pattern = "^Excitatory")
-go_bp_list <- list.files(go_bp_dir, full.names = T, pattern = "^GO_BP_Excitatory")
-go_mf_list <- list.files(go_mf_dir, full.names = T, pattern = "^GO_MF_Excitatory")
-go_cc_list <- list.files(go_cc_dir, full.names = T, pattern = "^GO_CC_Excitatory")
+deg_list <- list.files(deg_dir, full.names = T, pattern = "^ExN_CA|^ExN_mDG")
+go_bp_list <- list.files(go_bp_dir, full.names = T, pattern = "^GO_BP_ExN_CA|^GO_BP_ExN_mDG")
+go_mf_list <- list.files(go_mf_dir, full.names = T, pattern = "^GO_MF_ExN_CA|^GO_MF_ExN_mDG")
+go_cc_list <- list.files(go_cc_dir, full.names = T, pattern = "^GO_CC_ExN_CA|^GO_CC_ExN_mDG")
 
 # check file numbers match
 length(go_bp_list) == length(deg_list) & 
