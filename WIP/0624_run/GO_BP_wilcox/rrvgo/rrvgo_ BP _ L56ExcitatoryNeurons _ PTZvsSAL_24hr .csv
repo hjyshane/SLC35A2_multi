@@ -1,9 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0071248","GO:0071248",1,"GO:0071248",2.38624464501447,187,"cellular response to metal ion","cellular response to metal ion",0.64075,0.29925,0
-"GO:0050807","GO:0050807",2,"GO:0050807",2.28191726382021,309,"regulation of synapse organization","regulation of synapse organization",0.660375,0.5025,0
-"GO:0050803","GO:0050803",2,"GO:0050807",2.21605352486403,317,"regulation of synapse structure or activity","regulation of synapse organization",0.875625,0.5025,0.995
-"GO:0071277","GO:0071277",1,"GO:0071248",2.13382590633548,91,"cellular response to calcium ion","cellular response to metal ion",0.638125,0.293,0.944
-"GO:0071241","GO:0071241",1,"GO:0071248",2.1135644610135,258,"cellular response to inorganic substance","cellular response to metal ion",0.651375,0.321,0.975
-"GO:0007416","GO:0007416",3,"GO:0007416",1.78318085545098,222,"synapse assembly","synapse assembly",0.76875,0.526,0
-"GO:0034329","GO:0034329",3,"GO:0007416",1.37590577650251,481,"cell junction assembly","synapse assembly",0.770125,0.526,0.948
-"GO:0051592","GO:0051592",1,"GO:0071248",1.33909308947542,147,"response to calcium ion","cellular response to metal ion",0.666625,0.33325,0.884

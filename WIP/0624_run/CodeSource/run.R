@@ -249,7 +249,7 @@ qs::qsave(combined_object, file = file.path(qsave_dir, 'filtered_50_cells.qs'))
 
 # DEG parameter set up for cell types and comparison groups
 # Create list of named lists to use in DEG comparison. group1 and group2 should be in object metadata.
-cell_types <- unique(combined_object$cell_type)
+cell_types <- unique(combined_object$short_ct)
 
 comparisons <- list(
   PTZvsSAL_24hr = list(name = "PTZvsSAL_24hr", group1 = "PTZ_24hr", group2 = "SAL_24hr"),
@@ -285,7 +285,7 @@ dir.create(plot_dir, recursive = TRUE)
 # source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna.R') # wilcox
 source("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/16_find_dg_rna_MAST.R") # MAST
 
-combined_object <- qs::qread('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/filtered_50_cells.qs')
+combined_object <- qs::qread('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/filtered_50_cells_atac_cleaned.qs')
 
 DefaultAssay(combined_object) <- "RNA"
 combined_object <- NormalizeData(combined_object)
@@ -293,7 +293,7 @@ combined_object <- NormalizeData(combined_object)
 # Run DEG
 run_dg_MAST(
   combined_object,
-  cell_type_meta = 'cell_type',
+  cell_type_meta = 'short_ct',
   comparison_meta = 'Sample',
   cell_types = cell_types,
   comparisons = comparisons,
@@ -311,11 +311,11 @@ run_dg_MAST(
 source('~/PTZ_ATAC_scRNA_072024/WIP/0624_run/CodeSource/17_run_go.R')
 
 # Get background genes (scRNA specific)
-# gene_count <- Seurat::GetAssayData(combined_object, assay = 'RNA', layer = 'counts')
-# bg_gene <- rownames(gene_count)[Matrix::rowSums(gene_count > 0) > 10]
+gene_count <- Seurat::GetAssayData(combined_object, assay = 'RNA', layer = 'counts')
+bg_gene <- rownames(gene_count)[Matrix::rowSums(gene_count > 0) > 10]
 
-# deg_dir <- file.path(save_dir, "DEG_MAST")
-# sig_dir <- file.path(deg_dir, "sig_csv")
+deg_dir <- file.path(save_dir, "DEG_MAST")
+sig_dir <- file.path(deg_dir, "sig_csv")
 
 
 # Set GO analysis save directory
@@ -345,7 +345,7 @@ rrvgo_dir <- file.path(go_dir, "rrvgo")
 
 # Run GO analysis
 run_go(
-  seurat_obj = combined_object,
+  seurat_obj = cobj_2,
   input_sig = sig_dir,
   orgdb = org.Mm.eg.db,
   ontology = "MF",
@@ -366,7 +366,7 @@ rrvgo_dir <- file.path(go_dir, "rrvgo")
 
 # Run GO analysis
 run_go(
-  seurat_obj = combined_object,
+  seurat_obj = cobj_2,
   input_sig = sig_dir,
   orgdb = org.Mm.eg.db,
   ontology = "CC",

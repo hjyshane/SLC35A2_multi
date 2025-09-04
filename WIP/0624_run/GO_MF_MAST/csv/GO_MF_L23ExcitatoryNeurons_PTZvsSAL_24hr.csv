@@ -1,3 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:0046875","GO:0046875","ephrin receptor binding","2/12","32/17543",0.000210339230847276,0.0105169615423638,0.00642088178375895,"Chn1/Epha4",2,1.97810971417348,0.166666666666667,0.00182408938037964,91.3697916666667,180.73947247784,"L23ExcitatoryNeurons","PTZvsSAL_24hr"
-"GO:0005200","GO:0005200","structural constituent of cytoskeleton","2/12","63/17543",0.000818510401119854,0.0409255200559927,0.0124930534907767,"Tubb2a/Tubb4b",2,1.38800579313745,0.166666666666667,0.00359117596762241,46.4100529100529,64.4174222989692,"L23ExcitatoryNeurons","PTZvsSAL_24hr"

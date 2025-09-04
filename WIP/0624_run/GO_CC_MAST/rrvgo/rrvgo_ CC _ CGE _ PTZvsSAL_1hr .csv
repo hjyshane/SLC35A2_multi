@@ -1,4 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0032281","GO:0032281",1,"GO:0032281",1.74351959439848,29,"AMPA glutamate receptor complex","AMPA glutamate receptor complex",0.359,0.359,0
-"GO:0008328","GO:0008328",1,"GO:0032281",1.56246491581125,44,"ionotropic glutamate receptor complex","AMPA glutamate receptor complex",0.346666666666667,0.346666666666667,0.963
-"GO:0098878","GO:0098878",1,"GO:0032281",1.55270507852212,46,"neurotransmitter receptor complex","AMPA glutamate receptor complex",0.347666666666667,0.347666666666667,0.96

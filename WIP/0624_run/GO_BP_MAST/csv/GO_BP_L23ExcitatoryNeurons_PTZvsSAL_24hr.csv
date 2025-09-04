@@ -1,2 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:0008045","GO:0008045","motor neuron axon guidance","2/11","27/17643",0.000122994631076558,0.0386203141580392,0.0155870676451069,"Chn1/Epha4",2,1.41318419776149,0.181818181818182,0.00153035198095562,118.808080808081,167.89770236435,"L23ExcitatoryNeurons","PTZvsSAL_24hr"

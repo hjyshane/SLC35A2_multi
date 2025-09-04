@@ -1,4 +1,0 @@
-"","p_val","avg_log2FC","pct.1","pct.2","p_val_adj","gene","cell_type","comparison","Regulation"
-"Gm42418",8.60069065643485e-18,-1.05684196196114,0.961,1,2.15421498871724e-13,"Gm42418","NdnfRelnInhibitoryInterneurons","24hrvs1hr_PTZ","Down"
-"Cwc22",1.07145270097605e-07,-1.32218338863691,0.422,0.76,0.00268366758013472,"Cwc22","NdnfRelnInhibitoryInterneurons","24hrvs1hr_PTZ","Down"
-"Tuba1a",3.62897054813977e-07,-1.05864244292118,0.578,0.875,0.00908948253192569,"Tuba1a","NdnfRelnInhibitoryInterneurons","24hrvs1hr_PTZ","Down"

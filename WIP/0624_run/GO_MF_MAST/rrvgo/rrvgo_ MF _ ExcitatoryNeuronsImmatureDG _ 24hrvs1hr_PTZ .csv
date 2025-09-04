@@ -1,4 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005200","GO:0005200",1,"GO:0005200",5.08413129209599,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
-"GO:0031625","GO:0031625",2,"GO:0031625",2.34242679869236,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.67,0.505,0
-"GO:0044389","GO:0044389",2,"GO:0031625",2.25722677301187,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.67,0.505,0.99

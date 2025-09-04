@@ -1,3 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:1902430","GO:1902430",1,"GO:1902430",1.56923169776412,19,"negative regulation of amyloid-beta formation","negative regulation of amyloid-beta formation",0.511,0.511,0
-"GO:1902992","GO:1902992",1,"GO:1902430",1.34749375970005,22,"negative regulation of amyloid precursor protein catabolic process","negative regulation of amyloid-beta formation",0.511,0.511,0.978

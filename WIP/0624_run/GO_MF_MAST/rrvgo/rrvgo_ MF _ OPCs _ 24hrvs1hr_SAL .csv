@@ -1,5 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005200","GO:0005200",1,"GO:0005200",2.92897581021671,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
-"GO:0005525","GO:0005525",2,"GO:0005525",1.53793224336334,363,"GTP binding","GTP binding",0.51525,0.353666666666667,0
-"GO:0019001","GO:0019001",2,"GO:0005525",1.4764402839852,387,"guanyl nucleotide binding","GTP binding",0.51,0.346666666666667,0.968
-"GO:0032561","GO:0032561",2,"GO:0005525",1.4764402839852,387,"guanyl ribonucleotide binding","GTP binding",0.50925,0.345666666666667,0.971

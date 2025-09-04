@@ -10,9 +10,15 @@ create_deg_summary <- function(deg_dir) {
         # Extract metadata from filename
         file_name <- basename(file)
         parts <- strsplit(gsub(".csv", "", file_name), "_")[[1]]
-        cell_type <- parts[1]
-        comparison_name <- paste(parts[-1], collapse = "_")
-
+        
+        if (length(parts) == 4) {
+          cell_type <-paste(parts[1:2], collapse = "_") 
+          comparison_name <- paste(parts[3:4], collapse = "_")
+          } else if (length(parts) == 3) {
+            cell_type <-paste(parts[1], collapse = "_") 
+            comparison_name <- paste(parts[-1], collapse = "_")
+            } else {message("check file name")}
+        
         # Read DEG results
         deg_data <- read.csv(file)
 
@@ -58,10 +64,10 @@ create_deg_summary <- function(deg_dir) {
 }
 
 # Generate summary
-complete_summary <- create_deg_summary(deg_dir = bg_dir)
+complete_summary <- create_deg_summary(file.path(deg_dir, "bg_csv"))
 
 # Save summary
-write.csv(complete_summary, file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/DEG_Complete_Analysis_Summary.csv"), row.names = FALSE)
+write.csv(complete_summary, file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/DEG_Complete_Analysis_Summary.csv"), row.names = FALSE)
 
 complete_summary <- complete_summary %>%
     dplyr::rename(Cell_Type = Cell_Type,
@@ -78,13 +84,14 @@ deg_long <- complete_summary %>%
 # 1. Stacked Bar Chart of Up/Down Regulated Genes by Cell Type and Comparison
 p1_stacked <- ggplot(deg_long, aes(x = reorder(Cell_Type, -Count), y = Count, fill = Regulation)) +
     geom_bar(stat = "identity", position = "stack") +
-    facet_wrap(~ Comparison, scales = "free_y") +
+    facet_wrap(~ Comparison) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1), plot.margin = margin(10, 20, 40, 20)) +
     labs(
         title = "Up/Down Regulated Genes by Cell Type and Comparison",
         subtitle = "Significant genes (p < 0.05, |log2FC| > 0.)",
-        y = "Number of Genes"
+        y = "Number of Genes",
+        x = NULL
     ) +
     scale_fill_manual(values = c("Upregulated" = "#66c2a5", "Downregulated" = "#fc8d62"), name = "Regulation") +
     geom_text(aes(label = Count), position = position_stack(vjust = 0.5), size = 3)
@@ -107,8 +114,8 @@ p1 <- ggplot(deg_long, aes(x = reorder(Cell_Type, -Count), y = Count, fill = Reg
     scale_fill_manual(values = c("Upregulated" = "#66c2a5", "Downregulated" = "#fc8d62"), name = "Regulation") +
     geom_text(aes(label = Count), position = position_dodge(width = 0.8), vjust = -0.5, size = 3)
 
-ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/Sig_UpDown_Distribution_stacked.png"), p1_stacked, width = 18, height = 12)
-ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/Sig_UpDown_Distribution.png"), p1, width = 16, height = 12)
+ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/Sig_UpDown_Distribution_stacked.png"), p1_stacked, width = 18, height = 12)
+ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/Sig_UpDown_Distribution.png"), p1, width = 16, height = 12)
 
 # 3. Comparison of Total DEGs vs Significant Genes
 long_summary <- complete_summary %>%
@@ -136,7 +143,7 @@ p2 <- ggplot(long_summary, aes(x = reorder(Cell_Type, -Count), y = Count, fill =
 
 p2_stacked <- ggplot(long_summary, aes(x = reorder(Cell_Type, -Count), y = Count, fill = Gene_Category)) +
     geom_bar(stat = "identity", position = "stack") +  # Stacked bars
-    facet_wrap(~ Comparison, scales = "free_y") +
+    facet_wrap(~ Comparison) +
     theme_minimal() +
     theme(
         axis.text.x = element_text(angle = 45, hjust = 1),
@@ -145,14 +152,15 @@ p2_stacked <- ggplot(long_summary, aes(x = reorder(Cell_Type, -Count), y = Count
     labs(
         title = "Comparison of Total Genes vs DEGs",
         subtitle = "Significant genes (p < 0.05)",
-        y = "Number of Genes"
+        y = "Number of Genes",
+        x = NULL
     ) +
     scale_fill_manual(values = c("Total Genes" = "#66c2a5", "DEGs" = "#fc8d62"), name = "Gene Category") +
     geom_text(aes(label = Count), position = position_stack(vjust = 0.5), size = 3)
 
 
-ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/DEG_vs_SigGenes.png"), p2, width = 16, height = 12)
-ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/DEG_vs_SigGenes_stacked.png"), p2_stacked, width = 16, height = 12)
+ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/DEG_vs_SigGenes.png"), p2, width = 16, height = 12)
+ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/DEG_vs_SigGenes_stacked.png"), p2_stacked, width = 16, height = 12)
 
 
 # 4. Create Individual Plots for Each Comparison
@@ -178,7 +186,7 @@ for (comp in unique(deg_long$Comparison)) {
         scale_fill_manual(values = c("Downregulated" = "#2166AC", "Upregulated" = "#B2182B")) +
         geom_text(aes(label = Count), position = position_dodge(width = 0.8), vjust = -0.5, size = 3.5)
 
-    ggsave(file.path(paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/Sig_UpDown_", comp, "_from_summary.png")), p4, width = 10, height = 6, dpi = 300)
+    ggsave(file.path(paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/Sig_UpDown_", comp, "_from_summary.png")), p4, width = 10, height = 6, dpi = 300)
 }
 
 for (comp in unique(long_summary$Comparison)) {
@@ -203,7 +211,7 @@ for (comp in unique(long_summary$Comparison)) {
         scale_fill_manual(values = c("Total Genes" = "#2166AC", "DEGs" = "#B2182B")) +
         geom_text(aes(label = Count), position = position_dodge(width = 0.8), vjust = -0.5, size = 3.5)
 
-    ggsave(file.path(paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/Summary/DEG_vs_Sig_", comp, "_from_summary.png")), p5, width = 10, height = 6, dpi = 300)
+    ggsave(file.path(paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/Summary/DEG_vs_Sig_", comp, "_from_summary.png")), p5, width = 10, height = 6, dpi = 300)
 }
 
 # stacked individual
@@ -306,7 +314,8 @@ for (comp in comparisons) {
         labs(title = paste("Total Genes vs DEGs -", comp),
              subtitle = paste0("Pearson Correlation: ", round(result$correlation_coefficient, 2), ", p-value: ", signif(result$pearson_p_value, 3)),
              x = "Total Number of Genes",
-             y = "Number of DEGs") +
+             y = "Number of DEGs",
+             x = NULL) +
         theme_minimal() +
         theme(legend.position = "none",
               plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
@@ -316,17 +325,17 @@ for (comp in comparisons) {
 
     # Save the plot
     plot_file_name <- paste0("Scatter_Total_vs_Significant_DEGs_", gsub("[:]", "_", comp), ".png")
-    ggsave(filename = file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Plots/ScatterPlots", plot_file_name), plot = scatter_plot, width = 10, height = 8, dpi = 300)
+    ggsave(filename = file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Plots/ScatterPlots", plot_file_name), plot = scatter_plot, width = 10, height = 8, dpi = 300)
 }
 
 # Combine results into a single data frame
 correlation_results_df <- do.call(rbind, correlation_results)
 
 # Save the results as a CSV file
-write.csv(correlation_results_df, file = file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG/Correlation_Results.csv"), row.names = FALSE)
+write.csv(correlation_results_df, file = file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/Correlation_Results.csv"), row.names = FALSE)
 
 output_dir_base <-"~/PTZ_ATAC_scRNA_072024/WIP/0624_run/"
-sig_gene_files <- list.files(path = file.path(output_dir_base, "DEG", "sig_csv"), pattern = ".csv$", full.names = TRUE)
+sig_gene_files <- list.files(path = file.path(output_dir_base, "DEG_MAST", "sig_csv"), pattern = ".csv$", full.names = TRUE)
 
 # combine list
 deg_list <- lapply(
@@ -364,7 +373,7 @@ plot <- ggplot(deg_top10, aes(x = comparison, y = avg_log2FC, group = gene, colo
     facet_wrap(~ cell_type, scales = "free_y") +
     guides(color = "none")
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "LinePlot_all_by_pattern.png"), plot, width = 12, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "LinePlot_all_by_pattern.png"), plot, width = 12, height =12, dpi = 300)
 
 # more
 deg_wide <- deg_all %>%
@@ -380,13 +389,13 @@ deg_wide <- deg_wide %>%
         pattern = case_when(
             PTZvsSAL_1hr > 0 & PTZvsSAL_24hr > 0 ~ "Increase maintain",
             PTZvsSAL_1hr > 0 & PTZvsSAL_24hr < 0 ~ "Increase then Reversal",
-            PTZvsSAL_1hr > 0 & is.na(PTZvsSAL_24hr) ~ "Increase then Baseline",
+            PTZvsSAL_1hr > 0 & (is.na(PTZvsSAL_24hr) | PTZvsSAL_24hr == 0 ) ~ "Increase then Baseline",
             PTZvsSAL_1hr < 0 & PTZvsSAL_24hr < 0 ~ "Sustained Decrease",
             PTZvsSAL_1hr < 0 & PTZvsSAL_24hr > 0 ~ "Decrease then Reversal",
-            PTZvsSAL_1hr < 0 & is.na(PTZvsSAL_24hr) ~ "Decrease then Baseline",
-            is.na(PTZvsSAL_1hr) & PTZvsSAL_24hr > 0 ~ "Late Upregulation",
-            is.na(PTZvsSAL_1hr) & PTZvsSAL_24hr < 0 ~ "Late Downregulation",
-            TRUE ~ "Other"
+            PTZvsSAL_1hr < 0 & (is.na(PTZvsSAL_24hr) | PTZvsSAL_24hr == 0 ) ~ "Decrease then Baseline",
+            (is.na(PTZvsSAL_1hr) | PTZvsSAL_1hr == 0 ) & PTZvsSAL_24hr > 0 ~ "Late Upregulation",
+            (is.na(PTZvsSAL_1hr) | PTZvsSAL_1hr == 0 ) & PTZvsSAL_24hr < 0 ~ "Late Downregulation",
+            TRUE ~ "No Change"
         ))
 
 bar <- deg_wide %>%
@@ -397,7 +406,7 @@ bar <- deg_wide %>%
     theme_minimal() +
     labs(title = "Gene Count per Pattern", x = "Pattern", y = "Gene Count")
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "BarPlot_all_by_pattern.png"), bar, width = 12, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "BarPlot_all_by_pattern.png"), bar, width = 12, height =12, dpi = 300)
 
 bar_cell <- deg_wide %>%
     dplyr::count(cell_type, pattern, sort = TRUE) %>%
@@ -408,7 +417,7 @@ bar_cell <- deg_wide %>%
     facet_wrap(~ cell_type, scales = "free_y") +
     labs(title = "Gene Count per Pattern by Cell Type", x = "Pattern", y = "Gene Count")
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "BarPlot_all_by_pattern_cell.png"), bar_cell, width = 16, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "BarPlot_all_by_pattern_cell.png"), bar_cell, width = 16, height =12, dpi = 300)
 
 #  Injection point (baseline)
 baseline_point <- deg_wide %>%
@@ -453,7 +462,7 @@ cell <- ggplot(deg_long_full_filtered, aes(x = timepoint, y = avg_log2FC, group 
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     geom_hline(yintercept = 0, linetype = "dashed", color = "gray")
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "LinePlot_cell.png"), cell, width = 16, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "LinePlot_cell.png"), cell, width = 16, height =12, dpi = 300)
 
 pattern <- ggplot(deg_long_full_filtered, aes(x = timepoint, y = avg_log2FC, group = pattern)) +
     geom_line(aes(color = pattern), alpha = 0.5) +
@@ -462,7 +471,7 @@ pattern <- ggplot(deg_long_full_filtered, aes(x = timepoint, y = avg_log2FC, gro
     labs(title = "Gene Expression by Pattern and Cell Type",
          x = "Timepoint", y = "avg_log2FC")
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "LinePlot_grid.png"), pattern, width = 16, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "LinePlot_grid.png"), pattern, width = 16, height =12, dpi = 300)
 
 # simplified
 pattern_summary_by_cell <- deg_long_full_filtered %>%
@@ -494,4 +503,4 @@ pattern_plot_by_cell <- ggplot(pattern_summary_by_cell, aes(x = timepoint, y = m
         legend.position = "right"
     )
 
-ggsave(filename = file.path(output_dir_base, "DEG", "Plots", "Gene_Behavior", "LinePlot_agg.png"), pattern_plot_by_cell, width = 16, height =12, dpi = 300)
+ggsave(filename = file.path(output_dir_base, "DEG_MAST", "Plots", "Gene_Behavior", "LinePlot_agg.png"), pattern_plot_by_cell, width = 16, height =12, dpi = 300)

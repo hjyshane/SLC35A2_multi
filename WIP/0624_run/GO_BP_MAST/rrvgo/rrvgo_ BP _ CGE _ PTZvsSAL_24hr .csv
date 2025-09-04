@@ -1,6 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0050807","GO:0050807",1,"GO:0050807",4.97517356737384,309,"regulation of synapse organization","regulation of synapse organization",0.5408,0.362333333333333,0
-"GO:0050803","GO:0050803",1,"GO:0050807",4.81111175106737,317,"regulation of synapse structure or activity","regulation of synapse organization",0.6178,0.363,0.995
-"GO:0007409","GO:0007409",2,"GO:0007409",2.44648420327535,501,"axonogenesis","axonogenesis",0.7418,0.7215,0
-"GO:0099175","GO:0099175",1,"GO:0050807",2.21977470056501,139,"regulation of postsynapse organization","regulation of synapse organization",0.563,0.388666666666667,0.918
-"GO:0030900","GO:0030900",2,"GO:0007409",1.3240288275199,425,"forebrain development","axonogenesis",0.8886,0.7215,0.557

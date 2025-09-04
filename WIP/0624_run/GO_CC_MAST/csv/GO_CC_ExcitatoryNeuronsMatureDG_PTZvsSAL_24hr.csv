@@ -1,3 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:0043209","GO:0043209","myelin sheath","4/16","192/17673",2.21847170368345e-05,0.00326115340441467,0.00165801569433184,"Tuba1a/Actg1/Sptan1/Hspa8",4,2.48662877153326,0.25,0.0108640298760822,23.01171875,57.2216019261815,"ExcitatoryNeuronsMatureDG","PTZvsSAL_24hr"
-"GO:0099524","GO:0099524","postsynaptic cytosol","2/16","27/17673",0.000266187673118817,0.0391295879484661,0.00677313503446298,"Camk2a/Hspa8",2,1.40749472538451,0.125,0.00152775420132405,81.8194444444444,115.160436489447,"ExcitatoryNeuronsMatureDG","PTZvsSAL_24hr"

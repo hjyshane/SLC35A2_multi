@@ -1,9 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0000377","GO:0000377",1,"GO:0000377",2.44744059384801,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.527125,0.2556,0
-"GO:0000375","GO:0000375",1,"GO:0000377",2.44744059384801,304,"RNA splicing, via transesterification reactions","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.526875,0.2552,0.996
-"GO:0000398","GO:0000398",1,"GO:0000377",2.44744059384801,304,"mRNA splicing, via spliceosome","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.507625,0.2244,0.997
-"GO:0008380","GO:0008380",1,"GO:0000377",2.07301921241573,449,"RNA splicing","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.53425,0.2676,0.945
-"GO:0006397","GO:0006397",1,"GO:0000377",1.97584621433766,496,"mRNA processing","RNA splicing, via transesterification reactions with bulged adenosine as nucleophile",0.57525,0.3332,0.784
-"GO:2000288","GO:2000288",2,"GO:2000288",1.59545446061182,18,"positive regulation of myoblast proliferation","positive regulation of myoblast proliferation",0.745,0.354,0
-"GO:2000291","GO:2000291",2,"GO:2000288",1.48635924628141,23,"regulation of myoblast proliferation","positive regulation of myoblast proliferation",0.74275,0.348,0.982
-"GO:0051450","GO:0051450",2,"GO:2000288",1.37996549209198,31,"myoblast proliferation","positive regulation of myoblast proliferation",0.745375,0.356666666666667,0.956

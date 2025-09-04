@@ -1,2 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:0032222","GO:0032222","regulation of synaptic transmission, cholinergic","2/15","13/17643",5.23415200200313e-05,0.0315095950520588,0.0109495992040077,"Camk2b/Cacna1a",2,1.50155717815848,0.133333333333333,0.000736836138978632,180.953846153846,271.712546607693,"ExcitatoryNeuronsCA3","PTZvsSAL_24hr"

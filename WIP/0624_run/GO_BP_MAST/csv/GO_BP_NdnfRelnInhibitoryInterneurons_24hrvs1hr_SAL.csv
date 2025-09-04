@@ -1,3 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:1902667","GO:1902667","regulation of axon guidance","1/2","12/17643",0.00135988878621085,0.0217582205793736,0.00131180138515973,"Tubb2b",1,1.66237662478995,0.5,0.000680156435980275,735.125,1222.05461629871,"NdnfRelnInhibitoryInterneurons","24hrvs1hr_SAL"
-"GO:1990403","GO:1990403","embryonic brain development","1/2","22/17643",0.00249242263180349,0.0398787621088559,0.00131180138515973,"Tubb2b",1,1.39925833124396,0.5,0.00124695346596384,400.977272727273,561.070789503118,"NdnfRelnInhibitoryInterneurons","24hrvs1hr_SAL"

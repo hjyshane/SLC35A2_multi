@@ -1,0 +1,4 @@
+"","p_val","avg_log2FC","pct.1","pct.2","p_val_adj","gene","cell_type","comparison","Regulation","Viz"
+"Gm42418",2.05339762486534e-15,-1.05684196196114,0.961,1,5.14314503100021e-11,"Gm42418","InN_Ndnf","24hrvs1hr_PTZ","Down","Sig"
+"Cwc22",1.23634120507785e-06,-1.32218338863691,0.422,0.76,0.0309666381635848,"Cwc22","InN_Ndnf","24hrvs1hr_PTZ","Down","Sig"
+"Tuba1a",1.34239856670027e-06,-1.05864244292118,0.578,0.875,0.0336230569001417,"Tuba1a","InN_Ndnf","24hrvs1hr_PTZ","Down","Sig"

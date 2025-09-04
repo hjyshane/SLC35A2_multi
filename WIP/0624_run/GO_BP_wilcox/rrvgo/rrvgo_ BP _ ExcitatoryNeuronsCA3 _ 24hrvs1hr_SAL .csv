@@ -1,5 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:1990138","GO:1990138",1,"GO:1990138",3.07184587372278,211,"neuron projection extension","neuron projection extension",0.272,0.272,0
-"GO:0048588","GO:0048588",1,"GO:1990138",2.22527177032807,291,"developmental cell growth","neuron projection extension",0.314,0.314,0.973
-"GO:0060560","GO:0060560",1,"GO:1990138",2.13265623694772,292,"developmental growth involved in morphogenesis","neuron projection extension",0.3165,0.3165,0.968
-"GO:0048675","GO:0048675",1,"GO:1990138",1.58321691803822,143,"axon extension","neuron projection extension",0.2855,0.2855,0.971

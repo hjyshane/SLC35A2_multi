@@ -1,4 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0048024","GO:0048024",1,"GO:0048024",2.09255626947012,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA splicing, via spliceosome",0.351333333333333,0.351333333333333,0
-"GO:0050684","GO:0050684",1,"GO:0048024",1.90526020731334,139,"regulation of mRNA processing","regulation of mRNA splicing, via spliceosome",0.454666666666667,0.454666666666667,0.985
-"GO:0043484","GO:0043484",1,"GO:0048024",1.62591761609025,187,"regulation of RNA splicing","regulation of mRNA splicing, via spliceosome",0.462666666666667,0.462666666666667,0.961

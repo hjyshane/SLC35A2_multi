@@ -1,5 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0043197","GO:0043197",1,"GO:0043197",1.50240096409417,208,"dendritic spine","dendritic spine",0.518,0.504,0
-"GO:0044309","GO:0044309",1,"GO:0043197",1.44375041062216,214,"neuron spine","dendritic spine",0.75075,0.504,0.992
-"GO:0048786","GO:0048786",2,"GO:0048786",1.35922319158443,121,"presynaptic active zone","presynaptic active zone",0.771,1,0
-"GO:0097060","GO:0097060",3,"GO:0097060",1.32118168129174,514,"synaptic membrane","synaptic membrane",0.75275,1,0

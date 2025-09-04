@@ -1,8 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0098982","GO:0098982",1,"GO:0098982",3.12876107614712,135,"GABA-ergic synapse","GABA-ergic synapse",0.807,1,0
-"GO:0097060","GO:0097060",2,"GO:0097060",2.26788858721352,514,"synaptic membrane","synaptic membrane",0.644571428571429,0.445,0
-"GO:0042734","GO:0042734",2,"GO:0097060",1.95612612016486,238,"presynaptic membrane","synaptic membrane",0.639571428571429,0.409,0.886
-"GO:0005903","GO:0005903",3,"GO:0005903",1.7779418536973,149,"brush border","brush border",0.998142857142857,1,0
-"GO:0048787","GO:0048787",2,"GO:0097060",1.4255540695071,66,"presynaptic active zone membrane","synaptic membrane",0.665857142857143,0.444666666666667,0.779
-"GO:0044294","GO:0044294",4,"GO:0044294",1.42093945009986,12,"dendritic growth cone","dendritic growth cone",0.998285714285714,1,0
-"GO:0097524","GO:0097524",5,"GO:0097524",1.34889646827738,29,"sperm plasma membrane","sperm plasma membrane",0.872285714285714,1,0

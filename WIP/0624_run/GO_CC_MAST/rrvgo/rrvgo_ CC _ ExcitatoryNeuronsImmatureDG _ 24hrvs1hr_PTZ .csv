@@ -1,6 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0098684","GO:0098684",1,"GO:0098684",1.96307424106771,18,"photoreceptor ribbon synapse","photoreceptor ribbon synapse",0.6676,0.517,0
-"GO:0098685","GO:0098685",2,"GO:0098685",1.67143355157568,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.772,1,0
-"GO:0097470","GO:0097470",1,"GO:0098684",1.5414022254024,29,"ribbon synapse","photoreceptor ribbon synapse",0.6622,0.517,0.966
-"GO:0005874","GO:0005874",3,"GO:0005874",1.46684973035835,467,"microtubule","microtubule",0.9896,1,0
-"GO:0099523","GO:0099523",4,"GO:0099523",1.45503631915588,32,"presynaptic cytosol","presynaptic cytosol",0.7826,1,0

@@ -1,8 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0050807","GO:0050807",1,"GO:0050807",3.23417695427257,309,"regulation of synapse organization","regulation of synapse organization",0.730571428571429,0.5025,0
-"GO:0050803","GO:0050803",1,"GO:0050807",3.10276832286864,317,"regulation of synapse structure or activity","regulation of synapse organization",0.857857142857143,0.5025,0.995
-"GO:0034329","GO:0034329",2,"GO:0034329",2.17289986348629,481,"cell junction assembly","cell junction assembly",0.872285714285714,1,0
-"GO:0099003","GO:0099003",3,"GO:0099003",2.13328122024485,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.741857142857143,0.415333333333333,0
-"GO:0099504","GO:0099504",3,"GO:0099003",1.94821644288605,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.739857142857143,0.410666666666667,0.982
-"GO:0001964","GO:0001964",4,"GO:0001964",1.88478205732868,38,"startle response","startle response",1,1,0
-"GO:0097091","GO:0097091",3,"GO:0099003",1.58357708770605,20,"synaptic vesicle clustering","vesicle-mediated transport in synapse",0.771571428571429,0.480666666666667,0.772

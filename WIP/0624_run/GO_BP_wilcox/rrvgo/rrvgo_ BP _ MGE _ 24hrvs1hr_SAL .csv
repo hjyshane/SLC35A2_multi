@@ -1,5 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0043087","GO:0043087",1,"GO:0043087",2.41241765089495,345,"regulation of GTPase activity","regulation of GTPase activity",0.75825,0.5165,0
-"GO:0016358","GO:0016358",2,"GO:0016358",1.84081622515305,327,"dendrite development","dendrite development",1,1,0
-"GO:0044788","GO:0044788",3,"GO:0044788",1.56503934771111,46,"modulation by host of viral process","modulation by host of viral process",1,1,0
-"GO:0043547","GO:0043547",1,"GO:0043087",1.55798013215238,253,"positive regulation of GTPase activity","regulation of GTPase activity",0.75825,0.5165,0.967

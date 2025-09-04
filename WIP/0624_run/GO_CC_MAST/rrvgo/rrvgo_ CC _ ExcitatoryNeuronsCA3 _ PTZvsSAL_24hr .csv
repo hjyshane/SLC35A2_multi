@@ -1,6 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005874","GO:0005874",1,"GO:0005874",2.81824282330555,467,"microtubule","microtubule",0.9778,1,0
-"GO:1990124","GO:1990124",2,"GO:1990124",2.10501785928811,16,"messenger ribonucleoprotein complex","messenger ribonucleoprotein complex",0.89,0.725,0
-"GO:0043204","GO:0043204",3,"GO:0043204",1.71733056341691,153,"perikaryon","perikaryon",0.9988,1,0
-"GO:0043209","GO:0043209",4,"GO:0043209",1.32297093505445,208,"myelin sheath","myelin sheath",0.9984,1,0
-"GO:0005681","GO:0005681",2,"GO:1990124",1.30980553888923,221,"spliceosomal complex","messenger ribonucleoprotein complex",0.8678,0.725,0.55

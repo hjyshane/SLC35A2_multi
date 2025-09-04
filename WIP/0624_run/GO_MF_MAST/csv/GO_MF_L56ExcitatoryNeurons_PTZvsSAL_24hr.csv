@@ -1,3 +1,0 @@
-"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count","log_p_adj","GeneRatio_numeric","BgRatio_numeric","Fold_enrichment","score","cell_type","comparison"
-"GO:0050998","GO:0050998","nitric-oxide synthase binding","2/20","21/17543",0.000255961804338933,0.0225246387818261,0.00830459300052059,"Dmd/Actb",2,1.6473421648913,0.1,0.00119705865587414,83.5380952380953,137.615826660419,"L56ExcitatoryNeurons","PTZvsSAL_24hr"
-"GO:0099186","GO:0099186","structural constituent of postsynapse","2/20","24/17543",0.000335717589382747,0.0295431478656818,0.00830459300052059,"Magi2/Actb",2,1.52954323184535,0.1,0.00136806703528473,73.0958333333333,111.803237151095,"L56ExcitatoryNeurons","PTZvsSAL_24hr"

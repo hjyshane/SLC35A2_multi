@@ -1,9 +1,0 @@
-gene,frequency,go_terms
-Hsp90ab1,3,"regulation of protein stability (GO:0031647, p=1.81e-02); protein folding (GO:0006457, p=3.29e-02); central nervous system neuron differentiation (GO:0021953, p=4.98e-02)"
-Hsp90aa1,3,"regulation of protein stability (GO:0031647, p=1.81e-02); protein folding (GO:0006457, p=3.29e-02); central nervous system neuron differentiation (GO:0021953, p=4.98e-02)"
-Hspa8,2,"regulation of protein stability (GO:0031647, p=1.81e-02); protein folding (GO:0006457, p=3.29e-02)"
-Gapdh,1,"regulation of protein stability (GO:0031647, p=1.81e-02)"
-Atp1b1,1,"regulation of protein stability (GO:0031647, p=1.81e-02)"
-Ppia,1,"protein folding (GO:0006457, p=3.29e-02)"
-Ubb,1,"central nervous system neuron differentiation (GO:0021953, p=4.98e-02)"
-Brinp2,1,"central nervous system neuron differentiation (GO:0021953, p=4.98e-02)"

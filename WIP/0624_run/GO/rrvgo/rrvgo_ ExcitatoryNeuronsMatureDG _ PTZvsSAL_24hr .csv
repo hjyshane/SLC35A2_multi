@@ -1,9 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0050684","GO:0050684",1,"GO:0050684",3.86127605252184,139,"regulation of mRNA processing","regulation of mRNA processing",0.290125,0.308,0
-"GO:1903311","GO:1903311",1,"GO:0050684",3.14232783331438,304,"regulation of mRNA metabolic process","regulation of mRNA processing",0.401125,0.331,0.92
-"GO:0006397","GO:0006397",1,"GO:0050684",2.82758972017724,496,"mRNA processing","regulation of mRNA processing",0.263,0.3595,0.863
-"GO:0000398","GO:0000398",2,"GO:0000398",2.3310519242914,304,"mRNA splicing, via spliceosome","mRNA splicing, via spliceosome",0.198625,0.2655,0
-"GO:0000377","GO:0000377",2,"GO:0000398",2.3310519242914,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","mRNA splicing, via spliceosome",0.282125,0.2655,0.997
-"GO:0000375","GO:0000375",2,"GO:0000398",2.3310519242914,304,"RNA splicing, via transesterification reactions","mRNA splicing, via spliceosome",0.281875,0.26525,0.996
-"GO:0048024","GO:0048024",1,"GO:0050684",2.05234118130759,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA processing",0.21075,0.3145,0.985
-"GO:0008380","GO:0008380",2,"GO:0000398",1.6397993560858,449,"RNA splicing","mRNA splicing, via spliceosome",0.289375,0.29075,0.945

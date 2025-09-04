@@ -1,3 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0001540","GO:0001540",1,"GO:0001540",2.29573244127642,71,"amyloid-beta binding","amyloid-beta binding",0.5835,0.5835,0
-"GO:0033218","GO:0033218",1,"GO:0001540",2.0797187167659,457,"amide binding","amyloid-beta binding",0.5835,0.5835,0.833

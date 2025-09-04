@@ -1,8 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0007409","GO:0007409",1,"GO:0007409",2.16727714378895,501,"axonogenesis","axonogenesis",0.735285714285714,0.626,0
-"GO:0031290","GO:0031290",1,"GO:0007409",2.02187373256402,22,"retinal ganglion cell axon guidance","axonogenesis",0.772428571428571,0.626,0.748
-"GO:0006814","GO:0006814",2,"GO:0006814",1.8290076062777,262,"sodium ion transport","sodium ion transport",0.864714285714286,0.5265,0
-"GO:0001508","GO:0001508",3,"GO:0001508",1.70212226890782,158,"action potential","action potential",1,1,0
-"GO:0035725","GO:0035725",2,"GO:0006814",1.56330101005516,169,"sodium ion transmembrane transport","sodium ion transport",0.855,0.5265,0.947
-"GO:0048588","GO:0048588",4,"GO:0048588",1.5089907513736,291,"developmental cell growth","developmental cell growth",0.738714285714286,0.5875,0
-"GO:0060560","GO:0060560",4,"GO:0048588",1.48202776246125,292,"developmental growth involved in morphogenesis","developmental cell growth",0.749857142857143,0.5875,0.825

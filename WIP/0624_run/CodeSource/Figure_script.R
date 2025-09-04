@@ -4,15 +4,15 @@ base::library(ggplot2)
 base::library(tidyverse)
 base::library(qs)
 base::library(patchwork)
-base::library(SeuratExtend)
+
 
 # object with all celltypes
-cobj <- qs::qread("./qsave/combined_cell_type.qs")
+cobj <- qs::qread("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/combined_cell_type.qs")
 DefaultAssay(cobj) <- "RNA"
 cobj <- Seurat::NormalizeData(cobj)
 
 # object with filtered with 50 cells or more
-cobj_2 <- qs::qread("./qsave/filtered_50_cells_atac_cleaned.qs")
+cobj_2 <- qs::qread("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/qsave/filtered_50_cells_atac_cleaned.qs")
 cobj_2 <- NormalizeData(cobj_2)
 
 #### Figure 1C/D UMAP ####
@@ -21,9 +21,9 @@ short <- c("ExcitatoryNeuronsCA1" = "ExN_CA1",
            "ExcitatoryNeuronsCA3" = "ExN_CA3",
            "ExcitatoryNeuronsMatureDG" = "ExN_mDG",
            "ExcitatoryNeuronsImmatureDG" = "ExN_iDG",
-           "L56ExcitatoryNeurons" = "ExN_5/6",
-           "L45ExcitatoryNeurons" = "ExN_4/5",
-           "L23ExcitatoryNeurons" = "ExN_2/3",
+           "L56ExcitatoryNeurons" = "ExN_56",
+           "L45ExcitatoryNeurons" = "ExN_45",
+           "L23ExcitatoryNeurons" = "ExN_23",
            "LGE" = "InN_LGE",
            "CGE" = "InN_CGE",
            "MGE" = "InN_MGE",
@@ -31,7 +31,7 @@ short <- c("ExcitatoryNeuronsCA1" = "ExN_CA1",
            "Lamp5positive" = "InN_Lamp5",
            "Astrocytes" = "Astrocytes",
            "Microglia" = "Microglia",
-           "COPMFOL" = "COP/MFOL",
+           "COPMFOL" = "COP_MFOL",
            "OPCs" = "OPCs")
 cobj@meta.data$short_ct <- short[as.character(cobj$cell_type)]
 
@@ -50,7 +50,7 @@ umap_by_ct <- SeuratExtend::DimPlot2(cobj,
     theme_umap_arrows(x_label = "UMAP_1",
                       y_label = "UMAP_2") 
 
-ggplot2::ggsave(umap_by_ct, file = "./Plots/UMAPbyCellType.png", width = 6, height = 6, dpi = 300)
+ggplot2::ggsave(umap_by_ct, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/UMAPbyCellType.png", width = 6, height = 6, dpi = 300)
 
 # Multimodal UMAP by cluster
 umap_by_mtct <- SeuratExtend::DimPlot2(cobj, 
@@ -68,7 +68,7 @@ umap_by_mtct <- SeuratExtend::DimPlot2(cobj,
                       y_label = "UMAP_2") 
 
 
-ggplot2::ggsave(umap_by_mtct, file = "./Plots/MultiUMAPbyCellType.png", width = 6, height = 6, dpi = 300)
+ggplot2::ggsave(umap_by_mtct, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/MultiUMAPbyCellType.png", width = 6, height = 6, dpi = 300)
 
 
 #### Figure 1E Cell type markers ####
@@ -110,14 +110,25 @@ custom_order <- c(
     "L23ExcitatoryNeurons","L45ExcitatoryNeurons", "L56ExcitatoryNeurons",
     "CGE","LGE", "MGE",  "NdnfRelnInhibitoryInterneurons","Lamp5positive")
 
+custom_order <- c( "Astrocytes", "Microglia", "OPCs", "COP_MFOL",
+                   "ExN_CA1", "ExN_CA3", "ExN_mDG", "ExN_iDG",  
+                   "ExN_23", "ExN_45", "ExN_56", 
+                   "InN_LGE", "InN_CGE", "InN_MGE", "InN_Ndnf", "InN_Lamp5")
+
+
 # order column
 cobj$cell_type <-
     base::factor(cobj$cell_type,
            levels = custom_order)
 
+cobj$short_ct <-
+    base::factor(cobj$short_ct,
+                 levels = custom_order)
+
 
 Seurat::DefaultAssay(cobj) <- "RNA"
 Seurat::Idents(cobj) <- "cell_type"
+Seurat::Idents(cobj) <- "short_ct"
 
 # DotPlot
 dot_plot <- Seurat::DotPlot(
@@ -146,11 +157,12 @@ dot_plot <- Seurat::DotPlot(
     ) +
     ggplot2::coord_flip()
 
-ggplot2::ggsave(dot_plot, filename = "./Plots/MarkersDotPlot.png", width = 7, height = 7, dpi = 300)
+ggplot2::ggsave(dot_plot, filename = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/MarkersDotPlot.png", width = 7, height = 7, dpi = 300)
 
 #### Figure 1F Gene activity score ####
 Seurat::DefaultAssay(cobj) <- "ACTIVITY"
 Seurat::Idents(cobj) <- "cell_type"
+Seurat::Idents(cobj) <- "short_ct"
 
 # DotPlot
 dot_plot <- Seurat::DotPlot(
@@ -181,12 +193,13 @@ dot_plot <- Seurat::DotPlot(
     ) +
     ggplot2::coord_flip()
 
-ggplot2::ggsave(dot_plot, filename = "./Plots/ActivityMarkersDotPlot.png", width = 7, height = 7, dpi = 300)
+ggplot2::ggsave(dot_plot, filename = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/ActivityMarkersDotPlot.png", width = 7, height = 7, dpi = 300)
 
 
 #### Figure 1G IEG VlnPlots/DotPlot ####
 Seurat::DefaultAssay(cobj) <- "RNA"
 Seurat::Idents(cobj) <- "cell_type"
+Seurat::Idents(cobj) <- "short_ct"
 
 IEGs <- c("Jun", "Fos", "Junb", "Fosb", "Egr1", "Homer1", "Snap25", "Nr4a3")
 Seurat::Idents(cobj) <- "Sample"
@@ -195,30 +208,30 @@ vp <- Seurat::VlnPlot(cobj,features = "Fos", cols = colorspace::rainbow_hcl(4))
 for (gene in IEGs) {
     Seurat::Idents(cobj) <- "Sample"
     vp <- Seurat::VlnPlot(cobj,features = gene, cols = colorspace::rainbow_hcl(4)) + Seurat::NoLegend()
-    ggsave(vp, file = paste0("./Plots/", gene, "_Sample_Vlnplot.png"), width = 8, height = 6, dpi = 300)
+    ggsave(vp, file = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/", gene, "_Sample_Vlnplot.png"), width = 8, height = 6, dpi = 300)
     
-    Seurat::Idents(cobj) <- "cell_type"
+    Seurat::Idents(cobj) <- "short_ct"
     vp2 <- Seurat::VlnPlot(cobj,features = gene, cols = colorspace::rainbow_hcl(16)) + Seurat::NoLegend()
-    ggsave(vp2, file = paste0("./Plots/", gene, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
+    ggsave(vp2, file = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/", gene, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
 }
 
 for (sample in unique(cobj$Sample)) {
     ob <-  subset(cobj, subset = Sample == sample)
-    Seurat::Idents(ob) <- "cell_type"
+    Seurat::Idents(ob) <- "short_ct"
     
     for (gene in IEGs) {
     vp <- Seurat::VlnPlot(ob,features = gene) + Seurat::NoLegend()
-    ggsave(vp, file = paste0("./Plots/", gene, "_", sample, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
+    ggsave(vp, file = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/", gene, "_", sample, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
     }
 }
 
-for (ct in unique(cobj$cell_type)) {
-    ob <-  subset(cobj, subset = cell_type == ct)
+for (ct in unique(cobj$short_ct)) {
+    ob <-  subset(cobj, subset = short_ct == ct)
     Seurat::Idents(ob) <- "Sample"
     
     for (gene in IEGs) {
         vp <- Seurat::VlnPlot(ob,features = gene) + NoLegend()
-        ggsave(vp, file = paste0("./Plots/", gene, "_", ct, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
+        ggsave(vp, file = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/", gene, "_", ct, "_CellType_Vlnplot.png"), width = 8, height = 6, dpi = 300)
     }
 }
 
@@ -244,12 +257,10 @@ IEGdot <- SeuratExtend::DotPlot2(
         legend.text = element_text(size = 8)) +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
     
-ggplot2::ggsave(IEGdot, filename = "./Plots/IEGdot_celltyep.png", width = 8, height = 6,dpi = 300)
+ggplot2::ggsave(IEGdot, filename = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/IEGdot_celltyep.png", width = 8, height = 6,dpi = 300)
 
 #### Figure 2A DEG stacked barplot ####
-library(patchwork)
-
-deg_dir <- "./DEG/sig_csv"
+deg_dir <- "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/sig_csv"
 deg_files <- list.files(deg_dir, pattern = ".csv")
 full_deg <- data.frame()
 for (file in deg_files) {
@@ -258,30 +269,30 @@ for (file in deg_files) {
     full_deg <- rbind(full_deg, deg)
 }
 
-write.csv(file = "./DEG/full_sig_deg.csv", full_deg, row.names = F)
+write.csv(file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/full_sig_deg.csv", full_deg, row.names = F)
 
-full_deg <- read.csv("./DEG/full_sig_deg.csv")
+full_deg <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DEG_MAST/full_sig_deg.csv")
 hp_deg <- full_deg %>%
-    filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
-hp_deg$cell_type <- factor(hp_deg$cell_type, levels = c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
+    filter(cell_type %in% c("ExN_CA1", "ExN_CA3", "ExN_mDG", "ExN_iDG"))
+hp_deg$cell_type <- factor(hp_deg$cell_type, levels = c("ExN_CA1", "ExN_CA3", "ExN_mDG", "ExN_iDG"))
 hp_deg$Regulation <- factor(hp_deg$Regulation, levels = c("Up", "Down"))
 
 summary_total <- hp_deg %>%
     group_by(cell_type, Regulation) %>%
     summarize(count = n()) %>%
-    mutate(shortend = case_when(cell_type == "ExcitatoryNeuronsCA1" ~ "CA1",
-                                cell_type == "ExcitatoryNeuronsCA3" ~ "CA3",
-                                cell_type == "ExcitatoryNeuronsMatureDG" ~ "DG",
-                                cell_type == "ExcitatoryNeuronsImmatureDG" ~ "Immature DG",
+    mutate(shortend = case_when(cell_type == "ExN_CA1" ~ "CA1",
+                                cell_type == "ExN_CA3" ~ "CA3",
+                                cell_type == "ExN_mDG" ~ "DG",
+                                cell_type == "ExN_iDG" ~ "Immature DG",
                                 TRUE ~ NA))
 
 summary_table <- hp_deg %>%
     group_by(cell_type, comparison, Regulation) %>%
     summarize(count = n()) %>%
-    mutate(shortend = case_when(cell_type == "ExcitatoryNeuronsCA1" ~ "CA1",
-                                cell_type == "ExcitatoryNeuronsCA3" ~ "CA3",
-                                cell_type == "ExcitatoryNeuronsMatureDG" ~ "DG",
-                                cell_type == "ExcitatoryNeuronsImmatureDG" ~ "Immature DG",
+    mutate(shortend = case_when(cell_type == "ExN_CA1" ~ "CA1",
+                                cell_type == "ExN_CA3" ~ "CA3",
+                                cell_type == "ExN_mDG" ~ "DG",
+                                cell_type == "ExN_iDG" ~ "Immature DG",
                                 TRUE ~ NA))
 
 degcountplot <- ggplot(data = summary_total, aes(x = reorder(shortend, -count), y = count, fill = Regulation)) +
@@ -319,13 +330,13 @@ combined_plot <- wrap_plots(plot_list, ncol = 3) +
     theme(legend.position = "bottom")   # Position shared legend
 
 
-ggsave(degcountplot, file = "./Plots/deg_count_plot.png", width = 6, height = 8, dpi = 300)
-ggsave(combined_plot, file = "./Plots/deg_count_combined.png", width = 6, height = 8, dpi = 300)
+ggsave(degcountplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/deg_count_plot.png", width = 6, height = 8, dpi = 300)
+ggsave(combined_plot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/deg_count_combined.png", width = 6, height = 8, dpi = 300)
 
 #### Figure 2B Vann diagram ####
-full_deg <- read_csv("./DEG/full_sig_deg.csv")
+full_deg <- read_csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG_MAST/full_sig_deg.csv")
 comparisons <- unique(full_deg$comparison)
-hpct <- c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG")
+hpct <- c("ExN_CA1", "ExN_CA3", "ExN_mDG", "ExN_iDG")
 
 get_gene <- function(data, comparisons, celltypes) {
     result <- list()
@@ -345,9 +356,9 @@ library(ggvenn)
 library(RColorBrewer)
 
 ptzsal1hr <- list(
-    "CA1" = gene_list$PTZvsSAL_1hr$ExcitatoryNeuronsCA1,
-    "CA3" = gene_list$PTZvsSAL_1hr$ExcitatoryNeuronsCA3,
-    "DG" = gene_list$PTZvsSAL_1hr$ExcitatoryNeuronsMatureDG
+    "CA1" = gene_list$PTZvsSAL_1hr$ExN_CA1,
+    "CA3" = gene_list$PTZvsSAL_1hr$ExN_CA3,
+    "DG" = gene_list$PTZvsSAL_1hr$ExN_mDG
     )
 
 ptzsal1hrplot <- ggvenn(ptzsal1hr, fill_color = c("orange", "lightblue", "lightgreen"),
@@ -356,9 +367,9 @@ ptzsal1hrplot <- ggvenn(ptzsal1hr, fill_color = c("orange", "lightblue", "lightg
     labs(title = "PTZ vs SAL 1hr")
 
 ptzsal24hr <- list(
-    "CA1" = gene_list$PTZvsSAL_24hr$ExcitatoryNeuronsCA1,
-    "CA3" = gene_list$PTZvsSAL_24hr$ExcitatoryNeuronsCA3,
-    "DG" = gene_list$PTZvsSAL_24hr$ExcitatoryNeuronsMatureDG
+    "CA1" = gene_list$PTZvsSAL_24hr$ExN_CA1,
+    "CA3" = gene_list$PTZvsSAL_24hr$ExN_CA3,
+    "DG" = gene_list$PTZvsSAL_24hr$ExN_mDG
 )
 
 ptzsal24hrplot <- ggvenn(ptzsal24hr, fill_color = c("orange", "lightblue", "lightgreen"),
@@ -367,9 +378,9 @@ ptzsal24hrplot <- ggvenn(ptzsal24hr, fill_color = c("orange", "lightblue", "ligh
     labs(title = "PTZ vs SAL 24hr")
 
 ptztemp <- list(
-    "CA1" = gene_list$`24hrvs1hr_PTZ`$ExcitatoryNeuronsCA1,
-    "CA3" = gene_list$`24hrvs1hr_PTZ`$ExcitatoryNeuronsCA3,
-    "DG" = gene_list$`24hrvs1hr_PTZ`$ExcitatoryNeuronsMatureDG
+    "CA1" = gene_list$`24hrvs1hr_PTZ`$ExN_CA1,
+    "CA3" = gene_list$`24hrvs1hr_PTZ`$ExN_CA3,
+    "DG" = gene_list$`24hrvs1hr_PTZ`$ExN_mDG
 )
 
 ptztempplot <- ggvenn(ptztemp, fill_color = c("orange", "lightblue", "lightgreen"),
@@ -378,9 +389,9 @@ ptztempplot <- ggvenn(ptztemp, fill_color = c("orange", "lightblue", "lightgreen
     labs(title = "24hr vs 1hr PTZ")
 
 saltemp <- list(
-    "CA1" = gene_list$`24hrvs1hr_SAL`$ExcitatoryNeuronsCA1,
-    "CA3" = gene_list$`24hrvs1hr_SAL`$ExcitatoryNeuronsCA3,
-    "DG" = gene_list$`24hrvs1hr_SAL`$ExcitatoryNeuronsMatureDG
+    "CA1" = gene_list$`24hrvs1hr_SAL`$ExN_CA1,
+    "CA3" = gene_list$`24hrvs1hr_SAL`$ExN_CA3,
+    "DG" = gene_list$`24hrvs1hr_SAL`$ExN_mDG
 )
 
 saltempplot <- ggvenn(saltemp, fill_color = c("orange", "lightblue", "lightgreen"),
@@ -388,13 +399,13 @@ saltempplot <- ggvenn(saltemp, fill_color = c("orange", "lightblue", "lightgreen
     theme(title = element_text(size = 20)) +
     labs(title = "24hr vs 1hr SAL")
 
-ggsave(ptzsal1hrplot, file = "./Plots/venn_ptzsal1hr.png", width = 6, height = 6, dpi = 300)
-ggsave(ptzsal24hrplot, file = "./Plots/venn_ptzsal24hr.png", width = 6, height = 6, dpi = 300)
-ggsave(ptztempplot, file = "./Plots/venn_ptztemp.png", width = 6, height = 6, dpi = 300)
-ggsave(saltempplot, file = "./Plots/venn_saltemp.png", width = 6, height = 6, dpi = 300)
+ggsave(ptzsal1hrplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptzsal1hr.png", width = 6, height = 6, dpi = 300)
+ggsave(ptzsal24hrplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptzsal24hr.png", width = 6, height = 6, dpi = 300)
+ggsave(ptztempplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptztemp.png", width = 6, height = 6, dpi = 300)
+ggsave(saltempplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_saltemp.png", width = 6, height = 6, dpi = 300)
 
 #### Figure 2D Gene behavior bar plots for HP ####
-gb <- read.csv("./DEG/gene_behavior.csv") %>%
+gb <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/gene_behavior.csv") %>%
     filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
 
 # Create function to ensure all patterns are present
@@ -501,16 +512,14 @@ idg <- ggplot(idg_gv, mapping = aes(x = pattern, y = n, fill = pattern)) +
     theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid = element_blank()) +
     labs(x = NULL, y = "Number of Genes", title = "Gene behavior in Immature DG")
 
-ggsave(ca1, file = "./Plots/ca1_behavior.png", width = 4, height = 4, dpi = 300)
-ggsave(ca3, file = "./Plots/ca3_behavior.png", width = 4, height = 4, dpi = 300)
-ggsave(dg, file = "./Plots/dg_behavior.png", width = 4, height = 4, dpi = 300)
-ggsave(idg, file = "./Plots/idg_behavior.png", width = 4, height = 4, dpi = 300)
+ggsave(ca1, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/ca1_behavior.png", width = 4, height = 4, dpi = 300)
+ggsave(ca3, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/ca3_behavior.png", width = 4, height = 4, dpi = 300)
+ggsave(dg, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/dg_behavior.png", width = 4, height = 4, dpi = 300)
+ggsave(idg, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/idg_behavior.png", width = 4, height = 4, dpi = 300)
 
 #### Figure 2E Gene behavior line graph example genes ####
 #### Figure 3A DAG stacked barplot ####
-library(patchwork)
-
-dag_dir <- "./DAG/Sig_ATAC/"
+dag_dir <- "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/Sig_ATAC/"
 dag_files <- list.files(dag_dir, pattern = ".csv")
 full_dag <- data.frame()
 for (file in dag_files) {
@@ -518,9 +527,9 @@ for (file in dag_files) {
     full_dag <- rbind(full_dag, dag)
 }
 
-write.csv(file = "./DAG/full_sig_dag.csv", full_deg)
+write.csv(file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/full_sig_dag.csv", full_deg)
 
-full_dag <- read.csv("./DAG/full_sig_dag.csv")
+full_dag <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/full_sig_dag.csv")
 hp_dag <- full_dag %>%
     filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
 hp_dag$cell_type <- factor(hp_dag$cell_type, levels = c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
@@ -583,12 +592,12 @@ combined_plot <- wrap_plots(plot_list, ncol = 3) +
     theme(legend.position = "bottom")   # Position shared legend
 
 
-ggsave(degcountplot, file = "./Plots/dag_count_plot.png", width = 6, height = 8, dpi = 300)
-ggsave(combined_plot, file = "./Plots/dag_count_combined.png", width = 6, height = 8, dpi = 300)
+ggsave(degcountplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/dag_count_plot.png", width = 6, height = 8, dpi = 300)
+ggsave(combined_plot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/dag_count_combined.png", width = 6, height = 8, dpi = 300)
 
 
 #### Figure 3B Vann diagram ATAC ####
-dag_files <- list.files("./DAG/Sig_ATAC/", full.names = T)
+dag_files <- list.files("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/Sig_ATAC/", full.names = T)
 full_dag <- data.frame()
 for (file in dag_files) {
     df <- read.csv(file)
@@ -596,7 +605,7 @@ for (file in dag_files) {
     full_dag <- bind_rows(full_dag, df)
     }
 }
-write.csv(full_dag, file = "./DAG/full_sig_dag.csv")
+write.csv(full_dag, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/full_sig_dag.csv")
 
 comparisons <- unique(full_dag$comparison)
 hpct <- c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG")
@@ -662,10 +671,10 @@ saltempplot <- ggvenn(saltemp, fill_color = c("orange", "lightblue", "lightgreen
     theme(title = element_text(size = 20)) +
     labs(title = "24hr vs 1hr SAL")
 
-ggsave(ptzsal1hrplot, file = "./Plots/venn_ptzsal1hr_ATAC_peak.png", width = 6, height = 6, dpi = 300)
-ggsave(ptzsal24hrplot, file = "./Plots/venn_ptzsal24hr_ATAC_peak.png", width = 6, height = 6, dpi = 300)
-ggsave(ptztempplot, file = "./Plots/venn_ptztemp_ATAC_peak.png", width = 6, height = 6, dpi = 300)
-ggsave(saltempplot, file = "./Plots/venn_saltemp_ATAC_peak.png", width = 6, height = 6, dpi = 300)
+ggsave(ptzsal1hrplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptzsal1hr_ATAC_peak.png", width = 6, height = 6, dpi = 300)
+ggsave(ptzsal24hrplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptzsal24hr_ATAC_peak.png", width = 6, height = 6, dpi = 300)
+ggsave(ptztempplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_ptztemp_ATAC_peak.png", width = 6, height = 6, dpi = 300)
+ggsave(saltempplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/venn_saltemp_ATAC_peak.png", width = 6, height = 6, dpi = 300)
 #### Supp UMAP per sample ####
 # RNA UMAP by sample group
 umap_by_group <- SeuratExtend::DimPlot2(cobj, 
@@ -682,7 +691,7 @@ umap_by_group <- SeuratExtend::DimPlot2(cobj,
     theme_umap_arrows(x_label = "UMAP_1",
                       y_label = "UMAP_2") 
 
-ggplot2::ggsave(umap_by_group, file = "./Plots/UMAPbySample.png", width = 6, height = 6, dpi = 300)
+ggplot2::ggsave(umap_by_group, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/UMAPbySample.png", width = 6, height = 6, dpi = 300)
 
 #### Supp QC plots ####
 # RNA QC plot
@@ -695,7 +704,7 @@ rnaqc <- VlnPlot2(cobj,
                  box = F) + 
     theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
 
-ggsave(rnaqc, file = "./Plots/RNA_vlnplot.png", width = 12, height = 4)
+ggsave(rnaqc, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/RNA_vlnplot.png", width = 12, height = 4)
 
 
 # ATAC QC plot
@@ -708,7 +717,7 @@ atacqc <- VlnPlot2(cobj,
                   box = F) + 
     theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
 
-ggsave(atacqc, file = "./Plots/ATAC_vlnplot.png", width = 12, height = 8)
+ggsave(atacqc, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/ATAC_vlnplot.png", width = 12, height = 8)
 
 
 allqc <- VlnPlot2(cobj, 
@@ -717,10 +726,10 @@ allqc <- VlnPlot2(cobj,
                    pt = F,
                    box = F) + 
     theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
-ggsave(allqc, file = "./Plots/QC_vlnplot.png", width = 12, height = 8)
+ggsave(allqc, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/QC_vlnplot.png", width = 12, height = 8)
 
 #### Overlapped/Unique genes/peaks ####
-full_deg <- read.csv("./DEG/full_sig_deg.csv")
+full_deg <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/full_sig_deg.csv")
 
 hp_deg <- full_deg %>% filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
 
@@ -757,10 +766,10 @@ venn_list <- bind_rows(ptzsal1hr_obj, ptzsal24hr_obj, ptztemp_obj, saltemp_obj)
 venn_list_deg <- venn_list %>%
     left_join(hp_deg, by = c("gene", "comparison"))
 
-write.csv(venn_list_deg, file = "./DEG/hp_deg_venn.csv")
+write.csv(venn_list_deg, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/hp_deg_venn.csv")
 
 # ATAC part (pick closest gene or range)
-full_dag <- read.csv("./DAG/full_sig_dag.csv")
+full_dag <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/full_sig_dag.csv")
 hp_dag <- full_dag %>% filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG", "ExcitatoryNeuronsImmatureDG"))
 
 comparisons <- unique(full_dag$comparison)
@@ -795,14 +804,14 @@ venn_list <- bind_rows(ptzsal1hr_obj, ptzsal24hr_obj, ptztemp_obj, saltemp_obj)
 venn_list_dag <- venn_list %>%
     left_join(hp_dag, by = c("closestgene", "comparison"))
 
-write.csv(venn_list_dag, file = "./DAG/hp_dag_venn_gene.csv")
+write.csv(venn_list_dag, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/DAG/hp_dag_venn_gene.csv")
 
 #### GO with gene behavior ####
-gb <- read.csv("./DEG/gene_behavior.csv")
+gb <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/gene_behavior.csv")
 counts_matrix <- GetAssayData(cobj_2, assay = "RNA", layer = "counts")
 bg_gene <- rownames(counts_matrix)[Matrix::rowSums(counts_matrix > 0) > 10]
 
-dir.create("./GO/Gene_behavior/csv", recursive = T)
+dir.create("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/Gene_behavior/csv", recursive = T)
 
 hp_gb <- gb %>%
     filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG"))
@@ -858,15 +867,15 @@ for (i in unique(hp_gb$pattern)) {
                 fill = "Fold Enrichment",
                 size = "Gene Count")
         
-        ggsave(file.path("./GO/Gene_behavior/Plots", paste0("GO_dotplot_", i, ".png")), 
+        ggsave(file.path("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/Gene_behavior/Plots", paste0("GO_dotplot_", i, ".png")), 
                go_plot, width = 18, height = 8, dpi = 300)
-        write.csv(go, file = paste0("./GO/Gene_behavior/csv/", i, "_GO.csv"))
+        write.csv(go, file = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/Gene_behavior/csv/", i, "_GO.csv"))
         go_list[[i]] <- go_df}
 }
 
 #### GO with Venn group ####
-venn_list_deg <- read.csv("./DEG/hp_deg_venn.csv")
-go_files <- list.files("./GO/csv", full.names = T)
+venn_list_deg <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/hp_deg_venn.csv")
+go_files <- list.files("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/csv", full.names = T)
 
 # for (go_file in go_files) {
 #     # Extract filename info
@@ -991,9 +1000,9 @@ ggplot(go_pie_data, aes(
     facet_grid(cell_type ~ comparison, scales = "free_y", space = "free_y")
 
 #### Gene behavior of GO genes ####
-go_files <- list.files("./GO/csv/", pattern = ".csv", full.names = TRUE)[6:19]
+go_files <- list.files("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/csv/", pattern = ".csv", full.names = TRUE)[6:19]
 
-gb <- read.csv("./DEG/gene_behavior.csv")
+gb <- read.csv("~/PTZ_ATAC_scRNA_072024/WIP/0624_runDEG/gene_behavior.csv")
 hp_gb <- gb %>%
     filter(cell_type %in% c("ExcitatoryNeuronsCA1", "ExcitatoryNeuronsCA3", "ExcitatoryNeuronsMatureDG")) %>%
     mutate(pattern_simplified = case_when(pattern %in% c("Increase then Baseline", "Decrease then Baseline") ~ "Acture Response",
@@ -1060,7 +1069,7 @@ for (go_file in go_files) {
          title = paste(ct, comp),
          )
     
-    ggsave(plot = plot, filename = paste0("./GO/Gene_behavior/Plots/", ct, "_", comp, ".png"), width = 16, height = 8, dpi = 300)
+    ggsave(plot = plot, filename = paste0("~/PTZ_ATAC_scRNA_072024/WIP/0624_runGO/Gene_behavior/Plots/", ct, "_", comp, ".png"), width = 16, height = 8, dpi = 300)
     
     if (nrow(go_deg) !=0){
     results[[file_info]] = go_deg}
@@ -1133,7 +1142,7 @@ idgenrichedplot <- FeaturePlot(cobj,
             features = "IDG_enriched1", label = TRUE, repel = TRUE) +
     scale_colour_gradientn(colours = rev(brewer.pal(n = 11, name = "RdBu")))
 
-ggsave(ca1enrichedplot, file = "./Plots/CA1_ModuleScore.png", width = 8, height = 8, dpi = 300)
-ggsave(ca3enrichedplot, file = "./Plots/CA3_ModuleScore.png", width = 8, height = 8, dpi = 300)
-ggsave(dgenrichedplot, file = "./Plots/DG_ModuleScore.png", width = 8, height = 8, dpi = 300)
-ggsave(idgenrichedplot, file = "./Plots/IDG_ModuleScore.png", width = 8, height = 8, dpi = 300)
+ggsave(ca1enrichedplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/CA1_ModuleScore.png", width = 8, height = 8, dpi = 300)
+ggsave(ca3enrichedplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/CA3_ModuleScore.png", width = 8, height = 8, dpi = 300)
+ggsave(dgenrichedplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/DG_ModuleScore.png", width = 8, height = 8, dpi = 300)
+ggsave(idgenrichedplot, file = "~/PTZ_ATAC_scRNA_072024/WIP/0624_run/Plots/IDG_ModuleScore.png", width = 8, height = 8, dpi = 300)

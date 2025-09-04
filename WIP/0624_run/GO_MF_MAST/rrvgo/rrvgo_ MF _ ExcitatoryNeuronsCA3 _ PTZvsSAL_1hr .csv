@@ -1,3 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0016875","GO:0016875",1,"GO:0016875",2.04290903143661,41,"ligase activity, forming carbon-oxygen bonds","ligase activity, forming carbon-oxygen bonds",0.5005,0.5005,0
-"GO:0004812","GO:0004812",1,"GO:0016875",2.04290903143661,41,"aminoacyl-tRNA ligase activity","ligase activity, forming carbon-oxygen bonds",0.5005,0.5005,0.999

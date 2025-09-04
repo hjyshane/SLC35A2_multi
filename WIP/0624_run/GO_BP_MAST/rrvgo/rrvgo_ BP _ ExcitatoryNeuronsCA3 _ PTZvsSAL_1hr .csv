@@ -1,8 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0007409","GO:0007409",1,"GO:0007409",5.14268713804091,501,"axonogenesis","axonogenesis",0.880571428571429,1,0
-"GO:0099173","GO:0099173",2,"GO:0099173",4.46988000725236,252,"postsynapse organization","postsynapse organization",0.816571428571429,1,0
-"GO:1902414","GO:1902414",3,"GO:1902414",1.83174049061784,133,"protein localization to cell junction","protein localization to cell junction",0.982857142857143,1,0
-"GO:0043484","GO:0043484",4,"GO:0043484",1.79717413968858,187,"regulation of RNA splicing","regulation of RNA splicing",0.831142857142857,0.554,0
-"GO:0050803","GO:0050803",5,"GO:0050803",1.65034984163847,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.844714285714286,0.5025,0
-"GO:0008380","GO:0008380",4,"GO:0043484",1.5732974930894,449,"RNA splicing","regulation of RNA splicing",0.857428571428571,0.554,0.892
-"GO:0050807","GO:0050807",5,"GO:0050803",1.30749648684349,309,"regulation of synapse organization","regulation of synapse structure or activity",0.658428571428571,0.5025,0.995

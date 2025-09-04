@@ -1,4 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0016409","GO:0016409",1,"GO:0016409",2.22291456430657,37,"palmitoyltransferase activity","palmitoyltransferase activity",0.480333333333333,0.480333333333333,0
-"GO:0008374","GO:0008374",1,"GO:0016409",2.07678652862835,55,"O-acyltransferase activity","palmitoyltransferase activity",0.468666666666667,0.468666666666667,0.733
-"GO:0016747","GO:0016747",1,"GO:0016409",1.44891927369409,233,"acyltransferase activity, transferring groups other than amino-acyl groups","palmitoyltransferase activity",0.437666666666667,0.437666666666667,0.826

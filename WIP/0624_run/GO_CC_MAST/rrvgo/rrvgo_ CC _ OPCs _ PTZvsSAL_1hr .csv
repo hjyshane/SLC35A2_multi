@@ -1,3 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0072534","GO:0072534",1,"GO:0072534",1.39008838390095,10,"perineuronal net","perineuronal net",0.51,0.51,0
-"GO:0098966","GO:0098966",1,"GO:0072534",1.34870798969024,11,"perisynaptic extracellular matrix","perineuronal net",0.51,0.51,0.98

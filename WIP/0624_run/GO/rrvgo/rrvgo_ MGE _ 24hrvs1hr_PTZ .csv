@@ -1,7 +1,0 @@
-"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0035418","GO:0035418",1,"GO:0035418",1.95314432393458,100,"protein localization to synapse","protein localization to synapse",0.828333333333333,0.5075,0
-"GO:0048588","GO:0048588",2,"GO:0048588",1.86275112049336,291,"developmental cell growth","developmental cell growth",0.692666666666667,0.400666666666667,0
-"GO:0060560","GO:0060560",2,"GO:0048588",1.8316390142601,292,"developmental growth involved in morphogenesis","developmental cell growth",0.701166666666667,0.402333333333333,0.825
-"GO:1990138","GO:1990138",2,"GO:0048588",1.57105084518634,211,"neuron projection extension","developmental cell growth",0.669,0.353,0.973
-"GO:0099072","GO:0099072",3,"GO:0099072",1.34831121589367,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",1,1,0
-"GO:1902414","GO:1902414",1,"GO:0035418",1.34831121589367,133,"protein localization to cell junction","protein localization to synapse",0.828166666666667,0.5075,0.985
