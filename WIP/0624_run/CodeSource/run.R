@@ -327,7 +327,7 @@ rrvgo_dir <- file.path(go_dir, "rrvgo")
 run_go(
   seurat_obj = combined_object,
   input_sig = sig_dir,
-  orgdb = org.M0m.eg.db,
+  orgdb = org.Mm.eg.db,
   ontology = "BP",
   bg_gene = bg_gene,
   top_n = 20,
@@ -379,10 +379,6 @@ run_go(
   cnet_dir = cnet_dir,
   rrvgo_dir = rrvgo_dir)
 
-
-dir.create(go_dir, recursive = TRUE)
-dir.create(cnet_dir, recursive = TRUE)
-dir.create(rrvgo_dir, recursive = TRUE)
 
 
 

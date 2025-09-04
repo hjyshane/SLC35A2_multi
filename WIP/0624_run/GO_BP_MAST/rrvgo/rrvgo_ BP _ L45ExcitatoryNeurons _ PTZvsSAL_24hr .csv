@@ -1,26 +1,7 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0050807","GO:0050807",1,"GO:0050807",7.2795066405478,309,"regulation of synapse organization","regulation of synapse organization",0.58836,0.5025,0
-"GO:0050803","GO:0050803",1,"GO:0050807",6.967241109395,317,"regulation of synapse structure or activity","regulation of synapse organization",0.81128,0.5025,0.995
-"GO:0099003","GO:0099003",2,"GO:0099003",4.08634759551347,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.82936,0.415333333333333,0
-"GO:0034329","GO:0034329",3,"GO:0034329",3.72371356056613,481,"cell junction assembly","cell junction assembly",0.68728,0.253875,0
-"GO:0099504","GO:0099504",2,"GO:0099003",3.61062175984994,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.82016,0.410666666666667,0.982
-"GO:0007409","GO:0007409",4,"GO:0007409",3.13740193000537,501,"axonogenesis","axonogenesis",0.78208,1,0
-"GO:0048167","GO:0048167",5,"GO:0048167",2.73855297124654,393,"regulation of synaptic plasticity","regulation of synaptic plasticity",0.7792,0.4056,0
-"GO:0007416","GO:0007416",3,"GO:0034329",2.67432906212271,222,"synapse assembly","cell junction assembly",0.66212,0.237125,0.948
-"GO:0099172","GO:0099172",3,"GO:0034329",2.49457300676108,63,"presynapse organization","cell junction assembly",0.72764,0.35125,0.713
-"GO:0016049","GO:0016049",6,"GO:0016049",2.33644869942989,556,"cell growth","cell growth",0.9058,0.374666666666667,0
-"GO:0099054","GO:0099054",3,"GO:0034329",2.1805275268302,55,"presynapse assembly","cell junction assembly",0.68328,0.268625,0.833
-"GO:0099173","GO:0099173",3,"GO:0034329",2.16433294663976,252,"postsynapse organization","cell junction assembly",0.7136,0.33275,0.804
-"GO:1901888","GO:1901888",3,"GO:0034329",2.15973873929461,246,"regulation of cell junction assembly","cell junction assembly",0.66972,0.261875,0.93
-"GO:0016079","GO:0016079",5,"GO:0048167",2.06848793231029,115,"synaptic vesicle exocytosis","regulation of synaptic plasticity",0.6296,0.3292,0.712
-"GO:0099643","GO:0099643",5,"GO:0048167",1.8519453929221,174,"signal release from synapse","regulation of synaptic plasticity",0.77288,0.3196,0.722
-"GO:0007269","GO:0007269",5,"GO:0048167",1.8519453929221,174,"neurotransmitter secretion","regulation of synaptic plasticity",0.66852,0.3156,0.732
-"GO:0051592","GO:0051592",7,"GO:0051592",1.80350326423225,147,"response to calcium ion","response to calcium ion",1,1,0
-"GO:0043484","GO:0043484",8,"GO:0043484",1.64107190484238,187,"regulation of RNA splicing","regulation of RNA splicing",0.9444,1,0
-"GO:0051963","GO:0051963",3,"GO:0034329",1.56371192576875,144,"regulation of synapse assembly","cell junction assembly",0.55964,0.2405,0.9
-"GO:0048588","GO:0048588",6,"GO:0016049",1.56201813719518,291,"developmental cell growth","cell growth",0.84828,0.359,0.95
-"GO:0050806","GO:0050806",5,"GO:0048167",1.43012690291336,348,"positive regulation of synaptic transmission","regulation of synaptic plasticity",0.83572,0.4116,0.806
-"GO:0006836","GO:0006836",9,"GO:0006836",1.37730004897819,230,"neurotransmitter transport","neurotransmitter transport",0.86372,1,0
-"GO:1990138","GO:1990138",6,"GO:0016049",1.309219672254,211,"neuron projection extension","cell growth",0.74372,0.367,0.926
-"GO:0097091","GO:0097091",2,"GO:0099003",1.30569668748911,20,"synaptic vesicle clustering","vesicle-mediated transport in synapse",0.851,0.480666666666667,0.772
-"GO:0051965","GO:0051965",3,"GO:0034329",1.30141678228557,82,"positive regulation of synapse assembly","cell junction assembly",0.57792,0.27975,0.841
+"GO:0007409","GO:0007409",1,"GO:0007409",2.80435860438243,501,"axonogenesis","axonogenesis",0.643833333333333,0.572,0
+"GO:0021543","GO:0021543",2,"GO:0021543",1.73756105670155,182,"pallium development","pallium development",0.735833333333333,1,0
+"GO:0021954","GO:0021954",1,"GO:0007409",1.64693442536985,98,"central nervous system neuron development","axonogenesis",0.690166666666667,0.604,0.657
+"GO:0001764","GO:0001764",1,"GO:0007409",1.56562918084476,206,"neuron migration","axonogenesis",0.724,0.614,0.627
+"GO:0098742","GO:0098742",3,"GO:0098742",1.54380094277483,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.839333333333333,0.5535,0
+"GO:0099560","GO:0099560",3,"GO:0098742",1.36185016400649,36,"synaptic membrane adhesion","cell-cell adhesion via plasma-membrane adhesion molecules",0.790166666666667,0.5535,0.893

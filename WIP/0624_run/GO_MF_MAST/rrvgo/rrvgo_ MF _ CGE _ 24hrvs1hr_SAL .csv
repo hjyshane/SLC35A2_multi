@@ -1,12 +1,11 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0044325","GO:0044325",1,"GO:0044325",4.16088734103495,169,"transmembrane transporter binding","transmembrane transporter binding",0.918090909090909,1,0
-"GO:0008066","GO:0008066",2,"GO:0008066",3.04340443873929,27,"glutamate receptor activity","glutamate receptor activity",0.911636363636364,0.514,0
-"GO:0022890","GO:0022890",3,"GO:0022890",3.02979187311814,538,"inorganic cation transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.953090909090909,1,0
-"GO:0003725","GO:0003725",4,"GO:0003725",2.64028256283534,82,"double-stranded RNA binding","double-stranded RNA binding",0.962,1,0
-"GO:0042277","GO:0042277",5,"GO:0042277",2.51650061998523,370,"peptide binding","peptide binding",0.876090909090909,0.5125,0
-"GO:0035254","GO:0035254",6,"GO:0035254",2.46886221525083,76,"glutamate receptor binding","glutamate receptor binding",0.896363636363636,1,0
-"GO:0044389","GO:0044389",7,"GO:0044389",1.91173636397271,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.842727272727273,0.505,0
-"GO:0033218","GO:0033218",5,"GO:0042277",1.79009426915959,457,"amide binding","peptide binding",0.875454545454545,0.5125,0.975
-"GO:0031625","GO:0031625",7,"GO:0044389",1.72514571104862,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.843090909090909,0.505,0.99
-"GO:0070325","GO:0070325",8,"GO:0070325",1.65904402375864,33,"lipoprotein particle receptor binding","lipoprotein particle receptor binding",0.899636363636364,1,0
-"GO:0004970","GO:0004970",2,"GO:0008066",1.45195701785336,19,"ionotropic glutamate receptor activity","glutamate receptor activity",0.864727272727273,0.514,0.972
+"GO:0005200","GO:0005200",1,"GO:0005200",11.0728562797161,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0044389","GO:0044389",2,"GO:0044389",6.72741815931516,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.8583,0.505,0
+"GO:0031625","GO:0031625",2,"GO:0044389",5.50648021006771,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.8585,0.505,0.99
+"GO:0005525","GO:0005525",3,"GO:0005525",5.46291732918907,363,"GTP binding","GTP binding",0.7442,0.353666666666667,0
+"GO:0019001","GO:0019001",3,"GO:0005525",5.22333293404293,387,"guanyl nucleotide binding","GTP binding",0.7406,0.346666666666667,0.968
+"GO:0032561","GO:0032561",3,"GO:0005525",5.22333293404293,387,"guanyl ribonucleotide binding","GTP binding",0.7405,0.345666666666667,0.971
+"GO:0097718","GO:0097718",4,"GO:0097718",2.58153004294189,36,"disordered domain specific binding","disordered domain specific binding",0.9453,1,0
+"GO:0003924","GO:0003924",5,"GO:0003924",2.10563347199267,305,"GTPase activity","GTPase activity",1,1,0
+"GO:0044183","GO:0044183",6,"GO:0044183",1.85041060836947,55,"protein folding chaperone","protein folding chaperone",1,1,0
+"GO:0019103","GO:0019103",7,"GO:0019103",1.74239866293384,11,"pyrimidine nucleotide binding","pyrimidine nucleotide binding",0.8556,1,0

@@ -1,21 +1,5 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0097060","GO:0097060",1,"GO:0097060",9.09622463969909,514,"synaptic membrane","synaptic membrane",0.6658,0.392,0
-"GO:0044309","GO:0044309",2,"GO:0044309",8.12086445086194,214,"neuron spine","neuron spine",0.8314,0.46025,0
-"GO:0043197","GO:0043197",2,"GO:0044309",7.57428774028533,208,"dendritic spine","neuron spine",0.5612,0.462,0.992
-"GO:0097449","GO:0097449",3,"GO:0097449",6.68999886306995,23,"astrocyte projection","astrocyte projection",0.8243,0.366,0
-"GO:0042734","GO:0042734",1,"GO:0097060",6.49000589646504,238,"presynaptic membrane","synaptic membrane",0.672,0.423666666666667,0.886
-"GO:0045211","GO:0045211",1,"GO:0097060",6.31992935218975,352,"postsynaptic membrane","synaptic membrane",0.6394,0.406333333333333,0.938
-"GO:0098685","GO:0098685",4,"GO:0098685",5.45467450300691,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.76615,1,0
-"GO:0097386","GO:0097386",3,"GO:0097449",5.05862675924661,45,"glial cell projection","astrocyte projection",0.8228,0.378,0.963
-"GO:0099572","GO:0099572",5,"GO:0099572",4.88880250139838,436,"postsynaptic specialization","postsynaptic specialization",0.69785,0.48925,0
-"GO:0014069","GO:0014069",5,"GO:0099572",4.83651519783812,384,"postsynaptic density","postsynaptic specialization",0.6557,0.266,0.981
-"GO:0098984","GO:0098984",5,"GO:0099572",4.56207019925249,448,"neuron to neuron synapse","postsynaptic specialization",0.70095,0.379,0.535
-"GO:0032279","GO:0032279",5,"GO:0099572",4.30941322160222,407,"asymmetric synapse","postsynaptic specialization",0.703,0.37725,0.527
-"GO:0048786","GO:0048786",6,"GO:0048786",3.26880766864218,121,"presynaptic active zone","presynaptic active zone",0.73355,0.5295,0
-"GO:0150034","GO:0150034",2,"GO:0044309",2.58185737287524,397,"distal axon","neuron spine",0.83835,0.5085,0.613
-"GO:0048787","GO:0048787",6,"GO:0048786",2.55082450954107,66,"presynaptic active zone membrane","presynaptic active zone",0.68905,0.5295,0.941
-"GO:0005938","GO:0005938",7,"GO:0005938",2.10563208657849,306,"cell cortex","cell cortex",0.9298,1,0
-"GO:0097450","GO:0097450",3,"GO:0097449",1.79198653467413,10,"astrocyte end-foot","astrocyte projection",0.8328,0.386,0.939
-"GO:0031252","GO:0031252",8,"GO:0031252",1.67565857748499,415,"cell leading edge","cell leading edge",0.99745,1,0
-"GO:0043209","GO:0043209",9,"GO:0043209",1.59220138676223,208,"myelin sheath","myelin sheath",0.9977,1,0
-"GO:0044304","GO:0044304",2,"GO:0044309",1.52748407615146,88,"main axon","neuron spine",0.84965,0.53775,0.554
+"GO:0043197","GO:0043197",1,"GO:0043197",1.50240096409417,208,"dendritic spine","dendritic spine",0.518,0.504,0
+"GO:0044309","GO:0044309",1,"GO:0043197",1.44375041062216,214,"neuron spine","dendritic spine",0.75075,0.504,0.992
+"GO:0048786","GO:0048786",2,"GO:0048786",1.35922319158443,121,"presynaptic active zone","presynaptic active zone",0.771,1,0
+"GO:0097060","GO:0097060",3,"GO:0097060",1.32118168129174,514,"synaptic membrane","synaptic membrane",0.75275,1,0

@@ -1,31 +1,9 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0097060","GO:0097060",1,"GO:0097060",6.3729362053925,514,"synaptic membrane","synaptic membrane",0.6899,0.392,0
-"GO:0043197","GO:0043197",2,"GO:0043197",5.67355306959073,208,"dendritic spine","dendritic spine",0.613933333333333,0.4492,0
-"GO:0044309","GO:0044309",2,"GO:0043197",5.51217413576325,214,"neuron spine","dendritic spine",0.8557,0.4472,0.992
-"GO:0150034","GO:0150034",2,"GO:0043197",5.32921801092203,397,"distal axon","dendritic spine",0.841866666666667,0.446,0.609
-"GO:0045211","GO:0045211",1,"GO:0097060",5.1689646694828,352,"postsynaptic membrane","synaptic membrane",0.669933333333333,0.406333333333333,0.938
-"GO:0098984","GO:0098984",3,"GO:0098984",4.34676491588451,448,"neuron to neuron synapse","neuron to neuron synapse",0.7252,0.350333333333333,0
-"GO:0099572","GO:0099572",4,"GO:0099572",3.85247976240887,436,"postsynaptic specialization","postsynaptic specialization",0.697533333333333,0.407,0
-"GO:0014069","GO:0014069",3,"GO:0098984",3.84464162294816,384,"postsynaptic density","neuron to neuron synapse",0.669833333333333,0.348333333333333,0.97
-"GO:0098685","GO:0098685",5,"GO:0098685",3.58033291878354,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.787233333333333,1,0
-"GO:0032279","GO:0032279",3,"GO:0098984",3.50415851982472,407,"asymmetric synapse","neuron to neuron synapse",0.726633333333333,0.345333333333333,0.979
-"GO:0031252","GO:0031252",6,"GO:0031252",3.46157198930135,415,"cell leading edge","cell leading edge",0.997433333333333,1,0
-"GO:0030426","GO:0030426",7,"GO:0030426",2.84889478735097,213,"growth cone","growth cone",0.815933333333333,0.5025,0
-"GO:0030427","GO:0030427",7,"GO:0030426",2.71324569768721,221,"site of polarized growth","growth cone",0.9647,0.5025,0.995
-"GO:0042734","GO:0042734",1,"GO:0097060",2.47477573400029,238,"presynaptic membrane","synaptic membrane",0.707566666666667,0.423666666666667,0.886
-"GO:0099634","GO:0099634",4,"GO:0099572",2.42954645073246,154,"postsynaptic specialization membrane","postsynaptic specialization",0.666366666666667,0.374333333333333,0.9
-"GO:0098684","GO:0098684",8,"GO:0098684",2.19213522764146,18,"photoreceptor ribbon synapse","photoreceptor ribbon synapse",0.801633333333333,0.517,0
-"GO:1902562","GO:1902562",9,"GO:1902562",2.0860733938118,41,"H4 histone acetyltransferase complex","H4 histone acetyltransferase complex",0.930366666666667,1,0
-"GO:0005911","GO:0005911",10,"GO:0005911",1.94592589344471,543,"cell-cell junction","cell-cell junction",0.7841,1,0
-"GO:0008328","GO:0008328",11,"GO:0008328",1.77026561443209,44,"ionotropic glutamate receptor complex","ionotropic glutamate receptor complex",0.875733333333333,0.392333333333333,0
-"GO:0036464","GO:0036464",12,"GO:0036464",1.76409934536451,246,"cytoplasmic ribonucleoprotein granule","cytoplasmic ribonucleoprotein granule",0.9315,0.5045,0
-"GO:0098878","GO:0098878",11,"GO:0008328",1.72233965654503,46,"neurotransmitter receptor complex","ionotropic glutamate receptor complex",0.875433333333333,0.391333333333333,0.997
-"GO:0043679","GO:0043679",2,"GO:0043197",1.69553748524469,202,"axon terminus","dendritic spine",0.6305,0.385,0.574
-"GO:0005819","GO:0005819",13,"GO:0005819",1.53365440515669,367,"spindle","spindle",0.951166666666667,1,0
-"GO:0097441","GO:0097441",14,"GO:0097441",1.53239344244221,12,"basal dendrite","basal dendrite",0.889233333333333,1,0
-"GO:0098839","GO:0098839",4,"GO:0099572",1.52418113891857,114,"postsynaptic density membrane","postsynaptic specialization",0.645266666666667,0.381333333333333,0.879
-"GO:0035770","GO:0035770",12,"GO:0036464",1.48909874118957,264,"ribonucleoprotein granule","cytoplasmic ribonucleoprotein granule",0.931333333333333,0.5045,0.991
-"GO:0098858","GO:0098858",15,"GO:0098858",1.38988661412758,234,"actin-based cell projection","actin-based cell projection",0.889533333333333,1,0
-"GO:0097470","GO:0097470",8,"GO:0098684",1.33651955865921,29,"ribbon synapse","photoreceptor ribbon synapse",0.794733333333333,0.517,0.966
-"GO:0044306","GO:0044306",2,"GO:0043197",1.32642819606488,224,"neuron projection terminus","dendritic spine",0.8557,0.4474,0.579
-"GO:0043235","GO:0043235",11,"GO:0008328",1.32620702498919,417,"receptor complex","ionotropic glutamate receptor complex",0.934733333333333,0.448333333333333,0.826
+"GO:0098871","GO:0098871",1,"GO:0098871",2.25574230276825,16,"postsynaptic actin cytoskeleton","postsynaptic actin cytoskeleton",0.699,0.5115,0
+"GO:0099571","GO:0099571",1,"GO:0098871",1.97229474345028,23,"postsynaptic cytoskeleton","postsynaptic actin cytoskeleton",0.694625,0.5115,0.977
+"GO:0098685","GO:0098685",2,"GO:0098685",1.93350226615088,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.856625,1,0
+"GO:0035267","GO:0035267",3,"GO:0035267",1.89532535968853,27,"NuA4 histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.692625,0.344666666666667,0
+"GO:0043189","GO:0043189",3,"GO:0035267",1.89532535968853,27,"H4/H2A histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.69225,0.344,0.998
+"GO:0044305","GO:0044305",4,"GO:0044305",1.69872832056854,32,"calyx of Held","calyx of Held",0.867125,1,0
+"GO:0043209","GO:0043209",5,"GO:0043209",1.54637268550624,208,"myelin sheath","myelin sheath",0.99825,1,0
+"GO:1902562","GO:1902562",3,"GO:0035267",1.49157305431943,41,"H4 histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.69425,0.354,0.968

@@ -1,17 +1,10 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0044325","GO:0044325",1,"GO:0044325",9.68960613364185,169,"transmembrane transporter binding","transmembrane transporter binding",0.942,1,0
-"GO:0003735","GO:0003735",2,"GO:0003735",6.64986276758181,178,"structural constituent of ribosome","structural constituent of ribosome",0.9551875,0.6415,0
-"GO:0031625","GO:0031625",3,"GO:0031625",4.01070408158576,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.890375,0.505,0
-"GO:0044389","GO:0044389",3,"GO:0031625",3.98338390531946,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.8900625,0.505,0.99
-"GO:0005200","GO:0005200",2,"GO:0003735",3.28066595438615,73,"structural constituent of cytoskeleton","structural constituent of ribosome",0.9551875,0.6415,0.717
-"GO:0003714","GO:0003714",4,"GO:0003714",2.9721422974541,200,"transcription corepressor activity","transcription corepressor activity",0.9439375,0.5515,0
-"GO:0003924","GO:0003924",5,"GO:0003924",2.73539056158453,305,"GTPase activity","GTPase activity",1,1,0
-"GO:0003729","GO:0003729",6,"GO:0003729",2.48921985295341,386,"mRNA binding","mRNA binding",0.9698125,1,0
-"GO:0042277","GO:0042277",7,"GO:0042277",2.23979400007776,370,"peptide binding","peptide binding",0.9138125,0.5125,0
-"GO:0033218","GO:0033218",7,"GO:0042277",2.16367583917564,457,"amide binding","peptide binding",0.9133125,0.5125,0.975
-"GO:0003712","GO:0003712",4,"GO:0003714",2.07145408245235,497,"transcription coregulator activity","transcription corepressor activity",0.9439375,0.5515,0.897
-"GO:0097718","GO:0097718",8,"GO:0097718",1.87589586821751,36,"disordered domain specific binding","disordered domain specific binding",0.9483125,1,0
-"GO:0019829","GO:0019829",9,"GO:0019829",1.86304233126071,57,"ATPase-coupled monoatomic cation transmembrane transporter activity","ATPase-coupled monoatomic cation transmembrane transporter activity",1,1,0
-"GO:0030674","GO:0030674",10,"GO:0030674",1.73768694458618,452,"protein-macromolecule adaptor activity","protein-macromolecule adaptor activity",1,1,0
-"GO:0042393","GO:0042393",11,"GO:0042393",1.56113198278205,294,"histone binding","histone binding",0.9393125,1,0
-"GO:0004857","GO:0004857",12,"GO:0004857",1.47813188017191,410,"enzyme inhibitor activity","enzyme inhibitor activity",1,1,0
+"GO:0005200","GO:0005200",1,"GO:0005200",9.24265392486297,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0005525","GO:0005525",2,"GO:0005525",6.20496785995558,363,"GTP binding","GTP binding",0.755666666666667,0.353666666666667,0
+"GO:0019001","GO:0019001",2,"GO:0005525",5.8087725215226,387,"guanyl nucleotide binding","GTP binding",0.752555555555556,0.346666666666667,0.968
+"GO:0032561","GO:0032561",2,"GO:0005525",5.8087725215226,387,"guanyl ribonucleotide binding","GTP binding",0.752444444444444,0.345666666666667,0.971
+"GO:0031625","GO:0031625",3,"GO:0031625",5.29210163891017,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.842222222222222,0.505,0
+"GO:0044389","GO:0044389",3,"GO:0031625",5.03221779277844,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.841777777777778,0.505,0.99
+"GO:0003924","GO:0003924",4,"GO:0003924",3.28784619425967,305,"GTPase activity","GTPase activity",1,1,0
+"GO:0050815","GO:0050815",5,"GO:0050815",2.07865667035546,12,"phosphoserine residue binding","phosphoserine residue binding",0.942222222222222,1,0
+"GO:0042277","GO:0042277",6,"GO:0042277",1.35736594608216,370,"peptide binding","peptide binding",0.954888888888889,1,0

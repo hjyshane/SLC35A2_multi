@@ -1,20 +1,5 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0098918","GO:0098918",1,"GO:0098918",8.2750613684803,37,"structural constituent of synapse","structural constituent of synapse",0.817526315789474,0.3066,0
-"GO:0050839","GO:0050839",2,"GO:0050839",5.28393429059612,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.949947368421053,1,0
-"GO:0005516","GO:0005516",3,"GO:0005516",3.87211012777682,195,"calmodulin binding","calmodulin binding",0.951789473684211,1,0
-"GO:0099186","GO:0099186",1,"GO:0098918",3.66159265077425,27,"structural constituent of postsynapse","structural constituent of synapse",0.815368421052632,0.2984,0.969
-"GO:0005216","GO:0005216",4,"GO:0005216",3.13348815182251,437,"monoatomic ion channel activity","monoatomic ion channel activity",0.753473684210526,0.219333333333333,0
-"GO:0035254","GO:0035254",5,"GO:0035254",2.98801131240006,76,"glutamate receptor binding","glutamate receptor binding",0.954526315789474,1,0
-"GO:0005200","GO:0005200",1,"GO:0098918",2.75604202739223,73,"structural constituent of cytoskeleton","structural constituent of synapse",0.870315789473684,0.5072,0.645
-"GO:0015631","GO:0015631",6,"GO:0015631",2.37992194995977,387,"tubulin binding","tubulin binding",0.924736842105263,0.6845,0
-"GO:0051020","GO:0051020",7,"GO:0051020",2.37460572681693,337,"GTPase binding","GTPase binding",0.950263157894737,1,0
-"GO:0022803","GO:0022803",4,"GO:0005216",2.34195636223969,501,"passive transmembrane transporter activity","monoatomic ion channel activity",0.753631578947368,0.219833333333333,0.969
-"GO:0015267","GO:0015267",4,"GO:0005216",2.34195636223969,501,"channel activity","monoatomic ion channel activity",0.753631578947368,0.219833333333333,0.969
-"GO:0098919","GO:0098919",1,"GO:0098918",2.16491046631382,11,"structural constituent of postsynaptic density","structural constituent of synapse",0.818263157894737,0.3094,0.921
-"GO:0005261","GO:0005261",4,"GO:0005216",2.07816221928753,322,"monoatomic cation channel activity","monoatomic ion channel activity",0.766210526315789,0.259666666666667,0.917
-"GO:0022839","GO:0022839",4,"GO:0005216",1.90338304228636,315,"monoatomic ion gated channel activity","monoatomic ion channel activity",0.757526315789474,0.232166666666667,0.925
-"GO:0019894","GO:0019894",6,"GO:0015631",1.8776835896039,53,"kinesin binding","tubulin binding",0.931894736842105,0.6845,0.631
-"GO:0022836","GO:0022836",4,"GO:0005216",1.85466505441127,320,"gated channel activity","monoatomic ion channel activity",0.759631578947368,0.238833333333333,0.904
-"GO:0098879","GO:0098879",1,"GO:0098918",1.74173244705743,13,"structural constituent of postsynaptic specialization","structural constituent of synapse",0.816631578947368,0.3032,0.932
-"GO:0060589","GO:0060589",8,"GO:0060589",1.73456777312169,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.947684210526316,0.503,0
-"GO:0030695","GO:0030695",8,"GO:0060589",1.73456777312169,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.947684210526316,0.503,0.994
+"GO:0008046","GO:0008046",1,"GO:0008046",2.60553061941499,11,"axon guidance receptor activity","axon guidance receptor activity",1,1,0
+"GO:0005216","GO:0005216",2,"GO:0005216",1.56723329715666,437,"monoatomic ion channel activity","monoatomic ion channel activity",0.55725,0.409666666666667,0
+"GO:0005261","GO:0005261",2,"GO:0005216",1.55267964288885,322,"monoatomic cation channel activity","monoatomic ion channel activity",0.547,0.396,0.917
+"GO:0046873","GO:0046873",2,"GO:0005216",1.35054321895956,437,"metal ion transmembrane transporter activity","monoatomic ion channel activity",0.56275,0.417,0.854

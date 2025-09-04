@@ -1,16 +1,7 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005200","GO:0005200",1,"GO:0005200",7.02012259880117,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
-"GO:0003727","GO:0003727",2,"GO:0003727",3.28021413773289,101,"single-stranded RNA binding","single-stranded RNA binding",0.743933333333333,0.2778,0
-"GO:0008143","GO:0008143",2,"GO:0003727",2.98949883826148,33,"poly(A) binding","single-stranded RNA binding",0.7514,0.2962,0.905
-"GO:0019199","GO:0019199",3,"GO:0019199",2.84949869830993,77,"transmembrane receptor protein kinase activity","transmembrane receptor protein kinase activity",0.779,0.337,0
-"GO:0008187","GO:0008187",2,"GO:0003727",2.65298207622587,32,"poly-pyrimidine tract binding","single-stranded RNA binding",0.75,0.2916,0.896
-"GO:0005003","GO:0005003",3,"GO:0019199",2.63039525894108,16,"ephrin receptor activity","transmembrane receptor protein kinase activity",0.764266666666667,0.2928,0.87
-"GO:0004714","GO:0004714",3,"GO:0019199",2.44938786722587,59,"transmembrane receptor protein tyrosine kinase activity","transmembrane receptor protein kinase activity",0.757666666666667,0.273,0.972
-"GO:0050839","GO:0050839",4,"GO:0050839",2.41434955465411,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.945266666666667,1,0
-"GO:0070717","GO:0070717",2,"GO:0003727",2.36505683622197,41,"poly-purine tract binding","single-stranded RNA binding",0.747933333333333,0.2866,0.923
-"GO:0004713","GO:0004713",3,"GO:0019199",2.09137174088358,132,"protein tyrosine kinase activity","transmembrane receptor protein kinase activity",0.7892,0.3676,0.65
-"GO:0043395","GO:0043395",5,"GO:0043395",1.96408400099335,24,"heparan sulfate proteoglycan binding","heparan sulfate proteoglycan binding",0.9534,1,0
-"GO:0035254","GO:0035254",6,"GO:0035254",1.72635104380123,76,"glutamate receptor binding","glutamate receptor binding",0.9498,1,0
-"GO:0005516","GO:0005516",7,"GO:0005516",1.71613701034801,195,"calmodulin binding","calmodulin binding",0.947066666666667,1,0
-"GO:0008266","GO:0008266",2,"GO:0003727",1.56272213160806,28,"poly(U) RNA binding","single-stranded RNA binding",0.751733333333333,0.2962,0.887
-"GO:0005005","GO:0005005",3,"GO:0019199",1.3576071942624,11,"transmembrane-ephrin receptor activity","transmembrane receptor protein kinase activity",0.7736,0.3208,0.823
+"GO:0005200","GO:0005200",1,"GO:0005200",7.87239127318893,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.788333333333333,0.576666666666667,0
+"GO:0019001","GO:0019001",2,"GO:0019001",2.71055320467952,387,"guanyl nucleotide binding","guanyl nucleotide binding",0.673333333333333,0.346666666666667,0
+"GO:0032561","GO:0032561",2,"GO:0019001",2.71055320467952,387,"guanyl ribonucleotide binding","guanyl nucleotide binding",0.672833333333333,0.345666666666667,0.992
+"GO:0099186","GO:0099186",1,"GO:0005200",2.39885283921273,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.734333333333333,0.468666666666667,0.625
+"GO:0098918","GO:0098918",1,"GO:0005200",2.09244974756401,37,"structural constituent of synapse","structural constituent of cytoskeleton",0.731,0.462,0.645
+"GO:0005525","GO:0005525",2,"GO:0019001",1.43186816989061,363,"GTP binding","guanyl nucleotide binding",0.676833333333333,0.353666666666667,0.968

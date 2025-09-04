@@ -1,15 +1,6 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0043209","GO:0043209",1,"GO:0043209",8.67693095481319,208,"myelin sheath","myelin sheath",0.997857142857143,1,0
-"GO:0098984","GO:0098984",2,"GO:0098984",5.76114460167447,448,"neuron to neuron synapse","neuron to neuron synapse",0.786,0.379,0
-"GO:0032279","GO:0032279",2,"GO:0098984",4.87552344510915,407,"asymmetric synapse","neuron to neuron synapse",0.785928571428571,0.37725,0.979
-"GO:0005751","GO:0005751",3,"GO:0005751",3.3981947971343,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.7945,0.354333333333333,0
-"GO:0099572","GO:0099572",2,"GO:0098984",3.23802602805774,436,"postsynaptic specialization","neuron to neuron synapse",0.776142857142857,0.48925,0.535
-"GO:0014069","GO:0014069",2,"GO:0098984",3.07465324297691,384,"postsynaptic density","neuron to neuron synapse",0.713357142857143,0.266,0.97
-"GO:0150034","GO:0150034",4,"GO:0150034",3.0357336343996,397,"distal axon","distal axon",0.910785714285714,0.592666666666667,0
-"GO:0045277","GO:0045277",3,"GO:0005751",2.9540658420217,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.811142857142857,0.348666666666667,0.983
-"GO:0016607","GO:0016607",5,"GO:0016607",2.3164648708133,369,"nuclear speck","nuclear speck",0.942,1,0
-"GO:0043197","GO:0043197",4,"GO:0150034",2.20462561791949,208,"dendritic spine","distal axon",0.709071428571429,0.466333333333333,0.609
-"GO:0044309","GO:0044309",4,"GO:0150034",2.05526138566935,214,"neuron spine","distal axon",0.883571428571429,0.465,0.613
-"GO:0070069","GO:0070069",3,"GO:0005751",1.8937516876783,41,"cytochrome complex","mitochondrial respiratory chain complex IV",0.813071428571429,0.358333333333333,0.954
-"GO:0140092","GO:0140092",6,"GO:0140092",1.87589110273604,10,"bBAF complex","bBAF complex",0.857714285714286,1,0
-"GO:0005681","GO:0005681",7,"GO:0005681",1.82723159760655,221,"spliceosomal complex","spliceosomal complex",0.868,1,0
+"GO:0005874","GO:0005874",1,"GO:0005874",2.81824282330555,467,"microtubule","microtubule",0.9778,1,0
+"GO:1990124","GO:1990124",2,"GO:1990124",2.10501785928811,16,"messenger ribonucleoprotein complex","messenger ribonucleoprotein complex",0.89,0.725,0
+"GO:0043204","GO:0043204",3,"GO:0043204",1.71733056341691,153,"perikaryon","perikaryon",0.9988,1,0
+"GO:0043209","GO:0043209",4,"GO:0043209",1.32297093505445,208,"myelin sheath","myelin sheath",0.9984,1,0
+"GO:0005681","GO:0005681",2,"GO:1990124",1.30980553888923,221,"spliceosomal complex","messenger ribonucleoprotein complex",0.8678,0.725,0.55

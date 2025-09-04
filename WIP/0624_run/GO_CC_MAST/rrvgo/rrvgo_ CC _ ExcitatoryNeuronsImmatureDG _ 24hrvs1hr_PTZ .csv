@@ -1,29 +1,6 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0099572","GO:0099572",1,"GO:0099572",10.1685697414191,436,"postsynaptic specialization","postsynaptic specialization",0.70625,0.55,0
-"GO:0098984","GO:0098984",2,"GO:0098984",9.78843005668065,448,"neuron to neuron synapse","neuron to neuron synapse",0.7325,0.350333333333333,0
-"GO:0032279","GO:0032279",2,"GO:0098984",9.19298233662372,407,"asymmetric synapse","neuron to neuron synapse",0.734642857142857,0.345333333333333,0.979
-"GO:0014069","GO:0014069",2,"GO:0098984",8.97813037060854,384,"postsynaptic density","neuron to neuron synapse",0.677142857142857,0.348333333333333,0.97
-"GO:0097060","GO:0097060",3,"GO:0097060",6.97719326094251,514,"synaptic membrane","synaptic membrane",0.667892857142857,0.392,0
-"GO:0045211","GO:0045211",3,"GO:0097060",5.86604572982803,352,"postsynaptic membrane","synaptic membrane",0.650178571428571,0.406333333333333,0.938
-"GO:0005681","GO:0005681",4,"GO:0005681",5.7959117464194,221,"spliceosomal complex","spliceosomal complex",0.932535714285714,0.5495,0
-"GO:0016607","GO:0016607",5,"GO:0016607",5.38650164193269,369,"nuclear speck","nuclear speck",0.969071428571429,1,0
-"GO:0043197","GO:0043197",6,"GO:0043197",3.81865806694919,208,"dendritic spine","dendritic spine",0.645857142857143,0.4305,0
-"GO:0150034","GO:0150034",6,"GO:0043197",3.76341245876467,397,"distal axon","dendritic spine",0.901321428571429,0.558,0.609
-"GO:0044309","GO:0044309",6,"GO:0043197",3.66581615824651,214,"neuron spine","dendritic spine",0.901607142857143,0.4685,0.992
-"GO:0098982","GO:0098982",7,"GO:0098982",3.38039775437239,135,"GABA-ergic synapse","GABA-ergic synapse",0.78675,1,0
-"GO:0098685","GO:0098685",8,"GO:0098685",3.06639354651257,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.784071428571429,1,0
-"GO:0045121","GO:0045121",9,"GO:0045121",2.95488939071527,301,"membrane raft","membrane raft",0.910142857142857,0.502,0
-"GO:0098857","GO:0098857",9,"GO:0045121",2.93558006884332,302,"membrane microdomain","membrane raft",0.910142857142857,0.502,0.996
-"GO:0031594","GO:0031594",10,"GO:0031594",2.48858634483822,109,"neuromuscular junction","neuromuscular junction",0.793071428571429,1,0
-"GO:0019897","GO:0019897",11,"GO:0019897",2.48364149285883,147,"extrinsic component of plasma membrane","extrinsic component of plasma membrane",0.889,0.5205,0
-"GO:0005911","GO:0005911",12,"GO:0005911",2.34058922344173,543,"cell-cell junction","cell-cell junction",0.780464285714286,1,0
-"GO:0030426","GO:0030426",13,"GO:0030426",2.14316694730966,213,"growth cone","growth cone",0.869642857142857,0.5025,0
-"GO:0048786","GO:0048786",14,"GO:0048786",2.07707458381358,121,"presynaptic active zone","presynaptic active zone",0.782285714285714,1,0
-"GO:0071013","GO:0071013",4,"GO:0005681",2.06076214992739,110,"catalytic step 2 spliceosome","spliceosomal complex",0.936035714285714,0.5495,0.901
-"GO:0030427","GO:0030427",13,"GO:0030426",2.00240288165356,221,"site of polarized growth","growth cone",0.962357142857143,0.5025,0.995
-"GO:0099634","GO:0099634",1,"GO:0099572",2.00041948863933,154,"postsynaptic specialization membrane","postsynaptic specialization",0.654428571428571,0.55,0.9
-"GO:0030315","GO:0030315",15,"GO:0030315",1.90430156398659,72,"T-tubule","T-tubule",0.920928571428571,1,0
-"GO:0043198","GO:0043198",6,"GO:0043197",1.90430156398659,71,"dendritic shaft","dendritic spine",0.917642857142857,0.564,0.677
-"GO:0042734","GO:0042734",3,"GO:0097060",1.75571018059974,238,"presynaptic membrane","synaptic membrane",0.687678571428571,0.423666666666667,0.886
-"GO:0019898","GO:0019898",11,"GO:0019897",1.48660789132712,227,"extrinsic component of membrane","extrinsic component of plasma membrane",0.911892857142857,0.5205,0.959
-"GO:1990351","GO:1990351",16,"GO:1990351",1.40763945456667,421,"transporter complex","transporter complex",0.975107142857143,1,0
+"GO:0098684","GO:0098684",1,"GO:0098684",1.96307424106771,18,"photoreceptor ribbon synapse","photoreceptor ribbon synapse",0.6676,0.517,0
+"GO:0098685","GO:0098685",2,"GO:0098685",1.67143355157568,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.772,1,0
+"GO:0097470","GO:0097470",1,"GO:0098684",1.5414022254024,29,"ribbon synapse","photoreceptor ribbon synapse",0.6622,0.517,0.966
+"GO:0005874","GO:0005874",3,"GO:0005874",1.46684973035835,467,"microtubule","microtubule",0.9896,1,0
+"GO:0099523","GO:0099523",4,"GO:0099523",1.45503631915588,32,"presynaptic cytosol","presynaptic cytosol",0.7826,1,0

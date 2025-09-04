@@ -1,29 +1,8 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0098984","GO:0098984",1,"GO:0098984",10.663600927662,448,"neuron to neuron synapse","neuron to neuron synapse",0.688892857142857,0.350333333333333,0
-"GO:0099572","GO:0099572",2,"GO:0099572",10.5620508996179,436,"postsynaptic specialization","postsynaptic specialization",0.666,0.407,0
-"GO:0014069","GO:0014069",1,"GO:0098984",10.3967922523316,384,"postsynaptic density","neuron to neuron synapse",0.636392857142857,0.348333333333333,0.97
-"GO:0032279","GO:0032279",1,"GO:0098984",9.53923187809972,407,"asymmetric synapse","neuron to neuron synapse",0.690607142857143,0.345333333333333,0.979
-"GO:0097060","GO:0097060",3,"GO:0097060",9.28714649329749,514,"synaptic membrane","synaptic membrane",0.637321428571429,0.392,0
-"GO:0042734","GO:0042734",3,"GO:0097060",6.7960490332214,238,"presynaptic membrane","synaptic membrane",0.640357142857143,0.423666666666667,0.886
-"GO:0045211","GO:0045211",3,"GO:0097060",5.8940106135208,352,"postsynaptic membrane","synaptic membrane",0.617178571428571,0.406333333333333,0.938
-"GO:0043209","GO:0043209",4,"GO:0043209",5.68137704523993,208,"myelin sheath","myelin sheath",0.997857142857143,1,0
-"GO:0044309","GO:0044309",5,"GO:0044309",5.60820630227361,214,"neuron spine","neuron spine",0.920142857142857,0.465,0
-"GO:0043197","GO:0043197",5,"GO:0044309",5.17347405352237,208,"dendritic spine","neuron spine",0.634071428571429,0.466333333333333,0.992
-"GO:0098685","GO:0098685",6,"GO:0098685",5.11381715186769,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.756571428571429,1,0
-"GO:0150034","GO:0150034",5,"GO:0044309",3.82664742100568,397,"distal axon","neuron spine",0.920821428571429,0.592666666666667,0.613
-"GO:0005751","GO:0005751",7,"GO:0005751",3.80953600121842,25,"mitochondrial respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.87,0.354333333333333,0
-"GO:0030426","GO:0030426",8,"GO:0030426",3.61673182252141,213,"growth cone","growth cone",0.888107142857143,0.5025,0
-"GO:0030427","GO:0030427",8,"GO:0030426",3.38228680997733,221,"site of polarized growth","growth cone",0.962392857142857,0.5025,0.995
-"GO:0045277","GO:0045277",7,"GO:0005751",3.27826552549531,28,"respiratory chain complex IV","mitochondrial respiratory chain complex IV",0.890678571428571,0.348666666666667,0.983
-"GO:0098831","GO:0098831",9,"GO:0098831",3.12241964848121,22,"presynaptic active zone cytoplasmic component","presynaptic active zone cytoplasmic component",0.702321428571429,0.5225,0
-"GO:0099738","GO:0099738",9,"GO:0098831",3.02792910937243,47,"cell cortex region","presynaptic active zone cytoplasmic component",0.888571428571429,0.5225,0.955
-"GO:0060076","GO:0060076",10,"GO:0060076",2.7891609502378,99,"excitatory synapse","excitatory synapse",0.748785714285714,0.536,0
-"GO:0099634","GO:0099634",2,"GO:0099572",2.60191239514901,154,"postsynaptic specialization membrane","postsynaptic specialization",0.62375,0.374333333333333,0.9
-"GO:0048786","GO:0048786",11,"GO:0048786",2.58230702936895,121,"presynaptic active zone","presynaptic active zone",0.727214285714286,1,0
-"GO:0031252","GO:0031252",12,"GO:0031252",2.33428288201156,415,"cell leading edge","cell leading edge",0.965428571428571,0.5495,0
-"GO:0070069","GO:0070069",7,"GO:0005751",2.02856297601504,41,"cytochrome complex","mitochondrial respiratory chain complex IV",0.93125,0.358333333333333,0.954
-"GO:0070382","GO:0070382",13,"GO:0070382",1.50216771559622,281,"exocytic vesicle","exocytic vesicle",0.936571428571429,0.506,0
-"GO:0098688","GO:0098688",10,"GO:0060076",1.49841493752713,37,"parallel fiber to Purkinje cell synapse","excitatory synapse",0.765321428571429,0.536,0.928
-"GO:0008021","GO:0008021",13,"GO:0070382",1.47429541376441,259,"synaptic vesicle","exocytic vesicle",0.67525,0.506,0.988
-"GO:0098839","GO:0098839",2,"GO:0099572",1.39089183533019,114,"postsynaptic density membrane","postsynaptic specialization",0.601464285714286,0.381333333333333,0.879
-"GO:0031256","GO:0031256",12,"GO:0031252",1.30470780705148,159,"leading edge membrane","cell leading edge",0.873892857142857,0.5495,0.901
+"GO:0098982","GO:0098982",1,"GO:0098982",3.12876107614712,135,"GABA-ergic synapse","GABA-ergic synapse",0.807,1,0
+"GO:0097060","GO:0097060",2,"GO:0097060",2.26788858721352,514,"synaptic membrane","synaptic membrane",0.644571428571429,0.445,0
+"GO:0042734","GO:0042734",2,"GO:0097060",1.95612612016486,238,"presynaptic membrane","synaptic membrane",0.639571428571429,0.409,0.886
+"GO:0005903","GO:0005903",3,"GO:0005903",1.7779418536973,149,"brush border","brush border",0.998142857142857,1,0
+"GO:0048787","GO:0048787",2,"GO:0097060",1.4255540695071,66,"presynaptic active zone membrane","synaptic membrane",0.665857142857143,0.444666666666667,0.779
+"GO:0044294","GO:0044294",4,"GO:0044294",1.42093945009986,12,"dendritic growth cone","dendritic growth cone",0.998285714285714,1,0
+"GO:0097524","GO:0097524",5,"GO:0097524",1.34889646827738,29,"sperm plasma membrane","sperm plasma membrane",0.872285714285714,1,0

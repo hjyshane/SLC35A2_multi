@@ -1,19 +1,3 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0016358","GO:0016358",1,"GO:0016358",5.81452625124547,327,"dendrite development","dendrite development",0.486555555555556,0.304833333333333,0
-"GO:0050773","GO:0050773",1,"GO:0016358",4.36073137708049,145,"regulation of dendrite development","dendrite development",0.4595,0.289333333333333,0.924
-"GO:0010770","GO:0010770",2,"GO:0010770",4.19765817122857,67,"positive regulation of cell morphogenesis","positive regulation of cell morphogenesis",0.574277777777778,0.3305,0
-"GO:0048814","GO:0048814",1,"GO:0016358",3.89952255430757,99,"regulation of dendrite morphogenesis","dendrite development",0.438166666666667,0.274833333333333,0.895
-"GO:0048813","GO:0048813",1,"GO:0016358",3.79783245617118,192,"dendrite morphogenesis","dendrite development",0.456388888888889,0.297666666666667,0.95
-"GO:0007409","GO:0007409",1,"GO:0016358",3.26881237770314,501,"axonogenesis","dendrite development",0.461111111111111,0.373333333333333,0.762
-"GO:0050775","GO:0050775",2,"GO:0010770",3.16018696242117,64,"positive regulation of dendrite morphogenesis","positive regulation of cell morphogenesis",0.393888888888889,0.3095,0.997
-"GO:0050807","GO:0050807",3,"GO:0050807",2.98098798045059,309,"regulation of synapse organization","regulation of synapse organization",0.7425,0.5025,0
-"GO:0050803","GO:0050803",3,"GO:0050807",2.83482517589806,317,"regulation of synapse structure or activity","regulation of synapse organization",0.910111111111111,0.5025,0.995
-"GO:0031346","GO:0031346",1,"GO:0016358",2.82419261746078,463,"positive regulation of cell projection organization","dendrite development",0.68,0.419666666666667,0.64
-"GO:0021680","GO:0021680",4,"GO:0021680",2.39704022755643,40,"cerebellar Purkinje cell layer development","cerebellar Purkinje cell layer development",0.587666666666667,0.296,0
-"GO:0021695","GO:0021695",4,"GO:0021680",1.86854184805066,71,"cerebellar cortex development","cerebellar Purkinje cell layer development",0.571166666666667,0.272,0.957
-"GO:0021696","GO:0021696",4,"GO:0021680",1.80854071539343,47,"cerebellar cortex morphogenesis","cerebellar Purkinje cell layer development",0.559833333333333,0.279333333333333,0.929
-"GO:0021533","GO:0021533",4,"GO:0021680",1.74256304462959,31,"cell differentiation in hindbrain","cerebellar Purkinje cell layer development",0.609222222222222,0.3755,0.765
-"GO:0021697","GO:0021697",4,"GO:0021680",1.43365122043569,33,"cerebellar cortex formation","cerebellar Purkinje cell layer development",0.57,0.2935,0.906
-"GO:0021537","GO:0021537",4,"GO:0021680",1.42245867453541,281,"telencephalon development","cerebellar Purkinje cell layer development",0.603444444444444,0.440333333333333,0.667
-"GO:0050769","GO:0050769",2,"GO:0010770",1.41323391094555,329,"positive regulation of neurogenesis","positive regulation of cell morphogenesis",0.551666666666667,0.44975,0.787
-"GO:0022604","GO:0022604",2,"GO:0010770",1.3892661608758,277,"regulation of cell morphogenesis","positive regulation of cell morphogenesis",0.596166666666667,0.41825,0.894
+"GO:1902667","GO:1902667",1,"GO:1902667",1.66237662478995,13,"regulation of axon guidance","regulation of axon guidance",0.896,1,0
+"GO:1990403","GO:1990403",2,"GO:1990403",1.39925833124396,28,"embryonic brain development","embryonic brain development",0.896,1,0

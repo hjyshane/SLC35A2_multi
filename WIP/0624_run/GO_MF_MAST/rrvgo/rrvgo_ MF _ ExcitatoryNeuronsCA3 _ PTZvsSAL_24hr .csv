@@ -1,4 +1,7 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005200","GO:0005200",1,"GO:0005200",3.66953497506881,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
-"GO:0044325","GO:0044325",2,"GO:0044325",1.46543121223319,169,"transmembrane transporter binding","transmembrane transporter binding",0.937,1,0
-"GO:0051020","GO:0051020",3,"GO:0051020",1.35769720523891,337,"GTPase binding","GTPase binding",0.937,1,0
+"GO:0005200","GO:0005200",1,"GO:0005200",4.77451101843762,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0005525","GO:0005525",2,"GO:0005525",2.01602172759138,363,"GTP binding","GTP binding",0.666,0.353666666666667,0
+"GO:0019001","GO:0019001",2,"GO:0005525",1.8969381074726,387,"guanyl nucleotide binding","GTP binding",0.662166666666667,0.346666666666667,0.968
+"GO:0032561","GO:0032561",2,"GO:0005525",1.8969381074726,387,"guanyl ribonucleotide binding","GTP binding",0.661666666666667,0.345666666666667,0.971
+"GO:0015085","GO:0015085",3,"GO:0015085",1.87652070102372,134,"calcium ion transmembrane transporter activity","calcium ion transmembrane transporter activity",1,1,0
+"GO:0005516","GO:0005516",4,"GO:0005516",1.39611380244738,195,"calmodulin binding","calmodulin binding",0.966833333333333,1,0

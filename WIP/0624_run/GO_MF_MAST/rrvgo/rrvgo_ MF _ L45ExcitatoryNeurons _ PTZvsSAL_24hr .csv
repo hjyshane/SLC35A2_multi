@@ -1,7 +1,8 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005516","GO:0005516",1,"GO:0005516",3.27262050775465,195,"calmodulin binding","calmodulin binding",0.900666666666667,1,0
-"GO:0005200","GO:0005200",2,"GO:0005200",3.18465344024526,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
-"GO:0044325","GO:0044325",3,"GO:0044325",3.05045451361248,169,"transmembrane transporter binding","transmembrane transporter binding",0.901,1,0
-"GO:0031625","GO:0031625",4,"GO:0031625",1.5476035961774,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.845666666666667,1,0
-"GO:0003729","GO:0003729",5,"GO:0003729",1.48447643265821,386,"mRNA binding","mRNA binding",0.9565,1,0
-"GO:0043274","GO:0043274",6,"GO:0043274",1.40221397293949,29,"phospholipase binding","phospholipase binding",0.858833333333333,1,0
+"GO:0005200","GO:0005200",1,"GO:0005200",3.17412225166963,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0097110","GO:0097110",2,"GO:0097110",2.67532935455493,89,"scaffold protein binding","scaffold protein binding",0.942714285714286,1,0
+"GO:0019103","GO:0019103",3,"GO:0019103",1.7185694256248,11,"pyrimidine nucleotide binding","pyrimidine nucleotide binding",0.801142857142857,1,0
+"GO:0044325","GO:0044325",4,"GO:0044325",1.62524515827392,169,"transmembrane transporter binding","transmembrane transporter binding",0.940428571428571,1,0
+"GO:0005525","GO:0005525",5,"GO:0005525",1.50706693919494,363,"GTP binding","GTP binding",0.644142857142857,0.353666666666667,0
+"GO:0019001","GO:0019001",5,"GO:0005525",1.36451435654461,387,"guanyl nucleotide binding","GTP binding",0.639428571428571,0.346666666666667,0.968
+"GO:0032561","GO:0032561",5,"GO:0005525",1.36451435654461,387,"guanyl ribonucleotide binding","GTP binding",0.639285714285714,0.345666666666667,0.971

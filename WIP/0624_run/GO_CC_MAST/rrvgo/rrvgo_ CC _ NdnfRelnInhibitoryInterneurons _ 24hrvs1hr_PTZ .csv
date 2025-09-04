@@ -1,18 +1,3 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0048786","GO:0048786",1,"GO:0048786",7.33812108320895,121,"presynaptic active zone","presynaptic active zone",0.693529411764706,0.5295,0
-"GO:0097060","GO:0097060",2,"GO:0097060",6.93566815554522,514,"synaptic membrane","synaptic membrane",0.626176470588235,0.392,0
-"GO:0048787","GO:0048787",1,"GO:0048786",4.99288324219291,66,"presynaptic active zone membrane","presynaptic active zone",0.619117647058824,0.5295,0.941
-"GO:0042734","GO:0042734",2,"GO:0097060",4.03967942439613,238,"presynaptic membrane","synaptic membrane",0.598882352941176,0.423666666666667,0.886
-"GO:0150034","GO:0150034",3,"GO:0150034",4.00989999622912,397,"distal axon","distal axon",0.856117647058824,0.397,0
-"GO:0043209","GO:0043209",4,"GO:0043209",3.95819688545348,208,"myelin sheath","myelin sheath",0.997764705882353,1,0
-"GO:0043679","GO:0043679",3,"GO:0150034",3.14547966671659,202,"axon terminus","distal axon",0.574352941176471,0.2875,0.935
-"GO:0045211","GO:0045211",2,"GO:0097060",2.98218916312628,352,"postsynaptic membrane","synaptic membrane",0.624588235294118,0.406333333333333,0.938
-"GO:0044306","GO:0044306",3,"GO:0150034",2.71459183920087,224,"neuron projection terminus","distal axon",0.85,0.37025,0.613
-"GO:0034702","GO:0034702",5,"GO:0034702",2.42856024886432,301,"monoatomic ion channel complex","monoatomic ion channel complex",0.842058823529412,0.405333333333333,0
-"GO:0098685","GO:0098685",6,"GO:0098685",2.28142353099997,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.763529411764706,1,0
-"GO:0043195","GO:0043195",3,"GO:0150034",1.72507833517686,93,"terminal bouton","distal axon",0.601411764705882,0.32325,0.864
-"GO:0097470","GO:0097470",7,"GO:0097470",1.6269694803866,29,"ribbon synapse","ribbon synapse",0.793764705882353,1,0
-"GO:0032281","GO:0032281",5,"GO:0034702",1.6269694803866,29,"AMPA glutamate receptor complex","monoatomic ion channel complex",0.832470588235294,0.465333333333333,0.815
-"GO:1902495","GO:1902495",5,"GO:0034702",1.47816421051764,396,"transmembrane transporter complex","monoatomic ion channel complex",0.842294117647059,0.414,0.969
-"GO:0043204","GO:0043204",8,"GO:0043204",1.40030563470564,153,"perikaryon","perikaryon",0.998058823529412,1,0
-"GO:0099572","GO:0099572",9,"GO:0099572",1.36630417669141,436,"postsynaptic specialization","postsynaptic specialization",0.729764705882353,1,0
+"GO:0071012","GO:0071012",1,"GO:0071012",1.45227316453568,23,"catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.5,0.5,0
+"GO:0071006","GO:0071006",1,"GO:0071012",1.45227316453568,23,"U2-type catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.5,0.5,1

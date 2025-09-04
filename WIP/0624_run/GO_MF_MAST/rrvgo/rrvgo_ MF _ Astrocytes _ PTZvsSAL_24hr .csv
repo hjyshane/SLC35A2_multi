@@ -1,3 +1,3 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0042805","GO:0042805",1,"GO:0042805",2.40675996651309,41,"actinin binding","actinin binding",0.5125,0.5125,0
-"GO:0051393","GO:0051393",1,"GO:0042805",1.62875763514202,30,"alpha-actinin binding","actinin binding",0.5125,0.5125,0.975
+"GO:0030215","GO:0030215",1,"GO:0030215",1.41747741132166,22,"semaphorin receptor binding","semaphorin receptor binding",1,1,0
+"GO:0004683","GO:0004683",2,"GO:0004683",1.35959689963518,24,"calmodulin-dependent protein kinase activity","calmodulin-dependent protein kinase activity",1,1,0

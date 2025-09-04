@@ -1,15 +1,3 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0072534","GO:0072534",1,"GO:0072534",4.32669221507038,10,"perineuronal net","perineuronal net",0.669785714285714,0.324333333333333,0
-"GO:0098966","GO:0098966",1,"GO:0072534",4.13224842551404,11,"perisynaptic extracellular matrix","perineuronal net",0.6635,0.312,0.98
-"GO:0043194","GO:0043194",2,"GO:0043194",3.96329401848869,29,"axon initial segment","axon initial segment",0.876,0.428666666666667,0
-"GO:0099535","GO:0099535",1,"GO:0072534",3.80015729825401,13,"synapse-associated extracellular matrix","perineuronal net",0.661571428571429,0.308666666666667,0.969
-"GO:0097060","GO:0097060",3,"GO:0097060",3.77370691416853,514,"synaptic membrane","synaptic membrane",0.688928571428571,0.48925,0
-"GO:0045211","GO:0045211",3,"GO:0097060",3.08080680205785,352,"postsynaptic membrane","synaptic membrane",0.700928571428571,0.50375,0.938
-"GO:0031012","GO:0031012",1,"GO:0072534",2.74956092842066,521,"extracellular matrix","perineuronal net",0.652142857142857,0.323,0.69
-"GO:0030312","GO:0030312",1,"GO:0072534",2.73977069891781,523,"external encapsulating structure","perineuronal net",0.652142857142857,0.323,0.69
-"GO:0098984","GO:0098984",3,"GO:0097060",2.07934067947191,448,"neuron to neuron synapse","synaptic membrane",0.850928571428571,0.48425,0.557
-"GO:0032279","GO:0032279",3,"GO:0097060",1.71138242761304,407,"asymmetric synapse","synaptic membrane",0.852071428571429,0.48825,0.548
-"GO:0044304","GO:0044304",2,"GO:0043194",1.5726700533612,88,"main axon","axon initial segment",0.870714285714286,0.405,0.908
-"GO:0062023","GO:0062023",1,"GO:0072534",1.49281557283543,396,"collagen-containing extracellular matrix","perineuronal net",0.649214285714286,0.311333333333333,0.725
-"GO:0033268","GO:0033268",2,"GO:0043194",1.40999246136828,20,"node of Ranvier","axon initial segment",0.878214285714286,0.439,0.806
-"GO:0019898","GO:0019898",4,"GO:0019898",1.37471224116296,227,"extrinsic component of membrane","extrinsic component of membrane",0.966142857142857,1,0
+"GO:0072534","GO:0072534",1,"GO:0072534",1.39008838390095,10,"perineuronal net","perineuronal net",0.51,0.51,0
+"GO:0098966","GO:0098966",1,"GO:0072534",1.34870798969024,11,"perisynaptic extracellular matrix","perineuronal net",0.51,0.51,0.98

@@ -1,40 +1,6 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0007409","GO:0007409",1,"GO:0007409",7.91905851901367,501,"axonogenesis","axonogenesis",0.720538461538462,0.3244,0
-"GO:0099173","GO:0099173",2,"GO:0099173",6.40723791533121,252,"postsynapse organization","postsynapse organization",0.845769230769231,0.3438,0
-"GO:0097485","GO:0097485",1,"GO:0007409",6.02003093628258,252,"neuron projection guidance","axonogenesis",0.733230769230769,0.3336,0.859
-"GO:0007411","GO:0007411",1,"GO:0007409",6.02003093628258,252,"axon guidance","axonogenesis",0.731538461538461,0.317,0.927
-"GO:0030900","GO:0030900",3,"GO:0030900",5.26046587445384,425,"forebrain development","forebrain development",0.79451282051282,0.439,0
-"GO:0050803","GO:0050803",4,"GO:0050803",5.01412411535183,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.914974358974359,0.48575,0
-"GO:0050807","GO:0050807",4,"GO:0050803",4.63350122748966,309,"regulation of synapse organization","regulation of synapse structure or activity",0.782282051282051,0.48625,0.995
-"GO:0050890","GO:0050890",5,"GO:0050890",4.51767417351547,371,"cognition","cognition",0.853358974358974,0.36975,0
-"GO:0007626","GO:0007626",6,"GO:0007626",4.26689967836308,273,"locomotory behavior","locomotory behavior",0.834307692307692,0.43825,0
-"GO:0016358","GO:0016358",1,"GO:0007409",4.06256907844069,327,"dendrite development","axonogenesis",0.742307692307692,0.372,0.762
-"GO:0007611","GO:0007611",5,"GO:0050890",3.72099934051819,331,"learning or memory","cognition",0.799794871794872,0.3685,0.988
-"GO:0021953","GO:0021953",3,"GO:0030900",3.47529958974304,212,"central nervous system neuron differentiation","forebrain development",0.792205128205128,0.517666666666667,0.742
-"GO:0030534","GO:0030534",6,"GO:0007626",3.39767607933374,191,"adult behavior","locomotory behavior",0.836794871794872,0.43475,0.718
-"GO:0021537","GO:0021537",3,"GO:0030900",3.30804520066281,281,"telencephalon development","forebrain development",0.80374358974359,0.451333333333333,0.941
-"GO:0099072","GO:0099072",4,"GO:0050803",3.21221308353133,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of synapse structure or activity",0.940641025641026,0.61825,0.502
-"GO:0008344","GO:0008344",6,"GO:0007626",3.05558741181464,112,"adult locomotory behavior","locomotory behavior",0.836820512820513,0.38775,0.928
-"GO:0055074","GO:0055074",7,"GO:0055074",3.0270039933438,353,"calcium ion homeostasis","calcium ion homeostasis",0.950307692307692,0.354,0
-"GO:0042391","GO:0042391",4,"GO:0050803",2.88845270774286,491,"regulation of membrane potential","regulation of synapse structure or activity",0.935564102564103,0.58925,0.56
-"GO:0001967","GO:0001967",6,"GO:0007626",2.45485723168813,18,"suckling behavior","locomotory behavior",0.867205128205128,0.56125,0.601
-"GO:0034329","GO:0034329",2,"GO:0099173",2.39415642613523,481,"cell junction assembly","postsynapse organization",0.845846153846154,0.3584,0.804
-"GO:0007528","GO:0007528",2,"GO:0099173",2.28296434304053,61,"neuromuscular junction development","postsynapse organization",0.865923076923077,0.4344,0.722
-"GO:0007416","GO:0007416",2,"GO:0099173",2.26286804348472,222,"synapse assembly","postsynapse organization",0.714358974358974,0.349,0.818
-"GO:0036465","GO:0036465",8,"GO:0036465",2.25795951666948,90,"synaptic vesicle recycling","synaptic vesicle recycling",0.94448717948718,0.5595,0
-"GO:0050905","GO:0050905",5,"GO:0050890",2.24969307709491,204,"neuromuscular process","cognition",0.877487179487179,0.558,0.604
-"GO:0007612","GO:0007612",5,"GO:0050890",1.97980754754985,192,"learning","cognition",0.809615384615385,0.39175,0.929
-"GO:0010959","GO:0010959",9,"GO:0010959",1.90320627037991,461,"regulation of metal ion transport","regulation of metal ion transport",0.92374358974359,0.503,0
-"GO:0098771","GO:0098771",7,"GO:0055074",1.87024155154236,557,"inorganic ion homeostasis","calcium ion homeostasis",0.951564102564103,0.370333333333333,0.948
-"GO:0099545","GO:0099545",10,"GO:0099545",1.84593932460594,11,"trans-synaptic signaling by trans-synaptic complex","trans-synaptic signaling by trans-synaptic complex",0.978025641025641,1,0
-"GO:0048638","GO:0048638",11,"GO:0048638",1.82167837217475,405,"regulation of developmental growth","regulation of developmental growth",0.884923076923077,0.602,0
-"GO:0048813","GO:0048813",1,"GO:0007409",1.81915455675012,192,"dendrite morphogenesis","axonogenesis",0.743076923076923,0.3354,0.83
-"GO:0060541","GO:0060541",12,"GO:0060541",1.68589198780966,276,"respiratory system development","respiratory system development",0.846538461538462,1,0
-"GO:0099175","GO:0099175",2,"GO:0099173",1.51017510269132,139,"regulation of postsynapse organization","postsynapse organization",0.793051282051282,0.3716,0.937
-"GO:0099003","GO:0099003",8,"GO:0036465",1.50079881646389,270,"vesicle-mediated transport in synapse","synaptic vesicle recycling",0.94048717948718,0.5595,0.881
-"GO:0006874","GO:0006874",7,"GO:0055074",1.44248011749364,327,"intracellular calcium ion homeostasis","calcium ion homeostasis",0.95048717948718,0.356333333333333,0.99
-"GO:1901841","GO:1901841",9,"GO:0010959",1.41868303263428,14,"regulation of high voltage-gated calcium channel activity","regulation of metal ion transport",0.928564102564103,0.512,0.721
-"GO:0048592","GO:0048592",13,"GO:0048592",1.41181166443459,186,"eye morphogenesis","eye morphogenesis",0.837384615384615,1,0
-"GO:0061448","GO:0061448",14,"GO:0061448",1.40327922070345,316,"connective tissue development","connective tissue development",0.912282051282051,1,0
-"GO:0070588","GO:0070588",9,"GO:0010959",1.39975428942554,354,"calcium ion transmembrane transport","regulation of metal ion transport",0.93348717948718,0.495666666666667,0.77
-"GO:0035264","GO:0035264",11,"GO:0048638",1.31422797153948,230,"multicellular organism growth","regulation of developmental growth",0.871538461538462,0.602,0.796
+"GO:0099072","GO:0099072",1,"GO:0099072",3.01589933925344,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",1,1,0
+"GO:0030705","GO:0030705",2,"GO:0030705",1.81514567645124,214,"cytoskeleton-dependent intracellular transport","cytoskeleton-dependent intracellular transport",0.8412,1,0
+"GO:1902414","GO:1902414",3,"GO:1902414",1.80339461196615,133,"protein localization to cell junction","protein localization to cell junction",0.8438,1,0
+"GO:0097120","GO:0097120",4,"GO:0097120",1.55814725109021,87,"receptor localization to synapse","receptor localization to synapse",0.877,1,0
+"GO:0045161","GO:0045161",5,"GO:0045161",1.54913276495918,14,"neuronal ion channel clustering","neuronal ion channel clustering",0.9924,1,0

@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0071012","GO:0071012",1,"GO:0071012",1.87824189680796,23,"catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.451,0.451,0
+"GO:0071006","GO:0071006",1,"GO:0071012",1.87824189680796,23,"U2-type catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.401,0.401,1
+"GO:0071007","GO:0071007",1,"GO:0071012",1.51527300557285,47,"U2-type catalytic step 2 spliceosome","catalytic step 1 spliceosome",0.518666666666667,0.518666666666667,0.647

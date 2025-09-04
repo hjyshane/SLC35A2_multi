@@ -1,4 +1,4 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0005200","GO:0005200",1,"GO:0005200",3.22023659135524,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.791666666666667,0.6875,0
-"GO:0019888","GO:0019888",2,"GO:0019888",1.66155121871859,86,"protein phosphatase regulator activity","protein phosphatase regulator activity",1,1,0
-"GO:0099186","GO:0099186",1,"GO:0005200",1.60422623214748,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.791666666666667,0.6875,0.625
+"GO:0016409","GO:0016409",1,"GO:0016409",2.22291456430657,37,"palmitoyltransferase activity","palmitoyltransferase activity",0.480333333333333,0.480333333333333,0
+"GO:0008374","GO:0008374",1,"GO:0016409",2.07678652862835,55,"O-acyltransferase activity","palmitoyltransferase activity",0.468666666666667,0.468666666666667,0.733
+"GO:0016747","GO:0016747",1,"GO:0016409",1.44891927369409,233,"acyltransferase activity, transferring groups other than amino-acyl groups","palmitoyltransferase activity",0.437666666666667,0.437666666666667,0.826

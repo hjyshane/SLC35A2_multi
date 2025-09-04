@@ -1,21 +1,10 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0004674","GO:0004674",1,"GO:0004674",5.02638825008909,441,"protein serine/threonine kinase activity","protein serine/threonine kinase activity",1,1,0
-"GO:0048156","GO:0048156",2,"GO:0048156",3.70523250421254,22,"tau protein binding","tau protein binding",0.89995,0.7065,0
-"GO:0044325","GO:0044325",3,"GO:0044325",3.16688182442074,169,"transmembrane transporter binding","transmembrane transporter binding",0.908,1,0
-"GO:0035254","GO:0035254",4,"GO:0035254",3.0225960055959,76,"glutamate receptor binding","glutamate receptor binding",0.91325,1,0
-"GO:0051020","GO:0051020",5,"GO:0051020",2.97657055666523,337,"GTPase binding","GTPase binding",0.78895,0.453666666666667,0
-"GO:0019903","GO:0019903",5,"GO:0051020",2.92069604350612,191,"protein phosphatase binding","GTPase binding",0.79495,0.467,0.556
-"GO:0022890","GO:0022890",6,"GO:0022890",2.62151957847176,538,"inorganic cation transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.95165,0.5165,0
-"GO:0019902","GO:0019902",5,"GO:0051020",2.58069186725203,243,"phosphatase binding","GTPase binding",0.7913,0.458333333333333,0.569
-"GO:0042277","GO:0042277",7,"GO:0042277",2.48848506230481,370,"peptide binding","peptide binding",0.91435,0.5125,0
-"GO:0015631","GO:0015631",2,"GO:0048156",2.38042240564507,387,"tubulin binding","tau protein binding",0.87905,0.7065,0.587
-"GO:0031625","GO:0031625",5,"GO:0051020",2.37289217076097,338,"ubiquitin protein ligase binding","GTPase binding",0.78905,0.454166666666667,0.582
-"GO:0031267","GO:0031267",5,"GO:0051020",2.33617993281293,297,"small GTPase binding","GTPase binding",0.79075,0.457833333333333,0.985
-"GO:0003729","GO:0003729",8,"GO:0003729",2.26964025805104,386,"mRNA binding","mRNA binding",0.95895,1,0
-"GO:0044389","GO:0044389",5,"GO:0051020",2.20900915296442,358,"ubiquitin-like protein ligase binding","GTPase binding",0.78815,0.452,0.586
-"GO:0060589","GO:0060589",9,"GO:0060589",1.87580368350868,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.87515,0.37575,0
-"GO:0030695","GO:0030695",9,"GO:0060589",1.87580368350868,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.87515,0.37575,0.994
-"GO:0046873","GO:0046873",6,"GO:0022890",1.66345667419421,437,"metal ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.95165,0.5165,0.967
-"GO:0005096","GO:0005096",9,"GO:0060589",1.62955206706564,238,"GTPase activator activity","nucleoside-triphosphatase regulator activity",0.88015,0.40075,0.928
-"GO:0033218","GO:0033218",7,"GO:0042277",1.57468043386857,457,"amide binding","peptide binding",0.9136,0.5125,0.975
-"GO:0099106","GO:0099106",9,"GO:0060589",1.55298715069414,136,"ion channel regulator activity","nucleoside-triphosphatase regulator activity",0.91545,0.57725,0.575
+"GO:0005200","GO:0005200",1,"GO:0005200",7.32519504278881,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0031625","GO:0031625",2,"GO:0031625",5.94856235246036,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.809666666666667,0.505,0
+"GO:0044389","GO:0044389",2,"GO:0031625",5.70212740420152,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.809222222222222,0.505,0.99
+"GO:0005525","GO:0005525",3,"GO:0005525",2.86356923373364,363,"GTP binding","GTP binding",0.749777777777778,0.353666666666667,0
+"GO:0097718","GO:0097718",4,"GO:0097718",2.68931891216147,36,"disordered domain specific binding","disordered domain specific binding",0.911333333333333,1,0
+"GO:0019001","GO:0019001",3,"GO:0005525",2.61456776534658,387,"guanyl nucleotide binding","GTP binding",0.746444444444444,0.346666666666667,0.968
+"GO:0032561","GO:0032561",3,"GO:0005525",2.61456776534658,387,"guanyl ribonucleotide binding","GTP binding",0.746222222222222,0.345666666666667,0.971
+"GO:0048156","GO:0048156",5,"GO:0048156",1.58240635465109,22,"tau protein binding","tau protein binding",0.913555555555556,1,0
+"GO:0005516","GO:0005516",6,"GO:0005516",1.52074144161314,195,"calmodulin binding","calmodulin binding",0.900666666666667,1,0

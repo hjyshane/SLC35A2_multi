@@ -1,28 +1,5 @@
 "","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
-"GO:0050807","GO:0050807",1,"GO:0050807",3.23407258607692,309,"regulation of synapse organization","regulation of synapse organization",0.722,0.492666666666667,0
-"GO:0050803","GO:0050803",1,"GO:0050807",2.98886707597637,317,"regulation of synapse structure or activity","regulation of synapse organization",0.870111111111111,0.492333333333333,0.995
-"GO:0099072","GO:0099072",2,"GO:0099072",2.96339418350223,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.90762962962963,1,0
-"GO:0060560","GO:0060560",3,"GO:0060560",2.94236927212512,292,"developmental growth involved in morphogenesis","developmental growth involved in morphogenesis",0.895962962962963,0.402333333333333,0
-"GO:0007409","GO:0007409",4,"GO:0007409",2.91005748676792,501,"axonogenesis","axonogenesis",0.739814814814815,0.444666666666667,0
-"GO:0006605","GO:0006605",5,"GO:0006605",2.57015529534188,303,"protein targeting","protein targeting",0.930074074074074,1,0
-"GO:0048588","GO:0048588",3,"GO:0060560",2.49778966731802,291,"developmental cell growth","developmental growth involved in morphogenesis",0.863555555555556,0.400666666666667,0.825
-"GO:0099003","GO:0099003",7,"GO:0099003",2.21223829883841,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.927481481481481,1,0
-"GO:0022898","GO:0022898",6,"GO:0022898",2.21223829883841,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.826333333333333,0.336666666666667,0
-"GO:0099173","GO:0099173",8,"GO:0099173",2.110648331609,252,"postsynapse organization","postsynapse organization",0.815703703703704,0.5315,0
-"GO:1990138","GO:1990138",3,"GO:0060560",2.02893054518128,211,"neuron projection extension","developmental growth involved in morphogenesis",0.724703703703704,0.353,0.968
-"GO:0007611","GO:0007611",9,"GO:0007611",1.91903138203276,331,"learning or memory","learning or memory",0.933962962962963,0.506,0
-"GO:0032409","GO:0032409",6,"GO:0022898",1.8883375918221,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.899037037037037,0.337666666666667,0.995
-"GO:0106027","GO:0106027",4,"GO:0007409",1.768549949737,118,"neuron projection organization","axonogenesis",0.813925925925926,0.453,0.618
-"GO:0034765","GO:0034765",10,"GO:0034765",1.73888156089465,490,"regulation of monoatomic ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.859592592592593,1,0
-"GO:0006123","GO:0006123",11,"GO:0006123",1.7301950172841,19,"mitochondrial electron transport, cytochrome c to oxygen","mitochondrial electron transport, cytochrome c to oxygen",0.975148148148148,1,0
-"GO:0016358","GO:0016358",4,"GO:0007409",1.68431035334526,327,"dendrite development","axonogenesis",0.757,0.429833333333333,0.762
-"GO:0006397","GO:0006397",12,"GO:0006397",1.65322809678055,496,"mRNA processing","mRNA processing",0.94662962962963,0.5875,0
-"GO:0048167","GO:0048167",1,"GO:0050807",1.58588291628037,393,"regulation of synaptic plasticity","regulation of synapse organization",0.887259259259259,0.648333333333333,0.527
-"GO:0044788","GO:0044788",13,"GO:0044788",1.57422754530416,46,"modulation by host of viral process","modulation by host of viral process",1,1,0
-"GO:0031346","GO:0031346",4,"GO:0007409",1.52789534087471,463,"positive regulation of cell projection organization","axonogenesis",0.771703703703704,0.492666666666667,0.687
-"GO:0097061","GO:0097061",4,"GO:0007409",1.51625730892325,108,"dendritic spine organization","axonogenesis",0.757111111111111,0.456333333333333,0.612
-"GO:0050890","GO:0050890",9,"GO:0007611",1.50785730581621,371,"cognition","learning or memory",0.933703703703704,0.506,0.988
-"GO:0060999","GO:0060999",4,"GO:0007409",1.47448566902682,66,"positive regulation of dendritic spine development","axonogenesis",0.765888888888889,0.4865,0.653
-"GO:0032412","GO:0032412",6,"GO:0022898",1.41432038157918,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.826777777777778,0.337666666666667,0.995
-"GO:0008380","GO:0008380",12,"GO:0006397",1.40409168227145,449,"RNA splicing","mRNA processing",0.946777777777778,0.5875,0.825
-"GO:0099175","GO:0099175",8,"GO:0099173",1.36586991545575,139,"regulation of postsynapse organization","postsynapse organization",0.729,0.5315,0.937
+"GO:0045793","GO:0045793",1,"GO:0045793",2.01272876664193,19,"positive regulation of cell size","positive regulation of cell size",0.9225,1,0
+"GO:0044794","GO:0044794",2,"GO:0044794",1.87645635475442,22,"positive regulation by host of viral process","positive regulation by host of viral process",1,1,0
+"GO:0046184","GO:0046184",3,"GO:0046184",1.64109067113383,28,"aldehyde biosynthetic process","aldehyde biosynthetic process",0.9905,1,0
+"GO:0007409","GO:0007409",4,"GO:0007409",1.33024001149709,501,"axonogenesis","axonogenesis",0.9215,1,0
