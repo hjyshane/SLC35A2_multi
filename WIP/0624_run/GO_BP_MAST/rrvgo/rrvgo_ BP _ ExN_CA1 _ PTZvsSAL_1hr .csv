@@ -1,0 +1,13 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",8.3056778395199,501,"axonogenesis","axonogenesis",0.532,0.348,0
+"GO:0099173","GO:0099173",2,"GO:0099173",5.91855450355816,252,"postsynapse organization","postsynapse organization",0.618166666666667,0.459333333333333,0
+"GO:0010977","GO:0010977",1,"GO:0007409",4.98969310773878,165,"negative regulation of neuron projection development","axonogenesis",0.538,0.378833333333333,0.72
+"GO:0050803","GO:0050803",3,"GO:0050803",4.47035109610933,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.901916666666667,0.5025,0
+"GO:0050807","GO:0050807",3,"GO:0050803",3.86314070749288,309,"regulation of synapse organization","regulation of synapse structure or activity",0.492083333333333,0.5025,0.995
+"GO:0031345","GO:0031345",1,"GO:0007409",3.41209193461133,221,"negative regulation of cell projection organization","axonogenesis",0.57075,0.427666666666667,0.644
+"GO:0007416","GO:0007416",2,"GO:0099173",3.41209193461133,222,"synapse assembly","postsynapse organization",0.547,0.411333333333333,0.818
+"GO:0097485","GO:0097485",1,"GO:0007409",3.19110894556399,252,"neuron projection guidance","axonogenesis",0.54575,0.357833333333333,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",3.19110894556399,252,"axon guidance","axonogenesis",0.54075,0.347333333333333,0.927
+"GO:0034329","GO:0034329",2,"GO:0099173",2.9057398693846,481,"cell junction assembly","postsynapse organization",0.600833333333333,0.416,0.804
+"GO:0016358","GO:0016358",1,"GO:0007409",2.04568248049367,327,"dendrite development","axonogenesis",0.57875,0.422333333333333,0.762
+"GO:0098742","GO:0098742",4,"GO:0098742",1.48703177783723,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.979833333333333,1,0

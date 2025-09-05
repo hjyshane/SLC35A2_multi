@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0045793","GO:0045793",1,"GO:0045793",2.01272876664193,19,"positive regulation of cell size","positive regulation of cell size",0.9225,1,0
+"GO:0044794","GO:0044794",2,"GO:0044794",1.87645635475442,22,"positive regulation by host of viral process","positive regulation by host of viral process",1,1,0
+"GO:0046184","GO:0046184",3,"GO:0046184",1.64109067113383,28,"aldehyde biosynthetic process","aldehyde biosynthetic process",0.9905,1,0
+"GO:0007409","GO:0007409",4,"GO:0007409",1.33024001149709,501,"axonogenesis","axonogenesis",0.9215,1,0

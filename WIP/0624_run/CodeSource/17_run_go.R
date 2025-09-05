@@ -51,11 +51,18 @@ run_go <- function(
                              pattern = "\\.csv", 
                              full.names = TRUE)) {
     
-    # Get cell type and comparison from file name
+    # Extract metadata from filename
     file_name <- basename(sig_file)
-    name_strings <- strsplit(gsub('\\.csv$', "", file_name), "_")[[1]]
-    cell_type <- name_strings[1]
-    comparison <- paste(name_strings[-1], collapse = "_")
+    parts <- strsplit(gsub(".csv", "", file_name), "_")[[1]]
+    
+    if (length(parts) == 4) {
+      cell_type <-paste(parts[1:2], collapse = "_") 
+      comparison <- paste(parts[3:4], collapse = "_")
+    } else if (length(parts) == 3) {
+      cell_type <-paste(parts[1], collapse = "_") 
+      comparison <- paste(parts[-1], collapse = "_")
+    } else {message("check file name")}
+    
   
     # Read files
     sig_deg <- read_csv(sig_file)

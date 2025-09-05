@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",5.73174077276199,501,"axonogenesis","axonogenesis",0.83075,0.6865,0
+"GO:0072384","GO:0072384",2,"GO:0072384",1.70138491959336,88,"organelle transport along microtubule","organelle transport along microtubule",0.90325,1,0
+"GO:0001764","GO:0001764",1,"GO:0007409",1.55964185702895,206,"neuron migration","axonogenesis",0.83175,0.6865,0.627
+"GO:0022898","GO:0022898",3,"GO:0022898",1.39567803822536,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.90225,1,0

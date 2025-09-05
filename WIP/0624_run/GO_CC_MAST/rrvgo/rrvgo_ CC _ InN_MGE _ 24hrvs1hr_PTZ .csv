@@ -1,0 +1,10 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0043209","GO:0043209",1,"GO:0043209",3.87255564566262,208,"myelin sheath","myelin sheath",0.998111111111111,1,0
+"GO:0097470","GO:0097470",2,"GO:0097470",3.00283744824006,29,"ribbon synapse","ribbon synapse",0.877777777777778,1,0
+"GO:0044295","GO:0044295",3,"GO:0044295",2.11218849440807,48,"axonal growth cone","axonal growth cone",0.712333333333333,0.413666666666667,0
+"GO:0150034","GO:0150034",4,"GO:0150034",1.71199890796262,397,"distal axon","distal axon",0.803444444444444,1,0
+"GO:0048786","GO:0048786",5,"GO:0048786",1.70625686778679,121,"presynaptic active zone","presynaptic active zone",0.868888888888889,1,0
+"GO:0030426","GO:0030426",3,"GO:0044295",1.47708384753603,213,"growth cone","axonal growth cone",0.686555555555556,0.374666666666667,0.881
+"GO:0098982","GO:0098982",6,"GO:0098982",1.47595313624785,135,"GABA-ergic synapse","GABA-ergic synapse",0.867111111111111,1,0
+"GO:0030427","GO:0030427",3,"GO:0044295",1.39971839445471,221,"site of polarized growth","axonal growth cone",0.790444444444445,0.375666666666667,0.878
+"GO:0060077","GO:0060077",7,"GO:0060077",1.36060738185484,29,"inhibitory synapse","inhibitory synapse",0.878222222222222,1,0

@@ -1,0 +1,12 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0022890","GO:0022890",1,"GO:0022890",3.62775386472307,538,"inorganic cation transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.571272727272727,0.326285714285714,0
+"GO:0046873","GO:0046873",1,"GO:0022890",3.49453575815869,437,"metal ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.533909090909091,0.267571428571429,0.967
+"GO:0044325","GO:0044325",2,"GO:0044325",2.6929993035185,169,"transmembrane transporter binding","transmembrane transporter binding",0.986272727272727,1,0
+"GO:0008331","GO:0008331",1,"GO:0022890",2.44937546500091,11,"high voltage-gated calcium channel activity","inorganic cation transmembrane transporter activity",0.626181818181818,0.412571428571429,0.659
+"GO:0005261","GO:0005261",1,"GO:0022890",2.30340746311486,322,"monoatomic cation channel activity","inorganic cation transmembrane transporter activity",0.566272727272727,0.318428571428571,0.674
+"GO:0015085","GO:0015085",1,"GO:0022890",1.82831031283104,134,"calcium ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.563909090909091,0.314714285714286,0.839
+"GO:0005521","GO:0005521",3,"GO:0005521",1.61678286897227,18,"lamin binding","lamin binding",0.986272727272727,1,0
+"GO:0005216","GO:0005216",1,"GO:0022890",1.47571348578802,437,"monoatomic ion channel activity","inorganic cation transmembrane transporter activity",0.579181818181818,0.338714285714286,0.721
+"GO:0060589","GO:0060589",4,"GO:0060589",1.47571014576924,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.909636363636364,0.503,0
+"GO:0030695","GO:0030695",4,"GO:0060589",1.47571014576924,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.909636363636364,0.503,0.994
+"GO:0015079","GO:0015079",1,"GO:0022890",1.424406654972,160,"potassium ion transmembrane transporter activity","inorganic cation transmembrane transporter activity",0.574545454545454,0.331428571428571,0.856

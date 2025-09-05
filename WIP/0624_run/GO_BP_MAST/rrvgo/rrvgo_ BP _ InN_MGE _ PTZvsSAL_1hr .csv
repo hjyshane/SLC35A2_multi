@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007026","GO:0007026",1,"GO:0007026",1.470725274404,36,"negative regulation of microtubule depolymerization","negative regulation of microtubule depolymerization",0.5045,0.5045,0
+"GO:0031114","GO:0031114",1,"GO:0007026",1.36210379825091,39,"regulation of microtubule depolymerization","negative regulation of microtubule depolymerization",0.5045,0.5045,0.991

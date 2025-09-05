@@ -1,0 +1,21 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",5.37797267478713,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.9365,0.576666666666667,0
+"GO:0005003","GO:0005003",2,"GO:0005003",4.48476205065908,16,"ephrin receptor activity","ephrin receptor activity",0.93245,0.524,0
+"GO:0098918","GO:0098918",1,"GO:0005200",4.38151739708202,37,"structural constituent of synapse","structural constituent of cytoskeleton",0.9193,0.462,0.645
+"GO:0005521","GO:0005521",3,"GO:0005521",3.88835799057754,18,"lamin binding","lamin binding",0.93505,1,0
+"GO:0031625","GO:0031625",4,"GO:0031625",3.75928832263879,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.8659,0.505,0
+"GO:0035254","GO:0035254",5,"GO:0035254",3.71505768537896,76,"glutamate receptor binding","glutamate receptor binding",0.91075,0.734,0
+"GO:0044325","GO:0044325",6,"GO:0044325",3.62709995752578,169,"transmembrane transporter binding","transmembrane transporter binding",0.924,1,0
+"GO:0005005","GO:0005005",2,"GO:0005003",3.50572668092493,11,"transmembrane-ephrin receptor activity","ephrin receptor activity",0.93345,0.524,0.952
+"GO:0044389","GO:0044389",4,"GO:0031625",3.41134609123214,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.8654,0.505,0.99
+"GO:0050998","GO:0050998",7,"GO:0050998",3.27123155864413,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.90315,1,0
+"GO:0042277","GO:0042277",8,"GO:0042277",2.64359668569037,370,"peptide binding","peptide binding",0.92155,0.574,0
+"GO:0022890","GO:0022890",9,"GO:0022890",2.48504059494205,538,"inorganic cation transmembrane transporter activity","inorganic cation transmembrane transporter activity",1,1,0
+"GO:0001540","GO:0001540",8,"GO:0042277",2.23729708967014,71,"amyloid-beta binding","peptide binding",0.92635,0.574,0.852
+"GO:0050815","GO:0050815",10,"GO:0050815",1.87918142330189,12,"phosphoserine residue binding","phosphoserine residue binding",0.93645,1,0
+"GO:0005525","GO:0005525",11,"GO:0005525",1.86533250312304,363,"GTP binding","GTP binding",0.8717,0.353666666666667,0
+"GO:0099186","GO:0099186",1,"GO:0005200",1.62047725359826,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.9203,0.468666666666667,0.625
+"GO:0001664","GO:0001664",5,"GO:0035254",1.48523601959374,335,"G protein-coupled receptor binding","glutamate receptor binding",0.90005,0.734,0.532
+"GO:0019001","GO:0019001",11,"GO:0005525",1.47820973488089,387,"guanyl nucleotide binding","GTP binding",0.86985,0.346666666666667,0.968
+"GO:0032561","GO:0032561",11,"GO:0005525",1.47820973488089,387,"guanyl ribonucleotide binding","GTP binding",0.8699,0.345666666666667,0.971
+"GO:0008066","GO:0008066",12,"GO:0008066",1.44286200243479,27,"glutamate receptor activity","glutamate receptor activity",0.9611,1,0

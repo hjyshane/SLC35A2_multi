@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005003","GO:0005003",1,"GO:0005003",3.85407584430757,16,"ephrin receptor activity","ephrin receptor activity",0.762,0.524,0
+"GO:0005005","GO:0005005",1,"GO:0005003",2.67183862157989,11,"transmembrane-ephrin receptor activity","ephrin receptor activity",0.762,0.524,0.952
+"GO:0050839","GO:0050839",2,"GO:0050839",2.09540848500102,306,"cell adhesion molecule binding","cell adhesion molecule binding",0.98425,1,0
+"GO:0003727","GO:0003727",3,"GO:0003727",1.57135552624853,101,"single-stranded RNA binding","single-stranded RNA binding",0.98425,1,0

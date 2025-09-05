@@ -1,0 +1,8 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0044325","GO:0044325",1,"GO:0044325",7.19516440073692,169,"transmembrane transporter binding","transmembrane transporter binding",0.904142857142857,1,0
+"GO:0005200","GO:0005200",2,"GO:0005200",3.76942617815681,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.907857142857143,0.6775,0
+"GO:0098918","GO:0098918",2,"GO:0005200",2.70830400369889,37,"structural constituent of synapse","structural constituent of cytoskeleton",0.907857142857143,0.6775,0.645
+"GO:0030215","GO:0030215",3,"GO:0030215",2.20595554104214,22,"semaphorin receptor binding","semaphorin receptor binding",0.831,1,0
+"GO:0045499","GO:0045499",4,"GO:0045499",1.68952526657829,29,"chemorepellent activity","chemorepellent activity",0.831,1,0
+"GO:0097718","GO:0097718",5,"GO:0097718",1.5105119401927,36,"disordered domain specific binding","disordered domain specific binding",0.912857142857143,1,0
+"GO:0001664","GO:0001664",6,"GO:0001664",1.50960397397707,335,"G protein-coupled receptor binding","G protein-coupled receptor binding",0.807285714285714,1,0

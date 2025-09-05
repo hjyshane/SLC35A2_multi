@@ -1,0 +1,9 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0098871","GO:0098871",1,"GO:0098871",2.25574230276825,16,"postsynaptic actin cytoskeleton","postsynaptic actin cytoskeleton",0.699,0.5115,0
+"GO:0099571","GO:0099571",1,"GO:0098871",1.97229474345028,23,"postsynaptic cytoskeleton","postsynaptic actin cytoskeleton",0.694625,0.5115,0.977
+"GO:0098685","GO:0098685",2,"GO:0098685",1.93350226615088,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.856625,1,0
+"GO:0035267","GO:0035267",3,"GO:0035267",1.89532535968853,27,"NuA4 histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.692625,0.344666666666667,0
+"GO:0043189","GO:0043189",3,"GO:0035267",1.89532535968853,27,"H4/H2A histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.69225,0.344,0.998
+"GO:0044305","GO:0044305",4,"GO:0044305",1.69872832056854,32,"calyx of Held","calyx of Held",0.867125,1,0
+"GO:0043209","GO:0043209",5,"GO:0043209",1.54637268550624,208,"myelin sheath","myelin sheath",0.99825,1,0
+"GO:1902562","GO:1902562",3,"GO:0035267",1.49157305431943,41,"H4 histone acetyltransferase complex","NuA4 histone acetyltransferase complex",0.69425,0.354,0.968

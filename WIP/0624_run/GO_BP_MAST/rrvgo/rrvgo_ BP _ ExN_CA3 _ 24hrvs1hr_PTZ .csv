@@ -1,0 +1,36 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0002181","GO:0002181",1,"GO:0002181",17.7089008482642,148,"cytoplasmic translation","cytoplasmic translation",0.854657142857143,0.534,0
+"GO:0140236","GO:0140236",1,"GO:0002181",7.56029559034112,47,"translation at presynapse","cytoplasmic translation",0.846142857142857,0.379,0.612
+"GO:0140242","GO:0140242",1,"GO:0002181",7.44166980930355,48,"translation at postsynapse","cytoplasmic translation",0.846257142857143,0.3795,0.611
+"GO:0140241","GO:0140241",1,"GO:0002181",7.44166980930355,48,"translation at synapse","cytoplasmic translation",0.839942857142857,0.362,0.641
+"GO:0032409","GO:0032409",2,"GO:0032409",4.85209849821233,307,"regulation of transporter activity","regulation of transporter activity",0.919542857142857,0.337666666666667,0
+"GO:0000028","GO:0000028",3,"GO:0000028",4.42429352552843,21,"ribosomal small subunit assembly","ribosomal small subunit assembly",0.844228571428571,0.441,0
+"GO:0022898","GO:0022898",2,"GO:0032409",4.42356561390027,294,"regulation of transmembrane transporter activity","regulation of transporter activity",0.853142857142857,0.336666666666667,0.995
+"GO:0022618","GO:0022618",4,"GO:0022618",4.40173210667837,175,"protein-RNA complex assembly","protein-RNA complex assembly",0.830971428571429,0.5025,0
+"GO:0071826","GO:0071826",4,"GO:0022618",4.10796292781334,183,"protein-RNA complex organization","protein-RNA complex assembly",0.859114285714286,0.5025,0.995
+"GO:0007409","GO:0007409",5,"GO:0007409",3.97573456472951,501,"axonogenesis","axonogenesis",0.823542857142857,0.556333333333333,0
+"GO:0050684","GO:0050684",6,"GO:0050684",3.42755533763958,139,"regulation of mRNA processing","regulation of mRNA processing",0.754542857142857,0.308,0
+"GO:0043484","GO:0043484",7,"GO:0043484",3.36423330642269,187,"regulation of RNA splicing","regulation of RNA splicing",0.754828571428571,0.3102,0
+"GO:0032412","GO:0032412",2,"GO:0032409",3.19975352709083,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transporter activity",0.853542857142857,0.337666666666667,0.992
+"GO:0099003","GO:0099003",8,"GO:0099003",2.99981299504641,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.895714285714286,0.379,0
+"GO:0022613","GO:0022613",3,"GO:0000028",2.8801209984556,440,"ribonucleoprotein complex biogenesis","ribosomal small subunit assembly",0.843628571428571,0.48,0.747
+"GO:0042255","GO:0042255",3,"GO:0000028",2.73439329186756,66,"ribosome assembly","ribosomal small subunit assembly",0.856714285714286,0.419,0.93
+"GO:0099504","GO:0099504",8,"GO:0099003",2.61576245507613,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.896,0.374,0.982
+"GO:0000398","GO:0000398",7,"GO:0043484",2.28138734861704,304,"mRNA splicing, via spliceosome","regulation of RNA splicing",0.746371428571429,0.242,0.852
+"GO:0000377","GO:0000377",7,"GO:0043484",2.28138734861704,304,"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile","regulation of RNA splicing",0.765457142857143,0.242,0.852
+"GO:0000375","GO:0000375",7,"GO:0043484",2.28138734861704,304,"RNA splicing, via transesterification reactions","regulation of RNA splicing",0.765342857142857,0.2416,0.853
+"GO:0006397","GO:0006397",6,"GO:0050684",2.28041092249614,496,"mRNA processing","regulation of mRNA processing",0.762057142857143,0.3595,0.863
+"GO:0050807","GO:0050807",9,"GO:0050807",2.19012155602673,309,"regulation of synapse organization","regulation of synapse organization",0.809542857142857,0.5025,0
+"GO:0060560","GO:0060560",10,"GO:0060560",2.08332977697794,292,"developmental growth involved in morphogenesis","developmental growth involved in morphogenesis",0.933771428571429,0.402333333333333,0
+"GO:1903311","GO:1903311",6,"GO:0050684",2.04049448031557,304,"regulation of mRNA metabolic process","regulation of mRNA processing",0.780314285714286,0.331,0.92
+"GO:0050803","GO:0050803",9,"GO:0050807",2.02778897190991,317,"regulation of synapse structure or activity","regulation of synapse organization",0.944828571428571,0.5025,0.995
+"GO:0099173","GO:0099173",11,"GO:0099173",1.98531252044064,252,"postsynapse organization","postsynapse organization",0.876428571428571,1,0
+"GO:0008380","GO:0008380",7,"GO:0043484",1.96399615348958,449,"RNA splicing","regulation of RNA splicing",0.764,0.2542,0.892
+"GO:1990138","GO:1990138",10,"GO:0060560",1.7758693561036,211,"neuron projection extension","developmental growth involved in morphogenesis",0.809885714285714,0.353,0.968
+"GO:0048024","GO:0048024",6,"GO:0050684",1.77517545918859,114,"regulation of mRNA splicing, via spliceosome","regulation of mRNA processing",0.728342857142857,0.3145,0.985
+"GO:0043270","GO:0043270",12,"GO:0043270",1.64441740791112,277,"positive regulation of monoatomic ion transport","positive regulation of monoatomic ion transport",0.902371428571429,1,0
+"GO:0048588","GO:0048588",10,"GO:0060560",1.51631830092319,291,"developmental cell growth","developmental growth involved in morphogenesis",0.914342857142857,0.400666666666667,0.825
+"GO:0051592","GO:0051592",13,"GO:0051592",1.47379366752264,147,"response to calcium ion","response to calcium ion",1,1,0
+"GO:0031345","GO:0031345",5,"GO:0007409",1.46244711680149,221,"negative regulation of cell projection organization","axonogenesis",0.833314285714286,0.511,0.644
+"GO:0031346","GO:0031346",5,"GO:0007409",1.42887551376792,463,"positive regulation of cell projection organization","axonogenesis",0.819257142857143,0.496666666666667,0.687
+"GO:0036465","GO:0036465",8,"GO:0099003",1.42426482776762,90,"synaptic vesicle recycling","vesicle-mediated transport in synapse",0.903857142857143,0.407666666666667,0.881

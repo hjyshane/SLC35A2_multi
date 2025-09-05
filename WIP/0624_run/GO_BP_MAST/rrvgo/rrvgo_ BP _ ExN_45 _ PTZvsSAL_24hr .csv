@@ -1,0 +1,7 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",2.80435860438243,501,"axonogenesis","axonogenesis",0.643833333333333,0.572,0
+"GO:0021543","GO:0021543",2,"GO:0021543",1.73756105670155,182,"pallium development","pallium development",0.735833333333333,1,0
+"GO:0021954","GO:0021954",1,"GO:0007409",1.64693442536985,98,"central nervous system neuron development","axonogenesis",0.690166666666667,0.604,0.657
+"GO:0001764","GO:0001764",1,"GO:0007409",1.56562918084476,206,"neuron migration","axonogenesis",0.724,0.614,0.627
+"GO:0098742","GO:0098742",3,"GO:0098742",1.54380094277483,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.839333333333333,0.5535,0
+"GO:0099560","GO:0099560",3,"GO:0098742",1.36185016400649,36,"synaptic membrane adhesion","cell-cell adhesion via plasma-membrane adhesion molecules",0.790166666666667,0.5535,0.893

@@ -1,0 +1,16 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003735","GO:0003735",1,"GO:0003735",14.5887535868822,178,"structural constituent of ribosome","structural constituent of ribosome",0.859533333333333,0.47325,0
+"GO:0003729","GO:0003729",2,"GO:0003729",5.40117338843811,386,"mRNA binding","mRNA binding",0.929333333333333,0.6975,0
+"GO:0044389","GO:0044389",3,"GO:0044389",4.40215992964143,358,"ubiquitin-like protein ligase binding","ubiquitin-like protein ligase binding",0.852533333333333,0.505,0
+"GO:0031625","GO:0031625",3,"GO:0044389",4.10168670428039,338,"ubiquitin protein ligase binding","ubiquitin-like protein ligase binding",0.852933333333333,0.505,0.99
+"GO:0098918","GO:0098918",1,"GO:0003735",3.29184203993142,37,"structural constituent of synapse","structural constituent of ribosome",0.845266666666667,0.41975,0.707
+"GO:0044325","GO:0044325",4,"GO:0044325",3.09474398499593,169,"transmembrane transporter binding","transmembrane transporter binding",0.929,1,0
+"GO:0019843","GO:0019843",2,"GO:0003729",2.92196328012285,75,"rRNA binding","mRNA binding",0.9334,0.6975,0.605
+"GO:0005200","GO:0005200",1,"GO:0003735",2.40850931433322,73,"structural constituent of cytoskeleton","structural constituent of ribosome",0.867533333333333,0.50325,0.717
+"GO:0050998","GO:0050998",5,"GO:0050998",2.0454365511221,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.896933333333333,1,0
+"GO:0099186","GO:0099186",1,"GO:0003735",1.74283513476937,27,"structural constituent of postsynapse","structural constituent of ribosome",0.8482,0.43075,0.683
+"GO:0001664","GO:0001664",6,"GO:0001664",1.72550583374661,335,"G protein-coupled receptor binding","G protein-coupled receptor binding",0.8852,0.6325,0
+"GO:0015662","GO:0015662",7,"GO:0015662",1.56468424578018,30,"P-type ion transporter activity","P-type ion transporter activity",0.933666666666667,0.5025,0
+"GO:0035256","GO:0035256",6,"GO:0001664",1.51990037548456,15,"G protein-coupled glutamate receptor binding","G protein-coupled receptor binding",0.9008,0.6325,0.735
+"GO:0001540","GO:0001540",8,"GO:0001540",1.45360985051615,71,"amyloid-beta binding","amyloid-beta binding",0.969733333333333,1,0
+"GO:0140358","GO:0140358",7,"GO:0015662",1.32538029121058,33,"P-type transmembrane transporter activity","P-type ion transporter activity",0.933666666666667,0.5025,0.995

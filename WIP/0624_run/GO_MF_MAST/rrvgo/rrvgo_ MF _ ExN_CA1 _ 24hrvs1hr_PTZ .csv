@@ -1,0 +1,32 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0003729","GO:0003729",1,"GO:0003729",8.34417308136059,386,"mRNA binding","mRNA binding",0.965387096774194,1,0
+"GO:0003735","GO:0003735",2,"GO:0003735",8.30380042045205,178,"structural constituent of ribosome","structural constituent of ribosome",0.890096774193548,0.432166666666667,0
+"GO:0098918","GO:0098918",2,"GO:0003735",7.38224138224818,37,"structural constituent of synapse","structural constituent of ribosome",0.865354838709677,0.304333333333333,0.707
+"GO:0035254","GO:0035254",3,"GO:0035254",5.99070960298177,76,"glutamate receptor binding","glutamate receptor binding",0.878225806451613,0.501333333333333,0
+"GO:0099186","GO:0099186",2,"GO:0003735",5.90499080513788,27,"structural constituent of postsynapse","structural constituent of ribosome",0.864806451612903,0.3015,0.683
+"GO:0060589","GO:0060589",4,"GO:0060589",4.32135226276479,429,"nucleoside-triphosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.896096774193548,0.3558,0
+"GO:0030695","GO:0030695",4,"GO:0060589",4.32135226276479,429,"GTPase regulator activity","nucleoside-triphosphatase regulator activity",0.896096774193548,0.3558,0.994
+"GO:0005516","GO:0005516",5,"GO:0005516",3.93579314761401,195,"calmodulin binding","calmodulin binding",0.909612903225806,1,0
+"GO:0003779","GO:0003779",6,"GO:0003779",3.52359442226432,448,"actin binding","actin binding",0.827548387096774,0.3816,0
+"GO:0044325","GO:0044325",7,"GO:0044325",3.00697123495512,169,"transmembrane transporter binding","transmembrane transporter binding",0.910225806451613,1,0
+"GO:0001664","GO:0001664",3,"GO:0035254",2.76728277497475,335,"G protein-coupled receptor binding","glutamate receptor binding",0.87958064516129,0.652666666666667,0.532
+"GO:0098919","GO:0098919",2,"GO:0003735",2.67677691919586,11,"structural constituent of postsynaptic density","structural constituent of ribosome",0.867774193548387,0.316833333333333,0.646
+"GO:0005200","GO:0005200",2,"GO:0003735",2.66703231389555,73,"structural constituent of cytoskeleton","structural constituent of ribosome",0.897387096774194,0.469833333333333,0.717
+"GO:0008017","GO:0008017",6,"GO:0003779",2.58342947343335,269,"microtubule binding","actin binding",0.834225806451613,0.3984,0.753
+"GO:0051015","GO:0051015",6,"GO:0003779",2.46250804778055,219,"actin filament binding","actin binding",0.838290322580645,0.4148,0.911
+"GO:0015631","GO:0015631",6,"GO:0003779",2.4379886754524,387,"tubulin binding","actin binding",0.828806451612903,0.3814,0.787
+"GO:0019208","GO:0019208",4,"GO:0060589",2.39584622980073,100,"phosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.905774193548387,0.4158,0.66
+"GO:0005085","GO:0005085",4,"GO:0060589",2.376808876475,201,"guanyl-nucleotide exchange factor activity","nucleoside-triphosphatase regulator activity",0.90141935483871,0.3888,0.917
+"GO:0005245","GO:0005245",8,"GO:0005245",2.19802065250877,43,"voltage-gated calcium channel activity","voltage-gated calcium channel activity",0.941870967741935,0.399333333333333,0
+"GO:0098879","GO:0098879",2,"GO:0003735",2.13972659701891,13,"structural constituent of postsynaptic specialization","structural constituent of ribosome",0.866516129032258,0.310333333333333,0.654
+"GO:0051020","GO:0051020",9,"GO:0051020",1.90015340510034,337,"GTPase binding","GTPase binding",0.871451612903226,0.610666666666667,0
+"GO:0019888","GO:0019888",4,"GO:0060589",1.79484897527049,86,"protein phosphatase regulator activity","nucleoside-triphosphatase regulator activity",0.906677419354839,0.4214,0.65
+"GO:0050998","GO:0050998",10,"GO:0050998",1.79006895244357,22,"nitric-oxide synthase binding","nitric-oxide synthase binding",0.893225806451613,1,0
+"GO:0017124","GO:0017124",11,"GO:0017124",1.59681247163599,130,"SH3 domain binding","SH3 domain binding",0.913032258064516,1,0
+"GO:0030276","GO:0030276",12,"GO:0030276",1.55888944670876,70,"clathrin binding","clathrin binding",0.914935483870968,1,0
+"GO:0035255","GO:0035255",3,"GO:0035254",1.55255941643319,50,"ionotropic glutamate receptor binding","glutamate receptor binding",0.881709677419355,0.508666666666667,0.964
+"GO:0031625","GO:0031625",9,"GO:0051020",1.52445748537617,338,"ubiquitin protein ligase binding","GTPase binding",0.858290322580645,0.476,0.582
+"GO:0015085","GO:0015085",8,"GO:0005245",1.50689037530097,134,"calcium ion transmembrane transporter activity","voltage-gated calcium channel activity",0.944870967741935,0.430333333333333,0.904
+"GO:0044389","GO:0044389",9,"GO:0051020",1.50271727021275,358,"ubiquitin-like protein ligase binding","GTPase binding",0.857612903225806,0.474666666666667,0.586
+"GO:0008331","GO:0008331",8,"GO:0005245",1.3290031995298,11,"high voltage-gated calcium channel activity","voltage-gated calcium channel activity",0.945064516129032,0.432333333333333,0.898
+"GO:0019894","GO:0019894",6,"GO:0003779",1.31328440295413,53,"kinesin binding","actin binding",0.860612903225806,0.5042,0.641

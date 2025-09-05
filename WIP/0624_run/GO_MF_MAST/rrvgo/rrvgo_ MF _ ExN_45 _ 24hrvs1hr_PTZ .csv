@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",2.8834257185221,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0050839","GO:0050839",2,"GO:0050839",1.95375522926145,306,"cell adhesion molecule binding","cell adhesion molecule binding",1,1,0

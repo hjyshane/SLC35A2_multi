@@ -1,0 +1,26 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0050807","GO:0050807",1,"GO:0050807",9.76850988001255,309,"regulation of synapse organization","regulation of synapse organization",0.71868,0.5025,0
+"GO:0050803","GO:0050803",1,"GO:0050807",9.52443208053776,317,"regulation of synapse structure or activity","regulation of synapse organization",0.8908,0.5025,0.995
+"GO:0007611","GO:0007611",2,"GO:0007611",4.21360195087521,331,"learning or memory","learning or memory",0.80004,0.3114,0
+"GO:0007409","GO:0007409",3,"GO:0007409",3.80286558727828,501,"axonogenesis","axonogenesis",0.74976,0.4442,0
+"GO:0050890","GO:0050890",2,"GO:0007611",3.5354026741606,371,"cognition","learning or memory",0.82304,0.3144,0.988
+"GO:0060998","GO:0060998",3,"GO:0007409",3.15823038761149,86,"regulation of dendritic spine development","axonogenesis",0.73868,0.3892,0.671
+"GO:0007612","GO:0007612",2,"GO:0007611",2.93195036917009,192,"learning","learning or memory",0.8092,0.34,0.939
+"GO:0016358","GO:0016358",3,"GO:0007409",2.52157030083507,327,"dendrite development","axonogenesis",0.74276,0.3652,0.762
+"GO:0043484","GO:0043484",4,"GO:0043484",2.34132662494722,187,"regulation of RNA splicing","regulation of RNA splicing",0.94536,1,0
+"GO:0099175","GO:0099175",5,"GO:0099175",2.33195118802866,139,"regulation of postsynapse organization","regulation of postsynapse organization",0.72448,0.38425,0
+"GO:0099173","GO:0099173",5,"GO:0099175",2.28465939214822,252,"postsynapse organization","regulation of postsynapse organization",0.78984,0.36225,0.937
+"GO:0050905","GO:0050905",2,"GO:0007611",2.26739934142793,204,"neuromuscular process","learning or memory",0.86964,0.5358,0.599
+"GO:0007626","GO:0007626",6,"GO:0007626",2.24599080647319,273,"locomotory behavior","locomotory behavior",0.8662,1,0
+"GO:0034765","GO:0034765",7,"GO:0034765",2.17063774959355,490,"regulation of monoatomic ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.86504,1,0
+"GO:0032412","GO:0032412",8,"GO:0032412",2.16978582857877,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.82856,0.337666666666667,0
+"GO:0022898","GO:0022898",8,"GO:0032412",2.02173741767993,294,"regulation of transmembrane transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.82812,0.336666666666667,0.995
+"GO:0035249","GO:0035249",9,"GO:0035249",1.96261478216207,129,"synaptic transmission, glutamatergic","synaptic transmission, glutamatergic",0.93448,0.7215,0
+"GO:0099563","GO:0099563",5,"GO:0099175",1.9353031562691,42,"modification of synaptic structure","regulation of postsynapse organization",0.82476,0.491,0.673
+"GO:0032409","GO:0032409",8,"GO:0032412",1.82711083079625,307,"regulation of transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.8884,0.337666666666667,0.992
+"GO:0007613","GO:0007613",2,"GO:0007611",1.80291874060556,164,"memory","learning or memory",0.81276,0.3512,0.917
+"GO:0030705","GO:0030705",10,"GO:0030705",1.68464570582303,214,"cytoskeleton-dependent intracellular transport","cytoskeleton-dependent intracellular transport",0.94244,1,0
+"GO:0060996","GO:0060996",3,"GO:0007409",1.56731888252534,134,"dendritic spine development","axonogenesis",0.75316,0.371,0.702
+"GO:0097061","GO:0097061",5,"GO:0099175",1.44642666510455,108,"dendritic spine organization","regulation of postsynapse organization",0.75584,0.398,0.853
+"GO:0099550","GO:0099550",9,"GO:0035249",1.43446392502577,15,"trans-synaptic signaling, modulating synaptic transmission","synaptic transmission, glutamatergic",0.934,0.7215,0.557
+"GO:0031345","GO:0031345",3,"GO:0007409",1.42676507838347,221,"negative regulation of cell projection organization","axonogenesis",0.77908,0.5316,0.644

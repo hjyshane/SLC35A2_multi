@@ -1,0 +1,13 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007416","GO:0007416",1,"GO:0007416",4.38092915668084,222,"synapse assembly","synapse assembly",0.572166666666667,0.30375,0
+"GO:0050807","GO:0050807",2,"GO:0050807",4.03156171296918,309,"regulation of synapse organization","regulation of synapse organization",0.55575,0.482,0
+"GO:0050803","GO:0050803",2,"GO:0050807",3.91453044979937,317,"regulation of synapse structure or activity","regulation of synapse organization",0.785583333333333,0.481666666666667,0.995
+"GO:0051963","GO:0051963",1,"GO:0007416",3.6354097343846,144,"regulation of synapse assembly","synapse assembly",0.447333333333333,0.29575,0.949
+"GO:0034329","GO:0034329",1,"GO:0007416",3.32762228384715,481,"cell junction assembly","synapse assembly",0.663333333333333,0.3055,0.948
+"GO:1901888","GO:1901888",1,"GO:0007416",3.00170377935,246,"regulation of cell junction assembly","synapse assembly",0.653666666666667,0.3035,0.888
+"GO:0042391","GO:0042391",2,"GO:0050807",2.21106255152647,491,"regulation of membrane potential","regulation of synapse organization",0.8555,0.627,0.559
+"GO:0007626","GO:0007626",3,"GO:0007626",1.69501688234448,273,"locomotory behavior","locomotory behavior",0.921916666666667,1,0
+"GO:0003128","GO:0003128",4,"GO:0003128",1.53043654472524,17,"heart field specification","heart field specification",0.879666666666667,1,0
+"GO:0001764","GO:0001764",5,"GO:0001764",1.522347908709,206,"neuron migration","neuron migration",0.823083333333333,0.6865,0
+"GO:0098742","GO:0098742",6,"GO:0098742",1.49293431938688,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.985833333333333,1,0
+"GO:0007409","GO:0007409",5,"GO:0001764",1.38175113083386,501,"axonogenesis","neuron migration",0.7125,0.6865,0.627

@@ -49,20 +49,23 @@ temp_bp <- list()
 temp_mf <- list()
 temp_cc <- list()
 
-for (i in seq_along(deg_list)) {
+for (i in seq_along(go_bp_list)) {
   temp_bp[[i]] <- read_csv(go_bp_list[i]) %>%
     dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
     mutate(ontology = "BP") %>%
     dplyr::arrange(qvalue, desc(Fold_enrichment)) %>%
     slice_head(n = 10)
-  
+}
+
+for (i in seq_along(go_mf_list)) {
   temp_mf[[i]] <- read_csv(go_mf_list[i]) %>%
     dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
     mutate(ontology = "MF") %>%
     dplyr::arrange(qvalue, desc(Fold_enrichment)) %>%
     slice_head(n = 10)
-  
-  
+}
+
+for (i in seq_along(go_cc_list)) {
   temp_cc[[i]] <- read_csv(go_cc_list[i]) %>%
     dplyr::select(ID, Description, pvalue, qvalue, GeneRatio_numeric, BgRatio_numeric, Fold_enrichment, score, Count, geneID, cell_type, comparison) %>%
     mutate(ontology = "CC") %>%
@@ -125,7 +128,7 @@ for (i in seq_along(temp_bp)) {
            GO_ont = ontology, 
            GO_ct = cell_type,
            GO_cp = comparison) %>%
-    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+    dplyr::select(ID, GO, gene, GO_ont, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
   
   bp_list[[i]] <- bp_gene
 }
@@ -142,7 +145,7 @@ for (i in seq_along(temp_mf)) {
            GO_ont = ontology, 
            GO_ct = cell_type,
            GO_cp = comparison) %>%
-    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+    dplyr::select(ID, GO, gene, GO_ont, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
   
   mf_list[[i]] <- mf_gene
 }
@@ -159,7 +162,7 @@ for (i in seq_along(temp_cc)) {
            GO_ont = ontology, 
            GO_ct = cell_type,
            GO_cp = comparison) %>%
-    dplyr::select(ID, GO, gene, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
+    dplyr::select(ID, GO, gene, GO_ont, GO_p, GO_q, GO_fc, GO_r, GO_ont, GO_ct, GO_cp)
   
   cc_list[[i]] <- cc_gene
 }
@@ -185,7 +188,11 @@ final <- all %>%
          DEG_FDR = neglogFDR,
          DEG_sig = Viz,
          DEG_edit = gene_edit) %>% 
-  relocate(gene, GO, GO_q, DEG_adjp, GO_fc, DEG_log2FC, everything())
+  relocate(gene, GO, GO_ont, GO_q, DEG_adjp, GO_fc, DEG_log2FC, everything())
+
+# Save
+write_csv(final, file = file.path(deg_dir, "combined_DEG_GO_gene_list.csv"))
+
 ```
 
 ```{r clean up environment}
@@ -208,6 +215,11 @@ for (ont in c("BP", "MF", "CC")) {
                                    DEG_adjp >= 0.05 & abs(DEG_log2FC) <= 0.2 ~ "ns",
                                    TRUE ~ "?"))
       
+      if (nrow(temp_df) == 0) {
+        cat("Skipping empty dataset:", ont, ct, cp, "\n")
+        next
+      }
+      
       temp_plot <- ggplot(temp_df, aes(x = DEG_log2FC, y = -log10(DEG_adjp), col = DEG_sig)) + 
         geom_point(alpha = 0.6, size = 1.5) + 
         geom_vline(xintercept = 0.2, alpha = 0.4, color = "black", linetype = "dashed") +
@@ -218,7 +230,7 @@ for (ont in c("BP", "MF", "CC")) {
               plot.background = element_blank(),
               panel.grid.major = element_blank(),
               panel.grid.minor = element_blank(),
-              panel.border = element_blank(),) +
+              panel.border = element_blank()) +
         geom_text_repel(data = subset(temp_df, DEG_sig == "pf_sig"), aes(label = gene), max.overlaps = 20, size = 3, color = "black") +
         facet_wrap(~ GO, ncol = 5) + 
         Seurat::NoLegend()
@@ -229,34 +241,6 @@ for (ont in c("BP", "MF", "CC")) {
     }
   }
 }
-
-
-
-ca1_1hr <- final %>% 
-  filter(GO_ct == "ExcitatoryNeuronsCA1" & GO_cp == "PTZvsSAL_1hr", GO_ont == "BP") %>%
-  mutate(DEG_sig = case_when(DEG_adjp < 0.05 & abs(DEG_log2FC) > 0.2 ~ "pf_sig",
-                             DEG_adjp < 0.05 & abs(DEG_log2FC) <= 0.2 ~ "p_only",
-                             DEG_adjp >= 0.05 & abs(DEG_log2FC) > 0.2 ~ "fc_only",
-                             DEG_adjp >= 0.05 & abs(DEG_log2FC) <= 0.2 ~ "ns",
-                             TRUE ~ "?"))
-
-volcPlot <- ggplot(ca1_1hr, aes(x = DEG_log2FC, y = -log10(DEG_adjp), col = DEG_sig)) + 
-  geom_point(alpha = 0.6, size = 1.5) + 
-  geom_vline(xintercept = 0.2, alpha = 0.4, color = "black", linetype = "dashed") +
-  geom_vline(xintercept = -0.2, alpha = 0.4, color = "black", linetype = "dashed") +
-  geom_hline(yintercept = 1.31, alpha = 0.4, color = "black", linetype = "dashed") +
-  theme_minimal() + 
-  theme(axis.line = element_line(color='black'),
-        plot.background = element_blank(),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.border = element_blank(),) +
-  geom_text_repel(data = subset(ca1_1hr, DEG_sig == "pf_sig"), aes(label = gene), max.overlaps = 20, size = 3, color = "black") +
-  facet_wrap(~ GO, ncol = 5) + 
-  Seurat::NoLegend()
-
-volcPlot
-
 ```
 
 

@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005684","GO:0005684",1,"GO:0005684",1.59522726668597,112,"U2-type spliceosomal complex","U2-type spliceosomal complex",0.999,1,0
+"GO:0033268","GO:0033268",2,"GO:0033268",1.44628065919343,20,"node of Ranvier","node of Ranvier",0.999,1,0

@@ -1,0 +1,5 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0008046","GO:0008046",1,"GO:0008046",2.60553061941499,11,"axon guidance receptor activity","axon guidance receptor activity",1,1,0
+"GO:0005216","GO:0005216",2,"GO:0005216",1.56723329715666,437,"monoatomic ion channel activity","monoatomic ion channel activity",0.55725,0.409666666666667,0
+"GO:0005261","GO:0005261",2,"GO:0005216",1.55267964288885,322,"monoatomic cation channel activity","monoatomic ion channel activity",0.547,0.396,0.917
+"GO:0046873","GO:0046873",2,"GO:0005216",1.35054321895956,437,"metal ion transmembrane transporter activity","monoatomic ion channel activity",0.56275,0.417,0.854

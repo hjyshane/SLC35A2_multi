@@ -1,0 +1,8 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0071012","GO:0071012",1,"GO:0071012",2.17912441570953,23,"catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.375,0.375,0
+"GO:0071006","GO:0071006",1,"GO:0071012",2.17912441570953,23,"U2-type catalytic step 1 spliceosome","catalytic step 1 spliceosome",0.308857142857143,0.308857142857143,1
+"GO:0071007","GO:0071007",1,"GO:0071012",1.81594651329671,47,"U2-type catalytic step 2 spliceosome","catalytic step 1 spliceosome",0.314428571428571,0.314428571428571,0.647
+"GO:0071005","GO:0071005",1,"GO:0071012",1.57706442438152,60,"U2-type precatalytic spliceosome","catalytic step 1 spliceosome",0.292,0.292,0.654
+"GO:0071011","GO:0071011",1,"GO:0071012",1.56067400819338,62,"precatalytic spliceosome","catalytic step 1 spliceosome",0.351428571428571,0.351428571428571,0.665
+"GO:0071013","GO:0071013",1,"GO:0071012",1.33402637569524,110,"catalytic step 2 spliceosome","catalytic step 1 spliceosome",0.335142857142857,0.335142857142857,0.707
+"GO:0005684","GO:0005684",1,"GO:0071012",1.3292799406708,112,"U2-type spliceosomal complex","catalytic step 1 spliceosome",0.289142857142857,0.289142857142857,0.702

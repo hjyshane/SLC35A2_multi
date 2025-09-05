@@ -1,0 +1,11 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",3.67588351770823,501,"axonogenesis","axonogenesis",0.8094,0.6865,0
+"GO:1900242","GO:1900242",2,"GO:1900242",3.29804403302473,28,"regulation of synaptic vesicle endocytosis","regulation of synaptic vesicle endocytosis",0.5011,0.2508,0
+"GO:1903421","GO:1903421",2,"GO:1900242",2.92462991772435,37,"regulation of synaptic vesicle recycling","regulation of synaptic vesicle endocytosis",0.5713,0.2908,0.987
+"GO:0001764","GO:0001764",1,"GO:0007409",2.36733629677778,206,"neuron migration","axonogenesis",0.921,0.6865,0.627
+"GO:0048488","GO:0048488",2,"GO:1900242",1.99261071175757,78,"synaptic vesicle endocytosis","regulation of synaptic vesicle endocytosis",0.5397,0.2362,0.925
+"GO:0140238","GO:0140238",2,"GO:1900242",1.94138237996943,81,"presynaptic endocytosis","regulation of synaptic vesicle endocytosis",0.579,0.3152,0.923
+"GO:0097090","GO:0097090",3,"GO:0097090",1.86490167053019,12,"presynaptic membrane organization","presynaptic membrane organization",0.8304,0.642666666666667,0
+"GO:0036465","GO:0036465",2,"GO:1900242",1.79900907164926,90,"synaptic vesicle recycling","regulation of synaptic vesicle endocytosis",0.5607,0.2798,0.911
+"GO:0097688","GO:0097688",3,"GO:0097090",1.64676463509786,14,"glutamate receptor clustering","presynaptic membrane organization",0.6392,0.488,0.536
+"GO:0097113","GO:0097113",3,"GO:0097090",1.64676463509786,14,"AMPA glutamate receptor clustering","presynaptic membrane organization",0.6392,0.488,0.536

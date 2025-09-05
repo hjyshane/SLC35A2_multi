@@ -1,0 +1,10 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",9.24265392486297,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0005525","GO:0005525",2,"GO:0005525",6.20496785995558,363,"GTP binding","GTP binding",0.755666666666667,0.353666666666667,0
+"GO:0019001","GO:0019001",2,"GO:0005525",5.8087725215226,387,"guanyl nucleotide binding","GTP binding",0.752555555555556,0.346666666666667,0.968
+"GO:0032561","GO:0032561",2,"GO:0005525",5.8087725215226,387,"guanyl ribonucleotide binding","GTP binding",0.752444444444444,0.345666666666667,0.971
+"GO:0031625","GO:0031625",3,"GO:0031625",5.29210163891017,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.842222222222222,0.505,0
+"GO:0044389","GO:0044389",3,"GO:0031625",5.03221779277844,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.841777777777778,0.505,0.99
+"GO:0003924","GO:0003924",4,"GO:0003924",3.28784619425967,305,"GTPase activity","GTPase activity",1,1,0
+"GO:0050815","GO:0050815",5,"GO:0050815",2.07865667035546,12,"phosphoserine residue binding","phosphoserine residue binding",0.942222222222222,1,0
+"GO:0042277","GO:0042277",6,"GO:0042277",1.35736594608216,370,"peptide binding","peptide binding",0.954888888888889,1,0

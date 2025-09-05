@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",4.96159593315427,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",0.576666666666667,0.576666666666667,0
+"GO:0099186","GO:0099186",1,"GO:0005200",2.87252898383552,27,"structural constituent of postsynapse","structural constituent of cytoskeleton",0.468666666666667,0.468666666666667,0.625
+"GO:0098918","GO:0098918",1,"GO:0005200",2.40694605723835,37,"structural constituent of synapse","structural constituent of cytoskeleton",0.462,0.462,0.645

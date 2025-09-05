@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0050807","GO:0050807",1,"GO:0050807",2.47824866853283,309,"regulation of synapse organization","regulation of synapse organization",0.5025,0.5025,0
+"GO:0050803","GO:0050803",1,"GO:0050807",2.4221621718785,317,"regulation of synapse structure or activity","regulation of synapse organization",0.5025,0.5025,0.995

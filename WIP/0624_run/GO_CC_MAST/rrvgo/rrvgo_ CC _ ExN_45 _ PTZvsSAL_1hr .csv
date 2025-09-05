@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0097470","GO:0097470",1,"GO:0097470",2.37093345079912,29,"ribbon synapse","ribbon synapse",0.869333333333333,1,0
+"GO:0042734","GO:0042734",2,"GO:0042734",1.74811295063055,238,"presynaptic membrane","presynaptic membrane",0.869333333333333,1,0
+"GO:0097441","GO:0097441",3,"GO:0097441",1.58902636628692,12,"basal dendrite","basal dendrite",0.998666666666667,1,0

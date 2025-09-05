@@ -1,0 +1,3 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0099072","GO:0099072",1,"GO:0099072",1.92735767059579,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",1,1,0
+"GO:0035418","GO:0035418",2,"GO:0035418",1.3727978144554,100,"protein localization to synapse","protein localization to synapse",1,1,0

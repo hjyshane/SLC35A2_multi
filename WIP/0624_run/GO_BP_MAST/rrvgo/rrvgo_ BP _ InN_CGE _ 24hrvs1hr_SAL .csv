@@ -1,0 +1,15 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",4.46233636552245,501,"axonogenesis","axonogenesis",0.779857142857143,0.572,0
+"GO:0032414","GO:0032414",2,"GO:0032414",2.86916306304947,129,"positive regulation of ion transmembrane transporter activity","positive regulation of ion transmembrane transporter activity",0.513357142857143,0.29375,0
+"GO:0032411","GO:0032411",2,"GO:0032414",2.76072640478682,136,"positive regulation of transporter activity","positive regulation of ion transmembrane transporter activity",0.5755,0.2935,0.996
+"GO:0022898","GO:0022898",2,"GO:0032414",2.38315331973657,294,"regulation of transmembrane transporter activity","positive regulation of ion transmembrane transporter activity",0.568857142857143,0.29375,0.916
+"GO:0032409","GO:0032409",2,"GO:0032414",2.28034779748239,307,"regulation of transporter activity","positive regulation of ion transmembrane transporter activity",0.756357142857143,0.294,0.913
+"GO:0034767","GO:0034767",3,"GO:0034767",1.98047351669822,209,"positive regulation of monoatomic ion transmembrane transport","positive regulation of monoatomic ion transmembrane transport",0.592214285714286,0.3835,0
+"GO:0021954","GO:0021954",1,"GO:0007409",1.84474242197636,98,"central nervous system neuron development","axonogenesis",0.903571428571429,0.604,0.657
+"GO:0001764","GO:0001764",1,"GO:0007409",1.81933706346662,206,"neuron migration","axonogenesis",0.905,0.614,0.627
+"GO:0010592","GO:0010592",4,"GO:0010592",1.74397769698527,30,"positive regulation of lamellipodium assembly","positive regulation of lamellipodium assembly",0.713071428571429,0.345333333333333,0
+"GO:1903421","GO:1903421",3,"GO:0034767",1.46544226707344,37,"regulation of synaptic vesicle recycling","positive regulation of monoatomic ion transmembrane transport",0.752428571428571,0.60775,0.516
+"GO:1902745","GO:1902745",4,"GO:0010592",1.46544226707344,37,"positive regulation of lamellipodium organization","positive regulation of lamellipodium assembly",0.712214285714286,0.352,0.986
+"GO:0010591","GO:0010591",4,"GO:0010592",1.395924354306,41,"regulation of lamellipodium assembly","positive regulation of lamellipodium assembly",0.765642857142857,0.354666666666667,0.978
+"GO:0043270","GO:0043270",3,"GO:0034767",1.38441268752053,277,"positive regulation of monoatomic ion transport","positive regulation of monoatomic ion transmembrane transport",0.632071428571429,0.438,0.973
+"GO:0034764","GO:0034764",3,"GO:0034767",1.35799553005814,282,"positive regulation of transmembrane transport","positive regulation of monoatomic ion transmembrane transport",0.605857142857143,0.43775,0.977

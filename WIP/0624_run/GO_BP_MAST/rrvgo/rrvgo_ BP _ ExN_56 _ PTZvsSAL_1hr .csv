@@ -1,0 +1,33 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",12.2087608347375,501,"axonogenesis","axonogenesis",0.70121875,0.328,0
+"GO:0097485","GO:0097485",1,"GO:0007409",7.81039879329992,252,"neuron projection guidance","axonogenesis",0.7155,0.349,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",7.81039879329992,252,"axon guidance","axonogenesis",0.71196875,0.328,0.927
+"GO:0050803","GO:0050803",2,"GO:0050803",6.69051618041866,317,"regulation of synapse structure or activity","regulation of synapse structure or activity",0.82525,0.47875,0
+"GO:0050807","GO:0050807",2,"GO:0050803",5.90341096441448,309,"regulation of synapse organization","regulation of synapse structure or activity",0.6915,0.47925,0.995
+"GO:0046928","GO:0046928",3,"GO:0046928",5.17014710475711,106,"regulation of neurotransmitter secretion","regulation of neurotransmitter secretion",0.69584375,0.28925,0
+"GO:0099173","GO:0099173",4,"GO:0099173",5.07579705546965,252,"postsynapse organization","postsynapse organization",0.84846875,0.419666666666667,0
+"GO:0001764","GO:0001764",5,"GO:0001764",4.47799045885236,206,"neuron migration","neuron migration",0.81584375,1,0
+"GO:0051588","GO:0051588",3,"GO:0046928",4.43229713972707,126,"regulation of neurotransmitter transport","regulation of neurotransmitter secretion",0.80584375,0.289,0.987
+"GO:0099643","GO:0099643",6,"GO:0099643",4.10724887099019,174,"signal release from synapse","signal release from synapse",0.80021875,0.344,0
+"GO:0007269","GO:0007269",6,"GO:0099643",4.10724887099019,174,"neurotransmitter secretion","signal release from synapse",0.6849375,0.344,0.998
+"GO:0031345","GO:0031345",1,"GO:0007409",3.92706015340476,221,"negative regulation of cell projection organization","axonogenesis",0.79609375,0.4,0.644
+"GO:0010977","GO:0010977",1,"GO:0007409",3.21195759316914,165,"negative regulation of neuron projection development","axonogenesis",0.6903125,0.356666666666667,0.72
+"GO:0001505","GO:0001505",2,"GO:0050803",3.06397357211639,220,"regulation of neurotransmitter levels","regulation of synapse structure or activity",0.79925,0.5965,0.53
+"GO:0006836","GO:0006836",3,"GO:0046928",2.90156793215424,230,"neurotransmitter transport","regulation of neurotransmitter secretion",0.83221875,0.33625,0.892
+"GO:0021543","GO:0021543",7,"GO:0021543",2.85195831130637,182,"pallium development","pallium development",0.799,0.2965,0
+"GO:0060560","GO:0060560",8,"GO:0060560",2.76364822307434,292,"developmental growth involved in morphogenesis","developmental growth involved in morphogenesis",0.89021875,1,0
+"GO:0042391","GO:0042391",2,"GO:0050803",2.5750422019157,491,"regulation of membrane potential","regulation of synapse structure or activity",0.84721875,0.5815,0.56
+"GO:0007215","GO:0007215",9,"GO:0007215",2.54089146588831,49,"glutamate receptor signaling pathway","glutamate receptor signaling pathway",0.91453125,1,0
+"GO:0050890","GO:0050890",10,"GO:0050890",2.50760187844915,371,"cognition","cognition",0.87740625,0.368333333333333,0
+"GO:0021987","GO:0021987",7,"GO:0021543",2.29256631233416,120,"cerebral cortex development","pallium development",0.805625,0.3145,0.962
+"GO:0007613","GO:0007613",10,"GO:0050890",2.27049313433411,164,"memory","cognition",0.8851875,0.392,0.907
+"GO:0021537","GO:0021537",7,"GO:0021543",2.13417473260163,281,"telencephalon development","pallium development",0.79390625,0.29675,0.954
+"GO:2000300","GO:2000300",3,"GO:0046928",2.09337227568996,59,"regulation of synaptic vesicle exocytosis","regulation of neurotransmitter secretion",0.704625,0.3065,0.964
+"GO:0030900","GO:0030900",7,"GO:0021543",2.01842440702279,425,"forebrain development","pallium development",0.79109375,0.32475,0.898
+"GO:0050770","GO:0050770",1,"GO:0007409",1.78748737998533,186,"regulation of axonogenesis","axonogenesis",0.6755625,0.324333333333333,0.882
+"GO:0099175","GO:0099175",4,"GO:0099173",1.75813610143033,139,"regulation of postsynapse organization","postsynapse organization",0.70784375,0.436666666666667,0.937
+"GO:0006816","GO:0006816",11,"GO:0006816",1.62933635643107,469,"calcium ion transport","calcium ion transport",0.91571875,1,0
+"GO:0016079","GO:0016079",6,"GO:0099643",1.44528071476819,115,"synaptic vesicle exocytosis","signal release from synapse",0.6910625,0.353333333333333,0.97
+"GO:0007611","GO:0007611",10,"GO:0050890",1.43851465837569,331,"learning or memory","cognition",0.8776875,0.365,0.988
+"GO:0034329","GO:0034329",4,"GO:0099173",1.43318971476348,481,"cell junction assembly","postsynapse organization",0.851625,0.481,0.804
+"GO:0071526","GO:0071526",12,"GO:0071526",1.43102999142962,50,"semaphorin-plexin signaling pathway","semaphorin-plexin signaling pathway",0.91353125,1,0

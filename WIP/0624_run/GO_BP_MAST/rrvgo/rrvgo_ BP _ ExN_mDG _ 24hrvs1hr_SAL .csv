@@ -1,0 +1,81 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",10.9002404607657,501,"axonogenesis","axonogenesis",0.7002375,0.314454545454545,0
+"GO:0099173","GO:0099173",2,"GO:0099173",7.90604725006815,252,"postsynapse organization","postsynapse organization",0.8753125,0.3765,0
+"GO:0050807","GO:0050807",3,"GO:0050807",6.64373900633802,309,"regulation of synapse organization","regulation of synapse organization",0.79065,0.5025,0
+"GO:0097485","GO:0097485",1,"GO:0007409",6.52875914694647,252,"neuron projection guidance","axonogenesis",0.7111,0.346363636363636,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",6.52875914694647,252,"axon guidance","axonogenesis",0.7089875,0.334,0.927
+"GO:0050803","GO:0050803",3,"GO:0050807",6.46444820390937,317,"regulation of synapse structure or activity","regulation of synapse organization",0.90625,0.5025,0.995
+"GO:0007626","GO:0007626",4,"GO:0007626",5.8073054640092,273,"locomotory behavior","locomotory behavior",0.8459375,0.36925,0
+"GO:0022898","GO:0022898",5,"GO:0022898",5.52593905592935,294,"regulation of transmembrane transporter activity","regulation of transmembrane transporter activity",0.8677875,0.336666666666667,0
+"GO:0001764","GO:0001764",6,"GO:0001764",5.32668240827625,206,"neuron migration","neuron migration",0.810225,1,0
+"GO:0032409","GO:0032409",5,"GO:0022898",5.28075838687402,307,"regulation of transporter activity","regulation of transmembrane transporter activity",0.9399375,0.337666666666667,0.995
+"GO:0032412","GO:0032412",5,"GO:0022898",4.74662877886256,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of transmembrane transporter activity",0.8681375,0.337666666666667,0.995
+"GO:0031345","GO:0031345",1,"GO:0007409",4.72446875902702,221,"negative regulation of cell projection organization","axonogenesis",0.8008625,0.390727272727273,0.644
+"GO:0007611","GO:0007611",7,"GO:0007611",4.57085643878759,331,"learning or memory","learning or memory",0.7702,0.2935,0
+"GO:0007612","GO:0007612",7,"GO:0007611",4.50886786293946,192,"learning","learning or memory",0.7795125,0.2935,0.939
+"GO:0006941","GO:0006941",8,"GO:0006941",4.24838872128049,178,"striated muscle contraction","striated muscle contraction",0.805375,0.224666666666667,0
+"GO:0055117","GO:0055117",8,"GO:0006941",4.0883820478074,72,"regulation of cardiac muscle contraction","striated muscle contraction",0.757825,0.228666666666667,0.914
+"GO:0050890","GO:0050890",7,"GO:0007611",3.94976632096197,371,"cognition","learning or memory",0.8025125,0.2985,0.988
+"GO:0008038","GO:0008038",9,"GO:0008038",3.91699112730048,47,"neuron recognition","neuron recognition",0.8077125,0.5445,0
+"GO:0008542","GO:0008542",10,"GO:0008542",3.73812112553909,75,"visual learning","visual learning",0.7631625,0.378666666666667,0
+"GO:0008344","GO:0008344",4,"GO:0007626",3.70000592607488,112,"adult locomotory behavior","locomotory behavior",0.8520375,0.32375,0.928
+"GO:0007632","GO:0007632",10,"GO:0008542",3.59929436921181,81,"visual behavior","visual learning",0.8323,0.377333333333333,0.995
+"GO:0030534","GO:0030534",4,"GO:0007626",3.55102820999819,191,"adult behavior","locomotory behavior",0.8517625,0.4235,0.718
+"GO:0016358","GO:0016358",1,"GO:0007409",3.5400019988603,327,"dendrite development","axonogenesis",0.7313,0.373454545454545,0.762
+"GO:0090659","GO:0090659",4,"GO:0007626",3.47649281083466,53,"walking behavior","locomotory behavior",0.8627625,0.417,0.877
+"GO:1904062","GO:1904062",11,"GO:1904062",3.47311974574804,367,"regulation of monoatomic cation transmembrane transport","regulation of monoatomic cation transmembrane transport",0.8687625,0.278,0
+"GO:0006942","GO:0006942",8,"GO:0006941",3.46643875420929,90,"regulation of striated muscle contraction","striated muscle contraction",0.7684125,0.223666666666667,0.934
+"GO:0048813","GO:0048813",1,"GO:0007409",3.38280020677259,192,"dendrite morphogenesis","axonogenesis",0.7303125,0.363727272727273,0.83
+"GO:0106027","GO:0106027",1,"GO:0007409",3.3179721663807,118,"neuron projection organization","axonogenesis",0.86255,0.44,0.618
+"GO:0008306","GO:0008306",7,"GO:0007611",3.2209344854637,123,"associative learning","learning or memory",0.786925,0.3135,0.899
+"GO:0060048","GO:0060048",8,"GO:0006941",3.18920906712116,134,"cardiac muscle contraction","striated muscle contraction",0.786725,0.232166666666667,0.973
+"GO:0042391","GO:0042391",12,"GO:0042391",3.11332646094544,491,"regulation of membrane potential","regulation of membrane potential",0.906,0.5955,0
+"GO:0021954","GO:0021954",13,"GO:0021954",3.09928638983849,98,"central nervous system neuron development","central nervous system neuron development",0.7996125,0.445,0
+"GO:0060047","GO:0060047",14,"GO:0060047",3.04548868933938,239,"heart contraction","heart contraction",0.7959625,0.2576,0
+"GO:0048167","GO:0048167",15,"GO:0048167",3.03385353170366,393,"regulation of synaptic plasticity","regulation of synaptic plasticity",0.8931625,0.66,0
+"GO:0008016","GO:0008016",14,"GO:0060047",2.90524690692897,197,"regulation of heart contraction","heart contraction",0.7513875,0.233,0.973
+"GO:0003015","GO:0003015",14,"GO:0060047",2.79584864968166,252,"heart process","heart contraction",0.7957,0.2598,0.993
+"GO:0034765","GO:0034765",11,"GO:1904062",2.68757456934473,490,"regulation of monoatomic ion transmembrane transport","regulation of monoatomic cation transmembrane transport",0.8680375,0.285714285714286,0.973
+"GO:0034329","GO:0034329",2,"GO:0099173",2.67492891216583,481,"cell junction assembly","postsynapse organization",0.8748,0.37825,0.804
+"GO:0050771","GO:0050771",16,"GO:0050771",2.67454448230767,71,"negative regulation of axonogenesis","negative regulation of axonogenesis",0.675075,0.5335,0
+"GO:0071526","GO:0071526",17,"GO:0071526",2.64669121047648,50,"semaphorin-plexin signaling pathway","semaphorin-plexin signaling pathway",0.92165,1,0
+"GO:0021953","GO:0021953",13,"GO:0021954",2.62673893232797,212,"central nervous system neuron differentiation","central nervous system neuron development",0.7958875,0.421,0.93
+"GO:0099175","GO:0099175",2,"GO:0099173",2.61172196766267,139,"regulation of postsynapse organization","postsynapse organization",0.801525,0.4005,0.937
+"GO:0030900","GO:0030900",13,"GO:0021954",2.5892976281149,425,"forebrain development","central nervous system neuron development",0.81465,0.42925,0.687
+"GO:0050770","GO:0050770",1,"GO:0007409",2.56047920335273,186,"regulation of axonogenesis","axonogenesis",0.6889625,0.326727272727273,0.882
+"GO:0097061","GO:0097061",1,"GO:0007409",2.50817874950604,108,"dendritic spine organization","axonogenesis",0.834425,0.444272727272727,0.612
+"GO:1903522","GO:1903522",14,"GO:0060047",2.50579419471406,268,"regulation of blood circulation","heart contraction",0.7530875,0.2834,0.856
+"GO:0048843","GO:0048843",18,"GO:0048843",2.48830212833595,27,"negative regulation of axon extension involved in axon guidance","negative regulation of axon extension involved in axon guidance",0.609475,0.243166666666667,0
+"GO:0007215","GO:0007215",19,"GO:0007215",2.41717504556905,49,"glutamate receptor signaling pathway","glutamate receptor signaling pathway",0.915575,1,0
+"GO:0021761","GO:0021761",13,"GO:0021954",2.38467831587205,120,"limbic system development","central nervous system neuron development",0.83705,0.47475,0.603
+"GO:0006936","GO:0006936",8,"GO:0006941",2.34780079329552,324,"muscle contraction","striated muscle contraction",0.8,0.243333333333333,0.946
+"GO:0006937","GO:0006937",8,"GO:0006941",2.30911705205818,167,"regulation of muscle contraction","striated muscle contraction",0.761025,0.240166666666667,0.885
+"GO:0043954","GO:0043954",20,"GO:0043954",2.2722356534215,86,"cellular component maintenance","cellular component maintenance",0.915975,1,0
+"GO:0050922","GO:0050922",21,"GO:0050922",2.20795875971444,58,"negative regulation of chemotaxis","negative regulation of chemotaxis",0.8950625,0.383,0
+"GO:0006935","GO:0006935",21,"GO:0050922",2.1507988210052,462,"chemotaxis","negative regulation of chemotaxis",0.932475,0.32525,0.794
+"GO:0036376","GO:0036376",11,"GO:1904062",2.1371414748055,15,"sodium ion export across plasma membrane","regulation of monoatomic cation transmembrane transport",0.9322625,0.469,0.638
+"GO:0042330","GO:0042330",21,"GO:0050922",2.12411463528845,464,"taxis","negative regulation of chemotaxis",0.932475,0.32525,0.794
+"GO:1990806","GO:1990806",22,"GO:1990806",2.08920504615673,32,"ligand-gated ion channel signaling pathway","ligand-gated ion channel signaling pathway",0.92085,0.5165,0
+"GO:0010977","GO:0010977",1,"GO:0007409",2.0773734488139,165,"negative regulation of neuron projection development","axonogenesis",0.6993625,0.356090909090909,0.72
+"GO:0048841","GO:0048841",18,"GO:0048843",2.01802391953869,33,"regulation of axon extension involved in axon guidance","negative regulation of axon extension involved in axon guidance",0.6848,0.230166666666667,0.98
+"GO:0070588","GO:0070588",11,"GO:1904062",1.98866589696974,354,"calcium ion transmembrane transport","regulation of monoatomic cation transmembrane transport",0.9116625,0.299,0.818
+"GO:0008037","GO:0008037",9,"GO:0008038",1.91152028182531,160,"cell recognition","neuron recognition",0.97735,0.5445,0.911
+"GO:0051961","GO:0051961",16,"GO:0050771",1.86173073892664,183,"negative regulation of nervous system development","negative regulation of axonogenesis",0.7733875,0.5335,0.933
+"GO:0031346","GO:0031346",1,"GO:0007409",1.84801417049656,463,"positive regulation of cell projection organization","axonogenesis",0.8017,0.379272727272727,0.687
+"GO:0097553","GO:0097553",11,"GO:1904062",1.82036223408496,201,"calcium ion transmembrane import into cytosol","regulation of monoatomic cation transmembrane transport",0.91585,0.330285714285714,0.771
+"GO:0048588","GO:0048588",18,"GO:0048843",1.81510755735829,291,"developmental cell growth","negative regulation of axon extension involved in axon guidance",0.8585,0.299666666666667,0.821
+"GO:0002027","GO:0002027",14,"GO:0060047",1.79559566867262,112,"regulation of heart rate","heart contraction",0.7389625,0.2826,0.89
+"GO:0050905","GO:0050905",23,"GO:0050905",1.77954782928574,204,"neuromuscular process","neuromuscular process",0.8239875,0.5605,0
+"GO:0060560","GO:0060560",18,"GO:0048843",1.76954728421282,292,"developmental growth involved in morphogenesis","negative regulation of axon extension involved in axon guidance",0.883625,0.303,0.816
+"GO:0001964","GO:0001964",23,"GO:0050905",1.75611641861286,38,"startle response","neuromuscular process",0.8098875,0.5605,0.879
+"GO:1902284","GO:1902284",18,"GO:0048843",1.75611641861286,37,"neuron projection extension involved in neuron projection guidance","negative regulation of axon extension involved in axon guidance",0.730375,0.224166666666667,0.962
+"GO:0048846","GO:0048846",18,"GO:0048843",1.75611641861286,37,"axon extension involved in axon guidance","negative regulation of axon extension involved in axon guidance",0.728075,0.224166666666667,0.962
+"GO:1903169","GO:1903169",11,"GO:1904062",1.66030165350807,203,"regulation of calcium ion transmembrane transport","regulation of monoatomic cation transmembrane transport",0.8708125,0.257428571428571,0.937
+"GO:1901888","GO:1901888",2,"GO:0099173",1.64690315579262,246,"regulation of cell junction assembly","postsynapse organization",0.833725,0.40225,0.753
+"GO:0098900","GO:0098900",12,"GO:0042391",1.63425841929527,71,"regulation of action potential","regulation of membrane potential",0.9173,0.5955,0.809
+"GO:0035235","GO:0035235",22,"GO:1990806",1.56180445786131,19,"ionotropic glutamate receptor signaling pathway","ligand-gated ion channel signaling pathway",0.911425,0.5165,0.967
+"GO:2000463","GO:2000463",15,"GO:0048167",1.52462878729597,41,"positive regulation of excitatory postsynaptic potential","regulation of synaptic plasticity",0.727025,0.66,0.68
+"GO:0010959","GO:0010959",11,"GO:1904062",1.52273933126827,461,"regulation of metal ion transport","regulation of monoatomic cation transmembrane transport",0.8863125,0.305714285714286,0.917
+"GO:0098742","GO:0098742",24,"GO:0098742",1.43515074950104,211,"cell-cell adhesion via plasma-membrane adhesion molecules","cell-cell adhesion via plasma-membrane adhesion molecules",0.9880375,1,0
+"GO:0009416","GO:0009416",10,"GO:0008542",1.37152448534525,329,"response to light stimulus","visual learning",0.9532125,0.419333333333333,0.869
+"GO:0050920","GO:0050920",21,"GO:0050922",1.31130845255673,243,"regulation of chemotaxis","negative regulation of chemotaxis",0.897425,0.325,0.88

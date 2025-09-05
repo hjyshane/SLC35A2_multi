@@ -1,0 +1,86 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0007409","GO:0007409",1,"GO:0007409",13.4927612300382,501,"axonogenesis","axonogenesis",0.731223529411765,0.311,0
+"GO:0048588","GO:0048588",2,"GO:0048588",7.92750574203443,291,"developmental cell growth","developmental cell growth",0.802129411764706,0.227333333333333,0
+"GO:0060560","GO:0060560",2,"GO:0048588",7.82471993489094,292,"developmental growth involved in morphogenesis","developmental cell growth",0.835764705882353,0.243333333333333,0.825
+"GO:0031346","GO:0031346",3,"GO:0031346",7.6951707155779,463,"positive regulation of cell projection organization","positive regulation of cell projection organization",0.761764705882353,0.344142857142857,0
+"GO:0050770","GO:0050770",1,"GO:0007409",6.89422317059791,186,"regulation of axonogenesis","axonogenesis",0.694305882352941,0.3552,0.882
+"GO:0032412","GO:0032412",4,"GO:0032412",6.7925243672053,283,"regulation of monoatomic ion transmembrane transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.711223529411765,0.294,0
+"GO:0022898","GO:0022898",4,"GO:0032412",6.53044499353936,294,"regulation of transmembrane transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.710694117647059,0.2936,0.995
+"GO:0031345","GO:0031345",3,"GO:0031346",6.52938346038636,221,"negative regulation of cell projection organization","positive regulation of cell projection organization",0.770611764705882,0.358571428571429,0.823
+"GO:0034765","GO:0034765",5,"GO:0034765",6.50608998811945,490,"regulation of monoatomic ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.704529411764706,0.237833333333333,0
+"GO:0032409","GO:0032409",4,"GO:0032412",6.18579938435133,307,"regulation of transporter activity","regulation of monoatomic ion transmembrane transporter activity",0.881564705882353,0.2946,0.992
+"GO:1990138","GO:1990138",2,"GO:0048588",6.14064069402722,211,"neuron projection extension","developmental cell growth",0.710941176470588,0.219333333333333,0.973
+"GO:0010977","GO:0010977",3,"GO:0031346",5.93825468537927,165,"negative regulation of neuron projection development","positive regulation of cell projection organization",0.714847058823529,0.33,0.805
+"GO:0042391","GO:0042391",6,"GO:0042391",5.27536021300332,491,"regulation of membrane potential","regulation of membrane potential",0.887035294117647,0.5815,0
+"GO:0010976","GO:0010976",3,"GO:0031346",5.081147133572,239,"positive regulation of neuron projection development","positive regulation of cell projection organization",0.708211764705882,0.338285714285714,0.929
+"GO:0099003","GO:0099003",7,"GO:0099003",4.94251371612448,270,"vesicle-mediated transport in synapse","vesicle-mediated transport in synapse",0.831964705882353,0.509,0
+"GO:1904062","GO:1904062",5,"GO:0034765",4.86259779192411,367,"regulation of monoatomic cation transmembrane transport","regulation of monoatomic ion transmembrane transport",0.706976470588235,0.230583333333333,0.973
+"GO:0050771","GO:0050771",8,"GO:0050771",4.66728992722367,71,"negative regulation of axonogenesis","negative regulation of axonogenesis",0.688752941176471,0.321,0
+"GO:0016049","GO:0016049",2,"GO:0048588",4.51187494269855,556,"cell growth","developmental cell growth",0.894517647058824,0.250444444444444,0.95
+"GO:0048668","GO:0048668",2,"GO:0048588",4.32532661566304,33,"collateral sprouting","developmental cell growth",0.7412,0.282333333333333,0.847
+"GO:0010959","GO:0010959",5,"GO:0034765",4.29644663004639,461,"regulation of metal ion transport","regulation of monoatomic ion transmembrane transport",0.722270588235294,0.229166666666667,0.938
+"GO:0016358","GO:0016358",3,"GO:0031346",4.24699577207598,327,"dendrite development","positive regulation of cell projection organization",0.762670588235294,0.361,0.64
+"GO:0035418","GO:0035418",9,"GO:0035418",3.96952965763516,100,"protein localization to synapse","protein localization to synapse",0.825670588235294,0.26475,0
+"GO:0099643","GO:0099643",10,"GO:0099643",3.96664696857054,174,"signal release from synapse","signal release from synapse",0.795776470588235,0.34225,0
+"GO:0007269","GO:0007269",10,"GO:0099643",3.96664696857054,174,"neurotransmitter secretion","signal release from synapse",0.7166,0.33975,0.998
+"GO:0051961","GO:0051961",8,"GO:0050771",3.79292433803922,183,"negative regulation of nervous system development","negative regulation of axonogenesis",0.782870588235294,0.30025,0.933
+"GO:0097485","GO:0097485",1,"GO:0007409",3.77559896379267,252,"neuron projection guidance","axonogenesis",0.748588235294118,0.3294,0.859
+"GO:0007411","GO:0007411",1,"GO:0007409",3.77559896379267,252,"axon guidance","axonogenesis",0.744647058823529,0.304,0.927
+"GO:0061387","GO:0061387",11,"GO:0061387",3.73617748026426,129,"regulation of extent of cell growth","regulation of extent of cell growth",0.725458823529412,0.377666666666667,0
+"GO:0016079","GO:0016079",10,"GO:0099643",3.45341237036896,115,"synaptic vesicle exocytosis","signal release from synapse",0.713317647058824,0.35125,0.97
+"GO:0050767","GO:0050767",8,"GO:0050771",3.38429651413675,494,"regulation of neurogenesis","negative regulation of axonogenesis",0.755482352941176,0.344,0.846
+"GO:0048675","GO:0048675",2,"GO:0048588",3.33875884520291,143,"axon extension","developmental cell growth",0.715517647058824,0.237333333333333,0.946
+"GO:0050807","GO:0050807",6,"GO:0042391",3.29825828513533,309,"regulation of synapse organization","regulation of membrane potential",0.753964705882353,0.47925,0.559
+"GO:0048638","GO:0048638",2,"GO:0048588",3.24398618708747,405,"regulation of developmental growth","developmental cell growth",0.789894117647059,0.275888888888889,0.832
+"GO:0050768","GO:0050768",8,"GO:0050771",3.16557994443596,175,"negative regulation of neurogenesis","negative regulation of axonogenesis",0.760023529411765,0.29025,0.937
+"GO:0001764","GO:0001764",12,"GO:0001764",3.15600401719157,206,"neuron migration","neuron migration",0.824470588235294,1,0
+"GO:0050803","GO:0050803",6,"GO:0042391",3.11997813552852,317,"regulation of synapse structure or activity","regulation of membrane potential",0.886070588235294,0.47875,0.56
+"GO:0099173","GO:0099173",13,"GO:0099173",3.08166427871493,252,"postsynapse organization","postsynapse organization",0.8672,0.356,0
+"GO:0099504","GO:0099504",7,"GO:0099003",3.01990551674089,230,"synaptic vesicle cycle","vesicle-mediated transport in synapse",0.813705882352941,0.509,0.982
+"GO:1903078","GO:1903078",14,"GO:1903078",2.98287128480553,63,"positive regulation of protein localization to plasma membrane","positive regulation of protein localization to plasma membrane",0.755741176470588,0.2508,0
+"GO:1990778","GO:1990778",14,"GO:1903078",2.93380518623169,400,"protein localization to cell periphery","positive regulation of protein localization to plasma membrane",0.812835294117647,0.3732,0.843
+"GO:0021953","GO:0021953",15,"GO:0021953",2.72959772832776,212,"central nervous system neuron differentiation","central nervous system neuron differentiation",0.824752941176471,0.629,0
+"GO:0099068","GO:0099068",13,"GO:0099173",2.67090615965872,50,"postsynapse assembly","postsynapse organization",0.807623529411765,0.3514,0.881
+"GO:0048670","GO:0048670",2,"GO:0048588",2.64893341124132,23,"regulation of collateral sprouting","developmental cell growth",0.656741176470588,0.274333333333333,0.821
+"GO:0097120","GO:0097120",16,"GO:0097120",2.64694532567412,87,"receptor localization to synapse","receptor localization to synapse",0.878576470588235,1,0
+"GO:0001505","GO:0001505",6,"GO:0042391",2.62376391758458,220,"regulation of neurotransmitter levels","regulation of membrane potential",0.876611764705882,0.5965,0.555
+"GO:0008361","GO:0008361",11,"GO:0061387",2.5974511990168,222,"regulation of cell size","regulation of extent of cell growth",0.8078,0.365666666666667,0.962
+"GO:1902414","GO:1902414",9,"GO:0035418",2.58521709711901,133,"protein localization to cell junction","protein localization to synapse",0.823976470588235,0.27225,0.985
+"GO:0099560","GO:0099560",13,"GO:0099173",2.50318937126886,36,"synaptic membrane adhesion","postsynapse organization",0.884058823529412,0.4452,0.717
+"GO:0007611","GO:0007611",17,"GO:0007611",2.4185506285808,331,"learning or memory","learning or memory",0.922070588235294,0.506,0
+"GO:0006836","GO:0006836",18,"GO:0006836",2.41760578483411,230,"neurotransmitter transport","neurotransmitter transport",0.831070588235294,0.401,0
+"GO:0050773","GO:0050773",3,"GO:0031346",2.3785352354357,145,"regulation of dendrite development","positive regulation of cell projection organization",0.715976470588235,0.299142857142857,0.786
+"GO:0050890","GO:0050890",17,"GO:0007611",2.36877688926839,371,"cognition","learning or memory",0.9282,0.506,0.988
+"GO:2000649","GO:2000649",5,"GO:0034765",2.33632637919016,59,"regulation of sodium ion transmembrane transporter activity","regulation of monoatomic ion transmembrane transport",0.719258823529412,0.26075,0.818
+"GO:0030900","GO:0030900",15,"GO:0021953",2.30559363588186,425,"forebrain development","central nervous system neuron differentiation",0.849988235294118,0.629,0.742
+"GO:1904377","GO:1904377",14,"GO:1903078",2.30380273481414,75,"positive regulation of protein localization to cell periphery","positive regulation of protein localization to plasma membrane",0.755917647058824,0.2958,0.989
+"GO:0006813","GO:0006813",5,"GO:0034765",2.22091230729133,249,"potassium ion transport","regulation of monoatomic ion transmembrane transport",0.803,0.32475,0.678
+"GO:0040013","GO:0040013",19,"GO:0040013",2.04943785494558,358,"negative regulation of locomotion","negative regulation of locomotion",0.914211764705882,0.5055,0
+"GO:0046928","GO:0046928",18,"GO:0006836",2.03869246925258,106,"regulation of neurotransmitter secretion","neurotransmitter transport",0.690047058823529,0.373666666666667,0.892
+"GO:0043270","GO:0043270",5,"GO:0034765",2.010096329362,277,"positive regulation of monoatomic ion transport","regulation of monoatomic ion transmembrane transport",0.734294117647059,0.295916666666667,0.874
+"GO:0034764","GO:0034764",20,"GO:0034764",1.94214149145653,282,"positive regulation of transmembrane transport","positive regulation of transmembrane transport",0.730341176470588,0.531,0
+"GO:2000651","GO:2000651",5,"GO:0034765",1.87985763526601,19,"positive regulation of sodium ion transmembrane transporter activity","regulation of monoatomic ion transmembrane transport",0.732447058823529,0.30225,0.747
+"GO:0043266","GO:0043266",5,"GO:0034765",1.84575836333684,116,"regulation of potassium ion transport","regulation of monoatomic ion transmembrane transport",0.742588235294118,0.246833333333333,0.83
+"GO:0007416","GO:0007416",13,"GO:0099173",1.80499530794089,222,"synapse assembly","postsynapse organization",0.786905882352941,0.327,0.818
+"GO:0032535","GO:0032535",11,"GO:0061387",1.78545741172503,411,"regulation of cellular component size","regulation of extent of cell growth",0.800129411764706,0.384666666666667,0.905
+"GO:1902305","GO:1902305",5,"GO:0034765",1.76445362093315,71,"regulation of sodium ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.734247058823529,0.251833333333333,0.833
+"GO:0099072","GO:0099072",21,"GO:0099072",1.75539128971849,133,"regulation of postsynaptic membrane neurotransmitter receptor levels","regulation of postsynaptic membrane neurotransmitter receptor levels",0.897552941176471,1,0
+"GO:1905477","GO:1905477",14,"GO:1903078",1.73523822554576,114,"positive regulation of protein localization to membrane","positive regulation of protein localization to plasma membrane",0.754505882352941,0.3656,0.959
+"GO:0048813","GO:0048813",3,"GO:0031346",1.72956311991484,192,"dendrite morphogenesis","positive regulation of cell projection organization",0.755776470588235,0.384571428571429,0.608
+"GO:1901379","GO:1901379",5,"GO:0034765",1.70294554627263,95,"regulation of potassium ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.725458823529412,0.232,0.867
+"GO:0043087","GO:0043087",4,"GO:0032412",1.6939804990984,345,"regulation of GTPase activity","regulation of monoatomic ion transmembrane transporter activity",0.907152941176471,0.5242,0.602
+"GO:1903539","GO:1903539",9,"GO:0035418",1.66267511650948,67,"protein localization to postsynaptic membrane","protein localization to synapse",0.812152941176471,0.266,0.977
+"GO:2001257","GO:2001257",4,"GO:0032412",1.66119462022268,145,"regulation of cation channel activity","regulation of monoatomic ion transmembrane transporter activity",0.709082352941176,0.3236,0.941
+"GO:0007626","GO:0007626",22,"GO:0007626",1.66011998227833,273,"locomotory behavior","locomotory behavior",0.937964705882353,1,0
+"GO:0062237","GO:0062237",9,"GO:0035418",1.61313909342332,68,"protein localization to postsynapse","protein localization to synapse",0.828611764705882,0.265,0.979
+"GO:1903076","GO:1903076",14,"GO:1903078",1.5935266543352,120,"regulation of protein localization to plasma membrane","positive regulation of protein localization to plasma membrane",0.750882352941176,0.2642,0.955
+"GO:0071805","GO:0071805",5,"GO:0034765",1.55613510762643,212,"potassium ion transmembrane transport","regulation of monoatomic ion transmembrane transport",0.782,0.305833333333333,0.772
+"GO:0099565","GO:0099565",10,"GO:0099643",1.52495679249585,117,"chemical synaptic transmission, postsynaptic","signal release from synapse",0.857670588235294,0.50225,0.663
+"GO:0034329","GO:0034329",13,"GO:0099173",1.48559635978431,481,"cell junction assembly","postsynapse organization",0.862976470588235,0.3428,0.804
+"GO:0032414","GO:0032414",20,"GO:0034764",1.45783693218967,129,"positive regulation of ion transmembrane transporter activity","positive regulation of transmembrane transport",0.708364705882353,0.531,0.938
+"GO:0048640","GO:0048640",2,"GO:0048588",1.42480447211798,129,"negative regulation of developmental growth","developmental cell growth",0.790564705882353,0.327666666666667,0.76
+"GO:0002028","GO:0002028",5,"GO:0034765",1.42260612972722,102,"regulation of sodium ion transport","regulation of monoatomic ion transmembrane transport",0.746411764705882,0.257916666666667,0.816
+"GO:0022604","GO:0022604",1,"GO:0007409",1.4164007596941,277,"regulation of cell morphogenesis","axonogenesis",0.803188235294118,0.4036,0.777
+"GO:2000146","GO:2000146",19,"GO:0040013",1.39458271026386,326,"negative regulation of cell motility","negative regulation of locomotion",0.892847058823529,0.5055,0.989
+"GO:0051588","GO:0051588",18,"GO:0006836",1.35976343889276,126,"regulation of neurotransmitter transport","neurotransmitter transport",0.763223529411765,0.369333333333333,0.905
+"GO:0032970","GO:0032970",23,"GO:0032970",1.3439130331572,402,"regulation of actin filament-based process","regulation of actin filament-based process",0.924494117647059,1,0

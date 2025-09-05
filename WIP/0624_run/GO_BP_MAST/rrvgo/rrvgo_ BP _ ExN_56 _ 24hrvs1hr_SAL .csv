@@ -1,0 +1,15 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0001764","GO:0001764",1,"GO:0001764",6.24910108149231,206,"neuron migration","neuron migration",0.732142857142857,0.554,0
+"GO:0007409","GO:0007409",1,"GO:0001764",5.12556762570385,501,"axonogenesis","neuron migration",0.611857142857143,0.4572,0.627
+"GO:0050807","GO:0050807",2,"GO:0050807",3.17968946110538,309,"regulation of synapse organization","regulation of synapse organization",0.733428571428571,0.5025,0
+"GO:0030900","GO:0030900",3,"GO:0030900",3.14156954459791,425,"forebrain development","forebrain development",0.644857142857143,0.387,0
+"GO:0050803","GO:0050803",2,"GO:0050807",3.07426384567365,317,"regulation of synapse structure or activity","regulation of synapse organization",0.849857142857143,0.5025,0.995
+"GO:0021537","GO:0021537",3,"GO:0030900",2.69054326641927,281,"telencephalon development","forebrain development",0.651785714285714,0.368333333333333,0.941
+"GO:0099175","GO:0099175",4,"GO:0099175",2.56401977290067,139,"regulation of postsynapse organization","regulation of postsynapse organization",0.737214285714286,0.5315,0
+"GO:0021954","GO:0021954",1,"GO:0001764",2.54879003071462,98,"central nervous system neuron development","neuron migration",0.633785714285714,0.3864,0.531
+"GO:0032409","GO:0032409",5,"GO:0032409",2.51545985580134,307,"regulation of transporter activity","regulation of transporter activity",0.909,0.5025,0
+"GO:0021543","GO:0021543",3,"GO:0030900",1.88019623823761,182,"pallium development","forebrain development",0.663642857142857,0.382666666666667,0.898
+"GO:0099173","GO:0099173",4,"GO:0099175",1.85569337865943,252,"postsynapse organization","regulation of postsynapse organization",0.8185,0.5315,0.937
+"GO:0021953","GO:0021953",1,"GO:0001764",1.83189166256887,212,"central nervous system neuron differentiation","neuron migration",0.625142857142857,0.3936,0.569
+"GO:0022898","GO:0022898",5,"GO:0032409",1.68220774288734,294,"regulation of transmembrane transporter activity","regulation of transporter activity",0.894,0.5025,0.995
+"GO:0021955","GO:0021955",1,"GO:0001764",1.30676699930196,45,"central nervous system neuron axonogenesis","neuron migration",0.579642857142857,0.3772,0.503

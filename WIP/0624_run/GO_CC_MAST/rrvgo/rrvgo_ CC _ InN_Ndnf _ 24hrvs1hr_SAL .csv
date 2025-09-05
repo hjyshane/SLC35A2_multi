@@ -1,0 +1,4 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0045171","GO:0045171",1,"GO:0045171",1.59409776368033,101,"intercellular bridge","intercellular bridge",0.998666666666667,1,0
+"GO:0098685","GO:0098685",2,"GO:0098685",1.39605192873659,144,"Schaffer collateral - CA1 synapse","Schaffer collateral - CA1 synapse",0.998666666666667,1,0
+"GO:0072686","GO:0072686",3,"GO:0072686",1.30779102483705,181,"mitotic spindle","mitotic spindle",0.998666666666667,1,0

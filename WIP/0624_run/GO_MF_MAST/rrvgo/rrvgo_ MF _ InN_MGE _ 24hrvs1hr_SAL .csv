@@ -1,0 +1,13 @@
+"","go","cluster","parent","score","size","term","parentTerm","termUniqueness","termUniquenessWithinCluster","termDispensability"
+"GO:0005200","GO:0005200",1,"GO:0005200",10.0686280290909,73,"structural constituent of cytoskeleton","structural constituent of cytoskeleton",1,1,0
+"GO:0031625","GO:0031625",2,"GO:0031625",7.14599472986887,338,"ubiquitin protein ligase binding","ubiquitin protein ligase binding",0.866333333333333,0.505,0
+"GO:0005525","GO:0005525",3,"GO:0005525",7.09149775045513,363,"GTP binding","GTP binding",0.781416666666667,0.353666666666667,0
+"GO:0044389","GO:0044389",2,"GO:0031625",6.9323455529201,358,"ubiquitin-like protein ligase binding","ubiquitin protein ligase binding",0.866083333333333,0.505,0.99
+"GO:0019001","GO:0019001",3,"GO:0005525",6.79185701688406,387,"guanyl nucleotide binding","GTP binding",0.77825,0.346666666666667,0.968
+"GO:0032561","GO:0032561",3,"GO:0005525",6.79185701688406,387,"guanyl ribonucleotide binding","GTP binding",0.77825,0.345666666666667,0.971
+"GO:0003924","GO:0003924",4,"GO:0003924",3.8789744876173,305,"GTPase activity","GTPase activity",1,1,0
+"GO:0097718","GO:0097718",5,"GO:0097718",2.22177969959555,36,"disordered domain specific binding","disordered domain specific binding",0.94125,1,0
+"GO:0019103","GO:0019103",6,"GO:0019103",1.49605249066425,11,"pyrimidine nucleotide binding","pyrimidine nucleotide binding",0.8755,1,0
+"GO:0044183","GO:0044183",7,"GO:0044183",1.4940651238483,55,"protein folding chaperone","protein folding chaperone",1,1,0
+"GO:0010851","GO:0010851",8,"GO:0010851",1.40946334171048,15,"cyclase regulator activity","cyclase regulator activity",1,1,0
+"GO:0044325","GO:0044325",9,"GO:0044325",1.3037225939707,169,"transmembrane transporter binding","transmembrane transporter binding",0.934583333333333,1,0
